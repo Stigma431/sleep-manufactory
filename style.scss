@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+
+    .logo {
+        display: flex;
+        .logoImage {
+            background: url(images/Ellipse1.svg) blue no-repeat;
+            width: 238px;
+            height: 42.75px;
+        }
+        .logoText {
+
+        }
+    }
+}
