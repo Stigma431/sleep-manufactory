@@ -4,18 +4,36 @@
     box-sizing: border-box;
 }
 
+$images: url(images);
+
 .header {
-    display: flex;
+    .header-wrapper {
+        width: 97.813vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2.917vw;
+    }
 
     .logo {
         display: flex;
-        .logoImage {
-            background: url(images/Ellipse1.svg) blue no-repeat;
-            width: 238px;
-            height: 42.75px;
-        }
-        .logoText {
+        background: url(images/logo.svg) no-repeat;
+        width: 12.396vw;
+        height: 2.227vw;
+    }
 
+    .nav-menu {
+        list-style: none;
+        display: flex;
+    }
+
+    .header-right {
+        display: flex;
+        justify-content: space-between;
+
+        .map-icon {
+            background: url(images/);
         }
     }
 }
