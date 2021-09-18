@@ -7,6 +7,21 @@
 
 body {
   font-family: Calibri;
+  height: 100000px;
+}
+
+.header {
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.header .header_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .header .header-wrapper {
@@ -132,7 +147,7 @@ body {
   margin-top: 0.172vw;
 }
 
-.burger-menu {
+.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +168,7 @@ body {
   position: absolute;
   left: 1.09%;
   right: 97.76%;
-  top: 5%;
+  top: 1.443vw;
   z-index: 1;
 }
 
