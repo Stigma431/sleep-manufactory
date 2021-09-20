@@ -16,8 +16,7 @@ li {
 }
 
 body {
-  font-family: $font;
-  height: 100000px;
+  font-family: $font; 
 }
 
 .header {
@@ -27,6 +26,7 @@ body {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
   z-index: 100;
   position: relative;
+  top: 0;
 
   .header_fixed {
     position: fixed;
@@ -161,7 +161,7 @@ body {
 }
 
 
-
+//Начало бургер меню
 .input {
   display: flex;
   flex-direction: column;
@@ -252,4 +252,9 @@ body {
 #menu-toggle:checked~.menubox {
   visibility: visible;
   left: 0;
+}
+//Конец бургер меню
+
+.main {
+  height: 1000px;
 }
