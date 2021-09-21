@@ -21,8 +21,13 @@ body {
 
 .container {
   width: 71.146vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 1.042vw; }
 
+@media all and (max-width: 1366px) {
+  .container {
+    width: 100vw;
+    padding: 0 1.464vw; } }
 .header {
   width: 100%;
   background: #fff;
