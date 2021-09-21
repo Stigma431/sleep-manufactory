@@ -10,11 +10,30 @@
 
 $font: 'Calibri Regular';
 $images: url(images);
+$blue: #1F316A;
+$yellow: #EFCA58;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #1F316A;
   font-family: 'Calibri Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $font;
+}
+// 1920px
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto;
 }

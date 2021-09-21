@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #1F316A;
   font-family: 'Calibri Regular'; }
 
 a {
@@ -19,6 +18,10 @@ li {
 
 body {
   font-family: "Calibri Regular"; }
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto; }
 
 .header {
   width: 100%;
