@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url("fonts/Calibri.eot");
+  src: url("fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("fonts/Calibri.woff") format("woff"), url("fonts/Calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1F316A;
+  font-family: 'Calibri Regular'; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: "Calibri Regular"; }
+
+.header {
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  position: relative;
+  top: 0; }
+  .header .header_fixed {
+    position: fixed;
+    left: 0;
+    top: 0; }
+  .header .header-wrapper {
+    width: 97.813vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.917vw; }
+    .header .header-wrapper .header-logo_burger {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.365vw; }
+      .header .header-wrapper .header-logo_burger .header__nav {
+        position: absolute;
+        right: 36px;
+        display: block; }
+      .header .header-wrapper .header-logo_burger .header__menu {
+        display: flex;
+        position: relative;
+        z-index: 2; }
+      .header .header-wrapper .header-logo_burger .header__menu li {
+        list-style: none;
+        margin: 0px 0px 0px 36px;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .header .header-wrapper .header-logo_burger .content-wrapper {
+        margin-top: 78px;
+        padding: 10px;
+        line-height: 34px; }
+      .header .header-wrapper .header-logo_burger a {
+        color: #242e31;
+        text-decoration: none;
+        font-weight: 600; }
+    .header .header-wrapper .nav-menu {
+      list-style: none;
+      display: flex;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center; }
+      .header .header-wrapper .nav-menu .submenu {
+        position: absolute;
+        top: 3vw;
+        left: 0;
+        min-width: 99vw;
+        min-height: 22.656vw;
+        display: none;
+        -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        background: #fff; }
+      .header .header-wrapper .nav-menu .nav-links {
+        color: #1F316A;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 0.729vw; }
+      .header .header-wrapper .nav-menu .nav:hover .submenu {
+        display: block; }
+      .header .header-wrapper .nav-menu .nav-links:hover {
+        border-bottom: 2px solid blue;
+        -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); }
+      .header .header-wrapper .nav-menu .nav {
+        background-color: transparent; }
+      .header .header-wrapper .nav-menu .nav:not(:last-child) {
+        padding-right: 1.042vw; }
+    .header .header-wrapper .header-right {
+      display: flex;
+      align-items: center; }
+      .header .header-wrapper .header-right .map {
+        color: #1f316a;
+        display: flex;
+        text-decoration: none;
+        margin-right: 0.573vw; }
+        .header .header-wrapper .header-right .map .map-name {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          padding-left: 0.401vw;
+          color: #1F316A; }
+      .header .header-wrapper .header-right .shopping-cart {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.172vw; }
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 19px; }
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1.09%;
+  right: 97.76%;
+  top: 1.443vw;
+  z-index: 1; }
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1F316A;
+  transition-duration: .25s; }
+
+.menu-btn > span::before {
+  content: '';
+  top: -8px; }
+
+.menu-btn > span::after {
+  content: '';
+  top: 8px; }
+
+.menubox {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: .25s; }
+
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s; }
+
+.menu-item:hover {
+  background-color: #CFD8DC; }
+
+#menu-toggle {
+  opacity: 0; }
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg); }
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0); }
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg); }
+
+#menu-toggle:checked ~ .menubox {
+  visibility: visible;
+  left: 0; }
+
+.main {
+  height: 1000px; }
+
+/*# sourceMappingURL=header-style.css.map */

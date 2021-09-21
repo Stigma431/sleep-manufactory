@@ -1,11 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-$font: Calibri;
-$images: url(images);
+@import "base-scss.scss";
 
 a {
   text-decoration: none;
@@ -122,7 +115,7 @@ body {
       }
 
       .nav {
-        background-color: none;
+        background-color: transparent;
       }
 
       .nav:not(:last-child) {

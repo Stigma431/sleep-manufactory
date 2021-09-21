@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url('fonts/Calibri.eot');
+  src: url('fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Calibri.woff') format('woff'),
+  url('fonts/Calibri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font: 'Calibri Regular';
+$images: url(images);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1F316A;
+  font-family: 'Calibri Regular';
+}
