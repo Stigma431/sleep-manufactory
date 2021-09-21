@@ -4,6 +4,10 @@
     margin-right: 19px;
 }
 
+.input {
+  width: 1.042vw; 
+}
+
 .menu-btn{
     display: flex;
     align-items: center;
@@ -82,4 +86,8 @@
   #menu-toggle:checked ~ .menubox{
     visibility: visible;
     left: 0;
+  }
+
+  @media {
+
   }
