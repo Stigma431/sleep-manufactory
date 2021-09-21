@@ -1,5 +1,23 @@
-@import "base-scss.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+$font: Calibri;
+$images: url(images);
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $font;
+}
 
 .header {
   width: 100%;
@@ -9,7 +27,12 @@
   z-index: 100;
   position: relative;
   top: 0;
-  position: fixed;
+
+  .header_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
 
   .header-wrapper {
     width: 97.813vw;
@@ -99,7 +122,7 @@
       }
 
       .nav {
-        background-color: transparent;
+        background-color: none;
       }
 
       .nav:not(:last-child) {
@@ -230,5 +253,9 @@
   visibility: visible;
   left: 0;
 }
+
 //Конец бургер меню
 
+.main {
+  height: 1000px;
+}

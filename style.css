@@ -1,17 +1,8 @@
-@font-face {
-  font-family: 'Calibri Regular';
-  src: url("fonts/Calibri.eot");
-  src: url("fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("fonts/Calibri.woff") format("woff"), url("fonts/Calibri.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Calibri Regular';
 }
 
 a {
@@ -23,12 +14,7 @@ li {
 }
 
 body {
-  font-family: "Calibri Regular";
-}
-
-.container {
-  width: 71.146vw;
-  margin: 0 auto;
+  font-family: Calibri;
 }
 
 .header {
@@ -39,7 +25,12 @@ body {
   z-index: 100;
   position: relative;
   top: 0;
+}
+
+.header .header_fixed {
   position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .header .header-wrapper {
@@ -143,7 +134,7 @@ body {
 }
 
 .header .header-wrapper .nav-menu .nav {
-  background-color: transparent;
+  background-color: none;
 }
 
 .header .header-wrapper .nav-menu .nav:not(:last-child) {
@@ -294,4 +285,8 @@ body {
   visibility: visible;
   left: 0;
 }
-/*# sourceMappingURL=header-style.css.map */
+
+.main {
+  height: 1000px;
+}
+/*# sourceMappingURL=style.css.map */
