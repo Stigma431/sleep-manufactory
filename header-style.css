@@ -118,11 +118,9 @@ body {
   position: absolute;
   top: 3vw;
   left: 0;
-  min-width: 99vw;
+  min-width: 100vw;
   min-height: 22.656vw;
   display: none;
-  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
   background: #fff;
 }
 
@@ -130,7 +128,7 @@ body {
   color: #1F316A;
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  padding-bottom: 0.729vw;
+  padding: 0.729vw 0.729vw;
 }
 
 .header .header-wrapper .nav-menu .nav:hover .submenu {
@@ -145,8 +143,10 @@ body {
   background-color: transparent;
 }
 
-.header .header-wrapper .nav-menu .nav:not(:last-child) {
-  padding-right: 1.042vw;
+.header .header-wrapper .nav-menu .deactive {
+  color: #1F316A;
+  text-decoration: none;
+  padding: 0.729vw 0.729vw;
 }
 
 .header .header-wrapper .header-right {
@@ -189,6 +189,7 @@ body {
 
 .burger-menu {
   cursor: pointer;
+  margin-right: 1.875vw;
 }
 
 .input {
@@ -199,7 +200,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 1.875vw;
 }
 
 .menu-btn {

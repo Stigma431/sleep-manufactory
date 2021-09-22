@@ -72,11 +72,9 @@
         position: absolute;
         top: 3vw;
         left: 0;
-        min-width: 99vw;
+        min-width: 100vw;
         min-height: 22.656vw;
         display: none;
-        -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
         background: #fff;
       }
 
@@ -84,8 +82,7 @@
         color: #1F316A;
         text-decoration: none;
         border-bottom: 2px solid transparent;
-        padding-bottom: 0.729vw;
-
+        padding: 0.729vw 0.729vw;
       }
 
       .nav:hover .submenu {
@@ -94,16 +91,19 @@
 
       .nav-links:hover {
         border-bottom: 2px solid #1F316A;
-
       }
+
 
       .nav {
         background-color: transparent;
       }
 
-      .nav:not(:last-child) {
-        padding-right: 1.042vw;
+      .deactive {
+        color: #1F316A;
+        text-decoration: none;
+        padding: 0.729vw 0.729vw;
       }
+      
     }
 
     .header-right {
@@ -140,12 +140,13 @@
 //Начало бургер меню
 .burger-menu {
   cursor: pointer;
+  margin-right: 1.875vw;
 }
 
 .input {
   display: flex;
   flex-direction: column;
-  margin-right: 1.875vw; 
+
 }
 
 .menu-btn {
@@ -234,6 +235,7 @@
   visibility: visible;
   left: 0;
 }
+
 //Конец бургер меню
 
 @media all and (max-width: 1366px) {
@@ -243,6 +245,6 @@
     padding: 0 1.464vw;
   }
 
-  
+
 
 }
