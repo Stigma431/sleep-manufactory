@@ -2,10 +2,10 @@
 
 
 .header {
-  width: 100%;
+  width: 100vw;
   background: #fff;
-  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
   z-index: 100;
   position: relative;
   top: 0;
@@ -28,7 +28,7 @@
 
       .header__nav {
         position: absolute;
-        right: 36px;
+        right: 1.875vw;
         display: block;
       }
 
@@ -40,16 +40,16 @@
 
       .header__menu li {
         list-style: none;
-        margin: 0px 0px 0px 36px;
-        font-size: 16px;
+        margin: 0px 0px 0px 1.875vw;
+        font-size: 0.833vw;
         text-transform: uppercase;
         text-decoration: none;
       }
 
       .content-wrapper {
-        margin-top: 78px;
-        padding: 10px;
-        line-height: 34px;
+        margin-top: 4.063vw;
+        padding: 0.521vw;
+        line-height: 1.771vw;
       }
 
       a {
@@ -64,8 +64,8 @@
       display: flex;
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 0.938vw;
+      line-height: 1.146vw;
       text-align: center;
 
       .submenu {
@@ -81,7 +81,7 @@
       .nav-links {
         color: #1F316A;
         text-decoration: none;
-        border-bottom: 2px solid transparent;
+        border-bottom: 0.150vw solid transparent;
         padding: 0.729vw 0.729vw;
       }
 
@@ -90,7 +90,7 @@
       }
 
       .nav-links:hover {
-        border-bottom: 2px solid #1F316A;
+        border-bottom: 0.150vw solid #1F316A;
       }
 
 
@@ -103,8 +103,6 @@
         text-decoration: none;
         padding: 0.729vw 0.729vw;
       }
-      
-      
 
     }
 
@@ -122,8 +120,8 @@
         .map-name {
           font-style: normal;
           font-weight: normal;
-          font-size: 18px;
-          line-height: 22px;
+          font-size: 0.938vw;
+          line-height: 1.146vw;
           padding-left: 0.401vw;
           color: #1F316A;
         }
@@ -155,8 +153,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  left: 1.09%;
-  right: 97.76%;
+  left: 1.090vw;
+  right: 97.760vw;
   top: 1.443vw;
   z-index: 1;
 }
@@ -166,8 +164,8 @@
 .menu-btn>span::after {
   display: block;
   position: absolute;
-  width: 100%;
-  height: 2px;
+  width: 1.146vw;
+  height: 0.104vw;
   background-color: #1F316A;
   transition-duration: .25s;
   cursor: pointer;
@@ -175,12 +173,12 @@
 
 .menu-btn>span::before {
   content: '';
-  top: -8px;
+  top: -0.417vw;
 }
 
 .menu-btn>span::after {
   content: '';
-  top: 8px;
+  top: 0.417vw;
 }
 
 .menubox {
@@ -188,23 +186,23 @@
   position: fixed;
   visibility: hidden;
   top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
+  left: -100vw;
+  width: 15.625vw;
+  height: 100vw;
   margin: 0;
-  padding: 80px 0;
+  padding: 4.167vw 0;
   list-style: none;
   background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  box-shadow: 0.052vw 0px 0.313vw rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
 
 .menu-item {
   display: block;
-  padding: 12px 24px;
+  padding: 0.625vw 1.250vw;
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 1.042vw;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
