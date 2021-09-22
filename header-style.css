@@ -84,7 +84,7 @@ body {
 
 .header .header-wrapper .header-logo_burger .header__menu li {
   list-style: none;
-  margin: 0px 0px 0px 1.875vw;
+  margin: 0 0 0 1.875vw;
   font-size: 0.833vw;
   text-transform: uppercase;
   text-decoration: none;
