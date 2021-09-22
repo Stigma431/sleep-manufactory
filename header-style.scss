@@ -232,3 +232,15 @@
 }
 //Конец бургер меню
 
+@media all and (max-width: 1366px) {
+
+  .container {
+    width: 100vw;
+    padding: 0 1.464vw;
+  }
+
+  .header_main-nav {
+    //display: none;
+  }
+
+}
