@@ -71,6 +71,10 @@ footer {
 
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
+  .container {
+    width: 100vw;
+    padding: 0 1.464vw;
+  }
   footer {
     .footer__row {
       padding: 2.760vw * $coefficient 0 5vw * $coefficient;
@@ -110,5 +114,8 @@ footer {
 }
 
 @media all and (max-width: 415px) {
+  .container {
+    padding: 0 3.614vw;
+  }
 
 }
