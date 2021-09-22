@@ -29,5 +29,6 @@ body {
 .container {
   width: 71.146vw;
   margin: 0 auto;
+  padding: 0 1.042vw;
 }
 /*# sourceMappingURL=base-scss.css.map */

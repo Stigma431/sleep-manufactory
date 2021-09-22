@@ -93,9 +93,8 @@
       }
 
       .nav-links:hover {
-        border-bottom: 2px solid blue;
-        -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        border-bottom: 2px solid #1F316A;
+
       }
 
       .nav {
@@ -139,10 +138,14 @@
 
 
 //Начало бургер меню
+.burger-menu {
+  cursor: pointer;
+}
+
 .input {
   display: flex;
   flex-direction: column;
-  margin-right: 19px;
+  margin-right: 1.875vw; 
 }
 
 .menu-btn {
@@ -164,6 +167,7 @@
   height: 2px;
   background-color: #1F316A;
   transition-duration: .25s;
+  cursor: pointer;
 }
 
 .menu-btn>span::before {
