@@ -56,6 +56,7 @@
         color: #242e31;
         text-decoration: none;
         font-weight: 600;
+
         img {
           width: 13.438vw;
         }
@@ -97,9 +98,7 @@
       }
 
 
-      .nav {
-        background-color: transparent;
-      }
+
 
       .deactive {
         color: #1F316A;
@@ -107,18 +106,28 @@
         padding: 0.729vw 0.729vw;
       }
 
+      .nav {
+        background-color: transparent;
+      }
     }
 
     .header-right {
       display: flex;
       align-items: center;
+      width: 6.042vw;
+      height: 0.990vw;
 
       .map {
         color: #1f316a;
-
         display: flex;
+        align-items: center;
         text-decoration: none;
         margin-right: 0.573vw;
+
+        img {
+          width: 0.693vw;
+          height: 0.906vw;
+        }
 
         .map-name {
           font-style: normal;
@@ -127,13 +136,21 @@
           line-height: 1.146vw;
           padding-left: 0.401vw;
           color: #1F316A;
+
+          flex-direction: column;
+          justify-content: flex-end;
         }
       }
 
       .shopping-cart {
         display: flex;
-        flex-direction: column;
-        margin-top: 0.172vw;
+        align-items: center;
+
+        img {
+          width: 0.938vw;
+          height: 0.817vw;
+        }
+
       }
     }
   }
@@ -142,8 +159,8 @@
 .burger-menu {
   //Начало бургер меню
 
-    cursor: pointer;
-    margin-right: 1.875vw;
+  cursor: pointer;
+  margin-right: 1.875vw;
 
   .input {
     display: flex;
@@ -244,6 +261,7 @@
 
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
+
   .container {
     width: 100vw;
     padding: 0 1.464vw * $coefficient;
@@ -308,16 +326,13 @@
           padding: 0.729vw * $coefficient 0.729vw * $coefficient;
         }
 
-        .nav:hover .submenu {
-
-        }
+        .nav:hover .submenu {}
 
         .nav-links:hover {
           border-bottom: 0.150vw * $coefficient solid #1F316A;
         }
 
-        .nav {
-        }
+        .nav {}
 
         .deactive {
           padding: 0.729vw * $coefficient 0.729vw * $coefficient;
@@ -344,5 +359,240 @@
     }
   }
 
+
+}
+
+@media all and (max-width: 415px) {
+  $coefficient: 4;
+
+  .header {
+    width: 100vw;
+    -webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
+
+    .header-wrapper {
+      width: 97.813vw ;
+
+
+      height: 2.917vw * $coefficient;
+
+
+
+      .header-logo_burger {
+
+        margin-top: 0.365vw * $coefficient;
+
+        .header__nav {
+
+          right: 1.875vw * $coefficient;
+
+        }
+
+        .header__menu {}
+
+        .header__menu li {
+
+          margin: 0 0 0 1.875vw * $coefficient;
+          font-size: 0.833vw * $coefficient;
+        }
+
+        .content-wrapper {
+          margin-top: 4.063vw * $coefficient;
+          padding: 0.521vw * $coefficient;
+          line-height: 1.771vw * $coefficient;
+        }
+
+        a {
+
+          img {
+            width: 13.438vw * $coefficient;
+          }
+        }
+      }
+
+      .header_main-nav {
+        display: none;
+
+        .nav-menu {
+          font-size: 0.938vw;
+          line-height: 1.146vw;
+
+
+          .submenu {
+            top: 3vw;
+            left: 0;
+            min-width: 100vw;
+            min-height: 22.656vw;
+          }
+
+          .nav-links {
+            padding: 0.729vw 0.729vw;
+          }
+
+          .nav:hover .submenu {
+            display: block;
+          }
+
+          .nav-links:hover {
+            border-bottom: 0.150vw solid #1F316A;
+          }
+
+
+
+
+          .deactive {
+            color: #1F316A;
+            text-decoration: none;
+            padding: 0.729vw 0.729vw;
+          }
+
+          .nav {
+            background-color: transparent;
+          }
+        }
+
+      }
+
+      .header-right {
+
+        width: 6.042vw * $coefficient;
+        height: 0.990vw * $coefficient;
+
+        .map {
+
+          margin-right: 0.573vw * $coefficient;
+
+          img {
+            width: 0.693vw * $coefficient;
+            height: 0.906vw * $coefficient;
+          }
+
+          .map-name {
+
+            font-size: 0.938vw * $coefficient;
+            line-height: 1.146vw * $coefficient;
+            padding-left: 0.401vw * $coefficient;
+
+
+
+          }
+        }
+
+        .shopping-cart {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 0.938vw * $coefficient;
+            height: 0.817vw * $coefficient;
+          }
+
+        }
+      }
+    }
+  }
+
+  .burger-menu {
+    //Начало бургер меню
+
+    cursor: pointer;
+    margin-right: 1.875vw * $coefficient;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .menu-btn {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 1.090vw * $coefficient;
+      right: 97.760vw * $coefficient;
+      top: 1.443vw * $coefficient;
+      z-index: 1;
+    }
+
+    .menu-btn>span,
+    .menu-btn>span::before,
+    .menu-btn>span::after {
+      display: block;
+      position: absolute;
+      width: 1.146vw * $coefficient;
+      height: 0.104vw * $coefficient;
+      background-color: #1F316A;
+      transition-duration: .25s;
+      cursor: pointer;
+    }
+
+    .menu-btn>span::before {
+      content: '';
+      top: -0.417vw * $coefficient;
+    }
+
+    .menu-btn>span::after {
+      content: '';
+      top: 0.417vw * $coefficient;
+    }
+
+    .menubox {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100vw;
+      width: 15.625vw * $coefficient;
+      height: 100vw;
+      margin: 0;
+      padding: 4.167vw * $coefficient 0;
+      list-style: none;
+      background-color: #ECEFF1;
+      box-shadow: 0.052vw * $coefficient 0px 0.313vw * $coefficient rgba(0, 0, 0, .2);
+      transition-duration: .25s;
+    }
+
+    .menu-item {
+      display: block;
+      padding: 0.625vw * $coefficient 1.250vw * $coefficient;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.042vw * $coefficient;
+      font-weight: 600;
+      text-decoration: none;
+      transition-duration: .25s;
+    }
+
+    .menu-item:hover {
+      background-color: #CFD8DC;
+    }
+
+
+    #menu-toggle {
+      opacity: 0;
+    }
+
+    #menu-toggle:checked~.menu-btn>span {
+      transform: rotate(45deg);
+    }
+
+    #menu-toggle:checked~.menu-btn>span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    #menu-toggle:checked~.menu-btn>span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    #menu-toggle:checked~.menubox {
+      visibility: visible;
+      left: 0;
+    }
+
+    //Конец бургер меню
+
+  }
 
 }
