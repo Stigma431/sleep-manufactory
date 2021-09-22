@@ -80,9 +80,6 @@ footer {
     .footer__row {
       padding: 2.760vw * $coefficient 0 5vw * $coefficient;
     }
-    .footer__column {
-      width: 100vw;
-    }
     .footer__column-header {
       font-size: 1.198vw * $coefficient;
       padding-bottom: 1.354vw * $coefficient;
@@ -118,7 +115,7 @@ footer {
 }
 
 @media all and (max-width: 415px) {
-  $coefficient: 3;
+  $coefficient: 5;
   .container {
     padding: 0 3.614vw;
   }
@@ -128,6 +125,12 @@ footer {
     }
     .footer__column-header {
       font-size: 1.198vw * $coefficient;
+      padding-bottom: 1.354vw * $coefficient;
+    }
+    .footer__column {
+      width: 100vw;
+    }
+    .footer__column:first-child {
       padding-bottom: 1.354vw * $coefficient;
     }
     .footer__menu-link {

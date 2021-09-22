@@ -83,8 +83,6 @@ footer {
 
   footer .footer__row {
     padding: 3.864vw 0 7vw; }
-  footer .footer__column {
-    width: 100vw; }
   footer .footer__column-header {
     font-size: 1.6772vw;
     padding-bottom: 1.8956vw; }
@@ -108,24 +106,28 @@ footer {
     padding: 0 3.614vw; }
 
   footer .footer__row {
-    padding: 8.28vw 0 15vw; }
+    padding: 13.8vw 0 25vw; }
   footer .footer__column-header {
-    font-size: 3.594vw;
-    padding-bottom: 4.062vw; }
+    font-size: 5.99vw;
+    padding-bottom: 6.77vw; }
+  footer .footer__column {
+    width: 100vw; }
+  footer .footer__column:first-child {
+    padding-bottom: 6.77vw; }
   footer .footer__menu-link {
-    font-size: 2.814vw;
-    line-height: 6vw; }
+    font-size: 4.69vw;
+    line-height: 10vw; }
   footer .footer__social {
-    margin-bottom: 1.563vw; }
+    margin-bottom: 2.605vw; }
   footer .first, footer .second {
-    border: 0.48vw solid transparent;
-    width: 6.405vw;
-    height: 6.405vw; }
+    border: 0.8vw solid transparent;
+    width: 10.675vw;
+    height: 10.675vw; }
   footer .footer__copyright {
-    font-size: 2.499vw; }
+    font-size: 4.165vw; }
   footer .footer__row-copyright {
-    height: 8.439vw; }
+    height: 14.065vw; }
   footer .year {
-    margin: 0 1.875vw; } }
+    margin: 0 3.125vw; } }
 
 /*# sourceMappingURL=footer.css.map */
