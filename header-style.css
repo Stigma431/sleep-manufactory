@@ -154,12 +154,6 @@ body {
 }
 
 .header .header-wrapper .header-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 6.042vw;
   height: 0.990vw;
 }
@@ -169,11 +163,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-decoration: none;
-  margin-right: 0.573vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6.042vw;
 }
 
-.header .header-wrapper .header-right .map img {
+.header .header-wrapper .header-right .map .map-icon {
+  padding-right: 0.401vw;
+}
+
+.header .header-wrapper .header-right .map .map-icon img {
   width: 0.693vw;
   height: 0.906vw;
 }
@@ -182,9 +182,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 0.938vw;
-  line-height: 1.146vw;
-  padding-left: 0.401vw;
   color: #1F316A;
+  text-decoration: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -192,18 +191,16 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 0.573vw;
 }
 
-.header .header-wrapper .header-right .shopping-cart {
+.header .header-wrapper .header-right .map .shopping-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.header .header-wrapper .header-right .shopping-cart img {
+.header .header-wrapper .header-right .map .shopping-cart img {
   width: 0.938vw;
   height: 0.817vw;
 }
@@ -331,7 +328,7 @@ body {
     box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15);
   }
   .header .header-wrapper {
-    width: 100vw;
+    width: 97.813vw;
     height: 2.917vw;
   }
   .header .header-wrapper .header-logo_burger {
@@ -381,16 +378,24 @@ body {
   .header .header-wrapper .nav-menu .deactive {
     padding: 1.0206vw 1.0206vw;
   }
-  .header .header-wrapper .header-right .map {
-    margin-right: 0.8022vw;
+  .header .header-wrapper .header-right {
+    width: 8.4588vw;
+    height: 1.386vw;
+  }
+  .header .header-wrapper .header-right .map .map-icon {
+    padding-right: 0.5614vw;
+  }
+  .header .header-wrapper .header-right .map .map-icon img {
+    width: 0.9702vw;
+    height: 1.2684vw;
   }
   .header .header-wrapper .header-right .map .map-name {
-    font-size: 0.938vw;
-    line-height: 1.146vw;
-    padding-left: 0.5614vw;
+    font-size: 1.3132vw;
+    margin-right: 0.8022vw;
   }
-  .header .header-wrapper .header-right .shopping-cart {
-    margin-top: 0.2408vw;
+  .header .header-wrapper .header-right .map .shopping-cart img {
+    width: 1.3132vw;
+    height: 1.1438vw;
   }
 }
 
@@ -408,6 +413,7 @@ body {
     margin-top: 1.46vw;
   }
   .header .header-wrapper .header-logo_burger .header__nav {
+    position: absolute;
     right: 7.5vw;
   }
   .header .header-wrapper .header-logo_burger .header__menu li {
@@ -418,6 +424,9 @@ body {
     margin-top: 16.252vw;
     padding: 2.084vw;
     line-height: 7.084vw;
+  }
+  .header .header-wrapper .header-logo_burger a {
+    font-weight: 600;
   }
   .header .header-wrapper .header-logo_burger a img {
     width: 53.752vw;
@@ -431,11 +440,11 @@ body {
   }
   .header .header-wrapper .header_main-nav .nav-menu .submenu {
     top: 3vw;
-    left: 0;
     min-width: 100vw;
     min-height: 22.656vw;
   }
   .header .header-wrapper .header_main-nav .nav-menu .nav-links {
+    border-bottom: 0.150vw solid transparent;
     padding: 0.729vw 0.729vw;
   }
   .header .header-wrapper .header_main-nav .nav-menu .nav:hover .submenu {
@@ -457,26 +466,20 @@ body {
     height: 3.96vw;
   }
   .header .header-wrapper .header-right .map {
-    margin-right: 2.292vw;
+    width: 24.168vw;
   }
-  .header .header-wrapper .header-right .map img {
+  .header .header-wrapper .header-right .map .map-icon {
+    padding-right: 1.604vw;
+  }
+  .header .header-wrapper .header-right .map .map-icon img {
     width: 2.772vw;
     height: 3.624vw;
   }
   .header .header-wrapper .header-right .map .map-name {
     font-size: 3.752vw;
-    line-height: 4.584vw;
-    padding-left: 1.604vw;
+    margin-right: 2.292vw;
   }
-  .header .header-wrapper .header-right .shopping-cart {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .header-wrapper .header-right .shopping-cart img {
+  .header .header-wrapper .header-right .map .shopping-cart img {
     width: 3.752vw;
     height: 3.268vw;
   }

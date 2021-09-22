@@ -112,49 +112,49 @@
     }
 
     .header-right {
-      display: flex;
-      align-items: center;
+
       width: 6.042vw;
       height: 0.990vw;
 
       .map {
         color: #1f316a;
         display: flex;
-        
-        text-decoration: none;
-        margin-right: 0.573vw;
+        align-items: center;
+        width: 6.042vw;
 
-        img {
-          width: 0.693vw;
-          height: 0.906vw;
+        .map-icon {
+          padding-right: 0.401vw;
+
+          img {
+            width: 0.693vw;
+            height: 0.906vw;
+          }
         }
 
         .map-name {
           font-style: normal;
           font-weight: normal;
           font-size: 0.938vw;
-          line-height: 1.146vw;
-          padding-left: 0.401vw;
           color: #1F316A;
-
+          text-decoration: none;
           flex-direction: column;
           justify-content: flex-end;
-        }
-      }
-
-      .shopping-cart {
-        display: flex;
-        align-items: center;
-
-        img {
-          width: 0.938vw;
-          height: 0.817vw;
+          margin-right: 0.573vw;
         }
 
+        .shopping-cart {
+          display: flex;
+
+          img {
+            width: 0.938vw;
+            height: 0.817vw;
+          }
+        }
       }
     }
   }
 }
+
 
 .burger-menu {
   //Начало бургер меню
@@ -273,7 +273,7 @@
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
-      width: 100vw;
+      width: 97.813vw;
       height: 2.917vw;
 
       .header-logo_burger {
@@ -341,25 +341,36 @@
       }
 
       .header-right {
+        width: 6.042vw * $coefficient;
+        height: 0.990vw * $coefficient;
 
         .map {
-          margin-right: 0.573vw * $coefficient;
+
+          .map-icon {
+            padding-right: 0.401vw * $coefficient;
+
+            img {
+              width: 0.693vw * $coefficient;
+              height: 0.906vw * $coefficient;
+
+            }
+          }
 
           .map-name {
-            font-size: 0.938vw;
-            line-height: 1.146vw;
-            padding-left: 0.401vw * $coefficient;
+            font-size: 0.938vw * $coefficient;
+            margin-right: 0.573vw * $coefficient;
           }
-        }
 
-        .shopping-cart {
-          margin-top: 0.172vw * $coefficient;
+          .shopping-cart {
+            img {
+              width: 0.938vw * $coefficient;
+              height: 0.817vw * $coefficient;
+            }
+          }
         }
       }
     }
   }
-
-
 }
 
 @media all and (max-width: 415px) {
@@ -370,28 +381,24 @@
     -webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
+
     .header-wrapper {
-      width: 97.813vw ;
-
-
+      width: 97.813vw;
       height: 2.917vw * $coefficient;
 
 
 
       .header-logo_burger {
-
         margin-top: 0.365vw * $coefficient;
 
         .header__nav {
-
+          position: absolute;
           right: 1.875vw * $coefficient;
-
         }
 
         .header__menu {}
 
         .header__menu li {
-
           margin: 0 0 0 1.875vw * $coefficient;
           font-size: 0.833vw * $coefficient;
         }
@@ -403,6 +410,7 @@
         }
 
         a {
+          font-weight: 600;
 
           img {
             width: 13.438vw * $coefficient;
@@ -417,15 +425,14 @@
           font-size: 0.938vw;
           line-height: 1.146vw;
 
-
           .submenu {
             top: 3vw;
-            left: 0;
             min-width: 100vw;
             min-height: 22.656vw;
           }
 
           .nav-links {
+            border-bottom: 0.150vw solid transparent;
             padding: 0.729vw 0.729vw;
           }
 
@@ -453,44 +460,40 @@
 
       }
 
+
       .header-right {
 
         width: 6.042vw * $coefficient;
         height: 0.990vw * $coefficient;
 
         .map {
+          width: 6.042vw * $coefficient;
 
-          margin-right: 0.573vw * $coefficient;
+          .map-icon {
+            padding-right: 0.401vw * $coefficient;
 
-          img {
-            width: 0.693vw * $coefficient;
-            height: 0.906vw * $coefficient;
+            img {
+              width: 0.693vw * $coefficient;
+              height: 0.906vw * $coefficient;
+            }
           }
 
           .map-name {
-
             font-size: 0.938vw * $coefficient;
-            line-height: 1.146vw * $coefficient;
-            padding-left: 0.401vw * $coefficient;
-
-
-
-          }
-        }
-
-        .shopping-cart {
-          display: flex;
-          align-items: center;
-
-          img {
-            width: 0.938vw * $coefficient;
-            height: 0.817vw * $coefficient;
+            margin-right: 0.573vw * $coefficient;
           }
 
+          .shopping-cart {
+            img {
+              width: 0.938vw * $coefficient;
+              height: 0.817vw * $coefficient;
+            }
+          }
         }
       }
     }
   }
+
 
   .burger-menu {
     //Начало бургер меню
@@ -594,5 +597,4 @@
     //Конец бургер меню
 
   }
-
 }
