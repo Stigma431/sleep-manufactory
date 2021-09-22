@@ -29,6 +29,14 @@ body {
 .container {
   width: 71.146vw;
   margin: 0 auto;
+  padding: 0 1.042vw;
+}
+
+@media all and (max-width: 1366px) {
+  .container {
+    width: 100vw;
+    padding: 0 1.464vw;
+  }
 }
 
 .header {
@@ -293,5 +301,12 @@ body {
 #menu-toggle:checked ~ .menubox {
   visibility: visible;
   left: 0;
+}
+
+@media all and (max-width: 1366px) {
+  .container {
+    width: 100vw;
+    padding: 0 1.464vw;
+  }
 }
 /*# sourceMappingURL=header-style.css.map */

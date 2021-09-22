@@ -36,6 +36,8 @@ footer {
     border: 0.16vw solid transparent;
     margin: 0;
     padding: 0;
+    width: 2.135vw;
+    height: 2.135vw;
   }
 
   .first {
@@ -53,7 +55,60 @@ footer {
   .first:hover {
     opacity: 0.00;
   }
+  .footer__copyright {
+    background-color: $pale-blue;
+    font-size: 0.833vw;
+  }
+  .footer__row-copyright {
+    display: flex;
+    align-items: center;
+    height: 2.813vw;
+  }
+  .year {
+    margin: 0 0.625vw;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  $coefficient: 1.4;
+  footer {
+    .footer__row {
+      padding: 2.760vw * $coefficient 0 5vw * $coefficient;
+    }
+    .footer__column-header {
+      font-size: 1.198vw * $coefficient;
+      padding-bottom: 1.354vw * $coefficient;
+    }
+    .footer__menu-link {
+      font-size: 0.938vw * $coefficient;
+      line-height: 2vw * $coefficient;
+    }
+    .footer__social {
+      margin-bottom: 0.521vw * $coefficient;
+    }
+
+    .first, .second {
+      border: 0.16vw * $coefficient solid transparent;
+      width: 2.135vw * $coefficient;
+      height: 2.135vw * $coefficient;
+    }
+
+    .footer__copyright {
+      font-size: 0.833vw * $coefficient;
+    }
+    .footer__row-copyright {
+      height: 2.813vw * $coefficient;
+    }
+    .year {
+      margin: 0 0.625vw * $coefficient;
+    }
+  }
 
 
+
+
+}
+
+@media all and (max-width: 415px) {
 
 }
