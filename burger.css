@@ -1,47 +1,82 @@
-/*
-Error: Invalid CSS after "  @media ": expected media query (e.g. print, screen, print and screen), was "{"
-        on line 91 of burger.scss
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 19px; }
 
-86:   #menu-toggle:checked ~ .menubox{
-87:     visibility: visible;
-88:     left: 0;
-89:   }
-90: 
-91:   @media {
-92: 
-93:   }
+.input {
+  width: 1.042vw; }
 
-Backtrace:
-burger.scss:91
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1218:in `expr!'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Users/mac/.rvm/gems/ruby-2.7.0/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:23:in `load'
-/usr/local/bin/scss:23:in `<main>'
-/Users/mac/.rvm/gems/ruby-2.7.0/bin/ruby_executable_hooks:24:in `eval'
-/Users/mac/.rvm/gems/ruby-2.7.0/bin/ruby_executable_hooks:24:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  @media \": expected media query (e.g. print, screen, print and screen), was \"{\"\A         on line 91 of burger.scss\A \A 86:   #menu-toggle:checked ~ .menubox{\A 87:     visibility: visible;\A 88:     left: 0;\A 89:   }\A 90: \A 91:   @media {\A 92: \A 93:   }"; }
+.menu-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1.09%;
+  right: 97.76%;
+  top: 5%;
+  z-index: 1; }
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1F316A;
+  transition-duration: .25s; }
+
+.menu-btn > span::before {
+  content: '';
+  top: -8px; }
+
+.menu-btn > span::after {
+  content: '';
+  top: 8px; }
+
+.menubox {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: .25s; }
+
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s; }
+
+.menu-item:hover {
+  background-color: #CFD8DC; }
+
+#menu-toggle {
+  opacity: 0; }
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg); }
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0); }
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg); }
+
+#menu-toggle:checked ~ .menubox {
+  visibility: visible;
+  left: 0; }
+
+/*# sourceMappingURL=burger.css.map */
