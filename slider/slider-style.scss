@@ -1,0 +1,83 @@
+@import "base-scss.scss";
+@import "owl.carousel.scss";
+@import "owl.theme.default.scss";
+
+.container {
+  width: 100vw;
+  padding: 0;
+
+}
+
+.slide-wrapper {
+  margin-top: 2.083vw;
+  
+
+  .slide-item-img {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    width: 69.582vw - 2.9vw;
+  }
+
+  .slide-item-img {
+    background: url(images/slid1-bg.svg) center no-repeat;
+    width: 100vw;
+    height: 40.104vw;
+  }
+
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 1.042vw;
+    height: 1.042vw;
+    margin: 0.260vw 0.55vw;
+    background: $blue;
+    border: 0.052vw solid $blue;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: $red;
+    border: 0.052vw solid $blue;
+  }
+
+  .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 0;
+    width: 2.9vw;
+    height: 21.6vw;
+    background-color: #fff;
+    color: $blue;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: "fa-solid-900", serif;
+    margin: 0;
+  }
+
+  .owl-theme .owl-nav [class*='owl-']:hover {
+    background: #fff;
+    color: $red;
+    text-decoration: none;
+  }
+
+  button.owl-prev {
+    left: -0.1vw;
+  }
+
+  button.owl-next {
+    right: -0.1vw;
+  }
+}
