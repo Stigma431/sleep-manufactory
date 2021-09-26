@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url("fonts/Calibri.eot");
+  src: url("fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("fonts/Calibri.woff") format("woff"), url("fonts/Calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Calibri Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Calibri Regular";
+}
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto;
+  padding: 0 1.042vw;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 69.167vw;
+  height: 20.573vw;
+  margin: 0 auto;
+}
+
+.flex-container .left-item {
+  background: url(images/categories__bg01.svg) no-repeat;
+  width: 22.396vw;
+  position: relative;
+}
+
+.flex-container .right-item_box {
+  width: 45.729vw;
+  position: relative;
+}
+
+.flex-container .right-item_box .right-item-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(images/categories__bg02.svg) no-repeat;
+  width: 22.135vw;
+  height: 9.792vw;
+  position: relative;
+}
+
+.flex-container .right-item_box .right-item-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(images/categories__bg03.svg) no-repeat;
+  width: 22.135vw;
+  height: 9.792vw;
+}
+
+.flex-container .right-item_box .right-item-3 {
+  background: url(images/categories__bg04.svg) no-repeat;
+  width: 22.135vw;
+  height: 9.792vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.flex-container .right-item_box .right-item-4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(images/categories__bg05.svg) no-repeat;
+  width: 22.135vw;
+  height: 9.792vw;
+}
+
+.flex-container .categories-item:hover .item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 0;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.flex-container .item-content {
+  position: absolute;
+  top: -2.604vw;
+  opacity: 0;
+  margin-top: 0.772vw;
+  margin-left: 1.151vw;
+}
+
+.flex-container .item-content .item-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6.092vw;
+  height: 1.403vw;
+  background-color: #0C5E5B;
+  color: #FFFFFF;
+  border-radius: 0.677vw;
+  font-weight: 700;
+  font-size: 0.469vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.flex-container .item-content .item-title {
+  font-weight: 700;
+  font-size: 1.146vw;
+  margin-top: 0.530vw;
+  color: #1F316A;
+}
+
+@media all and (max-width: 1366px) {
+  .flex-container {
+    width: 103.7505vw;
+    height: 30.8595vw;
+    margin: 0 auto;
+  }
+  .flex-container .left-item {
+    width: 33.594vw;
+  }
+  .flex-container .right-item_box {
+    width: 68.5935vw;
+  }
+  .flex-container .right-item_box .right-item-1 {
+    width: 33.2025vw;
+    height: 14.688vw;
+  }
+  .flex-container .right-item_box .right-item-2 {
+    width: 33.2025vw;
+    height: 14.688vw;
+  }
+  .flex-container .right-item_box .right-item-3 {
+    width: 33.2025vw;
+    height: 14.688vw;
+  }
+  .flex-container .right-item_box .right-item-4 {
+    width: 33.2025vw;
+    height: 14.688vw;
+  }
+  .flex-container .item-content {
+    top: -3.906vw;
+    margin-top: 1.158vw;
+    margin-left: 1.7265vw;
+  }
+  .flex-container .item-content .item-button {
+    width: 9.138vw;
+    height: 2.1045vw;
+    border-radius: 1.0155vw;
+    font-size: 0.7035vw;
+  }
+  .flex-container .item-content .item-title {
+    font-size: 1.719vw;
+    margin-top: 0.795vw;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .flex-container {
+    width: 276.668vw;
+    height: 82.292vw;
+    margin: 0 auto;
+  }
+  .flex-container .left-item {
+    width: 89.584vw;
+  }
+  .flex-container .right-item_box {
+    width: 182.916vw;
+  }
+  .flex-container .right-item_box .right-item-1 {
+    width: 88.54vw;
+    height: 39.168vw;
+  }
+  .flex-container .right-item_box .right-item-2 {
+    width: 88.54vw;
+    height: 39.168vw;
+  }
+  .flex-container .right-item_box .right-item-3 {
+    width: 88.54vw;
+    height: 39.168vw;
+  }
+  .flex-container .right-item_box .right-item-4 {
+    width: 88.54vw;
+    height: 39.168vw;
+  }
+  .flex-container .item-content {
+    top: -10.416vw;
+    margin-top: 3.088vw;
+    margin-left: 4.604vw;
+  }
+  .flex-container .item-content .item-button {
+    width: 24.368vw;
+    height: 5.612vw;
+    border-radius: 2.708vw;
+    font-size: 1.876vw;
+  }
+  .flex-container .item-content .item-title {
+    font-size: 4.584vw;
+    margin-top: 2.12vw;
+  }
+}
+/*# sourceMappingURL=mattress-categories.css.map */
