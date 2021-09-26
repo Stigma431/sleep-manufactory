@@ -45,51 +45,45 @@ body {
 }
 
 .flex-container .left-item {
-  background: url(images/categories__bg01.svg) no-repeat;
+  background: url(images/categories__bg01.jpg) no-repeat;
+  background-size: 22.396vw;
   width: 22.396vw;
-  position: relative;
-}
-
-.flex-container .right-item_box {
-  width: 45.729vw;
+  height: 20.573vw;
   position: relative;
 }
 
 .flex-container .right-item_box .right-item-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url(images/categories__bg02.svg) no-repeat;
+  background: url(images/categories__bg02.jpg) no-repeat;
   width: 22.135vw;
   height: 9.792vw;
+  background-size: 22.396vw;
   position: relative;
+  margin-bottom: 0.990vw;
 }
 
 .flex-container .right-item_box .right-item-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(images/categories__bg03.svg) no-repeat;
+  background: url(images/categories__bg04.jpg) no-repeat;
   width: 22.135vw;
   height: 9.792vw;
+  background-size: 22.396vw;
+  position: relative;
 }
 
 .flex-container .right-item_box .right-item-3 {
-  background: url(images/categories__bg04.svg) no-repeat;
+  background: url(images/categories__bg03.jpg) no-repeat;
   width: 22.135vw;
   height: 9.792vw;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  background-size: 22.396vw;
+  position: relative;
+  margin-bottom: 0.990vw;
 }
 
 .flex-container .right-item_box .right-item-4 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: url(images/categories__bg05.svg) no-repeat;
+  background: url(images/categories__bg05.jpg) no-repeat;
   width: 22.135vw;
   height: 9.792vw;
+  background-size: 22.396vw;
+  position: relative;
 }
 
 .flex-container .categories-item:hover .item-content {
@@ -150,29 +144,33 @@ body {
   .flex-container {
     width: 103.7505vw;
     height: 30.8595vw;
-    margin: 0 auto;
   }
   .flex-container .left-item {
+    background-size: 33.594vw;
     width: 33.594vw;
-  }
-  .flex-container .right-item_box {
-    width: 68.5935vw;
+    height: 30.8595vw;
   }
   .flex-container .right-item_box .right-item-1 {
     width: 33.2025vw;
     height: 14.688vw;
+    background-size: 33.594vw;
+    margin-bottom: 1.485vw;
   }
   .flex-container .right-item_box .right-item-2 {
     width: 33.2025vw;
     height: 14.688vw;
+    background-size: 33.594vw;
   }
   .flex-container .right-item_box .right-item-3 {
     width: 33.2025vw;
     height: 14.688vw;
+    background-size: 33.594vw;
+    margin-bottom: 1.485vw;
   }
   .flex-container .right-item_box .right-item-4 {
     width: 33.2025vw;
     height: 14.688vw;
+    background-size: 33.594vw;
   }
   .flex-container .item-content {
     top: -3.906vw;
@@ -195,29 +193,33 @@ body {
   .flex-container {
     width: 276.668vw;
     height: 82.292vw;
-    margin: 0 auto;
   }
   .flex-container .left-item {
+    background-size: 89.584vw;
     width: 89.584vw;
-  }
-  .flex-container .right-item_box {
-    width: 182.916vw;
+    height: 82.292vw;
   }
   .flex-container .right-item_box .right-item-1 {
     width: 88.54vw;
     height: 39.168vw;
+    background-size: 89.584vw;
+    margin-bottom: 3.96vw;
   }
   .flex-container .right-item_box .right-item-2 {
     width: 88.54vw;
     height: 39.168vw;
+    background-size: 89.584vw;
   }
   .flex-container .right-item_box .right-item-3 {
     width: 88.54vw;
     height: 39.168vw;
+    background-size: 89.584vw;
+    margin-bottom: 3.96vw;
   }
   .flex-container .right-item_box .right-item-4 {
     width: 88.54vw;
     height: 39.168vw;
+    background-size: 89.584vw;
   }
   .flex-container .item-content {
     top: -10.416vw;
