@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Слайдер для сайта</title>
+    <!-- Подключаем CSS слайдера -->
+    <link rel="stylesheet" href="simple-adaptive-slider2.css">
+
+    <!-- Подключаем JS слайдера -->
+    <script defer src="js/simple-adaptive-slider.dev.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // инициализация слайдера
+            var slider = new SimpleAdaptiveSlider('.second-slider', {
+                loop: true,
+                autoplay: false,
+                interval: 10000,
+                swipe: true
+            });
+        });
+    </script>
 </head>
+
 <body>
-    
+    <!-- Разметка слайдера -->
+    <div class="slider-container">
+        <div class="second-slider-title">Считайте звезды, а не овец</div>
+        <div class="second-slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item item item_1">
+                        <div class="slider-content">
+                            <div class="slider-reviews">
+                                <ul class="slider-stars-menu">
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                </ul>
+                                <div class="slider-description">
+                                    “Это правда, оригинальный матрас “Мануфактура сна” -
+                                    отличное соотношение цены и качества. Благодаря технологии охлаждения я чувствую
+                                    себя комфортно всю ночь”
+                                </div>
+                                <div class="slider-tag">
+                                    <img src="images/icon1.svg" alt="">
+                                    <div class="name-city">
+                                        <div class="name">Катя</div>
+                                        <div class="city">Владивосток</div>
+                                    </div>
+                                </div>
+                                <button class="slider-button">Все отзывы</button>
+                            </div>
+                            <div class="slider2-image">
+                                <img src="images/Rectangle2.svg" alt="">
+                                <div class="slider2-title">Sweet Sleep art.004</div>
+                                <div class="slider2-price">
+                                    <div class="slider2-price title">Цена:</div>
+                                    <div class="slider2-price discount-price">18 395 р.</div>
+                                    <div class="slider2-price price">18 395 р.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item item item_2">
+                        <div class="slider-content">
+                            <div class="slider-reviews" >
+                                <ul class="slider-stars-menu">
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                </ul>
+                                <div class="slider-description">
+                                    “Это правда, оригинальный матрас “Мануфактура сна” -
+                                    отличное соотношение цены и качества. Благодаря технологии охлаждения я чувствую
+                                    себя комфортно всю ночь”
+                                </div>
+                                <div class="slider-tag">
+                                    <img src="images/icon1.svg" alt="">
+                                    <div class="name-city">
+                                        <div class="name">Катя</div>
+                                        <div class="city">Владивосток</div>
+                                    </div>
+                                </div>
+                                <button class="slider-button">Все отзывы</button>
+                            </div>
+                            <div class="slider2-image">
+                                <img src="images/Rectangle2.svg" alt="">
+                                <div class="slider2-title">Sweet Sleep art.004</div>
+                                <div class="slider2-price">
+                                    <div class="slider2-price title">Цена:</div>
+                                    <div class="slider2-price discount-price">18 395 р.</div>
+                                    <div class="slider2-price price">18 395 р.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item item item_3">
+                        <div class="slider-content">
+                            <div class="slider-reviews">
+                                <ul class="slider-stars-menu">
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                </ul>
+                                <div class="slider-description">
+                                    “Это правда, оригинальный матрас “Мануфактура сна” -
+                                    отличное соотношение цены и качества. Благодаря технологии охлаждения я чувствую
+                                    себя комфортно всю ночь”
+                                </div>
+                                <div class="slider-tag">
+                                    <img src="images/icon1.svg" alt="">
+                                    <div class="name-city">
+                                        <div class="name">Катя</div>
+                                        <div class="city">Владивосток</div>
+                                    </div>
+                                </div>
+                                <button class="slider-button">Все отзывы</button>
+                            </div>
+                            <div class="slider2-image">
+                                <img src="images/Rectangle2.svg" alt="">
+                                <div class="slider2-title">Sweet Sleep art.004</div>
+                                <div class="slider2-price">
+                                    <div class="slider2-price title">Цена:</div>
+                                    <div class="slider2-price discount-price">18 395 р.</div>
+                                    <div class="slider2-price price">18 395 р.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item item item_4">
+                        <div class="slider-content">
+                            <div class="slider-reviews">
+                                <ul class="slider-stars-menu">
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                    <li class="menu-peace"><img src="images/Star1.svg" alt=""></li>
+                                </ul>
+                                <div class="slider-description">
+                                    “Это правда, оригинальный матрас “Мануфактура сна” -
+                                    отличное соотношение цены и качества. Благодаря технологии охлаждения я чувствую
+                                    себя комфортно всю ночь”
+                                </div>
+                                <div class="slider-tag">
+                                    <img src="images/icon1.svg" alt="">
+                                    <div class="name-city">
+                                        <div class="name">Катя</div>
+                                        <div class="city">Владивосток</div>
+                                    </div>
+                                </div>
+                                <button class="slider-button">Все отзывы</button>
+                            </div>
+                            <div class="slider2-image">
+                                <img src="images/Rectangle2.svg" alt="">
+                                <div class="slider2-title">Sweet Sleep art.004</div>
+                                <div class="slider2-price">
+                                    <div class="slider2-price title">Цена:</div>
+                                    <div class="slider2-price discount-price">18 395 р.</div>
+                                    <del class="slider2-price price">18 395 р.</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <ol class="slider__indicators">
+                    <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+                    <li class="slider__indicator" data-slide-to="1"></li>
+                    <li class="slider__indicator" data-slide-to="2"></li>
+                    <li class="slider__indicator" data-slide-to="3"></li>
+                </ol>
+            </div>
+
+            <a class="slider__control slider__control_prev" id="slider-2_prev" href="#" role="button"
+                data-slide="prev"></a>
+            <a class="slider__control slider__control_next" id="slider-2_next" href="#" role="button"
+                data-slide="next"></a>
+        </div>
+
+    </div>
 </body>
+
 </html>
