@@ -181,7 +181,7 @@ body {
     text-decoration: none;
     transition-duration: .25s; }
   .burger-menu .menu-item:hover {
-    background-color: #CFD8DC; }
+    margin-left: 5px; }
   .burger-menu #menu-toggle {
     opacity: 0; }
   .burger-menu #menu-toggle:checked ~ .menu-btn > span {
