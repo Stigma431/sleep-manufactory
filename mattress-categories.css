@@ -36,8 +36,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -193,24 +191,30 @@ body {
 
 @media all and (max-width: 415px) {
   .flex-container {
-    width: 276.668vw;
-    height: 82.292vw;
+    width: 100vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .flex-container .left-item {
     background-size: 89.584vw;
     width: 89.584vw;
     height: 82.292vw;
   }
+  .flex-container .right-item_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .flex-container .right-item_box .right-item-1 {
-    width: 88.54vw;
-    height: 39.168vw;
-    background-size: 89.584vw;
+    width: 50vw;
+    height: 22.168vw;
+    background-size: 60.584vw;
     margin-bottom: 3.96vw;
   }
   .flex-container .right-item_box .right-item-2 {
-    width: 88.54vw;
-    height: 39.168vw;
-    background-size: 89.584vw;
+    width: 77.54vw;
+    height: 26.168vw;
+    background-size: 50.584vw;
   }
   .flex-container .right-item_box .right-item-3 {
     width: 88.54vw;
