@@ -189,7 +189,6 @@ body {
 }
 
 .fa {
-  height: 0.733vw;
   font-size: 0.938vw;
   margin-left: 0.521vw;
 }
@@ -261,7 +260,6 @@ body {
     height: 2.7209vw;
   }
   .fa {
-    height: 0.9529vw;
     font-size: 1.2194vw;
     margin-left: 0.6773vw;
   }
@@ -367,7 +365,6 @@ body {
     display: none;
   }
   .fa {
-    height: 2.932vw;
     font-size: 3.752vw;
     margin-left: 2.084vw;
   }

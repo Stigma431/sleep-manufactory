@@ -1,0 +1,337 @@
+/* Slider */
+@import "base-scss.scss";
+
+.second-slider {
+    display: flex;
+    width: 68.958vw;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.second-regular {
+    width: 18.646vw !important;
+}
+
+.second-slider-name {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.875vw;
+    color: #1F316A;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+
+    [dir="rtl"] & {
+        float: right;
+    }
+
+    img {
+        display: block;
+    }
+
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: flex;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+
+.first-regular {
+    width: 43.021vw !important;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 5.768vw;
+    }
+
+    .review-text {
+        font-size: 1.719vw;
+        color: #1F316A;
+        width: 38.333vw;
+    }
+
+    .reviews-tag {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3.177vw;
+        margin-bottom: 1.198vw;
+
+        .tag-icon {
+            width: 3.216vw;
+            height: 3.281vw;
+            margin-right: 0.431vw;
+        }
+
+        .tag-name-city {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .tag-name {
+                font-weight: 400;
+                font-size: 1.042vw;
+                color: #000000;
+            }
+
+            .tag-city {
+                font-weight: 400;
+                font-size: 0.938vw;
+                color: #504C4C;
+            }
+        }
+    }
+
+    .reviews-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12.032vw;
+        height: 2.552vw;
+        font-size: 0.938vw;
+        font-weight: 400;
+        background-color: #1F316A;
+        color: #FFFFFF;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+}
+
+.second-reviews:hover .reviews-image {
+    border-radius: 0.313vw;
+}
+
+.second-regular {
+    display: flex;
+    justify-content: center;
+    width: 23.542vw !important;
+
+}
+
+.second-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease-in-out 0s;
+    opacity: 1;
+
+
+    .reviews-image {
+        display: block;
+        background: url(images/Rectangle2.jpg) no-repeat;
+        width: 18.646vw;
+        height: 23.125vw;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out 0s;
+
+
+    }
+
+    .reviews-image-content {
+        position: absolute;
+        top: 0.833vw;
+        left: 0.833vw;
+        font-size: 0.625vw;
+        letter-spacing: 0.052vw;
+        color: rgb(255, 255, 255);
+        border-radius: 0.625vw;
+        background-color: rgb(0, 112, 110);
+        padding: 0.104vw 0.521vw;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .reviews-decoration-button {
+        position: absolute;
+        bottom: 0.833vw;
+        left: 0.833vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 0.938vw;
+        padding: 0.521vw 1.250vw 0.625vw;
+        color: rgb(255, 255, 255);
+        background: rgb(30, 48, 110);
+        opacity: 0;
+        line-height: 1;
+        border-radius: 1.354vw;
+        transition: opacity 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    }
+}
+
+.reviews-decoration-button:hover {
+    background: rgb(82, 102, 153);
+}
+
+.reviews-image:hover .reviews-image-content {
+    top: 1.042vw;
+}
+
+.reviews-image:hover .reviews-decoration-button {
+    opacity: 1;
+    bottom: 1.250vw;
+}
+
+.second-reviews-name {
+    font-weight: 700;
+    font-size: 0.885vw;
+    color: #1F316A;
+    margin-top: 0.729vw;
+    margin-bottom: 0.521vw;
+}
+
+.purchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    width: 10.833vw;
+
+    .discount-price {
+        font-weight: 700;
+        font-size: 0.885vw;
+        color: #27706D;
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 0.885vw;
+        color: #414141;
+        text-decoration: line-through;
+    }
+}
+
+.fa {
+    font-size: 0.938vw;
+    margin-left: 0.521vw;
+
+}
+
+.second-slider:hover .slick-arrow {
+    opacity: 1;
+}
+
+.slick-arrow {
+    font-size: 2.083vw !important;
+    margin: 0;
+    padding: 0.443vw 1.1124vw;
+    color: black;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: background-color 0.15s ease-out 0s;
+    transition: opacity 0.15s ease-out 0s;
+    border-radius: 50%;
+    box-shadow: black;
+}
+
+.slick-arrow:hover {
+
+
+    color: rgb(82, 102, 153);
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
