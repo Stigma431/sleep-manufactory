@@ -1,9 +1,60 @@
 /* Slider */
 @import "base-scss.scss";
 
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 50%;
+  margin: 5.208vw 1.198vw;
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 0;
+}
+
+.slick-active {
+  opacity: 1 !important;
+}
+
+li .slick-active {
+  background-color: #414141;
+}
+
+.second-regular .slick-active {
+  transform: translateY(+50%);
+}
+
+.slick-current {
+  opacity: 1;
+}
+
 .second-slider {
     display: flex;
-    width: 68.958vw;
+    min-width: 68.958vw;
     justify-content: center;
     margin: 0 auto;
 }
@@ -90,7 +141,7 @@
 .slick-slide {
     float: left;
     height: 100%;
-    min-height: 1px;
+    min-height: 0.052vw;
 
     [dir="rtl"] & {
         float: right;
@@ -121,7 +172,7 @@
     .slick-vertical & {
         display: block;
         height: auto;
-        border: 1px solid transparent;
+        border: 0.052vw solid transparent;
     }
 }
 
@@ -192,6 +243,7 @@
         cursor: pointer;
         border: none;
         outline: none;
+        border-radius: 0.208vw;
     }
 }
 
@@ -203,7 +255,7 @@
     display: flex;
     justify-content: center;
     width: 23.542vw !important;
-
+    margin-top: 8.854vw !important;
 }
 
 .second-reviews {
@@ -257,11 +309,28 @@
         border-radius: 1.354vw;
         transition: opacity 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
     }
+
+    .mobile-decoration-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0.417vw 0.833vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(255, 235, 235);
+        display: none;
+
+        .second-reviews-name {
+            margin-top: 0;
+        }
+    }
 }
 
 .reviews-decoration-button:hover {
     background: rgb(82, 102, 153);
 }
+
 
 .reviews-image:hover .reviews-image-content {
     top: 1.042vw;
@@ -334,4 +403,454 @@
 
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+@media all and (max-width: 1366px) {
+    $coefficient: 1.3;
+
+    .second-slider {
+        width: 68.958vw * $coefficient;
+        margin: 0 auto;
+    }
+
+    .second-regular {
+        width: 18.646vw * $coefficient !important;
+    }
+
+    .second-slider-name {
+        font-size: 1.875vw * $coefficient;
+    }
+
+    .slick-slider {}
+
+    .slick-list {
+        margin: 0;
+        padding: 0;
+
+        &:focus {}
+
+        &.dragging {}
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {}
+
+    .slick-track {
+        left: 0;
+        top: 0;
+
+
+        &:before,
+        &:after {}
+
+        &:after {}
+
+        .slick-loading & {}
+    }
+
+    .slick-slide {
+
+        height: 100%;
+        min-height: 0.052vw * $coefficient;
+
+        [dir="rtl"] & {}
+
+        img {}
+
+        &.slick-loading img {}
+
+
+
+        &.dragging img {}
+
+        .slick-initialized & {}
+
+        .slick-loading & {}
+
+        .slick-vertical & {
+            border: 0.052vw * $coefficient solid transparent;
+        }
+    }
+
+
+    .first-regular {
+        width: 43.021vw * $coefficient !important;
+    }
+
+    .reviews {
+
+        ul {
+            width: 5.768vw * $coefficient;
+        }
+
+        .review-text {
+            font-size: 1.719vw * $coefficient;
+            width: 38.333vw * $coefficient;
+        }
+
+        .reviews-tag {
+            margin-top: 3.177vw * $coefficient;
+            margin-bottom: 1.198vw * $coefficient;
+
+            .tag-icon {
+                width: 3.216vw * $coefficient;
+                height: 3.281vw * $coefficient;
+                margin-right: 0.431vw * $coefficient;
+            }
+
+            .tag-name-city {
+
+                .tag-name {
+                    font-size: 1.042vw * $coefficient;
+                }
+
+                .tag-city {
+                    font-size: 0.938vw * $coefficient;
+                }
+            }
+        }
+
+        .reviews-button {
+            width: 12.032vw * $coefficient;
+            height: 2.552vw * $coefficient;
+            font-size: 0.938vw * $coefficient;
+            border-radius: 0.208vw * $coefficient;
+        }
+    }
+
+    .second-reviews:hover .reviews-image {
+        border-radius: 0.313vw * $coefficient;
+    }
+
+    .second-regular {
+        width: 23.542vw * $coefficient !important;
+
+    }
+
+    .second-reviews {
+
+        .reviews-image {
+            width: 18.646vw * $coefficient;
+            height: 23.125vw * $coefficient;
+        }
+
+        .reviews-image-content {
+            top: 0.833vw * $coefficient;
+            left: 0.833vw * $coefficient;
+            font-size: 0.625vw * $coefficient;
+            letter-spacing: 0.052vw * $coefficient;
+            border-radius: 0.625vw * $coefficient;
+            padding: 0.104vw * $coefficient 0.521vw * $coefficient;
+        }
+
+        .reviews-decoration-button {
+            bottom: 0.833vw * $coefficient;
+            left: 0.833vw * $coefficient;
+            font-size: 0.938vw * $coefficient;
+            padding: 0.521vw * $coefficient 1.250vw * $coefficient 0.625vw * $coefficient;
+            border-radius: 1.354vw * $coefficient;
+        }
+    }
+
+    .reviews-decoration-button:hover {}
+
+    .reviews-image:hover .reviews-image-content {}
+
+    .reviews-image:hover .reviews-decoration-button {
+        bottom: 1.250vw * $coefficient;
+    }
+
+    .second-reviews-name {
+        font-size: 0.885vw * $coefficient;
+        margin-top: 0.729vw * $coefficient;
+        margin-bottom: 0.521vw * $coefficient;
+    }
+
+    .purchase {
+        font-weight: 700;
+        width: 10.833vw * $coefficient;
+
+        .discount-price {
+            font-size: 0.885vw * $coefficient;
+        }
+
+        .price {
+            font-size: 0.885vw * $coefficient;
+        }
+    }
+
+    .fa {
+        font-size: 0.938vw * $coefficient;
+        margin-left: 0.521vw * $coefficient;
+
+    }
+
+    .second-slider:hover .slick-arrow {}
+
+    .slick-arrow {
+        font-size: 2.083vw * $coefficient !important;
+        padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
+    }
+
+    .slick-arrow:hover {}
+
+    .slick-arrow.slick-hidden {}
+}
+
+@media all and (max-width: 415px) {
+    $coefficient: 4;
+
+    .second-slider {
+        min-width: 68.958vw * $coefficient;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .slick-slide {
+        margin: 0 0;
+    }
+
+    .second-regular .slick-active {
+        transform: none;
+      }
+
+    .second-regular {
+        width: 18.646vw * $coefficient !important;
+    }
+
+    .second-slider-name {
+        font-size: 1.875vw * $coefficient;
+        display: block;
+    }
+
+    .slick-slider {}
+
+    .slick-list {
+        margin: 0;
+        padding: 0;
+
+        &:focus {}
+
+        &.dragging {}
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {}
+
+    .slick-track {
+        left: 0;
+        top: 0;
+
+
+        &:before,
+        &:after {}
+
+        &:after {}
+
+        .slick-loading & {}
+    }
+
+    .slick-slide {
+
+        height: 100%;
+        min-height: 0.052vw * $coefficient;
+
+        [dir="rtl"] & {}
+
+        img {}
+
+        &.slick-loading img {}
+
+
+
+        &.dragging img {}
+
+        .slick-initialized & {}
+
+        .slick-loading & {}
+
+        .slick-vertical & {
+            border: 0.052vw * $coefficient solid transparent;
+        }
+    }
+
+
+    .first-regular {
+        width: 43.021vw * $coefficient !important;
+    }
+
+    .reviews {
+
+        ul {
+            width: 5.768vw * $coefficient;
+        }
+
+        .review-text {
+            font-size: 1.719vw * $coefficient;
+            width: 22.5vw * $coefficient;
+        }
+
+        .reviews-tag {
+            margin-top: 1.177vw * $coefficient;
+            margin-bottom: 1.198vw * $coefficient;
+
+            .tag-icon {
+                width: 5.216vw * $coefficient;
+                height: 5.281vw * $coefficient;
+                margin-right: 0.431vw * $coefficient;
+            }
+
+            .tag-name-city {
+
+                .tag-name {
+                    font-size: 1.5vw * $coefficient;
+                }
+
+                .tag-city {
+                    font-size: 0.938vw * $coefficient;
+                }
+            }
+        }
+
+        .reviews-button {
+            width: 22.632vw * $coefficient;
+            height: 2.552vw * $coefficient;
+            font-size: 0.938vw * $coefficient;
+            border-radius: 0.208vw * $coefficient;
+        }
+    }
+
+    .second-reviews:hover .reviews-image {
+        border-radius: 0.313vw * $coefficient;
+    }
+
+    .second-regular {
+        width: 23.542vw * $coefficient !important;
+
+    }
+
+    .second-reviews {
+
+        transform: none;
+
+        .reviews-image {
+            width: 18.646vw * $coefficient;
+            height: 17.83vw * $coefficient;
+        }
+
+        .reviews-image-content {
+            top: 0.833vw * $coefficient;
+            left: 0.833vw * $coefficient;
+            font-size: 0.625vw * $coefficient;
+            letter-spacing: 0.052vw * $coefficient;
+            border-radius: 0.625vw * $coefficient;
+            padding: 0.104vw * $coefficient 0.521vw * $coefficient;
+        }
+
+        .reviews-decoration-button {
+            bottom: 0.833vw * $coefficient;
+            left: 0.833vw * $coefficient;
+            font-size: 0.938vw * $coefficient;
+            padding: 0.521vw * $coefficient 1.250vw * $coefficient 0.625vw * $coefficient;
+            border-radius: 1.354vw * $coefficient;
+            display: none;
+        }
+
+        .mobile-decoration-button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0.417vw 0.833vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(255, 235, 235);
+            display: block;
+
+            .second-reviews-name-mobile {
+                margin-top: 0;
+                font-size: 0.885vw * $coefficient;
+                margin-bottom: 0.521vw * $coefficient;
+                font-weight: 700;
+                color: #1F316A;
+            }
+
+            .purchase-mobile {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 700;
+                color: black;
+                width: 10.833vw * $coefficient;
+
+                .discount-price-mobile {
+                    font-weight: 700;
+                    color: #27706D;
+                    font-size: 0.885vw * $coefficient;
+                }
+
+                .price-mobile {
+                    font-weight: 700;
+                    color: #414141;
+                    text-decoration: line-through;
+                    font-size: 0.885vw * $coefficient;
+                }
+            }
+        }
+
+        .reviews-decoration-button:hover {}
+
+        .reviews-image:hover .reviews-image-content {}
+
+        .reviews-image:hover .reviews-decoration-button {
+            bottom: 1.250vw * $coefficient;
+        }
+
+        .second-reviews-name {
+            font-size: 0.885vw * $coefficient;
+            margin-top: 0.729vw * $coefficient;
+            margin-bottom: 0.521vw * $coefficient;
+            display: none;
+        }
+
+        .purchase {
+            font-weight: 700;
+            width: 10.833vw * $coefficient;
+            display: none;
+
+
+            .discount-price {
+                font-size: 0.885vw * $coefficient;
+                display: none;
+            }
+
+            .price {
+                font-size: 0.885vw * $coefficient;
+                display: none;
+            }
+        }
+
+        .fa {
+            font-size: 0.938vw * $coefficient;
+            margin-left: 0.521vw * $coefficient;
+
+        }
+
+        .second-slider:hover .slick-arrow {}
+
+
+    }
+
+    .slick-arrow {
+        font-size: 2.083vw * $coefficient !important;
+        padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
+        display: none !important;
+    }
+
+    .slick-arrow:hover {}
+
+    .slick-arrow.slick-hidden {}
 }
