@@ -4,52 +4,52 @@
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .slider {
-  width: 50%;
-  margin: 5.208vw 1.198vw;
+    width: 50%;
+    margin: 5.208vw 1.198vw;
 }
 
 .slick-slide {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 
 .slick-slide img {
-  width: 100%;
+    width: 100%;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
+    color: black;
 }
 
 
 .slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: 0;
+    transition: all ease-in-out .3s;
+    opacity: 0;
 }
 
 .slick-active {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 li .slick-active {
-  background-color: #414141;
+    background-color: #414141;
 }
 
 .second-regular .slick-active {
-  transform: translateY(+50%);
+    transform: translateY(+50%);
 }
 
 .slick-current {
-  opacity: 1;
+    opacity: 1;
 }
 
 .second-slider {
@@ -57,6 +57,16 @@ li .slick-active {
     min-width: 68.958vw;
     justify-content: center;
     margin: 0 auto;
+    position: relative;
+
+    .background {
+        position: absolute;
+        background-color: #FFF2F2;
+        left: 18.969vw;
+        top: 7.292vw;
+        width: 30.156vw;
+        height: 28.177vw;
+    }
 }
 
 .second-regular {
@@ -179,6 +189,7 @@ li .slick-active {
 
 .first-regular {
     width: 43.021vw !important;
+    position: relative;
 }
 
 .reviews {
@@ -386,18 +397,16 @@ li .slick-active {
     margin: 0;
     padding: 0.443vw 1.1124vw;
     color: black;
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     opacity: 0;
     transition: background-color 0.15s ease-out 0s;
     transition: opacity 0.15s ease-out 0s;
     border-radius: 50%;
-    box-shadow: black;
+    
 }
 
 .slick-arrow:hover {
-
-
     color: rgb(82, 102, 153);
 }
 
@@ -601,7 +610,7 @@ li .slick-active {
     $coefficient: 4;
 
     .second-slider {
-        min-width: 68.958vw * $coefficient;
+        min-width: 25vw * $coefficient;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -614,7 +623,7 @@ li .slick-active {
 
     .second-regular .slick-active {
         transform: none;
-      }
+    }
 
     .second-regular {
         width: 18.646vw * $coefficient !important;
@@ -622,7 +631,6 @@ li .slick-active {
 
     .second-slider-name {
         font-size: 1.875vw * $coefficient;
-        display: block;
     }
 
     .slick-slider {}
@@ -715,7 +723,7 @@ li .slick-active {
         }
 
         .reviews-button {
-            width: 22.632vw * $coefficient;
+            width: 24.382vw * $coefficient;
             height: 2.552vw * $coefficient;
             font-size: 0.938vw * $coefficient;
             border-radius: 0.208vw * $coefficient;
