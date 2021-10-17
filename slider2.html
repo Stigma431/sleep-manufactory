@@ -8,7 +8,7 @@
   <!-- Подключаем CSS слайдера -->
   <link rel="stylesheet" href="slick.css">
   <link rel="stylesheet" href="slick-theme.css">
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -118,6 +118,7 @@
       </div>
     </section>
 
+    
     <section class="second-regular slider">
       <div class="second-reviews">
         <a href="#" class="reviews-image">
@@ -129,7 +130,8 @@
             <div class="second-reviews-name-mobile">
               Sweet Sleep art.004<i class="fa fa-angle-right"></i>
             </div>
-            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span class="price-mobile">18 395
+            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span
+                class="price-mobile">18 395
                 р.</span>
             </div>
           </div>
@@ -150,7 +152,8 @@
             <div class="second-reviews-name-mobile">
               Sweet Sleep art.004<i class="fa fa-angle-right"></i>
             </div>
-            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span class="price-mobile">18 395
+            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span
+                class="price-mobile">18 395
                 р.</span>
             </div>
           </div>
@@ -160,7 +163,30 @@
         </div>
         <div class="purchase">Цена: <span class="discount-price">18 395 р.</span> <span class="price">18 395 р.</span>
         </div>
-      
+
+      </div>
+      <div class="second-reviews">
+
+        <a href="#" class="reviews-image">
+          <div class="reviews-image-content">
+            до 30% Скидка
+          </div>
+          <div class="reviews-decoration-button">Shop now <i class="fa fa-angle-right"></i></div>
+          <div class="mobile-decoration-button">
+            <div class="second-reviews-name-mobile">
+              Sweet Sleep art.004<i class="fa fa-angle-right"></i>
+            </div>
+            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span
+                class="price-mobile">18 395
+                р.</span>
+            </div>
+          </div>
+        </a>
+        <div class="second-reviews-name">
+          Sweet Sleep art.004
+        </div>
+        <div class="purchase">Цена: <span class="discount-price">18 395 р.</span> <span class="price">18 395 р.</span>
+        </div>
       </div>
       <div class="second-reviews">
         <a href="#" class="reviews-image">
@@ -172,28 +198,8 @@
             <div class="second-reviews-name-mobile">
               Sweet Sleep art.004<i class="fa fa-angle-right"></i>
             </div>
-            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span class="price-mobile">18 395
-                р.</span>
-            </div>
-          </div>
-        </a>
-        <div class="second-reviews-name">
-          Sweet Sleep art.004
-        </div>
-        <div class="purchase">Цена: <span class="discount-price">18 395 р.</span> <span class="price">18 395 р.</span>
-        </div>
-      </div>
-      <div class="second-reviews">
-        <a href="#" class="reviews-image">
-          <div class="reviews-image-content">
-            до 30% Скидка
-          </div>
-          <div class="reviews-decoration-button">Shop now <i class="fa fa-angle-right"></i></div>
-          <div class="mobile-decoration-button">
-            <div class="second-reviews-name-mobile">
-              Sweet Sleep art.004<i class="fa fa-angle-right"></i>
-            </div>
-            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span class="price-mobile">18 395
+            <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 р.</span> <span
+                class="price-mobile">18 395
                 р.</span>
             </div>
           </div>
@@ -214,6 +220,7 @@
     $(document).on('ready', function () {
       $(".first-regular").slick({
         dots: true,
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -229,6 +236,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: false,
+        variableWidth: true,
         nextArrow: '<i class="fa fa-angle-right">',
         asNavFor: '.first-regular'
       });
@@ -239,7 +247,6 @@
       });
     });
   </script>
-
 </body>
 
 </html>

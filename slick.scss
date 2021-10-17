@@ -33,7 +33,8 @@ body {
 
 .slick-slide {
     transition: all ease-in-out .3s;
-    opacity: 0;
+    opacity: 1;
+    width: 0;
 }
 
 .slick-active {
@@ -42,10 +43,6 @@ body {
 
 li .slick-active {
     background-color: #414141;
-}
-
-.second-regular .slick-active {
-    /*transform: translateY(+50%);*/
 }
 
 .slick-current {
@@ -71,7 +68,39 @@ li .slick-active {
 
 .second-regular {
     width: 18.646vw !important;
+    position: relative;
+    overflow: hidden;
 }
+
+.second-regular .slick-active {
+    position: absolute;
+    top: 50%;
+    left: 20.833vw;
+    flex-direction: column;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out 0s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.second-regular .draggable {
+    position: relative;
+    width: 100%;
+    height: 26.354vw;
+}
+
+.second-regular .slick-slide {
+    position: absolute;
+    top: 50%;
+    left: 20.833vw;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out 0s;
+    width: 100%;
+    height: 26.354vw;
+}
+
 
 .second-slider-name {
     display: flex;
@@ -275,6 +304,8 @@ li .slick-active {
     align-items: center;
     transform: translateY(0%);
     transition: opacity 0.3s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
     opacity: 1;
 
     .reviews-image {
@@ -401,7 +432,7 @@ li .slick-active {
     transition: background-color 0.15s ease-out 0s;
     transition: opacity 0.15s ease-out 0s;
     border-radius: 50%;
-    
+
 }
 
 .slick-arrow:hover {
@@ -415,66 +446,161 @@ li .slick-active {
 @media all and (max-width: 1366px) {
     $coefficient: 1.3;
 
+    html,
+    body {
+    }
+
+    * {
+        
+    }
+
+    .slider {
+        width: 50%;
+        margin: 5.208vw * $coefficient 1.198vw * $coefficient;
+    }
+
+    .slick-slide {
+        margin: 0 20px;
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+    }
+
+
+    .slick-slide {
+    }
+
+    .slick-active {
+    }
+
+    li .slick-active {
+    }
+
+    .slick-current {
+    }
+
     .second-slider {
-        width: 68.958vw * $coefficient;
-        margin: 0 auto;
+        min-width: 68.958vw * $coefficient;
+        .background {
+            left: 18.969vw * $coefficient;
+            top: 7.292vw * $coefficient;
+            width: 30.156vw * $coefficient;
+            height: 28.177vw * $coefficient;
+        }
     }
 
     .second-regular {
         width: 18.646vw * $coefficient !important;
     }
 
+    .second-regular .slick-active {
+        top: 50%;
+        left: 20.833vw * $coefficient;
+    }
+
+    .second-regular .draggable {
+        width: 100%;
+        height: 26.354vw * $coefficient;
+    }
+
+    .second-regular .slick-slide {
+        top: 50%;
+        left: 20.833vw * $coefficient;
+        transition: opacity 0.3s ease-in-out 0s;
+        width: 100%;
+        height: 26.354vw * $coefficient;
+    }
+
+
     .second-slider-name {
         font-size: 1.875vw * $coefficient;
     }
 
-    .slick-slider {}
+    .slick-slider {
+    }
 
     .slick-list {
         margin: 0;
         padding: 0;
 
-        &:focus {}
+        &:focus {
+            outline: none;
+        }
 
-        &.dragging {}
+        &.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
     }
 
     .slick-slider .slick-track,
-    .slick-slider .slick-list {}
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 
     .slick-track {
+
         left: 0;
         top: 0;
 
-
         &:before,
-        &:after {}
+        &:after {
+            content: "";
+            display: table;
+        }
 
-        &:after {}
+        &:after {
+            clear: both;
+        }
 
-        .slick-loading & {}
+        .slick-loading & {
+            visibility: hidden;
+        }
     }
 
     .slick-slide {
-
+        float: left;
         height: 100%;
         min-height: 0.052vw * $coefficient;
 
-        [dir="rtl"] & {}
+        [dir="rtl"] & {
+            float: right;
+        }
 
-        img {}
+        img {
+            display: block;
+        }
 
-        &.slick-loading img {}
+        &.slick-loading img {
+            display: none;
+        }
 
+        display: none;
 
+        &.dragging img {
+            pointer-events: none;
+        }
 
-        &.dragging img {}
+        .slick-initialized & {
+            display: flex;
+        }
 
-        .slick-initialized & {}
-
-        .slick-loading & {}
+        .slick-loading & {
+            visibility: hidden;
+        }
 
         .slick-vertical & {
+            display: block;
+            height: auto;
             border: 0.052vw * $coefficient solid transparent;
         }
     }
@@ -485,6 +611,8 @@ li .slick-active {
     }
 
     .reviews {
+
+
 
         ul {
             width: 5.768vw * $coefficient;
@@ -531,10 +659,12 @@ li .slick-active {
 
     .second-regular {
         width: 23.542vw * $coefficient !important;
-
+        margin-top: 8.854vw * $coefficient !important;
     }
 
     .second-reviews {
+        width: 100%;
+        height: 100%;
 
         .reviews-image {
             width: 18.646vw * $coefficient;
@@ -557,11 +687,25 @@ li .slick-active {
             padding: 0.521vw * $coefficient 1.250vw * $coefficient 0.625vw * $coefficient;
             border-radius: 1.354vw * $coefficient;
         }
+
+        .mobile-decoration-button {
+            bottom: 0;
+            left: 0;
+            padding: 0.417vw * $coefficient 0.833vw * $coefficient;
+
+            .second-reviews-name {
+                margin-top: 0;
+            }
+        }
     }
 
-    .reviews-decoration-button:hover {}
+    .reviews-decoration-button:hover {
+    }
 
-    .reviews-image:hover .reviews-image-content {}
+
+    .reviews-image:hover .reviews-image-content {
+        top: 1.042vw * $coefficient;
+    }
 
     .reviews-image:hover .reviews-decoration-button {
         bottom: 1.250vw * $coefficient;
@@ -574,7 +718,6 @@ li .slick-active {
     }
 
     .purchase {
-        font-weight: 700;
         width: 10.833vw * $coefficient;
 
         .discount-price {
@@ -592,92 +735,185 @@ li .slick-active {
 
     }
 
-    .second-slider:hover .slick-arrow {}
+    .second-slider:hover .slick-arrow {
+    }
 
     .slick-arrow {
         font-size: 2.083vw * $coefficient !important;
         padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
+        border-radius: 50%;
+
     }
 
-    .slick-arrow:hover {}
+    .slick-arrow:hover {
+    }
 
-    .slick-arrow.slick-hidden {}
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+
 }
 
 @media all and (max-width: 415px) {
     $coefficient: 4;
 
-    .second-slider {
-        min-width: 25vw * $coefficient;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+    html,
+    body {
+    }
+
+    * {
+        
+    }
+
+    .slider {
+        width: 50%;
+        margin: none;
     }
 
     .slick-slide {
-        margin: 0 0;
+        margin: 0 20px;
     }
 
-    .second-regular .slick-active {
-        transform: none;
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+    }
+
+
+    .slick-slide {
+    }
+
+    .slick-active {
+    }
+
+    li .slick-active {
+    }
+
+    .slick-current {
+    }
+
+    .second-slider {
+        min-width: 68.958vw * $coefficient;
+        display: flex;
+        flex-direction: column-reverse;
+        .background {
+            left: 18.969vw * $coefficient;
+            top: 7.292vw * $coefficient;
+            width: 30.156vw * $coefficient;
+            height: 28.177vw * $coefficient;
+        }
     }
 
     .second-regular {
         width: 18.646vw * $coefficient !important;
     }
 
+    .second-regular .slick-active {
+        top: 50%;
+        left: 20.833vw * $coefficient;
+    }
+
+    .second-regular .draggable {
+        width: 100%;
+        height: 26.354vw * $coefficient;
+    }
+
+    .second-regular .slick-slide {
+        top: 50%;
+        left: 20.833vw * $coefficient;
+        transition: opacity 0.3s ease-in-out 0s;
+        width: 100%;
+        height: 26.354vw * $coefficient;
+    }
+
+
     .second-slider-name {
         font-size: 1.875vw * $coefficient;
     }
 
-    .slick-slider {}
+    .slick-slider {
+    }
 
     .slick-list {
         margin: 0;
         padding: 0;
 
-        &:focus {}
+        &:focus {
+            outline: none;
+        }
 
-        &.dragging {}
+        &.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
     }
 
     .slick-slider .slick-track,
-    .slick-slider .slick-list {}
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 
     .slick-track {
+
         left: 0;
         top: 0;
 
-
         &:before,
-        &:after {}
+        &:after {
+            content: "";
+            display: table;
+        }
 
-        &:after {}
+        &:after {
+            clear: both;
+        }
 
-        .slick-loading & {}
+        .slick-loading & {
+            visibility: hidden;
+        }
     }
 
     .slick-slide {
-
+        float: left;
         height: 100%;
         min-height: 0.052vw * $coefficient;
 
-        [dir="rtl"] & {}
+        [dir="rtl"] & {
+            float: right;
+        }
 
-        img {}
+        img {
+            display: block;
+        }
 
-        &.slick-loading img {}
+        &.slick-loading img {
+            display: none;
+        }
 
+        display: none;
 
+        &.dragging img {
+            pointer-events: none;
+        }
 
-        &.dragging img {}
+        .slick-initialized & {
+            display: flex;
+        }
 
-        .slick-initialized & {}
-
-        .slick-loading & {}
+        .slick-loading & {
+            visibility: hidden;
+        }
 
         .slick-vertical & {
+            display: block;
+            height: auto;
             border: 0.052vw * $coefficient solid transparent;
         }
     }
@@ -689,29 +925,31 @@ li .slick-active {
 
     .reviews {
 
+
+
         ul {
             width: 5.768vw * $coefficient;
         }
 
         .review-text {
             font-size: 1.719vw * $coefficient;
-            width: 22.5vw * $coefficient;
+            width: 38.333vw * $coefficient;
         }
 
         .reviews-tag {
-            margin-top: 1.177vw * $coefficient;
+            margin-top: 3.177vw * $coefficient;
             margin-bottom: 1.198vw * $coefficient;
 
             .tag-icon {
-                width: 5.216vw * $coefficient;
-                height: 5.281vw * $coefficient;
+                width: 3.216vw * $coefficient;
+                height: 3.281vw * $coefficient;
                 margin-right: 0.431vw * $coefficient;
             }
 
             .tag-name-city {
 
                 .tag-name {
-                    font-size: 1.5vw * $coefficient;
+                    font-size: 1.042vw * $coefficient;
                 }
 
                 .tag-city {
@@ -721,7 +959,7 @@ li .slick-active {
         }
 
         .reviews-button {
-            width: 24.382vw * $coefficient;
+            width: 12.032vw * $coefficient;
             height: 2.552vw * $coefficient;
             font-size: 0.938vw * $coefficient;
             border-radius: 0.208vw * $coefficient;
@@ -734,16 +972,16 @@ li .slick-active {
 
     .second-regular {
         width: 23.542vw * $coefficient !important;
-
+        margin-top: 8.854vw * $coefficient !important;
     }
 
     .second-reviews {
-
-        transform: none;
+        width: 100%;
+        height: 100%;
 
         .reviews-image {
             width: 18.646vw * $coefficient;
-            height: 17.83vw * $coefficient;
+            height: 23.125vw * $coefficient;
         }
 
         .reviews-image-content {
@@ -761,102 +999,71 @@ li .slick-active {
             font-size: 0.938vw * $coefficient;
             padding: 0.521vw * $coefficient 1.250vw * $coefficient 0.625vw * $coefficient;
             border-radius: 1.354vw * $coefficient;
-            display: none;
         }
 
         .mobile-decoration-button {
-            position: absolute;
             bottom: 0;
             left: 0;
-            padding: 0.417vw 0.833vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: rgb(255, 235, 235);
-            display: block;
+            padding: 0.417vw * $coefficient 0.833vw * $coefficient;
 
-            .second-reviews-name-mobile {
+            .second-reviews-name {
                 margin-top: 0;
-                font-size: 0.885vw * $coefficient;
-                margin-bottom: 0.521vw * $coefficient;
-                font-weight: 700;
-                color: #1F316A;
-            }
-
-            .purchase-mobile {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                font-weight: 700;
-                color: black;
-                width: 10.833vw * $coefficient;
-
-                .discount-price-mobile {
-                    font-weight: 700;
-                    color: #27706D;
-                    font-size: 0.885vw * $coefficient;
-                }
-
-                .price-mobile {
-                    font-weight: 700;
-                    color: #414141;
-                    text-decoration: line-through;
-                    font-size: 0.885vw * $coefficient;
-                }
             }
         }
+    }
 
-        .reviews-decoration-button:hover {}
+    .reviews-decoration-button:hover {
+    }
 
-        .reviews-image:hover .reviews-image-content {}
 
-        .reviews-image:hover .reviews-decoration-button {
-            bottom: 1.250vw * $coefficient;
-        }
+    .reviews-image:hover .reviews-image-content {
+        top: 1.042vw * $coefficient;
+    }
 
-        .second-reviews-name {
+    .reviews-image:hover .reviews-decoration-button {
+        bottom: 1.250vw * $coefficient;
+    }
+
+    .second-reviews-name {
+        font-size: 0.885vw * $coefficient;
+        margin-top: 0.729vw * $coefficient;
+        margin-bottom: 0.521vw * $coefficient;
+    }
+
+    .purchase {
+        width: 10.833vw * $coefficient;
+
+        .discount-price {
             font-size: 0.885vw * $coefficient;
-            margin-top: 0.729vw * $coefficient;
-            margin-bottom: 0.521vw * $coefficient;
-            display: none;
         }
 
-        .purchase {
-            font-weight: 700;
-            width: 10.833vw * $coefficient;
-            display: none;
-
-
-            .discount-price {
-                font-size: 0.885vw * $coefficient;
-                display: none;
-            }
-
-            .price {
-                font-size: 0.885vw * $coefficient;
-                display: none;
-            }
+        .price {
+            font-size: 0.885vw * $coefficient;
         }
+    }
 
-        .fa {
-            font-size: 0.938vw * $coefficient;
-            margin-left: 0.521vw * $coefficient;
+    .fa {
+        font-size: 0.938vw * $coefficient;
+        margin-left: 0.521vw * $coefficient;
 
-        }
+    }
 
-        .second-slider:hover .slick-arrow {}
-
-
+    .second-slider:hover .slick-arrow {
     }
 
     .slick-arrow {
         font-size: 2.083vw * $coefficient !important;
         padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
+        border-radius: 50%;
         display: none !important;
+
     }
 
-    .slick-arrow:hover {}
+    .slick-arrow:hover {
+    }
 
-    .slick-arrow.slick-hidden {}
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+
 }
