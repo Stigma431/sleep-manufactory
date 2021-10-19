@@ -798,7 +798,6 @@ li .slick-active {
   }
   .second-slider {
     min-width: 275.832vw;
-    padding-left: 3.6vw;
     background-color: #FFF2F2;
     height: 216.864vw;
     display: -webkit-box;
@@ -846,7 +845,14 @@ li .slick-active {
   }
   .second-slider-name {
     font-size: 7.5vw;
-    width: 95.24vw;
+    width: 124vw;
+    padding: 0vw 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .slick-list {
     margin: 0;
