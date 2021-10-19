@@ -63,6 +63,7 @@ li .slick-active {
         top: 7.292vw;
         width: 30.156vw;
         height: 28.177vw;
+        
     }
 }
 
@@ -215,6 +216,9 @@ li .slick-active {
     }
 }
 
+.slick-slide:nth-child(2n) .background {
+    background-color: rgb(242, 244, 243);
+}
 
 .first-regular {
     width: 43.021vw !important;
@@ -224,7 +228,7 @@ li .slick-active {
 .reviews {
     display: flex;
     flex-direction: column;
-
+    cursor: grab;
 
     ul {
         display: flex;
@@ -285,6 +289,10 @@ li .slick-active {
         outline: none;
         border-radius: 0.208vw;
     }
+}
+
+.reviews-button:hover {
+    background: rgb(82, 102, 153);
 }
 
 .second-reviews:hover .reviews-image {
@@ -623,8 +631,6 @@ li .slick-active {
 
     .reviews {
 
-
-
         ul {
             width: 5.768vw * $coefficient;
         }
@@ -797,7 +803,7 @@ li .slick-active {
 
     .second-slider {
         min-width: 68.958vw * $coefficient;
-        //padding: 0vw 18vw;
+        padding: 0vw 3vw;
         background-color: #FFF2F2;
         height: 54.216vw * $coefficient;
         display: flex;
@@ -846,7 +852,6 @@ li .slick-active {
         padding: 0vw 3vw;
         display: flex;
         justify-content: flex-start;
-
     }
 
     .slick-slider {}

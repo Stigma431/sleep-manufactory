@@ -267,6 +267,10 @@ li .slick-active {
   border: 0.052vw solid transparent;
 }
 
+.slick-slide:nth-child(2n) .background {
+  background-color: #f2f4f3;
+}
+
 .first-regular {
   width: 43.021vw !important;
   position: relative;
@@ -280,6 +284,8 @@ li .slick-active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .reviews ul {
@@ -365,6 +371,10 @@ li .slick-active {
   border: none;
   outline: none;
   border-radius: 0.208vw;
+}
+
+.reviews-button:hover {
+  background: #526699;
 }
 
 .second-reviews:hover .reviews-image {
@@ -798,6 +808,7 @@ li .slick-active {
   }
   .second-slider {
     min-width: 275.832vw;
+    padding: 0vw 3vw;
     background-color: #FFF2F2;
     height: 216.864vw;
     display: -webkit-box;
