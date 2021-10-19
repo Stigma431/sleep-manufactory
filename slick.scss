@@ -86,7 +86,7 @@ li .slick-active {
 .second-regular .draggable {
     position: relative;
     width: 100%;
-    height: 26.354vw;
+    height: 26.6vw;
 }
 
 .second-regular .slick-slide {
@@ -96,7 +96,7 @@ li .slick-active {
     flex-direction: column;
     opacity: 0;
     transform: translateY(0);
-    transition: opacity 0.3s ease-in-out 0s;
+    transition: opacity 1.3s ease-in-out 0s;
     width: 100%;
     height: 26.354vw;
 }
@@ -361,8 +361,27 @@ li .slick-active {
         background-color: rgb(255, 235, 235);
         display: none;
 
-        .second-reviews-name {
+        .second-reviews-name-mobile {
+            font-size: 0.938vw;
+            color: rgb(30, 48, 110);
             margin-top: 0;
+        }
+
+        .purchase-mobile {
+            color: #000000;
+            font-size: 0.885vw;
+
+            .discount-price-mobile {
+                color: #27706D;
+                font-size: 0.885vw;
+                line-height: 1.081vw;
+            }
+            .price-mobile {
+                color: #414141;
+                font-size: 0.885vw;
+                line-height: 1.081vw;
+                text-decoration: line-through;
+            }
         }
     }
 }
@@ -447,12 +466,9 @@ li .slick-active {
     $coefficient: 1.3;
 
     html,
-    body {
-    }
+    body {}
 
-    * {
-        
-    }
+    * {}
 
     .slider {
         width: 50%;
@@ -468,24 +484,20 @@ li .slick-active {
     }
 
     .slick-prev:before,
-    .slick-next:before {
-    }
+    .slick-next:before {}
 
 
-    .slick-slide {
-    }
+    .slick-slide {}
 
-    .slick-active {
-    }
+    .slick-active {}
 
-    li .slick-active {
-    }
+    li .slick-active {}
 
-    .slick-current {
-    }
+    .slick-current {}
 
     .second-slider {
         min-width: 68.958vw * $coefficient;
+
         .background {
             left: 18.969vw * $coefficient;
             top: 7.292vw * $coefficient;
@@ -505,7 +517,7 @@ li .slick-active {
 
     .second-regular .draggable {
         width: 100%;
-        height: 26.354vw * $coefficient;
+        height: 26.6vw * $coefficient;
     }
 
     .second-regular .slick-slide {
@@ -521,8 +533,7 @@ li .slick-active {
         font-size: 1.875vw * $coefficient;
     }
 
-    .slick-slider {
-    }
+    .slick-slider {}
 
     .slick-list {
         margin: 0;
@@ -699,8 +710,7 @@ li .slick-active {
         }
     }
 
-    .reviews-decoration-button:hover {
-    }
+    .reviews-decoration-button:hover {}
 
 
     .reviews-image:hover .reviews-image-content {
@@ -735,8 +745,7 @@ li .slick-active {
 
     }
 
-    .second-slider:hover .slick-arrow {
-    }
+    .second-slider:hover .slick-arrow {}
 
     .slick-arrow {
         font-size: 2.083vw * $coefficient !important;
@@ -745,8 +754,7 @@ li .slick-active {
 
     }
 
-    .slick-arrow:hover {
-    }
+    .slick-arrow:hover {}
 
     .slick-arrow.slick-hidden {
         display: none;
@@ -758,20 +766,17 @@ li .slick-active {
     $coefficient: 4;
 
     html,
-    body {
-    }
+    body {}
 
-    * {
-        
-    }
+    * {}
 
     .slider {
         width: 50%;
-        margin: none;
+        margin: 0;
     }
 
     .slick-slide {
-        margin: 0 20px;
+        margin: 0 1px;
     }
 
     .slick-slide img {
@@ -779,31 +784,31 @@ li .slick-active {
     }
 
     .slick-prev:before,
-    .slick-next:before {
-    }
+    .slick-next:before {}
 
 
-    .slick-slide {
-    }
+    .slick-slide {}
 
-    .slick-active {
-    }
+    .slick-active {}
 
-    li .slick-active {
-    }
+    li .slick-active {}
 
-    .slick-current {
-    }
+    .slick-current {}
 
     .second-slider {
         min-width: 68.958vw * $coefficient;
+        padding-left: 0.9vw * $coefficient;
+        background-color: #FFF2F2;
+        height: 54.216vw * $coefficient;
         display: flex;
         flex-direction: column-reverse;
+
         .background {
-            left: 18.969vw * $coefficient;
-            top: 7.292vw * $coefficient;
+            left: 0 * $coefficient;
+            top: 38.75vw * $coefficient;
             width: 30.156vw * $coefficient;
             height: 28.177vw * $coefficient;
+            display: none;
         }
     }
 
@@ -811,31 +816,36 @@ li .slick-active {
         width: 18.646vw * $coefficient !important;
     }
 
+    .second-regular .slick-track {
+        display: flex;
+        flex-direction: row;
+    }
+
     .second-regular .slick-active {
-        top: 50%;
+        position: static;
         left: 20.833vw * $coefficient;
     }
 
     .second-regular .draggable {
         width: 100%;
-        height: 26.354vw * $coefficient;
+        height: auto;
     }
 
     .second-regular .slick-slide {
-        top: 50%;
+        position: static;
         left: 20.833vw * $coefficient;
         transition: opacity 0.3s ease-in-out 0s;
         width: 100%;
-        height: 26.354vw * $coefficient;
+        height: auto;
     }
 
 
     .second-slider-name {
         font-size: 1.875vw * $coefficient;
+        width: 23.81vw * $coefficient;
     }
 
-    .slick-slider {
-    }
+    .slick-slider {}
 
     .slick-list {
         margin: 0;
@@ -861,7 +871,7 @@ li .slick-active {
     }
 
     .slick-track {
-
+        width: 6426px !important;
         left: 0;
         top: 0;
 
@@ -933,36 +943,37 @@ li .slick-active {
 
         .review-text {
             font-size: 1.719vw * $coefficient;
-            width: 38.333vw * $coefficient;
+            width: 25vw * $coefficient;
         }
 
         .reviews-tag {
-            margin-top: 3.177vw * $coefficient;
+            margin-top: 0.927vw * $coefficient;
             margin-bottom: 1.198vw * $coefficient;
 
             .tag-icon {
-                width: 3.216vw * $coefficient;
-                height: 3.281vw * $coefficient;
+                width: 4.66vw * $coefficient;
+                height: 4.66vw * $coefficient;
                 margin-right: 0.431vw * $coefficient;
             }
 
             .tag-name-city {
 
                 .tag-name {
-                    font-size: 1.042vw * $coefficient;
+                    font-size: 1.084vw * $coefficient;
                 }
 
                 .tag-city {
-                    font-size: 0.938vw * $coefficient;
+                    font-size: 0.963vw * $coefficient;
                 }
             }
         }
 
         .reviews-button {
-            width: 12.032vw * $coefficient;
+            width: 23.396vw * $coefficient;
             height: 2.552vw * $coefficient;
-            font-size: 0.938vw * $coefficient;
+            font-size: 1.084vw * $coefficient;
             border-radius: 0.208vw * $coefficient;
+            
         }
     }
 
@@ -972,7 +983,7 @@ li .slick-active {
 
     .second-regular {
         width: 23.542vw * $coefficient !important;
-        margin-top: 8.854vw * $coefficient !important;
+        margin-top: 2.854vw * $coefficient !important;
     }
 
     .second-reviews {
@@ -980,8 +991,9 @@ li .slick-active {
         height: 100%;
 
         .reviews-image {
-            width: 18.646vw * $coefficient;
-            height: 23.125vw * $coefficient;
+            width: 23.396vw * $coefficient;
+            height: 21.375vw * $coefficient;
+            background-size: 100%;
         }
 
         .reviews-image-content {
@@ -999,21 +1011,35 @@ li .slick-active {
             font-size: 0.938vw * $coefficient;
             padding: 0.521vw * $coefficient 1.250vw * $coefficient 0.625vw * $coefficient;
             border-radius: 1.354vw * $coefficient;
+            display: none;
         }
 
         .mobile-decoration-button {
-            bottom: 0;
-            left: 0;
             padding: 0.417vw * $coefficient 0.833vw * $coefficient;
-
-            .second-reviews-name {
-                margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .second-reviews-name-mobile {
+                font-size: 0.938vw * $coefficient;
+            }
+    
+            .purchase-mobile {
+                font-size: 0.885vw * $coefficient;
+    
+                .discount-price-mobile {
+                    font-size: 0.885vw * $coefficient;
+                    line-height: 1.081vw * $coefficient;
+                }
+                .price-mobile {
+                    font-size: 0.885vw * $coefficient;
+                    line-height: 1.081vw * $coefficient;
+                }
             }
         }
     }
 
-    .reviews-decoration-button:hover {
-    }
+    .reviews-decoration-button:hover {}
 
 
     .reviews-image:hover .reviews-image-content {
@@ -1028,10 +1054,12 @@ li .slick-active {
         font-size: 0.885vw * $coefficient;
         margin-top: 0.729vw * $coefficient;
         margin-bottom: 0.521vw * $coefficient;
+        display: none;
     }
 
     .purchase {
         width: 10.833vw * $coefficient;
+        display: none;
 
         .discount-price {
             font-size: 0.885vw * $coefficient;
@@ -1048,8 +1076,7 @@ li .slick-active {
 
     }
 
-    .second-slider:hover .slick-arrow {
-    }
+    .second-slider:hover .slick-arrow {}
 
     .slick-arrow {
         font-size: 2.083vw * $coefficient !important;
@@ -1059,11 +1086,13 @@ li .slick-active {
 
     }
 
-    .slick-arrow:hover {
-    }
+    .slick-arrow:hover {}
 
     .slick-arrow.slick-hidden {
         display: none;
+    }
+    .slick-dots {
+        left: 0.723vw !important;
     }
 
 }

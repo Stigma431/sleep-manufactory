@@ -118,7 +118,7 @@
       </div>
     </section>
 
-    
+
     <section class="second-regular slider">
       <div class="second-reviews">
         <a href="#" class="reviews-image">
@@ -237,6 +237,12 @@
         slidesToScroll: 1,
         prevArrow: false,
         variableWidth: true,
+        responsive: [{
+          breakpoint: 415,
+          settings: {
+            variableWidth: false,
+          }
+        }],
         nextArrow: '<i class="fa fa-angle-right">',
         asNavFor: '.first-regular'
       });
