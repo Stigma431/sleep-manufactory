@@ -935,7 +935,7 @@ li .slick-active {
   }
   .reviews .review-text {
     font-size: 6.876vw;
-    width: 100vw;
+    width: 88.584vw;
   }
   .reviews .reviews-tag {
     margin-top: 3.708vw;
@@ -953,7 +953,7 @@ li .slick-active {
     font-size: 3.852vw;
   }
   .reviews .reviews-button {
-    width: 93.584vw;
+    width: 88.584vw;
     height: 10.208vw;
     font-size: 4.336vw;
     border-radius: 0.832vw;
@@ -970,7 +970,7 @@ li .slick-active {
     height: 100%;
   }
   .second-reviews .reviews-image {
-    width: 93.584vw;
+    width: 88.584vw;
     height: 85.5vw;
     background-size: 100%;
   }
