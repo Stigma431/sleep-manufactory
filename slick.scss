@@ -840,7 +840,8 @@ li .slick-active {
     .second-regular .slick-slide {
         position: static;
         left: 20.833vw * $coefficient;
-        transition: opacity 0.3s ease-in-out 0s;
+        opacity: 1 !important;
+        transition: ease-in-out 3s !important;
         width: 100%;
         height: auto;
     }

@@ -849,8 +849,9 @@ li .slick-active {
   .second-regular .slick-slide {
     position: static;
     left: 83.332vw;
-    -webkit-transition: opacity 0.3s ease-in-out 0s;
-    transition: opacity 0.3s ease-in-out 0s;
+    opacity: 1 !important;
+    -webkit-transition: ease-in-out 3s !important;
+    transition: ease-in-out 3s !important;
     width: 100%;
     height: auto;
   }
