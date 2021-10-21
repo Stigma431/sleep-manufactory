@@ -96,9 +96,9 @@ li .slick-active {
 .second-slider .background {
   position: absolute;
   background-color: #FFF2F2;
-  left: 18.969vw;
+  left: 16.4vw;
   top: 7.292vw;
-  width: 30.156vw;
+  width: 29.156vw;
   height: 28.177vw;
 }
 
@@ -126,7 +126,7 @@ li .slick-active {
 
 .second-regular .draggable {
   position: relative;
-  width: 100%;
+  width: 19.494vw;
   height: 26.6vw;
 }
 
@@ -564,6 +564,8 @@ li .slick-active {
 
 .second-slider:hover .slick-arrow {
   opacity: 1;
+  -webkit-box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;
+          box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;
 }
 
 .slick-arrow {
@@ -604,9 +606,9 @@ li .slick-active {
     min-width: 89.6454vw;
   }
   .second-slider .background {
-    left: 24.6597vw;
-    top: 9.4796vw;
-    width: 39.2028vw;
+    left: 6.994vw;
+    top: 9.997vw;
+    width: 38.194vw;
     height: 36.6301vw;
   }
   .second-regular {
@@ -617,7 +619,7 @@ li .slick-active {
     left: 27.0829vw;
   }
   .second-regular .draggable {
-    width: 100%;
+    width: 25.3422vw;
     height: 34.58vw;
   }
   .second-regular .slick-slide {

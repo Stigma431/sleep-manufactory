@@ -59,9 +59,9 @@ li .slick-active {
     .background {
         position: absolute;
         background-color: #FFF2F2;
-        left: 18.969vw;
+        left: 16.4vw;
         top: 7.292vw;
-        width: 30.156vw;
+        width: 29.156vw;
         height: 28.177vw;
         
     }
@@ -86,7 +86,7 @@ li .slick-active {
 
 .second-regular .draggable {
     position: relative;
-    width: 100%;
+    width: 19.494vw;
     height: 26.6vw;
 }
 
@@ -446,6 +446,10 @@ li .slick-active {
 
 .second-slider:hover .slick-arrow {
     opacity: 1;
+    box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
+     rgb(247, 247, 247) 0 0 0 0.052vw,
+     rgb(242, 242, 242) 0 0.052vw 0 0,
+     rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
 .slick-arrow {
@@ -459,7 +463,6 @@ li .slick-active {
     transition: background-color 0.15s ease-out 0s;
     transition: opacity 0.15s ease-out 0s;
     border-radius: 50%;
-
 }
 
 .slick-arrow:hover {
@@ -507,9 +510,9 @@ li .slick-active {
         min-width: 68.958vw * $coefficient;
 
         .background {
-            left: 18.969vw * $coefficient;
-            top: 7.292vw * $coefficient;
-            width: 30.156vw * $coefficient;
+            left: 5.38vw * $coefficient;
+            top: 7.69vw * $coefficient;
+            width: 29.38vw * $coefficient;
             height: 28.177vw * $coefficient;
         }
     }
@@ -524,7 +527,7 @@ li .slick-active {
     }
 
     .second-regular .draggable {
-        width: 100%;
+        width: 19.494vw * $coefficient;
         height: 26.6vw * $coefficient;
     }
 
