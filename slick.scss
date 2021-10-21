@@ -830,6 +830,7 @@ li .slick-active {
     .second-regular .slick-active {
         position: static;
         left: 20.833vw * $coefficient;
+        transition: none;
     }
 
     .second-regular .draggable {
@@ -841,7 +842,7 @@ li .slick-active {
         position: static;
         left: 20.833vw * $coefficient;
         opacity: 1 !important;
-        transition: ease-in-out 3s !important;
+        transition: none !important;
         width: 100%;
         height: auto;
     }
@@ -881,7 +882,7 @@ li .slick-active {
     }
 
     .slick-track {
-        width: 6426px !important;
+        width: 5580px !important;
         left: 0;
         top: 0;
 

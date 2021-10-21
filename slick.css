@@ -841,6 +841,8 @@ li .slick-active {
   .second-regular .slick-active {
     position: static;
     left: 83.332vw;
+    -webkit-transition: none;
+    transition: none;
   }
   .second-regular .draggable {
     width: 100%;
@@ -850,8 +852,8 @@ li .slick-active {
     position: static;
     left: 83.332vw;
     opacity: 1 !important;
-    -webkit-transition: ease-in-out 3s !important;
-    transition: ease-in-out 3s !important;
+    -webkit-transition: none !important;
+    transition: none !important;
     width: 100%;
     height: auto;
   }
@@ -883,7 +885,7 @@ li .slick-active {
     transform: translate3d(0, 0, 0);
   }
   .slick-track {
-    width: 6426px !important;
+    width: 5580px !important;
     left: 0;
     top: 0;
   }
