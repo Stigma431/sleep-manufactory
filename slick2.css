@@ -1,0 +1,411 @@
+/* Slider */
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url("fonts/Calibri.eot");
+  src: url("fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("fonts/Calibri.woff") format("woff"), url("fonts/Calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Calibri Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Calibri Regular";
+}
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto;
+  padding: 0 1.042vw;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  width: 1920px;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-slide:focus {
+  outline: none !important;
+}
+
+.main-slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-item {
+  background: url(images/slid1-bg.svg);
+  width: 100vw;
+  height: 40.104vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-title {
+  font-weight: 700;
+  font-size: 3.385vw;
+  color: #17215B;
+}
+
+.slider-description {
+  font-weight: 700;
+  font-size: 1.146vw;
+  line-height: 1.399vw;
+  color: #17215B;
+  margin-top: 0.521vw;
+  margin-bottom: 2.083vw;
+}
+
+.slider-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13.750vw;
+  height: 3.646vw;
+  background-color: #CB372A;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.146vw;
+  line-height: 1.399vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  border-radius: 0.260vw;
+  -webkit-transition: border-radius 200ms;
+  transition: border-radius 200ms;
+  background-color: #ffffff;
+  color: #CB372A;
+  -webkit-transition: background-color 500ms, color 500ms;
+  transition: background-color 500ms, color 500ms;
+}
+
+.slick-arrow {
+  margin: 0;
+  padding: 0.443vw 1.1124vw;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: background-color 0.15s ease-out 0s;
+  transition: background-color 0.15s ease-out 0s;
+  -webkit-transition: opacity 0.15s ease-out 0s;
+  transition: opacity 0.15s ease-out 0s;
+  border-radius: 50%;
+}
+
+.main-slider:hover .slick-arrow {
+  opacity: 1;
+  -webkit-box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;
+          box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;
+}
+
+.slick-arrow:hover {
+  color: #526699;
+}
+
+.fa {
+  font-size: 2.083vw !important;
+}
+
+.fa.fa-angle-left {
+  position: absolute;
+  top: 44%;
+  left: 0.521vw;
+  z-index: 1;
+}
+
+.fa.fa-angle-right {
+  position: absolute;
+  top: 44%;
+  right: 0.521vw;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@media all and (max-width: 1366px) {
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .slick-track {
+    z-index: 0;
+    left: 0;
+    top: 0;
+  }
+  .slick-slide {
+    height: 100%;
+    min-height: 1px;
+  }
+  [dir="rtl"] .slick-slide {
+    float: right;
+  }
+  .slick-vertical .slick-slide {
+    border: 1px solid transparent;
+  }
+  .slider-item {
+    background: url(images/slid1-bg.svg);
+    width: 100vw;
+    height: 52.1352vw;
+  }
+  .slider-title {
+    font-size: 4.4005vw;
+  }
+  .slider-description {
+    font-size: 1.4898vw;
+    line-height: 1.8187vw;
+    margin-top: 0.6773vw;
+    margin-bottom: 2.7079vw;
+  }
+  .slider-button {
+    width: 17.875vw;
+    height: 4.7398vw;
+    font-size: 1.4898vw;
+    line-height: 1.8187vw;
+  }
+  .slider-button:hover {
+    border-radius: 0.338vw;
+    -webkit-transition: border-radius 200ms;
+    transition: border-radius 200ms;
+    -webkit-transition: background-color 500ms, color 500ms;
+    transition: background-color 500ms, color 500ms;
+  }
+  .slick-arrow {
+    padding: 0.5759vw 1.44612vw;
+    -webkit-transition: background-color 0.15s ease-out 0s;
+    transition: background-color 0.15s ease-out 0s;
+    -webkit-transition: opacity 0.15s ease-out 0s;
+    transition: opacity 0.15s ease-out 0s;
+    border-radius: 50%;
+  }
+  .fa {
+    font-size: 2.7079vw !important;
+  }
+  .fa.fa-angle-left {
+    top: 44%;
+    left: 0.6773vw;
+  }
+  .fa.fa-angle-right {
+    top: 44%;
+    right: 0.6773vw;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .slick-track {
+    z-index: 0;
+    left: 0;
+    top: 0;
+  }
+  .slick-slide {
+    height: 100%;
+    min-height: 1px;
+  }
+  [dir="rtl"] .slick-slide {
+    float: right;
+  }
+  .slick-vertical .slick-slide {
+    border: 1px solid transparent;
+  }
+  .slider-item {
+    background: url(images/slid1-bg.svg);
+    width: 100vw;
+    height: 160.416vw;
+  }
+  .slider-title {
+    font-size: 13.54vw;
+    text-align: center;
+  }
+  .slider-description {
+    font-size: 4.584vw;
+    line-height: 5.596vw;
+    margin-top: 2.084vw;
+    margin-bottom: 8.332vw;
+    text-align: center;
+  }
+  .slider-button {
+    width: 55vw;
+    height: 14.584vw;
+    font-size: 4.584vw;
+    line-height: 5.596vw;
+  }
+  .slider-button:hover {
+    border-radius: 1.04vw;
+    -webkit-transition: border-radius 200ms;
+    transition: border-radius 200ms;
+    -webkit-transition: background-color 500ms, color 500ms;
+    transition: background-color 500ms, color 500ms;
+  }
+  .slick-arrow {
+    padding: 1.772vw 4.4496vw;
+    -webkit-transition: background-color 0.15s ease-out 0s;
+    transition: background-color 0.15s ease-out 0s;
+    -webkit-transition: opacity 0.15s ease-out 0s;
+    transition: opacity 0.15s ease-out 0s;
+    border-radius: 50%;
+  }
+  .fa {
+    font-size: 8.332vw !important;
+  }
+  .fa.fa-angle-left {
+    top: 44%;
+    left: 2.084vw;
+  }
+  .fa.fa-angle-right {
+    top: 44%;
+    right: 2.084vw;
+  }
+}
+/*# sourceMappingURL=slick2.css.map */
