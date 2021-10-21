@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Слайдер для сайта</title>
   <!-- Подключаем CSS слайдера -->
@@ -238,10 +239,12 @@
         prevArrow: false,
         variableWidth: true,
         autoplay: true,
-      autoplaySpeed: 2000,
-        responsive: [{
+        autoplaySpeed: 2000,
+        responsive: [
+          {
           breakpoint: 415,
           settings: {
+            slidesToScroll: 2,
             variableWidth: false,
           }
         }],
