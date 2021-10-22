@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Слайдер для сайта</title>
     <!-- Подключаем CSS слайдера -->
@@ -14,7 +15,7 @@
 <body>
     <h1 class="slider-сarousel_name">Построй свою спальню</h1>
     <section class="slider-сarousel slider">
-        
+
         <div class="slider-carousel_items item-1">
             <a class="image">
                 <div class="decoration-button">Быстрый просмотр</div>
@@ -22,77 +23,99 @@
             <div class="name">Самая лучшая наволочка</div>
             <div class="price">Цена: <span>18 395 р.</span></div>
             <div class="select">
-                <button class="color-1"></button>
-                <button class="color-2"></button>
-                <button class="color-3"></button>
+                <button class="color one-item-1 one-active"></button>
+                <button class="color two-item-1"></button>
+                <button class="color three-item-1"></button>
             </div>
         </div>
         <div class="slider-carousel_items item-2">
-            <a class="image"><div class="decoration-button">Быстрый просмотр</div></a>
+            <a class="image">
+                <div class="decoration-button">Быстрый просмотр</div>
+            </a>
             <div class="name">Самая лучшая наволочка</div>
             <div class="price">Цена: <span>18 395 р.</span></div>
             <div class="select">
-                <button class="color-1"></button>
-                <button class="color-2"></button>
-                <button class="color-3"></button>
+                <button class="color one-item-2 one-active"></button>
+                <button class="color two-item-2"></button>
+                <button class="color three-item-2"></button>
             </div>
         </div>
         <div class="slider-carousel_items item-3">
-            <a class="image"><div class="decoration-button">Быстрый просмотр</div></a>
+            <a class="image">
+                <div class="decoration-button">Быстрый просмотр</div>
+            </a>
             <div class="name">Самая лучшая наволочка</div>
             <div class="price">Цена: <span>18 395 р.</span></div>
             <div class="select">
-                <button class="color-1"></button>
-                <button class="color-2"></button>
-                <button class="color-3"></button>
+                <button class="color one-item-3 one-active"></button>
+                <button class="color two-item-3"></button>
+                <button class="color three-item-3"></button>
             </div>
         </div>
         <div class="slider-carousel_items item-4">
-            <a class="image"><div class="decoration-button">Быстрый просмотр</div></a>
+            <a class="image">
+                <div class="decoration-button">Быстрый просмотр</div>
+            </a>
             <div class="name">Самая лучшая наволочка</div>
             <div class="price">Цена: <span>18 395 р.</span></div>
             <div class="select">
-                <button class="color-1"></button>
-                <button class="color-2"></button>
-                <button class="color-3"></button>
+                <button class="color one-item-4 one-active"></button>
+                <button class="color two-item-4"></button>
+                <button class="color three-item-4"></button>
             </div>
         </div>
         <div class="slider-carousel_items item-5">
-            <a class="image"><div class="decoration-button">Быстрый просмотр</div></a>
+            <a class="image">
+                <div class="decoration-button">Быстрый просмотр</div>
+            </a>
             <div class="name">Самая лучшая наволочка</div>
             <div class="price">Цена: <span>18 395 р.</span></div>
             <div class="select">
-                <button class="color-1"></button>
-                <button class="color-2"></button>
-                <button class="color-3"></button>
+                <button class="color one-item-5 one-active"></button>
+                <button class="color two-item-5"></button>
+                <button class="color three-item-5"></button>
             </div>
         </div>
         <div class="slider-carousel_items item-6">
-            <a class="image"><div class="decoration-button">Быстрый просмотр</div></a>
+            <a class="image">
+                <div class="decoration-button">Быстрый просмотр</div>
+            </a>
             <div class="name">Самая лучшая наволочка</div>
             <div class="price">Цена: <span>18 395 р.</span></div>
             <div class="select">
-                <button class="color-1"></button>
-                <button class="color-2"></button>
-                <button class="color-3"></button>
+                <button class="color one-item-6 one-active" checked=""></button>
+                <button class="color two-item-6" checked=""></button>
+                <button class="color three-item-6" checked=""></button>
             </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick3.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    
     <script type="text/javascript">
         $(document).on('ready', function () {
             $(".slider-сarousel").slick({
                 dots: true,
                 infinite: false,
-                slidesToShow: 3.5,
+                slidesToShow: 1.5,
                 slidesToScroll: 1,
                 swipeToSlide: true,
                 autoplay: false,
                 variableWidth: true,
+                mobileFirst:true,
                 autoplaySpeed: 5000,
                 nextArrow: '<i class="fa fa-angle-right">',
-                prevArrow: '<i class="fa fa-angle-left">'
+                prevArrow: '<i class="fa fa-angle-left">',
+                /*responsive: [{
+                    breakpoint: 416,
+                    settings: {
+                        slidesToShow: 1.5,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        arrows: false,
+                    }
+                }],*/
             })
             $(".lazy").slick({
                 lazyLoad: 'ondemand', // ondemand progressive anticipated
