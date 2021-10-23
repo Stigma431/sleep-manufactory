@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url("fonts/Calibri.eot");
+  src: url("fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("fonts/Calibri.woff") format("woff"), url("fonts/Calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Calibri Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Calibri Regular";
+}
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto;
+  padding: 0 1.042vw;
+}
+
+.banner-container {
+  height: auto;
+  margin-top: 5.208vw;
+  background: url(images/banner-back.jpg) repeat-x;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-content {
+  padding: 2.083vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-text {
+  width: 68.958vw;
+  padding: 1.667vw 0;
+  font-weight: 700;
+  font-size: 3.073vw;
+  line-height: 3.751vw;
+  background-color: #F5F5F0;
+  color: #1F316A;
+  text-align: center;
+}
+
+@media all and (max-width: 1366px) {
+  .banner-container {
+    margin-top: 6.7704vw;
+    margin-bottom: 6.7704vw;
+  }
+  .banner-content {
+    padding: 2.7079vw 0;
+  }
+  .banner-text {
+    width: 89.6454vw;
+    padding: 2.1671vw 0;
+    font-weight: 700;
+    font-size: 3.9949vw;
+    line-height: 4.8763vw;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .banner-container {
+    margin-top: 20.832vw;
+    margin-bottom: 20.832vw;
+  }
+  .banner-content {
+    padding: 13.494vw 0;
+  }
+  .banner-text {
+    width: 100vw;
+    padding: 6.668vw 0;
+    font-weight: 700;
+    font-size: 12.292vw;
+    line-height: 15.004vw;
+  }
+}
+/*# sourceMappingURL=banner.css.map */
