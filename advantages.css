@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url("fonts/Calibri.eot");
+  src: url("fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("fonts/Calibri.woff") format("woff"), url("fonts/Calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Calibri Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Calibri Regular";
+}
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto;
+  padding: 0 1.042vw;
+}
+
+.advantages-container {
+  width: 64.740vw;
+  margin: 0 auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.advantages-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages-icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4.688vw;
+  width: 4.688vw;
+}
+
+.advantages-title {
+  font-size: 0.885vw;
+  font-weight: 700;
+  line-height: 1.081vw;
+  color: #1F316A;
+  text-align: center;
+  padding-top: 0.625vw;
+}
+
+.advantages-description {
+  font-size: 0.885vw;
+  font-weight: 400;
+  line-height: 1.081vw;
+  color: #4F4F4F;
+  text-align: center;
+  width: 13vw;
+}
+
+@media all and (max-width: 1366px) {
+  .advantages-container {
+    width: 84.162vw;
+    margin: 0 auto;
+    margin-top: 6.5vw;
+    margin-bottom: 6.5vw;
+  }
+  .advantages-icon {
+    height: 6.0944vw;
+    width: 6.0944vw;
+  }
+  .advantages-title {
+    font-size: 1.1505vw;
+    line-height: 1.4053vw;
+    padding-top: 0.8125vw;
+  }
+  .advantages-description {
+    font-size: 1.1505vw;
+    line-height: 1.4053vw;
+    width: 16.9vw;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .advantages-container {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+  }
+  .advantages-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages-icon {
+    height: 18.752vw;
+    width: 18.752vw;
+  }
+  .advantages-title {
+    font-size: 3.54vw;
+    line-height: 4.324vw;
+    padding-top: 2.5vw;
+  }
+  .advantages-description {
+    font-size: 3.54vw;
+    line-height: 4.324vw;
+    width: 48vw;
+  }
+  .advantages-item:last-child {
+    padding-top: 8.332vw;
+  }
+}
+/*# sourceMappingURL=advantages.css.map */
