@@ -105,3 +105,75 @@ $(function () {
         $('.two-item-6').removeClass('two-active');
     });
 });
+
+$(function() {
+    $('.one-item-1').click(function() {
+        $('.image-item-1').css('background-image', 'url(images/Rectangle3.jpg)');
+      });
+    $('.two-item-1').click(function() {
+      $('.image-item-1').css('background-image', 'url(images/rectangle4.jpg)');
+    });
+    $('.three-item-1').click(function() {
+        $('.image-item-1').css('background-image', 'url(images/rectangle5.jpg)');
+      });
+  });
+
+  $(function() {
+    $('.one-item-2').click(function() {
+        $('.image-item-2').css('background-image', 'url(images/Rectangle4.jpg)');
+      });
+    $('.two-item-2').click(function() {
+      $('.image-item-2').css('background-image', 'url(images/rectangle3.jpg)');
+    });
+    $('.three-item-2').click(function() {
+        $('.image-item-2').css('background-image', 'url(images/rectangle5.jpg)');
+      });
+  });
+
+  $(function() {
+    $('.one-item-3').click(function() {
+        $('.image-item-3').css('background-image', 'url(images/Rectangle5.jpg)');
+      });
+    $('.two-item-3').click(function() {
+      $('.image-item-3').css('background-image', 'url(images/rectangle4.jpg)');
+    });
+    $('.three-item-3').click(function() {
+        $('.image-item-3').css('background-image', 'url(images/rectangle3.jpg)');
+      });
+  });
+
+  $(function() {
+    $('.one-item-4').click(function() {
+        $('.image-item-4').css('background-image', 'url(images/Rectangle6.jpg)');
+      });
+    $('.two-item-4').click(function() {
+      $('.image-item-4').css('background-image', 'url(images/rectangle4.jpg)');
+    });
+    $('.three-item-4').click(function() {
+        $('.image-item-4').css('background-image', 'url(images/rectangle3.jpg)');
+      });
+  });
+
+  $(function() {
+    $('.one-item-5').click(function() {
+        $('.image-item-5').css('background-image', 'url(images/Rectangle3.jpg)');
+      });
+    $('.two-item-5').click(function() {
+      $('.image-item-5').css('background-image', 'url(images/rectangle4.jpg)');
+    });
+    $('.three-item-5').click(function() {
+        $('.image-item-5').css('background-image', 'url(images/rectangle5.jpg)');
+      });
+  });
+  $(function() {
+    $('.one-item-6').click(function() {
+        $('.image-item-6').css('background-image', 'url(images/Rectangle3.jpg)');
+      });
+    $('.two-item-6').click(function() {
+      $('.image-item-6').css('background-image', 'url(images/rectangle4.jpg)');
+    });
+    $('.three-item-6').click(function() {
+        $('.image-item-6').css('background-image', 'url(images/rectangle5.jpg)');
+      });
+  });
+
