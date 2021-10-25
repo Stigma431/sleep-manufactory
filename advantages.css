@@ -72,19 +72,6 @@ body {
           justify-content: center;
   height: 4.688vw;
   width: 4.688vw;
-  background-size: 100%;
-}
-
-.advantages-icon .one {
-  background: url(images/advantages1.svg) no-repeat;
-}
-
-.advantages-icon .two {
-  background: url(images/advantages2.svg) no-repeat;
-}
-
-.advantages-icon .three {
-  background: url(images/advantages3.svg) no-repeat;
 }
 
 .advantages-title {
@@ -111,10 +98,6 @@ body {
     margin: 0 auto;
     margin-top: 6.5vw;
     margin-bottom: 6.5vw;
-  }
-  .advantages-icon {
-    height: 6.0944vw;
-    width: 6.0944vw;
   }
   .advantages-title {
     font-size: 1.1505vw;
@@ -144,10 +127,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .advantages-icon {
-    height: 18.752vw;
-    width: 18.752vw;
   }
   .advantages-title {
     font-size: 3.54vw;
