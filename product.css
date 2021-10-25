@@ -119,9 +119,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 0.586vw;
 }
 
@@ -138,6 +135,8 @@ body {
   font-weight: 700;
   color: #8C8B8B;
   text-decoration: line-through;
+  margin-left: 0.521vw;
+  margin-right: 0.938vw;
 }
 
 .product-discount-percent {
@@ -359,6 +358,8 @@ body {
   .product-price {
     font-size: 1.625vw;
     line-height: 1.9838vw;
+    margin-left: 0.6773vw;
+    margin-right: 1.2194vw;
   }
   .product-discount-percent {
     font-size: 0.9477vw;
@@ -474,6 +475,8 @@ body {
   .product-price {
     font-size: 5vw;
     line-height: 6.104vw;
+    margin-left: 2.084vw;
+    margin-right: 3.752vw;
   }
   .product-discount-percent {
     font-size: 2.916vw;
