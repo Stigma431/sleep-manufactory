@@ -1063,8 +1063,7 @@
 
 @media  all and (max-width: 415px) {
     $coefficient: 4;
-    @import "base-scss.scss";
-
+    
 .slider-сarousel {
 }
 
@@ -1156,6 +1155,7 @@
 }
 
 .slider-сarousel {
+    margin-left: 3.3vw * $coefficient;
 }
 
 .slider-сarousel_name {
@@ -1437,7 +1437,7 @@
 
 
 .slick-slide:first-child {
-    padding-left: 3.022vw * $coefficient;
+    padding-left: 0 * $coefficient;
 }
 
 .slick-slide {
