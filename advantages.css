@@ -72,6 +72,19 @@ body {
           justify-content: center;
   height: 4.688vw;
   width: 4.688vw;
+  background-size: 100%;
+}
+
+.advantages-icon .one {
+  background: url(images/advantages1.svg) no-repeat;
+}
+
+.advantages-icon .two {
+  background: url(images/advantages2.svg) no-repeat;
+}
+
+.advantages-icon .three {
+  background: url(images/advantages3.svg) no-repeat;
 }
 
 .advantages-title {
