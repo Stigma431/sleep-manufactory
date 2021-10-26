@@ -63,6 +63,13 @@ body {
           align-items: center;
 }
 
+.product-img {
+  background: url(images/mattress.png) no-repeat;
+  width: 38.958vw;
+  height: 18.177vw;
+  background-size: 100%;
+}
+
 .characteristics-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,6 +375,11 @@ body {
     width: 62.9694vw;
     height: 36.7653vw;
   }
+  .product-img {
+    width: 50.6454vw;
+    height: 23.6301vw;
+    background-size: 100%;
+  }
   .second-page-reviews ul {
     padding-right: 1.1505vw;
   }
@@ -496,6 +508,11 @@ body {
   .product-img-container {
     width: 193.752vw;
     height: 113.124vw;
+  }
+  .product-img {
+    width: 155.832vw;
+    height: 72.708vw;
+    background-size: 100%;
   }
   .second-page-reviews ul {
     padding-right: 3.54vw;
