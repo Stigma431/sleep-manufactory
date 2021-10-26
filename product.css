@@ -502,7 +502,7 @@ body {
 
 @media all and (max-width: 415px) {
   .product-container {
-    width: 100vw;
+    width: 268vw;
     margin-top: 20vw;
   }
   .product-img-container {
