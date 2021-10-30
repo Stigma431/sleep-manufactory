@@ -36,6 +36,27 @@ body {
   width: 77.708vw;
   margin: 0 auto;
   margin-top: 5vw;
+  display: block;
+}
+
+.zoom-out {
+  cursor: -webkit-zoom-out !important;
+  cursor: zoom-out !important;
+}
+
+.img-one {
+  opacity: 1;
+  width: 38.958vw;
+  height: 18.177vw;
+}
+
+.zoomImg {
+  width: calc(38.958vw * 2) !important;
+  height: calc(18.177vw * 2) !important;
+}
+
+.product-img_opacity {
+  opacity: 0 !important;
 }
 
 .product-characteristics-container {
@@ -49,7 +70,7 @@ body {
 }
 
 .product-img-container {
-  width: 48.438vw;
+  width: 51vw;
   height: 28.281vw;
   background-color: #F2F4F3;
   display: -webkit-box;
@@ -61,13 +82,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.product-img {
-  background: url(images/mattress.png) no-repeat;
-  width: 38.958vw;
-  height: 18.177vw;
-  background-size: 100%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .characteristics-container {
@@ -114,6 +130,7 @@ body {
   line-height: 1.271vw;
   font-weight: 400;
   color: #1F316A;
+  cursor: pointer;
 }
 
 .product-item_title {
@@ -343,42 +360,51 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 51vw;
 }
 
-.product-img_item-1 {
-  background: url(images/Rectangle10.jpg) no-repeat;
+.zoomImg {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.img {
   width: 24.896vw;
   height: 24.844vw;
-  background-size: 100%;
+  margin-bottom: 1.042vw;
 }
 
-.product-img_item-2 {
-  background: url(images/Rectangle11.jpg) no-repeat;
-  width: 24.792vw;
-  height: 24.844vw;
-  background-size: 100%;
-}
-
-.product-img_item-3 {
-  background: url(images/Rectangle12.jpg) no-repeat;
-  width: 24.792vw;
-  height: 24.844vw;
-  background-size: 100%;
+.product-img_list .zoomImg {
+  width: calc(24.896vw*2) !important;
+  height: calc(24.844vw*2) !important;
 }
 
 @media all and (max-width: 1366px) {
   .product-container {
-    width: 95.9998vw;
+    width: 101.0204vw;
     margin-top: 6.5vw;
+    display: block;
   }
-  .product-img-container {
-    width: 62.9694vw;
-    height: 36.7653vw;
+  .zoom-out {
+    cursor: -webkit-zoom-out !important;
+    cursor: zoom-out !important;
   }
-  .product-img {
+  .img-one {
     width: 50.6454vw;
     height: 23.6301vw;
-    background-size: 100%;
+  }
+  .zoomImg {
+    width: calc(38.958vw * $coefficient * 2) !important;
+    height: calc(18.177vw * $coefficient * 2) !important;
+  }
+  .product-characteristics-container {
+    margin-bottom: 4.219vw;
+  }
+  .product-img-container {
+    width: 66.3vw;
+    height: 36.7653vw;
   }
   .second-page-reviews ul {
     padding-right: 1.1505vw;
@@ -486,154 +512,162 @@ body {
     line-height: 1.9838vw;
     border-radius: 0.338vw;
   }
-  .product-img_item-1 {
-    width: 31.0648vw;
-    height: 30.9972vw;
+  .product-img_list {
+    width: 66.3vw;
   }
-  .product-img_item-2 {
-    width: 30.9296vw;
+  .img {
+    width: 32.3648vw;
     height: 32.2972vw;
+    margin-bottom: 1.3546vw;
   }
-  .product-img_item-3 {
-    width: 30.9296vw;
-    height: 30.9972vw;
+  .product-img_list .zoomImg {
+    width: calc(24.896vw * $coefficient * 2) !important;
+    height: calc(24.844vw * $coefficient * 2) !important;
   }
 }
 
-@media all and (max-width: 415px) {
+@media all and (max-width: 1366px) {
   .product-container {
-    width: 268vw;
-    margin-top: 20vw;
+    width: 99vw;
+    margin-top: 6.5vw;
+    display: block;
+  }
+  .zoom-out {
+    cursor: -webkit-zoom-out !important;
+    cursor: zoom-out !important;
+  }
+  .img-one {
+    width: 50.6454vw;
+    height: 23.6301vw;
+  }
+  .zoomImg {
+    width: calc(38.958vw * $coefficient * 2) !important;
+    height: calc(18.177vw * $coefficient * 2) !important;
+  }
+  .product-characteristics-container {
+    margin-bottom: 4.219vw;
   }
   .product-img-container {
-    width: 193.752vw;
-    height: 113.124vw;
-  }
-  .product-img {
-    width: 155.832vw;
-    height: 72.708vw;
-    background-size: 100%;
+    width: 66.3vw;
+    height: 36.7653vw;
   }
   .second-page-reviews ul {
-    padding-right: 3.54vw;
+    padding-right: 1.1505vw;
   }
   .reviews-number {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
   }
   .product-item_title {
-    font-size: 8.752vw;
-    line-height: 10.68vw;
+    font-size: 2.8444vw;
+    line-height: 3.471vw;
   }
   .product-price-container {
-    margin-top: 2.344vw;
+    margin-top: 0.7618vw;
   }
   .product-discount_price {
-    font-size: 5vw;
-    line-height: 6.104vw;
+    font-size: 1.625vw;
+    line-height: 1.9838vw;
   }
   .product-price {
-    font-size: 5vw;
-    line-height: 6.104vw;
-    margin-left: 2.084vw;
-    margin-right: 3.752vw;
+    font-size: 1.625vw;
+    line-height: 1.9838vw;
+    margin-left: 0.6773vw;
+    margin-right: 1.2194vw;
   }
   .product-discount-percent {
-    font-size: 2.916vw;
-    line-height: 3.56vw;
-    padding: 1.252vw 3.124vw;
-    border-radius: 3.124vw;
-    margin-top: 2.8vw;
+    font-size: 0.9477vw;
+    line-height: 1.157vw;
+    padding: 0.4069vw 1.0153vw;
+    border-radius: 1.0153vw;
+    margin-top: 0.91vw;
   }
   .mattress-parameters {
-    margin-top: 1.668vw;
+    margin-top: 0.5421vw;
   }
   .mattress-parameters_title {
-    font-size: 4.584vw;
-    line-height: 5.596vw;
-    margin-bottom: 2.084vw;
+    font-size: 1.4898vw;
+    line-height: 1.8187vw;
+    margin-bottom: 0.6773vw;
   }
   .btn {
-    width: 100.208vw;
-    height: 13.54vw;
-    line-height: 5.596vw;
-    padding-left: 5.624vw;
-    font-size: 4.584vw;
+    width: 32.5676vw;
+    height: 4.4005vw;
+    line-height: 1.8187vw;
+    padding-left: 1.8278vw;
+    font-size: 1.4898vw;
   }
   .dropdown-menu {
-    width: 100.208vw;
+    width: 32.5676vw;
   }
   .dropdown-item {
-    font-size: 4.584vw;
-    line-height: 5.596vw;
-    padding-left: 5.624vw;
+    font-size: 1.4898vw;
+    line-height: 1.8187vw;
+    padding-left: 1.8278vw;
   }
   .mattress-second-parameters {
-    margin-top: 4.584vw;
-    margin-bottom: 6.612vw;
+    margin-top: 1.4898vw;
+    margin-bottom: 2.1489vw;
   }
   .load {
-    padding-right: 3.332vw;
+    padding-right: 1.0829vw;
   }
   .load-title {
-    font-size: 4.584vw;
-    line-height: 5.596vw;
-    margin-bottom: 1.252vw;
+    font-size: 1.4898vw;
+    line-height: 1.8187vw;
+    margin-bottom: 0.4069vw;
   }
   .load-description {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
   }
   .height-title {
-    font-size: 4.584vw;
-    line-height: 5.596vw;
-    margin-bottom: 1.252vw;
+    font-size: 1.4898vw;
+    line-height: 1.8187vw;
+    margin-bottom: 0.4069vw;
   }
   .height-description {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
   }
   .load-height_description {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
   }
   .delivery-container {
-    margin-bottom: 6.8vw;
+    margin-bottom: 2.21vw;
   }
   .delivery-title {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
   }
   .delivery-city {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
   }
   .delivery-description {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
-    padding-top: 1.04vw;
+    font-size: 1.3546vw;
+    line-height: 1.6523vw;
+    padding-top: 0.338vw;
   }
   .buy {
-    width: 99.792vw;
-    height: 12.524vw;
-    font-size: 5vw;
-    line-height: 6.104vw;
-    border-radius: 1.04vw;
+    width: 32.4324vw;
+    height: 4.0703vw;
+    font-size: 1.625vw;
+    line-height: 1.9838vw;
+    border-radius: 0.338vw;
   }
   .product-img_list {
-    width: 279.759vw;
+    width: 66.3vw;
   }
-  .product-img_item-1 {
-    width: 90vw;
-    height: 90vw;
+  .img {
+    width: 32.3648vw;
+    height: 32.2972vw;
+    margin-bottom: 1.3546vw;
   }
-  .product-img_item-2 {
-    width: 90vw;
-    height: 90vw;
-  }
-  .product-img_item-3 {
-    width: 90vw;
-    height: 90vw;
+  .product-img_list .zoomImg {
+    width: calc(24.896vw * $coefficient * 2) !important;
+    height: calc(24.844vw * $coefficient * 2) !important;
   }
 }
 /*# sourceMappingURL=product.css.map */

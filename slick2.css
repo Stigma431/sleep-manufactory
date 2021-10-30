@@ -562,6 +562,18 @@ li .slick-active {
   margin-left: 0.521vw;
 }
 
+.fa .fa-angle-right {
+  position: absolute;
+  top: 44%;
+  right: 0.521vw;
+}
+
+.fa .fa-angle-left {
+  position: absolute;
+  top: 44%;
+  left: 0.521vw;
+}
+
 .second-slider:hover .slick-arrow {
   opacity: 1;
   -webkit-box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;

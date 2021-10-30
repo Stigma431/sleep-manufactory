@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="zoom-master/jquery.zoom.js"></script>
     <link rel="stylesheet" href="product.css">
     <title>Product для сайта</title>
 </head>
@@ -18,9 +17,11 @@
 
     <div class="product-container">
         <div class="product-characteristics-container">
-            <div class="product-img-container">
-                <div class="product-img"></div>
-            </div>
+            <a class="product-img-container">
+                <span class="zoom zoom-one" id="ex1">
+                    <img src="images/mattress.png" alt="" class="img-one">
+                </span>
+            </a>
             <div class="characteristics-container">
                 <div class="second-page-reviews">
                     <ul>
@@ -88,11 +89,50 @@
             </div>
         </div>
         <div class="product-img_list">
-            <div class="product-img_item-1"></div>
-            <div class="product-img_item-2"></div>
-            <div class="product-img_item-3"></div>
+            <span class="zoom zoom-two" id="ex2">
+                <img src="images/Rectangle10.jpg" alt="" class="img">
+            </span>
+            <span class="zoom zoom-three" id="ex3">
+                <img src="images/Rectangle11.jpg" alt="" class="img">
+            </span>
+            <span class="zoom zoom-four" id="ex4">
+                <img src="images/Rectangle12.jpg" alt="" class="img">
+            </span>
         </div>
     </div>
+    <script>
+        $('#ex1')
+        .zoom({
+            on: 'click'
+        });
+        $('#ex2')
+        .zoom({
+            on: 'click'
+        });
+        $('#ex3')
+        .zoom({
+            on: 'click'
+        });
+        $('#ex4')
+        .zoom({
+            on: 'click'
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.zoom-one').click(function () {
+                $('.img-one').toggleClass('product-img_opacity');
+            });
+        });
+        $(function () {
+            $('.zoom').click(function () {
+                $('.zoomImg').toggleClass('zoom-out');
+            });
+            $('.zoom').click(function () {
+                $('.product-img-container').toggleClass('zoom-out');
+            });
+        });
+    </script>
 </body>
 
 </html>
