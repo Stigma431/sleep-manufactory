@@ -166,8 +166,8 @@ body {
   opacity: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 1.3s ease-in-out 0s;
-  transition: opacity 1.3s ease-in-out 0s;
+  -webkit-transition: opacity 500ms ease-in-out 0s;
+  transition: opacity 500ms ease-in-out 0s;
   width: 100%;
   height: 26.354vw;
 }
@@ -179,11 +179,6 @@ body {
 .second-slick-item {
   width: 3.646vw !important;
   height: 2.708vw;
-}
-
-.second-slick-item.item-1 {
-  background: url(images/mattress.svg) no-repeat;
-  background-size: 100%;
 }
 
 .second-slick-item.item-2 {
@@ -199,5 +194,11 @@ body {
 .second-slick-item.item-4 {
   background: url(images/Rectangle12.svg) no-repeat;
   background-size: 100%;
+}
+
+li.slick-active {
+  -webkit-box-shadow: #6d80b4 0px 0px 0px 0.104vw;
+          box-shadow: #6d80b4 0px 0px 0px 0.104vw;
+  border-radius: 0.208vw;
 }
 /*# sourceMappingURL=product-second-modification.css.map */

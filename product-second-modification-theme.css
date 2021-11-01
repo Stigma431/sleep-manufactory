@@ -121,6 +121,7 @@
   margin: 0 5px;
   padding: 0;
   cursor: pointer;
+  border-radius: 0.208vw;
 }
 
 .slick-dots li button {

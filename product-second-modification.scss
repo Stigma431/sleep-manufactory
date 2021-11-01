@@ -133,7 +133,7 @@
     flex-direction: column;
     opacity: 0;
     transform: translateY(0);
-    transition: opacity 1.3s ease-in-out 0s;
+    transition: opacity 500ms ease-in-out 0s;
     width: 100%;
     height: 26.354vw;
 }
@@ -167,4 +167,8 @@
 .second-slick-item.item-4 {
     background: url(images/Rectangle12.svg) no-repeat;
     background-size: 100%;
+}
+
+li.slick-active {
+    box-shadow: rgb(109, 128, 180) 0px 0px 0px 0.104vw;
 }

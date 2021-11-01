@@ -29,7 +29,7 @@
             </section>
 
         </div>
-        
+
     </div>
 
 
@@ -45,6 +45,10 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 variableWidth: true,
+                swipe: false
+            });
+            $('.product-first-slick').on('click', function () {
+                $(this).slick('slickNext');
             });
             $(".lazy").slick({
                 lazyLoad: 'ondemand', // ondemand progressive anticipated
