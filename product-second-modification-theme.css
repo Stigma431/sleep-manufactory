@@ -103,7 +103,7 @@
 }
 
 .slick-dots {
-  position: absolute;
+  margin-top: 0.833vw !important;
   bottom: -3.646vw;
   list-style: none;
   display: block;
