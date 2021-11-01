@@ -183,4 +183,9 @@
 .slick-dots li:nth-child(4) {
   content: url(images/Rectangle12-mini.jpg) !important;
 }
+
+li.slick-active {
+  -webkit-box-shadow: #6d80b4 0px 0px 0px 0.104vw;
+          box-shadow: #6d80b4 0px 0px 0px 0.104vw;
+}
 /*# sourceMappingURL=product-second-modification-theme.css.map */
