@@ -46,13 +46,11 @@ body {
 
 .img-one {
   opacity: 1;
-  width: 38.958vw;
-  height: 18.177vw;
 }
 
 .zoomImg {
-  width: calc(38.958vw * 2) !important;
-  height: calc(18.177vw * 2) !important;
+  width: calc(50.999vw * 2) !important;
+  height: calc(28.281vw * 2) !important;
 }
 
 .product-img_opacity {
@@ -72,7 +70,6 @@ body {
 .product-img-container {
   width: 51vw;
   height: 28.281vw;
-  background-color: #F2F4F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,6 +81,11 @@ body {
           align-items: center;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
+}
+
+.img-one {
+  width: 50.999vw;
+  height: 28.281vw;
 }
 
 .characteristics-container {
@@ -370,10 +372,17 @@ body {
   cursor: zoom-in;
 }
 
+.zoom {
+  margin-bottom: 1.042vw;
+}
+
+.zoom-one {
+  margin-bottom: 0;
+}
+
 .img {
   width: 24.896vw;
   height: 24.844vw;
-  margin-bottom: 1.042vw;
 }
 
 .product-img_list .zoomImg {
@@ -526,10 +535,10 @@ body {
   }
 }
 
-@media all and (max-width: 1366px) {
+@media all and (max-width: 425px) {
   .product-container {
-    width: 99vw;
-    margin-top: 6.5vw;
+    width: 100vw;
+    margin-top: 20vw;
     display: block;
   }
   .zoom-out {
@@ -537,8 +546,8 @@ body {
     cursor: zoom-out !important;
   }
   .img-one {
-    width: 50.6454vw;
-    height: 23.6301vw;
+    width: 155.832vw;
+    height: 72.708vw;
   }
   .zoomImg {
     width: calc(38.958vw * $coefficient * 2) !important;
@@ -548,122 +557,137 @@ body {
     margin-bottom: 4.219vw;
   }
   .product-img-container {
-    width: 66.3vw;
-    height: 36.7653vw;
+    width: 156vw;
+    height: 113.124vw;
   }
   .second-page-reviews ul {
-    padding-right: 1.1505vw;
+    padding-right: 3.54vw;
   }
   .reviews-number {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
   }
   .product-item_title {
-    font-size: 2.8444vw;
-    line-height: 3.471vw;
+    font-size: 8.752vw;
+    line-height: 10.68vw;
   }
   .product-price-container {
-    margin-top: 0.7618vw;
+    margin-top: 2.344vw;
   }
   .product-discount_price {
-    font-size: 1.625vw;
-    line-height: 1.9838vw;
+    font-size: 5vw;
+    line-height: 6.104vw;
   }
   .product-price {
-    font-size: 1.625vw;
-    line-height: 1.9838vw;
-    margin-left: 0.6773vw;
-    margin-right: 1.2194vw;
+    font-size: 5vw;
+    line-height: 6.104vw;
+    margin-left: 2.084vw;
+    margin-right: 3.752vw;
   }
   .product-discount-percent {
-    font-size: 0.9477vw;
-    line-height: 1.157vw;
-    padding: 0.4069vw 1.0153vw;
-    border-radius: 1.0153vw;
-    margin-top: 0.91vw;
+    font-size: 2.916vw;
+    line-height: 3.56vw;
+    padding: 1.252vw 3.124vw;
+    border-radius: 3.124vw;
+    margin-top: 2.8vw;
   }
   .mattress-parameters {
-    margin-top: 0.5421vw;
+    margin-top: 1.668vw;
   }
   .mattress-parameters_title {
-    font-size: 1.4898vw;
-    line-height: 1.8187vw;
-    margin-bottom: 0.6773vw;
+    font-size: 4.584vw;
+    line-height: 5.596vw;
+    margin-bottom: 2.084vw;
   }
   .btn {
-    width: 32.5676vw;
-    height: 4.4005vw;
-    line-height: 1.8187vw;
-    padding-left: 1.8278vw;
-    font-size: 1.4898vw;
+    width: 100.208vw;
+    height: 13.54vw;
+    line-height: 5.596vw;
+    padding-left: 5.624vw;
+    font-size: 4.584vw;
   }
   .dropdown-menu {
-    width: 32.5676vw;
+    width: 100.208vw;
   }
   .dropdown-item {
-    font-size: 1.4898vw;
-    line-height: 1.8187vw;
-    padding-left: 1.8278vw;
+    font-size: 4.584vw;
+    line-height: 5.596vw;
+    padding-left: 5.624vw;
   }
   .mattress-second-parameters {
-    margin-top: 1.4898vw;
-    margin-bottom: 2.1489vw;
+    margin-top: 4.584vw;
+    margin-bottom: 6.612vw;
   }
   .load {
-    padding-right: 1.0829vw;
+    padding-right: 3.332vw;
   }
   .load-title {
-    font-size: 1.4898vw;
-    line-height: 1.8187vw;
-    margin-bottom: 0.4069vw;
+    font-size: 4.584vw;
+    line-height: 5.596vw;
+    margin-bottom: 1.252vw;
   }
   .load-description {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
   }
   .height-title {
-    font-size: 1.4898vw;
-    line-height: 1.8187vw;
-    margin-bottom: 0.4069vw;
+    font-size: 4.584vw;
+    line-height: 5.596vw;
+    margin-bottom: 1.252vw;
   }
   .height-description {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
   }
   .load-height_description {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
   }
   .delivery-container {
-    margin-bottom: 2.21vw;
+    margin-bottom: 6.8vw;
   }
   .delivery-title {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
   }
   .delivery-city {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
   }
   .delivery-description {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
-    padding-top: 0.338vw;
+    font-size: 4.168vw;
+    line-height: 5.084vw;
+    padding-top: 1.04vw;
   }
   .buy {
-    width: 32.4324vw;
-    height: 4.0703vw;
-    font-size: 1.625vw;
-    line-height: 1.9838vw;
-    border-radius: 0.338vw;
+    width: 99.792vw;
+    height: 12.524vw;
+    font-size: 5vw;
+    line-height: 6.104vw;
+    border-radius: 1.04vw;
   }
   .product-img_list {
-    width: 66.3vw;
+    width: 204vw;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .product-img_list .zoomImg {
+    width: 151.168vw !important;
+    height: 151.168vw !important;
+    overflow: inherit;
   }
   .img {
-    width: 32.3648vw;
-    height: 32.2972vw;
-    margin-bottom: 1.3546vw;
+    width: 75.584vw;
+    height: 75.584vw;
+    overflow: hidden;
+  }
+  .zoom {
+    margin-right: 4.816vw;
+    margin-bottom: 4.168vw;
+  }
+  .zoom-one {
+    margin: 0;
   }
   .product-img_list .zoomImg {
     width: calc(24.896vw * $coefficient * 2) !important;
