@@ -59,6 +59,40 @@
       }
     }
 
+    .hamburger {
+      padding: 0 !important;
+      padding-right: 0.990vw !important;
+      
+    }
+
+    .hamburger-box {
+      width: 1.146vw !important;
+      color: #1F316A !important;
+    }
+
+    .hamburger-inner {
+      width: 1.146vw !important;
+      height: 0.104vw;
+      
+    }
+
+    #mmenu-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .hamburger-inner::after {
+      width: 1.146vw !important;
+      height: 0.104vw;
+    }
+
+    .hamburger-inner::before {
+      width: 1.146vw !important;
+      height: 0.104vw;
+      bottom: -0.260vw;
+      
+    }
+
     .nav-menu {
       list-style: none;
       display: flex;
