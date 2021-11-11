@@ -108,6 +108,10 @@ body {
   padding-right: 0.990vw !important;
 }
 
+.header .header-wrapper .mm-navbar_title {
+  display: none !important;
+}
+
 .header .header-wrapper .hamburger-box {
   width: 1.146vw !important;
   color: #1F316A !important;
@@ -411,6 +415,18 @@ body {
 .burger-menu .top-menu > li:hover .submenu,
 .burger-menu .top-menu > li:hover .submenu-standart {
   display: block;
+}
+
+.mm-navbar {
+  height: 2.917vw;
+}
+
+.mm-navbar img {
+  width: 1.823vw;
+  height: 1.823vw;
+  position: absolute;
+  right: 1.042vw;
+  top: 0.3vw;
 }
 
 @media all and (max-width: 1366px) {

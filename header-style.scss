@@ -62,7 +62,11 @@
     .hamburger {
       padding: 0 !important;
       padding-right: 0.990vw !important;
-      
+
+    }
+
+    .mm-navbar_title {
+      display: none !important;
     }
 
     .hamburger-box {
@@ -73,7 +77,7 @@
     .hamburger-inner {
       width: 1.146vw !important;
       height: 0.104vw;
-      
+
     }
 
     #mmenu-icon {
@@ -90,7 +94,7 @@
       width: 1.146vw !important;
       height: 0.104vw;
       bottom: -0.260vw;
-      
+
     }
 
     .nav-menu {
@@ -191,7 +195,7 @@
 
   .shopping-cart img {
     width: 1.04vw;
-   }
+  }
 
   /* Бургер меню меню для мобильных*/
 
@@ -216,9 +220,9 @@
   }
 
   /* добавляем "гамбургер" */
-  .menu-btn > span,
-  .menu-btn > span::before,
-  .menu-btn > span::after {
+  .menu-btn>span,
+  .menu-btn>span::before,
+  .menu-btn>span::after {
     display: block;
     position: absolute;
     width: 1.302vw;
@@ -226,12 +230,12 @@
     background-color: $blue;
   }
 
-  .menu-btn > span::before {
+  .menu-btn>span::before {
     content: '';
     top: -0.313vw;
   }
 
-  .menu-btn > span::after {
+  .menu-btn>span::after {
     content: '';
     top: 0.313vw;
   }
@@ -272,28 +276,28 @@
     background-color: #CFD8DC;
   }
 
-  #menu-toggle:checked ~ .menu-btn > span {
+  #menu-toggle:checked~.menu-btn>span {
     transform: rotate(45deg);
   }
 
-  #menu-toggle:checked ~ .menu-btn > span::before {
+  #menu-toggle:checked~.menu-btn>span::before {
     top: 0;
     transform: rotate(0);
   }
 
-  #menu-toggle:checked ~ .menu-btn > span::after {
+  #menu-toggle:checked~.menu-btn>span::after {
     top: 0;
     transform: rotate(90deg);
   }
 
-  #menu-toggle:checked ~ .top-menu {
+  #menu-toggle:checked~.top-menu {
     visibility: visible;
     left: 0;
   }
 
-  .menu-btn > span,
-  .menu-btn > span::before,
-  .menu-btn > span::after {
+  .menu-btn>span,
+  .menu-btn>span::before,
+  .menu-btn>span::after {
     transition-duration: .25s;
   }
 
@@ -302,11 +306,11 @@
     height: auto !important;
   }
 
-  .top-menu > li {
+  .top-menu>li {
     border-bottom: 0.052vw solid #e5e5e5;
   }
 
-  .top-menu > li > a {
+  .top-menu>li>a {
     padding: 0.938vw;
     transition: 0s;
   }
@@ -319,14 +323,16 @@
     padding: 0;
     background: rgba(0, 0, 0, .02);
   }
+
   .submenu-standart li {
     padding: 0;
   }
+
   .submenu-standart li a {
     padding: 0.625vw 0.938vw;
   }
 
-  .submenu > li {
+  .submenu>li {
     border-right: none;
     border-bottom: 0.052vw solid #e5e5e5;
     padding: 0.938vw;
@@ -344,11 +350,24 @@
     border-bottom: none
   }
 
-  .top-menu > li:hover .submenu,
-  .top-menu > li:hover .submenu-standart {
+  .top-menu>li:hover .submenu,
+  .top-menu>li:hover .submenu-standart {
     display: block;
   }
 
+  
+}
+
+.mm-navbar {
+  height: 2.917vw;
+}
+
+.mm-navbar img {
+  width: 1.823vw;
+  height: 1.823vw;
+  position: absolute;
+  right: 1.042vw;
+  top: 0.3vw;
 }
 
 @media all and (max-width: 1366px) {
@@ -461,6 +480,7 @@
       }
     }
   }
+
 }
 
 @media all and (max-width: 415px) {
@@ -584,7 +604,5 @@
   }
 
 
-  .burger-menu {
-
-  }
+  .burger-menu {}
 }

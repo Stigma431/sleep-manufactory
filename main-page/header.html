@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mmenu-js-master/dist/mmenu.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="mmenu-js-master/dist/mmenu.css">
+    <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+    <link rel="stylesheet" href="header-style.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="header-logo_burger">
+                <a href="#menu" id="mmenu-icon" class="hamburger hamburger--spin">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/work">Our work</a></li>
+                        <li><span>About us</span>
+                            <ul>
+                                <li><a href="/about/history">History</a></li>
+                                <li><span>The team</span>
+                                    <ul>
+                                        <li><a href="/about/team/management">Management</a></li>
+                                        <li><a href="/about/team/sales">Sales</a></li>
+                                        <li><a href="/about/team/development">Development</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Services</span>
+                            <ul>
+                                <li><a href="/services/design">Design</a></li>
+                                <li><a href="/services/development">Development</a></li>
+                                <li><a href="/services/marketing">Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header_main-nav">
+                <ul class="nav-menu">
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link1" href="#">Матрасы</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Беспружинные матрасы</a></li>
+                            <li><a href="#">Зависимые матрасы</a></li>
+                            <li><a href="#">Пружинные матрасы</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link2" href="#">Топперы</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link3" href="#">Боксы кровати</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link4" href="#">Ортопедические основания</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="deactive" href="#">О компании</a>
+
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link5" href="#">Доставка и оплата</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="deactive" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!---<script src="js/header_main-menu.js"></script>
+                Изменение цвета меню--->
+            <div class="header-right">
+                <div class="map">
+                    <a href="#" class="header-right_link"><img class="map-icon" src="images/map.svg" alt=""></a>
+                    <a class="map-name" href="#">Москва</a>
+                    <a href="#"><img class="shopping-cart" src="images/Vector.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.0/jquery.mmenu.all.js"></script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new Mmenu("#menu", {
+                    "extensions": [
+                        "pagedim-black",
+                        "position-front"
+
+                    ],
+                    "counters": true,
+                    "navbars": [{
+                            "position": "top",
+                            "content": [
+                                "searchfield"
+                            ]
+                        },
+                        {
+                            "position": "top",
+                            "content": [
+                                "prev",
+                                "title"
+                            ]
+                        },
+                        {
+                            "position": "bottom",
+                            "content": [
+                                "<a class='fa fa-envelope' href='#/'></a>",
+                                "<a class='fa fa-twitter' href='#/'></a>",
+                                "<a class='fa fa-facebook' href='#/'></a>"
+                            ]
+                        }
+                    ]
+
+                });
+                const api = menu.API;
+
+                api.bind('open:finish', function () {
+                    $('.hamburger').addClass('is-active');
+                });
+                api.bind('close:finish', function () {
+                    $('.hamburger').removeClass('is-active');
+                });
+            }
+
+        );
+    </script>
+</body>
+
+</html>

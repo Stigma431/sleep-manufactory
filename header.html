@@ -25,28 +25,19 @@
                 </a>
                 <nav id="menu">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/work">Our work</a></li>
-                        <li><span>About us</span>
+                        <li><span>Матрасы</span>
                             <ul>
-                                <li><a href="/about/history">History</a></li>
-                                <li><span>The team</span>
-                                    <ul>
-                                        <li><a href="/about/team/management">Management</a></li>
-                                        <li><a href="/about/team/sales">Sales</a></li>
-                                        <li><a href="/about/team/development">Development</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="/about/history">Беспружинные матрасы</a></li>
+                                <li><a href="/about/history">Зависимые матрасы</a></li>
+                                <li><a href="/about/history">Пружинные матрасы</a></li>
                             </ul>
                         </li>
-                        <li><span>Services</span>
-                            <ul>
-                                <li><a href="/services/design">Design</a></li>
-                                <li><a href="/services/development">Development</a></li>
-                                <li><a href="/services/marketing">Marketing</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><span>Топперы</span></li>
+                        <li><span>Боксы кровати</span></li>
+                        <li><span>Ортопедические основания</span></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
                 <a href="#" class="logo">
@@ -83,7 +74,6 @@
                     </li>
                     <li class="nav">
                         <a class="deactive" href="#">О компании</a>
-
                     </li>
                     <li class="nav">
                         <a class="nav-links" id="nav-link5" href="#">Доставка и оплата</a>
@@ -120,21 +110,13 @@
                     "extensions": [
                         "pagedim-black",
                         "position-front"
-
                     ],
                     "counters": true,
                     "navbars": [{
                             "position": "top",
                             "content": [
-                                "searchfield"
-
-                            ]
-                        },
-                        {
-                            "position": "top",
-                            "content": [
-                                "prev",
-                                "title"
+                                "close",
+                                "<img src='images/Vector.svg'>"
                             ]
                         },
                         {
@@ -144,18 +126,11 @@
                                 "<a class='fa fa-twitter' href='#/'></a>",
                                 "<a class='fa fa-facebook' href='#/'></a>"
                             ]
-                        }
+                        },
                     ]
 
                 });
-                const api = menu.API;
 
-                api.bind('open:finish', function () {
-                    $('.hamburger').addClass('is-active');
-                });
-                api.bind('close:finish', function () {
-                    $('.hamburger').removeClass('is-active');
-                });
             }
 
         );
