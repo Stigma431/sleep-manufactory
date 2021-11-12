@@ -435,6 +435,10 @@
     margin: 0
 }
 
+#mm-2 .mm-listview {
+    margin-top: 1.042vw;
+}
+
 .mm-listitem {
     color: rgba(0, 0, 0, .75);
     border-color: rgba(0, 0, 0, .1);
@@ -462,6 +466,30 @@
     left: 20px;
     right: 0;
     bottom: 0
+}
+
+#mm-2 .mm-listitem:after {
+    content: none;
+}
+
+#mm-3 .mm-listitem:after {
+    content: none;
+}
+
+#mm-4 .mm-listitem:after {
+    content: none;
+}
+
+#mm-5 .mm-listitem:after {
+    content: none;
+}
+
+#mm-6 .mm-listitem:after {
+    content: none;
+}
+
+#mm-7 .mm-listitem:after {
+    content: none;
 }
 
 .mm-listitem a,
@@ -496,6 +524,28 @@
     font-size: 1.250vw;
     flex-basis: 10%;
     color: rgb(30, 48, 110) !important;
+    transition: padding-left 0.15s ease-in 0s;
+}
+
+#mm-2 .mm-listitem__text {
+    font-weight: 400;
+    font-size: 0.938vw;
+    line-height: 1;
+    letter-spacing: 0.031vw;
+    color: rgb(21, 21, 21) !important;
+    display: flex;
+}
+
+#mm-2 .mm-listitem__text:hover {
+    color: rgb(30, 48, 110) !important;
+}
+
+.mm-listitem__text:hover {
+    padding-left: 0.833vw;
+}
+
+#mm-2 .mm-listitem__text:last-child a:hover {
+    padding-left: 0vw;
 }
 
 .mm-listitem__btn {

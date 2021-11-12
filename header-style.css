@@ -427,6 +427,90 @@ body {
   position: absolute;
   right: 1.042vw;
   top: 0.3vw;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discount-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0.156vw 0.417vw;
+  margin-left: 0.417vw;
+  background-color: #00706e;
+  border-radius: 0.521vw;
+  color: white;
+}
+
+.discount-menu span {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.521vw;
+  line-height: 1;
+  letter-spacing: 0.052vw;
+}
+
+.menu-link-button {
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  font-size: 0.938vw;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.208vw;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+  transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-style: normal;
+  color: white !important;
+  background: #1e306e;
+  line-height: 1.250vw;
+  margin-top: 1vw;
+  margin-left: 0.521vw;
+  padding: 0.625vw 1.250vw;
+}
+
+.menu-link-button:hover {
+  background: #526699;
+}
+
+.menu-image-title {
+  color: #1e306e;
+  font-size: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1;
+  margin-left: 0.521vw;
+  margin-top: 1.042vw;
+  margin-bottom: 0.521vw;
+}
+
+.menu-image {
+  margin-left: 0.521vw;
+}
+
+#mm-2 a img {
+  width: 17.031vw;
+  height: 10.521vw;
+  background-size: 100%;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1366px) {
@@ -508,6 +592,165 @@ body {
   .header .header-wrapper .header-right .map .shopping-cart img {
     width: 1.3132vw;
     height: 1.1438vw;
+  }
+  .discount-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0.2184vw 0.5838vw;
+    margin-left: 0.5838vw;
+    background-color: #00706e;
+    border-radius: 0.7294vw;
+    color: white;
+  }
+  .discount-menu span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.7294vw;
+    line-height: 1;
+    letter-spacing: 0.0728vw;
+  }
+  .menu-link-button {
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    font-size: 1.3132vw;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.2912vw;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    font-style: normal;
+    color: white !important;
+    background: #1e306e;
+    line-height: 1.75vw;
+    margin-top: 1.4vw;
+    margin-left: 0.7294vw;
+    padding: 0.875vw 1.75vw;
+  }
+  .menu-link-button:hover {
+    background: #526699;
+  }
+  .menu-image-title {
+    color: #1e306e;
+    font-size: 2.1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1;
+    margin-left: 0.7294vw;
+    margin-top: 1.4588vw;
+    margin-bottom: 0.7294vw;
+  }
+  .menu-image {
+    margin-left: 0.7294vw;
+  }
+  .mm-navbar__title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #1e306e !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2.1vw;
+    overflow: hidden;
+  }
+  .mm-listitem__text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-weight: 500;
+    padding: 1.3132vw 0.875vw;
+    line-height: 1;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 10%;
+    font-size: 1.75vw;
+    flex-basis: 10%;
+    color: #1e306e !important;
+    -webkit-transition: padding-left 0.15s ease-in 0s;
+    transition: padding-left 0.15s ease-in 0s;
+  }
+  #mm-2 .mm-listview {
+    margin-top: 1.4588vw;
+  }
+  #mm-2 .mm-listitem__text {
+    font-weight: 400;
+    font-size: 1.3132vw;
+    line-height: 1;
+    letter-spacing: 0.0434vw;
+    color: #151515 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #mm-2 .mm-listitem__text:hover {
+    color: #1e306e !important;
+  }
+  .mm-listitem__text:hover {
+    padding-left: 1.1662vw;
+  }
+  #mm-2 .mm-listitem__text:last-child a:hover {
+    padding-left: 0vw;
+  }
+  #mm-2 a img {
+    width: 23.8434vw;
+    height: 14.7294vw;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .mm-navbar img {
+    width: 2.5522vw;
+    height: 2.5522vw;
+    position: absolute;
+    right: 1.4588vw;
+    top: 0.42vw;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .header .header-wrapper .hamburger-box {
+    width: 1.6044vw !important;
+    color: #1F316A !important;
+  }
+  .header .header-wrapper .hamburger-box {
+    width: 1.6044vw !important;
+    color: #1F316A !important;
+  }
+  .header .header-wrapper .hamburger-inner {
+    width: 1.6044vw !important;
+    height: 0.1456vw;
+  }
+  .header .header-wrapper .hamburger-inner::before {
+    width: 1.6044vw !important;
+    height: 0.1456vw;
+    bottom: -0.364vw;
+  }
+  .header .header-wrapper .hamburger-inner::after {
+    width: 1.6044vw !important;
+    height: 0.1456vw;
   }
 }
 
@@ -594,6 +837,161 @@ body {
   .header .header-wrapper .header-right .map .shopping-cart img {
     width: 3.752vw;
     height: 3.268vw;
+  }
+  .discount-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0.624vw 1.668vw;
+    margin-left: 1.668vw;
+    background-color: #00706e;
+    border-radius: 2.084vw;
+    color: white;
+  }
+  .discount-menu span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.084vw;
+    line-height: 1;
+    letter-spacing: 0.208vw;
+  }
+  .menu-link-button {
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    font-size: 3.752vw;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.832vw;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    font-style: normal;
+    color: white !important;
+    background: #1e306e;
+    line-height: 5vw;
+    margin-top: 4vw;
+    margin-left: 2.084vw;
+    padding: 2.5vw 5vw;
+  }
+  .menu-link-button:hover {
+    background: #526699;
+  }
+  .menu-image-title {
+    color: #1e306e;
+    font-size: 6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1;
+    margin-left: 2.084vw;
+    margin-top: 4.168vw;
+    margin-bottom: 2.084vw;
+  }
+  .menu-image {
+    margin-left: 2.084vw;
+  }
+  .mm-navbar__title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #1e306e !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 6vw;
+    overflow: hidden;
+  }
+  .mm-listitem__text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-weight: 500;
+    padding: 3.752vw 2.5vw;
+    line-height: 1;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 10%;
+    font-size: 5vw;
+    flex-basis: 10%;
+    color: #1e306e !important;
+    -webkit-transition: padding-left 0.15s ease-in 0s;
+    transition: padding-left 0.15s ease-in 0s;
+  }
+  #mm-2 .mm-listview {
+    margin-top: 4.168vw;
+  }
+  #mm-2 .mm-listitem__text {
+    font-weight: 400;
+    font-size: 3.752vw;
+    line-height: 1;
+    letter-spacing: 0.124vw;
+    color: #151515 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #mm-2 .mm-listitem__text:hover {
+    color: #1e306e !important;
+  }
+  .mm-listitem__text:hover {
+    padding-left: 3.332vw;
+  }
+  #mm-2 .mm-listitem__text:last-child a:hover {
+    padding-left: 0vw;
+  }
+  #mm-2 a img {
+    width: 68.124vw;
+    height: 42.084vw;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .mm-navbar img {
+    width: 7.292vw;
+    height: 7.292vw;
+    position: absolute;
+    right: 4.168vw;
+    top: 1.2vw;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .header .header-wrapper .hamburger-box {
+    width: 4.584vw !important;
+    color: #1F316A !important;
+  }
+  .header .header-wrapper .hamburger-inner {
+    width: 4.584vw !important;
+    height: 0.416vw;
+  }
+  .header .header-wrapper .hamburger-inner::before {
+    width: 4.584vw !important;
+    height: 0.416vw;
+    bottom: -1.04vw;
+  }
+  .header .header-wrapper .hamburger-inner::after {
+    width: 4.584vw !important;
+    height: 0.416vw;
   }
 }
 /*# sourceMappingURL=header-style.css.map */
