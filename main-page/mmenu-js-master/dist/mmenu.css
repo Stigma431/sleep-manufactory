@@ -8,6 +8,7 @@
  * License: CC-BY-NC-4.0
  * http://creativecommons.org/licenses/by-nc/4.0/
  */
+
 :root {
     --mm-line-height: 20px;
     --mm-listitem-size: 44px;
@@ -253,7 +254,8 @@
     margin: auto;
     position: absolute;
     top: 0;
-    bottom: 0
+    bottom: 0;
+    border-color: rgb(30, 48, 110)
 }
 
 .mm-btn_prev:before {
@@ -278,8 +280,8 @@
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     display: block;
-    width: 5px;
-    height: 5px;
+    width: 9px;
+    height: 9px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -292,13 +294,15 @@
 .mm-btn_close:before {
     border-right: none;
     border-bottom: none;
-    right: 18px
+    right: 12px;
+    border-color: rgb(30, 48, 110);
 }
 
 .mm-btn_close:after {
     border-left: none;
     border-top: none;
-    right: 25px
+    right: 25px;
+    border-color: rgb(30, 48, 110);
 }
 
 [dir=rtl] .mm-btn_next:after {
@@ -392,8 +396,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: rgb(30, 48, 110) !important;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 1.500vw;
     overflow: hidden
 }
 
@@ -405,7 +411,6 @@
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden
 }
 
 .mm-navbar__btn:not(.mm-hidden)+.mm-navbar__title {
@@ -428,6 +433,10 @@
     display: block;
     padding: 0;
     margin: 0
+}
+
+#mm-2 .mm-listview {
+    margin-top: 1.042vw;
 }
 
 .mm-listitem {
@@ -459,6 +468,30 @@
     bottom: 0
 }
 
+#mm-2 .mm-listitem:after {
+    content: none;
+}
+
+#mm-3 .mm-listitem:after {
+    content: none;
+}
+
+#mm-4 .mm-listitem:after {
+    content: none;
+}
+
+#mm-5 .mm-listitem:after {
+    content: none;
+}
+
+#mm-6 .mm-listitem:after {
+    content: none;
+}
+
+#mm-7 .mm-listitem:after {
+    content: none;
+}
+
 .mm-listitem a,
 .mm-listitem a:hover {
     text-decoration: none
@@ -471,7 +504,7 @@
     padding: calc((var(--mm-listitem-size) - var(--mm-line-height))/ 2);
     padding-left: 0;
     padding-right: 0;
-    color: inherit
+    color: rgb(30, 48, 110)
 }
 
 .mm-listitem__text {
@@ -481,11 +514,38 @@
     overflow: hidden;
     padding-left: 20px;
     padding-right: 10px;
+    font-weight: 500;
+    padding: 0.938vw 0.625vw;
+    line-height: 1;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-preferred-size: 10%;
-    flex-basis: 10%
+    font-size: 1.250vw;
+    flex-basis: 10%;
+    color: rgb(30, 48, 110) !important;
+    transition: padding-left 0.15s ease-in 0s;
+}
+
+#mm-2 .mm-listitem__text {
+    font-weight: 400;
+    font-size: 0.938vw;
+    line-height: 1;
+    letter-spacing: 0.031vw;
+    color: rgb(21, 21, 21) !important;
+    display: flex;
+}
+
+#mm-2 .mm-listitem__text:hover {
+    color: rgb(30, 48, 110) !important;
+}
+
+.mm-listitem__text:hover {
+    padding-left: 0.833vw;
+}
+
+#mm-2 .mm-listitem__text:last-child a:hover {
+    padding-left: 0vw;
 }
 
 .mm-listitem__btn {
@@ -1021,12 +1081,12 @@
 }
 
 .mm-counter {
-    color: rgba(0, 0, 0, .3);
+    color: rgb(30, 48, 110);
     display: block;
     padding-left: 20px;
     float: right;
     text-align: right;
-    color: var(--mm-color-text-dimmed)
+
 }
 
 .mm-listitem_nosubitems>.mm-counter {
