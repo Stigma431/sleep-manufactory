@@ -66,7 +66,7 @@ $(document).on('ready', function () {
         slidesToScroll: 1,
         prevArrow: false,
         variableWidth: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: '<i class="fa fa-angle-right">',
         asNavFor: '.first-regular'
