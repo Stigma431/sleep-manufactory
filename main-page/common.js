@@ -87,7 +87,7 @@ $(document).on('ready', function () {
         swipeToSlide: true,
         autoplay: false,
         variableWidth: true,
-        mobileFirst:true,
+        mobileFirst: true,
         autoplay: false,
         autoplaySpeed: 5000,
         nextArrow: '<i class="fa fa-angle-right">',

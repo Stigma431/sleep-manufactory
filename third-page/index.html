@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mmenu-js-master/dist/mmenu.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/slick3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="common.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="mmenu-js-master/dist/mmenu.css">
+    <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="header-logo_burger">
+                <a href="#menu" id="mmenu-icon" class="hamburger hamburger--spin">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><span>Матрасы</span>
+                            <ul>
+                                <li><a href="/about/history">Беспружинные матрасы <div class="discount-menu"><span>15%
+                                                OFF</span></div></a></li>
+                                <li><a href="/about/history">Зависимые матрасы <div class="discount-menu"><span>15%
+                                                OFF</span></div></a></li>
+                                <li><a href="/about/history">Пружинные матрасы <div class="discount-menu"><span>15%
+                                                OFF</span></div></a></li>
+                                <a href="#" class="menu-link-button">Посмотреть все матрасы</a>
+                                <div class="menu-image-title">Оригинальный матрас</div>
+                                <a class="menu-image"><img src="images/000.jpg" alt=""></a>
+                            </ul>
+                        </li>
+                        <li><span>Топперы</span></li>
+                        <li><span>Боксы кровати</span></li>
+                        <li><span>Ортопедические основания</span></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header_main-nav">
+                <ul class="nav-menu">
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link1" href="#">Матрасы</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Беспружинные матрасы</a></li>
+                            <li><a href="#">Зависимые матрасы</a></li>
+                            <li><a href="#">Пружинные матрасы</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link2" href="#">Топперы</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link3" href="#">Боксы кровати</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link4" href="#">Ортопедические основания</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="deactive" href="#">О компании</a>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-links" id="nav-link5" href="#">Доставка и оплата</a>
+                        <ul class="sub-menu">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav">
+                        <a class="deactive" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="map">
+                    <a href="#" class="header-right_link"><img class="map-icon" src="images/map.svg" alt=""></a>
+                    <a class="map-name" href="#">Москва</a>
+                    <a href="#"><img class="shopping-cart" src="images/Vector.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="product-second-modification-container">
+            <section class="product-first-slick">
+                <div class="first-slick_item item-1">
+                    <span class='zoom' id='ex1'>
+                        <img src='images/000.jpg' alt='Descr' class="first-slick_item item-1">
+                    </span>
+                </div>
+                <div class="first-slick_item">
+                    <img src="images/Rectangle10.jpg">
+                </div>
+                <div class="first-slick_item">
+                    <img src="images/Rectangle11.jpg">
+                </div>
+                <div class="first-slick_item">
+                    <img src="images/Rectangle12.jpg">
+                </div>
+            </section>
+            <div class="characteristics-container">
+                <div class="second-page-reviews">
+                    <ul>
+                        <li><img src="images/Star2.svg" alt=""></li>
+                        <li><img src="images/Star2.svg" alt=""></li>
+                        <li><img src="images/Star2.svg" alt=""></li>
+                        <li><img src="images/Star2.svg" alt=""></li>
+                        <li><img src="images/Star5.svg" alt=""></li>
+                    </ul>
+                    <a href="#" class="reviews-number">
+                        (24 отзыва)
+                    </a>
+                </div>
+                <div class="product-item_title">
+                    Sweet Sleep art.96
+                </div>
+                <div class="product-price-container">
+                    <div class="product-discount_price">
+                        18 850 р.
+                    </div>
+                    <div class="product-price">
+                        20 000 р.
+                    </div>
+                    <div class="product-discount-percent">
+                        -15% Скидка
+                    </div>
+                </div>
+                <div class="mattress-parameters">
+                    <div class="mattress-parameters_title">Размеры матраса</div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            800х2000 <span class="dropdown-arrow"><img src="images/arrow1.svg" alt=""></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mattress-second-parameters">
+                    <div class="load-height">
+                        <div class="load">
+                            <div class="load-title">Нагрузка:</div>
+                            <div class="load-description">90 кг</div>
+                        </div>
+                        <div class="height">
+                            <div class="height-title">Высота:</div>
+                            <div class="height-description">22 см</div>
+                        </div>
+                    </div>
+                    <div class="load-height_description">Средняя, ниже средней</div>
+                </div>
+                <div class="delivery-container">
+                    <div class="delivery-title">Доставка до квартиры:</div>
+                    <div class="delivery-city">Москва</div>
+                    <div class="delivery-description">Бесплатно от 20 000 р.</div>
+                </div>
+                <form action="#">
+                    <button type="submit" class="buy">
+                        Добавить в карзину
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="advantages-container">
+            <div class="advantages-items">
+                <div class="advantages-item">
+                    <img src="images/advantages1.svg">
+                    <div class="advantages-title">Поболтай с нами</div>
+                    <div class="advantages-description">Пиши! Наша служба поддержки всегда на связи в чате и готова помочь.
+                        Спрашивай!</div>
+                </div>
+                <div class="advantages-item">
+                    <img src="images/advantages2.svg">
+                    <div class="advantages-title">Гарантия качества</div>
+                    <div class="advantages-description">Оцени качество наших матрасов. У нас самая требовательная оценка
+                        качества. </div>
+                </div>
+                <div class="advantages-item">
+                    <img src="images/advantages3.svg">
+                    <div class="advantages-title">Позвони нам</div>
+                    <div class="advantages-description">Наши специалисты по сну готовы подобрать вам матрас Вашей мечты.
+                        Уточняй у нас все вопросы</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-page-reviews">
+            <div class="product-page-reviews-container">
+                <h1 class="product-page-reviews_title">Посмотрите почему люди любят наши матрасы</h1>
+                <div class="filter-reviews">
+                    <div class="filter-reviews_title">Фильтр отзывов:</div>
+                    <div class="filter-reviews_buttons">
+                        <button class="filter-reviews_button button-one button-active">Комфорт</button>
+                        <button class="filter-reviews_button button-two">Боль в спине</button>
+                        <button class="filter-reviews_button button-three">Пары</button>
+                        <button class="filter-reviews_button button-four">Переход на Манафактуру сна</button>
+                    </div>
+                    <div class="dropdown dropdown-reviews">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-reviews-button" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Комфорт <span class="dropdown-arrow"><i class="fa fa-angle-down"></i></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-reviews" aria-labelledby="dropdownMenuButton1">
+                            <li><button class="dropdown-item dropdown-item-reviews">Боль в спине</button></li>
+                            <li><button class="dropdown-item dropdown-item-reviews">Пары</button></li>
+                            <li><button class="dropdown-item dropdown-item-reviews">Переход на Манафактуру сна</button></li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <section class="reviews-items slider">
+                    <div>
+                        <div class="reviews-item">
+                            <div class="reviews-item_content">
+                                <div class="product-page-reviews_tag">
+                                    <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                    <div class="tag-name-city">
+                                        <div class="name">Костя</div>
+                                        <div class="city">Екатеринбург</div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star4.svg" alt=""></li>
+                                </ul>
+                                <div class="product-page-reviews_content">
+                                    <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                    <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
+                                        матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
+                                        жизнь!
+                                        Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                </div>
+                                <a href="#" class="read-more">Читать полностью...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews-item">
+                            <div class="reviews-item_content">
+                                <div class="product-page-reviews_tag">
+                                    <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                    <div class="tag-name-city">
+                                        <div class="name">Костя</div>
+                                        <div class="city">Екатеринбург</div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star4.svg" alt=""></li>
+                                </ul>
+                                <div class="product-page-reviews_content">
+                                    <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                    <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
+                                        матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
+                                        жизнь!
+                                        Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                </div>
+                                <a href="#" class="read-more">Читать полностью...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews-item">
+                            <div class="reviews-item_content">
+                                <div class="product-page-reviews_tag">
+                                    <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                    <div class="tag-name-city">
+                                        <div class="name">Костя</div>
+                                        <div class="city">Екатеринбург</div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star4.svg" alt=""></li>
+                                </ul>
+                                <div class="product-page-reviews_content">
+                                    <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                    <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
+                                        матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
+                                        жизнь!
+                                        Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                </div>
+                                <a href="#" class="read-more">Читать полностью...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews-item">
+                            <div class="reviews-item_content">
+                                <div class="product-page-reviews_tag">
+                                    <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                    <div class="tag-name-city">
+                                        <div class="name">Костя</div>
+                                        <div class="city">Екатеринбург</div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star4.svg" alt=""></li>
+                                </ul>
+                                <div class="product-page-reviews_content">
+                                    <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                    <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
+                                        матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
+                                        жизнь!
+                                        Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                </div>
+                                <a href="#" class="read-more">Читать полностью...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews-item">
+                            <div class="reviews-item_content">
+                                <div class="product-page-reviews_tag">
+                                    <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                    <div class="tag-name-city">
+                                        <div class="name">Костя</div>
+                                        <div class="city">Екатеринбург</div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star4.svg" alt=""></li>
+                                </ul>
+                                <div class="product-page-reviews_content">
+                                    <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                    <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
+                                        матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
+                                        жизнь!
+                                        Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                </div>
+                                <a href="#" class="read-more">Читать полностью...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews-item">
+                            <div class="reviews-item_content">
+                                <div class="product-page-reviews_tag">
+                                    <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                    <div class="tag-name-city">
+                                        <div class="name">Костя</div>
+                                        <div class="city">Екатеринбург</div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star3.svg" alt=""></li>
+                                    <li><img src="images/Star4.svg" alt=""></li>
+                                </ul>
+                                <div class="product-page-reviews_content">
+                                    <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                    <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
+                                        матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
+                                        жизнь!
+                                        Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                </div>
+                                <a href="#" class="read-more">Читать полностью...</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a href="#" class="read-all_reviews">Читать все отзывы</a>
+            </div>
+        </div>
+        <h1 class="slider-сarousel_name">Построй свою спальню</h1>
+        <section class="slider-сarousel">
+            <div class="slider-carousel_items item-1">
+                <a class="image image-item-1">
+                    <div class="decoration-button">Быстрый просмотр</div>
+                </a>
+                <div class="name">Самая лучшая наволочка</div>
+                <div class="price">Цена: <span>18 395 р.</span></div>
+                <div class="select">
+                    <button class="color one-item-1 one-active"></button>
+                    <button class="color two-item-1"></button>
+                    <button class="color three-item-1"></button>
+                </div>
+            </div>
+            <div class="slider-carousel_items item-2">
+                <a class="image image-item-2">
+                    <div class="decoration-button">Быстрый просмотр</div>
+                </a>
+                <div class="name">Самая лучшая наволочка</div>
+                <div class="price">Цена: <span>18 395 р.</span></div>
+                <div class="select">
+                    <button class="color one-item-2 one-active"></button>
+                    <button class="color two-item-2"></button>
+                    <button class="color three-item-2"></button>
+                </div>
+            </div>
+            <div class="slider-carousel_items item-3">
+                <a class="image image-item-3">
+                    <div class="decoration-button">Быстрый просмотр</div>
+                </a>
+                <div class="name">Самая лучшая наволочка</div>
+                <div class="price">Цена: <span>18 395 р.</span></div>
+                <div class="select">
+                    <button class="color one-item-3 one-active"></button>
+                    <button class="color two-item-3"></button>
+                    <button class="color three-item-3"></button>
+                </div>
+            </div>
+            <div class="slider-carousel_items item-4">
+                <a class="image image-item-4">
+                    <div class="decoration-button">Быстрый просмотр</div>
+                </a>
+                <div class="name">Самая лучшая наволочка</div>
+                <div class="price">Цена: <span>18 395 р.</span></div>
+                <div class="select">
+                    <button class="color one-item-4 one-active"></button>
+                    <button class="color two-item-4"></button>
+                    <button class="color three-item-4"></button>
+                </div>
+            </div>
+            <div class="slider-carousel_items item-5">
+                <a class="image image-item-5">
+                    <div class="decoration-button">Быстрый просмотр</div>
+                </a>
+                <div class="name">Самая лучшая наволочка</div>
+                <div class="price">Цена: <span>18 395 р.</span></div>
+                <div class="select">
+                    <button class="color one-item-5 one-active"></button>
+                    <button class="color two-item-5"></button>
+                    <button class="color three-item-5"></button>
+                </div>
+            </div>
+            <div class="slider-carousel_items item-6">
+                <a class="image image-item-6">
+                    <div class="decoration-button">Быстрый просмотр</div>
+                </a>
+                <div class="name">Самая лучшая наволочка</div>
+                <div class="price">Цена: <span>18 395 р.</span></div>
+                <div class="select">
+                    <button class="color one-item-6 one-active" checked=""></button>
+                    <button class="color two-item-6" checked=""></button>
+                    <button class="color three-item-6" checked=""></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <div class="footer__column-header">Категории</div>
+                        <ul class="footer__menu">
+                            <li><a class="footer__menu-link selected" href="#">
+                                Матрасы</a></li>
+                            <li><a class="footer__menu-link" href="#">
+                                Топеры</a></li>
+                            <li><a class="footer__menu-link" href="#">
+                                Боксы кровати</a></li>
+                            <li><a class="footer__menu-link" href="#">
+                                Ортопедически основания</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column-header">Ресурсы</div>
+                        <ul class="footer__menu">
+                            <li><a class="footer__menu-link selected" href="#">
+                                О компании</a></li>
+                            <li><a class="footer__menu-link" href="#">
+                                Доставка и оплата</a></li>
+                            <li><a class="footer__menu-link" href="#">
+                                Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column-header"></div>
+                        <div class="footer__link"></div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column-header">Контакты</div>
+                        <div class="footer__social">
+                            <a href="#" target="_blank" class="hover">
+                                <img class="first" src="images/icon__whatsapp.svg" alt="Иконка Whatsapp"/>
+                                <img class="second" src="images/icon__whatsapp-active.svg" alt="Иконка Whatsapp"/>
+                            </a>
+                            <a href="#" target="_blank" class="hover">
+                                <img class="first" src="images/facebook.svg" alt="Иконка Facebook"/>
+                                <img class="second" src="images/facebook-active.svg" alt="Иконка Facebook"/>
+                            </a>
+                            <a href="#" target="_blank" class="hover">
+                                <img class="first" src="images/twitter.svg" alt="Иконка Twitter"/>
+                                <img class="second" src="images/twitter-active.svg" alt="Иконка Twitter"/>
+                            </a>
+                            <a href="#" target="_blank" class="hover">
+                                <img class="first" src="images/icon__you.svg" alt="Иконка Youtube"/>
+                                <img class="second" src="images/icon__you-active.svg" alt="Иконка Youtube"/>
+                            </a>
+                            <a href="#" target="_blank" class="hover">
+                                <img class="first" src="images/icon__inst.svg" alt="Иконка Instagram"/>
+                                <img class="second" src="images/icon__inst-active.svg" alt="Иконка Instagram"/>
+                            </a>
+                            <a href="#" target="_blank" class="hover">
+                                <img class="first" src="images/icon__vk.svg" alt="Иконка ВК"/>
+                                <img class="second" src="images/icon__vk-active.svg" alt="Иконка ВК"/>
+                            </a>
+                        </div>
+                        <div class="footer__menu-link">
+                            <a href="tel:+79636998650" class="footer__tel">+7 963 699-86-50</a>
+                        </div>
+                        <div class="footer__menu-link">
+                            <a href="mailto:info@top-matras.shop" class="footer__mail">info@top-matras.shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="footer__row-copyright">
+                    <i class="fa fa-copyright"></i>
+                    <div class="year">2021</div>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
