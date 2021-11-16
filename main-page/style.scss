@@ -3076,10 +3076,10 @@ li .slick-active {
     .second-slider-name {
         font-size: 1.875vw * $coefficient;
         width: 100vw;
+        justify-content: center;
         margin-top: 12vw * $coefficient;
         padding: 0vw 3vw;
         display: flex;
-        justify-content: flex-start;
     }
 
     .slick-slider {}

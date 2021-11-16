@@ -2875,14 +2875,14 @@ li .slick-active {
   .second-slider-name {
     font-size: 7.5vw;
     width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 48vw;
     padding: 0vw 3vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .slick-list {
     margin: 0;
