@@ -809,6 +809,7 @@
 
                 width: 6.042vw * $coefficient;
                 height: 0.990vw * $coefficient;
+                margin-right: 2vw;
 
                 .map {
                     width: 6.042vw * $coefficient;
@@ -976,24 +977,26 @@
     }
 
     .header .header-wrapper .hamburger-box {
-        width: 1.146vw * $coefficient !important;
+        width: 1.5vw * $coefficient !important;
         color: #1F316A !important;
+        height: auto;
     }
 
     .header .header-wrapper .hamburger-inner {
-        width: 1.146vw * $coefficient !important;
+        width: 1.5vw * $coefficient !important;
         height: 0.104vw * $coefficient;
     }
 
     .header .header-wrapper .hamburger-inner::before {
-        width: 1.146vw * $coefficient !important;
+        width: 1.5vw * $coefficient !important;
         height: 0.104vw * $coefficient;
-        bottom: -0.260vw * $coefficient;
+        top: -1.7vw !important;
     }
 
     .header .header-wrapper .hamburger-inner::after {
-        width: 1.146vw * $coefficient !important;
+        width: 1.5vw * $coefficient !important;
         height: 0.104vw * $coefficient;
+        top: 1.7vw;
     }
 
     .burger-menu {}
@@ -2587,6 +2590,8 @@ li .slick-active {
             font-size: 0.938vw;
             color: rgb(30, 48, 110);
             margin-top: 0;
+            display: flex;
+            align-items: center;
         }
 
         .purchase-mobile {
@@ -2653,10 +2658,10 @@ li .slick-active {
     }
 }
 
-.fa {
+.second-regular .fa {
     font-size: 0.938vw;
     margin-left: 0.521vw;
-
+    position: static;
 }
 
 .second-slider:hover .slick-arrow {
@@ -3302,8 +3307,8 @@ li .slick-active {
         }
     }
 
-    .second-slider .fa {
-        font-size: 0.938vw * $coefficient;
+    .second-regular .fa {
+        font-size: 0.938vw * $coefficient !important;
         margin-left: 0.521vw * $coefficient;
 
     }

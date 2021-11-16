@@ -824,6 +824,7 @@ body {
   .header .header-wrapper .header-right {
     width: 24.168vw;
     height: 3.96vw;
+    margin-right: 2vw;
   }
   .header .header-wrapper .header-right .map {
     width: 24.168vw;
@@ -982,21 +983,23 @@ body {
     align-items: center;
   }
   .header .header-wrapper .hamburger-box {
-    width: 4.584vw !important;
+    width: 6vw !important;
     color: #1F316A !important;
+    height: auto;
   }
   .header .header-wrapper .hamburger-inner {
-    width: 4.584vw !important;
+    width: 6vw !important;
     height: 0.416vw;
   }
   .header .header-wrapper .hamburger-inner::before {
-    width: 4.584vw !important;
+    width: 6vw !important;
     height: 0.416vw;
-    bottom: -1.04vw;
+    top: -1.7vw !important;
   }
   .header .header-wrapper .hamburger-inner::after {
-    width: 4.584vw !important;
+    width: 6vw !important;
     height: 0.416vw;
+    top: 1.7vw;
   }
 }
 
@@ -2486,6 +2489,12 @@ li .slick-active {
   font-size: 0.938vw;
   color: #1e306e;
   margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .second-reviews .mobile-decoration-button .purchase-mobile {
@@ -2558,9 +2567,10 @@ li .slick-active {
   text-decoration: line-through;
 }
 
-.fa {
+.second-regular .fa {
   font-size: 0.938vw;
   margin-left: 0.521vw;
+  position: static;
 }
 
 .second-slider:hover .slick-arrow {
@@ -3047,8 +3057,8 @@ li .slick-active {
   .purchase .price {
     font-size: 3.54vw;
   }
-  .second-slider .fa {
-    font-size: 3.752vw;
+  .second-regular .fa {
+    font-size: 3.752vw !important;
     margin-left: 2.084vw;
   }
   .slick-arrow {
