@@ -20,195 +20,771 @@
             <h1 class="product-page-reviews_title">Посмотрите почему люди любят наши матрасы</h1>
             <div class="filter-reviews">
                 <div class="filter-reviews_title">Фильтр отзывов:</div>
-                <div class="filter-reviews_buttons">
-                    <button class="filter-reviews_button button-one button-active">Комфорт</button>
-                    <button class="filter-reviews_button button-two">Боль в спине</button>
-                    <button class="filter-reviews_button button-three">Пары</button>
-                    <button class="filter-reviews_button button-four">Переход на Манафактуру сна</button>
-                </div>
-                <div class="dropdown dropdown-reviews">
-                    <button class="btn btn-secondary dropdown-toggle dropdown-reviews-button" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Комфорт <span class="dropdown-arrow"><i class="fa fa-angle-down"></i></span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-reviews" aria-labelledby="dropdownMenuButton1">
-                        <li><button class="dropdown-item dropdown-item-reviews">Боль в спине</button></li>
-                        <li><button class="dropdown-item dropdown-item-reviews">Пары</button></li>
-                        <li><button class="dropdown-item dropdown-item-reviews">Переход на Манафактуру сна</button></li>
-                    </ul>
-                </div>
-
+                <ul id="myTab" class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#description">Комфорт</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#characteristics">Боль в спине</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#сouples">Пары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#transition">Переход на Манафактуру сна</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills" id="myTab-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Фильтр отзывов:</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#description">Комфорт</a></li>
+                            <li><a class="dropdown-item" href="#characteristics">Боль в спине</a></li>
+                            <li><a class="dropdown-item" href="#сouples">Пары</a></li>
+                            <li><a class="dropdown-item" href="#transition">Переход на Манафактуру сна</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <section class="reviews-items slider">
-                <div>
-                    <div class="reviews-item">
-                        <div class="reviews-item_content">
-                            <div class="product-page-reviews_tag">
-                                <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
-                                <div class="tag-name-city">
-                                    <div class="name">Костя</div>
-                                    <div class="city">Екатеринбург</div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="description">
+                    <section class="reviews-items slider">
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Костя</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star4.svg" alt=""></li>
-                            </ul>
-                            <div class="product-page-reviews_content">
-                                <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
-                                    матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
-                                    жизнь!
-                                    Теперь мне нужно бороться с собакой за место в постели и ...</div>
-                            </div>
-                            <a href="#" class="read-more">Читать полностью...</a>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews-item">
-                        <div class="reviews-item_content">
-                            <div class="product-page-reviews_tag">
-                                <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
-                                <div class="tag-name-city">
-                                    <div class="name">Костя</div>
-                                    <div class="city">Екатеринбург</div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Костя</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star4.svg" alt=""></li>
-                            </ul>
-                            <div class="product-page-reviews_content">
-                                <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
-                                    матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
-                                    жизнь!
-                                    Теперь мне нужно бороться с собакой за место в постели и ...</div>
-                            </div>
-                            <a href="#" class="read-more">Читать полностью...</a>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews-item">
-                        <div class="reviews-item_content">
-                            <div class="product-page-reviews_tag">
-                                <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
-                                <div class="tag-name-city">
-                                    <div class="name">Костя</div>
-                                    <div class="city">Екатеринбург</div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Костя</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star4.svg" alt=""></li>
-                            </ul>
-                            <div class="product-page-reviews_content">
-                                <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
-                                    матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
-                                    жизнь!
-                                    Теперь мне нужно бороться с собакой за место в постели и ...</div>
-                            </div>
-                            <a href="#" class="read-more">Читать полностью...</a>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews-item">
-                        <div class="reviews-item_content">
-                            <div class="product-page-reviews_tag">
-                                <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
-                                <div class="tag-name-city">
-                                    <div class="name">Костя</div>
-                                    <div class="city">Екатеринбург</div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Костя</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star4.svg" alt=""></li>
-                            </ul>
-                            <div class="product-page-reviews_content">
-                                <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
-                                    матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
-                                    жизнь!
-                                    Теперь мне нужно бороться с собакой за место в постели и ...</div>
-                            </div>
-                            <a href="#" class="read-more">Читать полностью...</a>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews-item">
-                        <div class="reviews-item_content">
-                            <div class="product-page-reviews_tag">
-                                <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
-                                <div class="tag-name-city">
-                                    <div class="name">Костя</div>
-                                    <div class="city">Екатеринбург</div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Костя</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star4.svg" alt=""></li>
-                            </ul>
-                            <div class="product-page-reviews_content">
-                                <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
-                                    матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
-                                    жизнь!
-                                    Теперь мне нужно бороться с собакой за место в постели и ...</div>
-                            </div>
-                            <a href="#" class="read-more">Читать полностью...</a>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews-item">
-                        <div class="reviews-item_content">
-                            <div class="product-page-reviews_tag">
-                                <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
-                                <div class="tag-name-city">
-                                    <div class="name">Костя</div>
-                                    <div class="city">Екатеринбург</div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Костя</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star3.svg" alt=""></li>
-                                <li><img src="images/Star4.svg" alt=""></li>
-                            </ul>
-                            <div class="product-page-reviews_content">
-                                <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала несколько
-                                    матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно меняет
-                                    жизнь!
-                                    Теперь мне нужно бороться с собакой за место в постели и ...</div>
-                            </div>
-                            <a href="#" class="read-more">Читать полностью...</a>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
+                <div class="tab-pane fade" id="characteristics">
+                    <section class="reviews-items slider second-page-reviews-slider">
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Ваня</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Ваня</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Ваня</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Ваня</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Ваня</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Ваня</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="сouples">
+                    <section class="reviews-items slider second-page-reviews-slider">
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Рома</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Рома</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Рома</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Рома</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Рома</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Рома</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="transition">
+                    <section class="reviews-items slider">
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Давид</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Давид</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Давид</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Давид</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Давид</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews-item">
+                                <div class="reviews-item_content">
+                                    <div class="product-page-reviews_tag">
+                                        <div class="tag-icon"><img src="images/reviews__icon.svg" alt=""></div>
+                                        <div class="tag-name-city">
+                                            <div class="name">Давид</div>
+                                            <div class="city">Екатеринбург</div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star3.svg" alt=""></li>
+                                        <li><img src="images/Star4.svg" alt=""></li>
+                                    </ul>
+                                    <div class="product-page-reviews_content">
+                                        <div class="reviews-item_title">Идеально подходит для легкого сна</div>
+                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
+                                            несколько
+                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет
+                                            жизнь!
+                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                    </div>
+                                    <a href="#" class="read-more">Читать полностью...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
             <a href="#" class="read-all_reviews">Читать все отзывы</a>
         </div>
     </div>
@@ -241,6 +817,16 @@
                 infinite: true
             });
         });
+    </script>
+    <script>
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+        $('#myTab-2 a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
     </script>
     <script src="js/second-page-reviews.js"></script>
 </body>
