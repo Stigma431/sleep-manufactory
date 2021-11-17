@@ -1112,9 +1112,16 @@ html {
     margin: 0 auto;
     margin-top: 6.5vw;
   }
+  .categories-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .categories-item {
     width: 32.7704vw;
     height: 27.2194vw;
+  }
+  .categories-item:not(:last-child) {
+    margin-bottom: 3vw;
   }
   .categories-content {
     padding-top: 1.4222vw;
@@ -1142,7 +1149,7 @@ html {
 
 @media all and (max-width: 415px) {
   .categories-container {
-    width: 242.595vw;
+    width: 100vw;
     margin: 0 auto;
     margin-top: 15vw;
   }

@@ -1103,6 +1103,7 @@ html {
     }
     
     .categories-items {
+        flex-wrap: wrap;
     }
     
     .categories-item_one {
@@ -1117,6 +1118,10 @@ html {
     .categories-item {
         width: 25.208vw * $coefficient;
         height: 20.938vw * $coefficient;
+    }
+
+    .categories-item:not(:last-child) {
+        margin-bottom: 3vw;
     }
     
     .categories-content {
@@ -1154,7 +1159,7 @@ html {
     $coefficient: 3;
 
     .categories-container {
-        width: 80.865vw * $coefficient;
+        width: 100vw;
         margin: 0 auto;
         margin-top: 5vw * $coefficient;
     }
