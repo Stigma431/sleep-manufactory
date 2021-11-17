@@ -2920,6 +2920,17 @@ img, svg {
   .slick-arrow.slick-hidden {
     display: none;
   }
+  .nav-link {
+    display: block;
+    padding: 0.5421vw 1.0829vw;
+    color: #1F316A;
+    font-weight: 700;
+    font-size: 1.1505vw;
+    line-height: 1.4053vw;
+    text-decoration: none;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  }
 }
 
 @media all and (max-width: 415px) {

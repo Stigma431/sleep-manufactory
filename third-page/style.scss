@@ -3072,6 +3072,16 @@ $slick-opacity-not-active: 0.25 !default;
         display: none;
     }
 
+    .nav-link {
+        display: block;
+        padding: 0.417vw * $coefficient 0.833vw * $coefficient;
+        color: #1F316A;
+        font-weight: 700;
+        font-size: 0.885vw * $coefficient;
+        line-height: 1.081vw * $coefficient;
+        text-decoration: none;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
 }
 
 @media all and (max-width: 415px) {
