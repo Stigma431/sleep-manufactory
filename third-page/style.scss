@@ -1290,11 +1290,12 @@ html {
 
 .form-select {
     display: block;
-    width: 100%;
+    width: 25.052vw;
+    height: 3.385vw;
     padding: .375rem 2.25rem .375rem .75rem;
     -moz-padding-start: calc(0.75rem - 3px);
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.146vw;
+    font-weight: 700;
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
@@ -1307,6 +1308,16 @@ html {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+.form-select:focus {
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+
+.drop-select {
+    width: inherit;
 }
 
 .load-height {
