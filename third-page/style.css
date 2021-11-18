@@ -2702,7 +2702,7 @@ svg {
   color: #FFFFFF;
 }
 
-.fa {
+.reviews-items .fa {
   font-size: 2.083vw !important;
 }
 
@@ -2935,7 +2935,7 @@ svg {
     -webkit-box-shadow: #f2f2f2 0 0.338vw 1.0153vw 0, #f7f7f7 0 0 0 0.0676vw, #f2f2f2 0 0.0676vw 0 0, #fcfcfc 0 0.0676vw 0.2028vw 0;
             box-shadow: #f2f2f2 0 0.338vw 1.0153vw 0, #f7f7f7 0 0 0 0.0676vw, #f2f2f2 0 0.0676vw 0 0, #fcfcfc 0 0.0676vw 0.2028vw 0;
   }
-  .fa {
+  .reviews-items .fa {
     font-size: 2.7079vw !important;
   }
   .fa.fa-angle-left {
@@ -3160,7 +3160,7 @@ svg {
     -webkit-box-shadow: #f2f2f2 0 1.04vw 3.124vw 0, #f7f7f7 0 0 0 0.208vw, #f2f2f2 0 0.208vw 0 0, #fcfcfc 0 0.208vw 0.624vw 0;
             box-shadow: #f2f2f2 0 1.04vw 3.124vw 0, #f7f7f7 0 0 0 0.208vw, #f2f2f2 0 0.208vw 0 0, #fcfcfc 0 0.208vw 0.624vw 0;
   }
-  .fa {
+  .reviews-items .fa {
     font-size: 8.332vw !important;
   }
   .fa.fa-angle-left {
@@ -4436,7 +4436,7 @@ svg {
   .slick-arrow {
     padding: 0.5759vw 1.44612vw;
   }
-  .fa {
+  .slider-carousel .fa {
     font-size: 2.7079vw !important;
   }
   .fa.fa-angle-left {
@@ -4732,7 +4732,7 @@ svg {
     padding: 1.772vw 4.4496vw;
     display: none !important;
   }
-  .fa {
+  .slider-carousel .fa {
     font-size: 8.332vw !important;
   }
   .fa.fa-angle-left {
