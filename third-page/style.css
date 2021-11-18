@@ -1444,11 +1444,13 @@ dl {
   margin-bottom: 0;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 0;
 }
 
-img, svg {
+img,
+svg {
   vertical-align: baseline;
 }
 
@@ -2555,8 +2557,9 @@ img, svg {
 }
 
 .reviews-item:hover {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+  cursor: default;
 }
 
 .reviews-item_content {
@@ -2735,8 +2738,9 @@ img, svg {
 
 #myTab li {
   background-color: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw 0.208vw;
-          box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw 0.208vw;
+  -webkit-box-shadow: #f2f2f2 0px 0.26vw 0.781vw 0px, #f7f7f7 0px 0px 0px 0.052vw, #f2f2f2 0px 0.052vw 0px 0px, #fcfcfc 0px 0.052vw 0.156vw 0px;
+          box-shadow: #f2f2f2 0px 0.26vw 0.781vw 0px, #f7f7f7 0px 0px 0px 0.052vw, #f2f2f2 0px 0.052vw 0px 0px, #fcfcfc 0px 0.052vw 0.156vw 0px;
+  border-radius: 0.208vw;
 }
 
 .nav-link {
@@ -2960,6 +2964,11 @@ img, svg {
   }
   #myTab {
     width: 45.9745vw;
+  }
+  #myTab li {
+    -webkit-box-shadow: #f2f2f2 0px 0.338vw 1.0153vw 0px, #f7f7f7 0px 0px 0px 0.0676vw, #f2f2f2 0px 0.0676vw 0px 0px, #fcfcfc 0px 0.0676vw 0.2028vw 0px;
+            box-shadow: #f2f2f2 0px 0.338vw 1.0153vw 0px, #f7f7f7 0px 0px 0px 0.0676vw, #f2f2f2 0px 0.0676vw 0px 0px, #fcfcfc 0px 0.0676vw 0.2028vw 0px;
+    border-radius: 0.2704vw;
   }
 }
 
@@ -4784,7 +4793,8 @@ footer .footer__social {
   margin-bottom: 0.521vw;
 }
 
-footer .first, footer .second {
+footer .first,
+footer .second {
   border: 0.16vw solid transparent;
   margin: 0;
   padding: 0;
@@ -4846,7 +4856,8 @@ footer .year {
   footer .footer__social {
     margin-bottom: 0.7294vw;
   }
-  footer .first, footer .second {
+  footer .first,
+  footer .second {
     border: 0.224vw solid transparent;
     width: 2.989vw;
     height: 2.989vw;
@@ -4886,7 +4897,8 @@ footer .year {
   footer .footer__social {
     margin-bottom: 2.605vw;
   }
-  footer .first, footer .second {
+  footer .first,
+  footer .second {
     border: 0.8vw solid transparent;
     width: 10.675vw;
     height: 10.675vw;
