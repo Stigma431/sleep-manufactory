@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/slick3.js" type="text/javascript" charset="utf-8"></script>
-    <script src="common.js"></script>
+    <script src="all-settings.js"></script>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="mmenu-js-master/dist/mmenu.css">
@@ -154,17 +154,12 @@
                 </div>
                 <div class="mattress-parameters">
                     <div class="mattress-parameters_title">Размеры матраса</div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            800х2000 <span class="dropdown-arrow"><img src="images/arrow1.svg" alt=""></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Действие</a></li>
-                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-select" aria-label="Пример выбора по умолчанию">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                      </select>
                 </div>
                 <div class="mattress-second-parameters">
                     <div class="load-height">
