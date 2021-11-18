@@ -2548,6 +2548,15 @@ img, svg {
   border-radius: 0.260vw;
   margin-top: 2.500vw;
   margin-bottom: 2.813vw;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.reviews-item:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 
 .reviews-item_content {

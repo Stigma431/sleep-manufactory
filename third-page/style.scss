@@ -2651,6 +2651,11 @@ $slick-opacity-not-active: 0.25 !default;
     border-radius: 0.260vw;
     margin-top: 2.500vw;
     margin-bottom: 2.813vw;
+    transition: transform 500ms;
+}
+
+.reviews-item:hover {
+    transform: translateY(-5%);
 }
 
 .reviews-item_content {
