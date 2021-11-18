@@ -2439,7 +2439,7 @@ img, svg {
 
 .product-page-reviews {
   width: 100vw;
-  color: #F2F4F3;
+  background-color: #F2F4F3;
 }
 
 .product-page-reviews-container {
@@ -2467,6 +2467,7 @@ img, svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2.500vw;
 }
 
 .filter-reviews_title {
@@ -2486,7 +2487,6 @@ img, svg {
           justify-content: space-between;
   width: 35.365vw;
   margin: 0 auto;
-  margin-bottom: 2.500vw;
 }
 
 .dropdown-reviews {
@@ -2541,10 +2541,13 @@ img, svg {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 24.619vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0.208vw 0.208vw;
-          box-shadow: rgba(0, 0, 0, 0.25) 0 0.208vw 0.208vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0.208vw 0.208vw 0.208vw 0.208vw;
+          box-shadow: rgba(0, 0, 0, 0.25) 0.208vw 0.208vw 0.208vw 0.208vw;
   background-color: #FFFFFF;
   margin-right: 0 !important;
+  border-radius: 0.260vw;
+  margin-top: 2.500vw;
+  margin-bottom: 2.813vw;
 }
 
 .reviews-item_content {
@@ -2621,7 +2624,7 @@ img, svg {
   line-height: 1.017vw;
   width: 21.243vw;
   color: #504C4C;
-  margin-bottom: 1.167vw;
+  margin-bottom: 4.010vw;
 }
 
 .read-more {
@@ -2849,8 +2852,10 @@ img, svg {
   }
   .reviews-item {
     width: 32.0047vw;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0.2704vw 0.2704vw;
-            box-shadow: rgba(0, 0, 0, 0.25) 0 0.2704vw 0.2704vw;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0.2704vw 0.2704vw 0.2704vw 0.2704vw;
+            box-shadow: rgba(0, 0, 0, 0.25) 0.2704vw 0.2704vw 0.2704vw 0.2704vw;
+    margin-top: 3.25vw;
+    margin-bottom: 3.6569vw;
   }
   .reviews-item_content {
     padding: 1.4898vw 0 1.9955vw 2.1554vw;
@@ -2878,7 +2883,7 @@ img, svg {
     font-size: 1.0829vw;
     line-height: 1.3221vw;
     width: 27.6159vw;
-    margin-bottom: 1.5171vw;
+    margin-bottom: 5.213vw;
   }
   .read-more {
     font-size: 1.0829vw;
@@ -3063,8 +3068,10 @@ img, svg {
   }
   .reviews-item {
     width: 100vw;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0.832vw 0.832vw;
-            box-shadow: rgba(0, 0, 0, 0.25) 0 0.832vw 0.832vw;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0.832vw 0.832vw 0.832vw 0.832vw;
+            box-shadow: rgba(0, 0, 0, 0.25) 0.832vw 0.832vw 0.832vw 0.832vw;
+    margin-top: 10vw;
+    margin-bottom: 11.252vw;
   }
   .reviews-item_content {
     padding: 4.584vw 0 6.14vw 6.632vw;
@@ -3092,7 +3099,7 @@ img, svg {
     font-size: 3.332vw;
     line-height: 4.068vw;
     width: 84.972vw;
-    margin-bottom: 4.668vw;
+    margin-bottom: 16.04vw;
   }
   .read-more {
     font-size: 3.332vw;
@@ -3518,6 +3525,7 @@ img, svg {
   color: #1F316A;
   margin-bottom: 4.629vw;
   text-align: center;
+  margin-top: 6.094vw;
 }
 
 .slider-carousel_items {
