@@ -2655,7 +2655,7 @@ $slick-opacity-not-active: 0.25 !default;
     display: flex;
     flex-direction: column;
     width: 24.619vw;
-    box-shadow: rgba(0, 0, 0, 0.25) 0.208vw 0.208vw 0.208vw 0.208vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw 0.208vw;
     background-color: #FFFFFF;
     margin-right: 0 !important;
     border-radius: 0.260vw;
@@ -2821,10 +2821,10 @@ $slick-opacity-not-active: 0.25 !default;
 
 #myTab li {
     background-color: white;
-    box-shadow: rgb(242, 242, 242) 0px 0.260vw 0.781vw 0px,
-        rgb(247, 247, 247) 0px 0px 0px 0.052vw,
-        rgb(242, 242, 242) 0px 0.052vw 0px 0px,
-        rgb(252, 252, 252) 0px 0.052vw 0.156vw 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw 0.781vw 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw, 
+    rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
+    rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
     border-radius: 0.208vw;
 }
 
@@ -3007,7 +3007,7 @@ $slick-opacity-not-active: 0.25 !default;
 
     .reviews-item {
         width: 24.619vw * $coefficient;
-        box-shadow: rgba(0, 0, 0, 0.25) 0.208vw * $coefficient 0.208vw * $coefficient 0.208vw * $coefficient 0.208vw * $coefficient;
+        box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw * $coefficient 0.208vw * $coefficient;
         margin-top: 2.500vw * $coefficient;
         margin-bottom: 2.813vw * $coefficient;
     }
@@ -3123,10 +3123,10 @@ $slick-opacity-not-active: 0.25 !default;
     }
 
     #myTab li {
-        box-shadow: rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
-            rgb(247, 247, 247) 0px 0px 0px 0.052vw * $coefficient,
-            rgb(242, 242, 242) 0px 0.052vw * $coefficient 0px 0px,
-            rgb(252, 252, 252) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient, 
+    rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+    rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
         border-radius: 0.208vw * $coefficient;
     }
 }
@@ -3312,7 +3312,7 @@ $slick-opacity-not-active: 0.25 !default;
 
     .reviews-item {
         width: 25vw * $coefficient;
-        box-shadow: rgba(0, 0, 0, 0.25) 0.208vw * $coefficient 0.208vw * $coefficient 0.208vw * $coefficient 0.208vw * $coefficient;
+        box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw * $coefficient 0.208vw * $coefficient;
         margin-top: 2.500vw * $coefficient;
         margin-bottom: 2.813vw * $coefficient;
     }

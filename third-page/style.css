@@ -2543,8 +2543,8 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 24.619vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0.208vw 0.208vw 0.208vw 0.208vw;
-          box-shadow: rgba(0, 0, 0, 0.25) 0.208vw 0.208vw 0.208vw 0.208vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw 0.208vw;
+          box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw 0.208vw;
   background-color: #FFFFFF;
   margin-right: 0 !important;
   border-radius: 0.260vw;
@@ -2738,8 +2738,8 @@ svg {
 
 #myTab li {
   background-color: white;
-  -webkit-box-shadow: #f2f2f2 0px 0.26vw 0.781vw 0px, #f7f7f7 0px 0px 0px 0.052vw, #f2f2f2 0px 0.052vw 0px 0px, #fcfcfc 0px 0.052vw 0.156vw 0px;
-          box-shadow: #f2f2f2 0px 0.26vw 0.781vw 0px, #f7f7f7 0px 0px 0px 0.052vw, #f2f2f2 0px 0.052vw 0px 0px, #fcfcfc 0px 0.052vw 0.156vw 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0.26vw 0.781vw 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw, rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px, rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 0.26vw 0.781vw 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw, rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px, rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
   border-radius: 0.208vw;
 }
 
@@ -2878,8 +2878,8 @@ svg {
   }
   .reviews-item {
     width: 32.0047vw;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0.2704vw 0.2704vw 0.2704vw 0.2704vw;
-            box-shadow: rgba(0, 0, 0, 0.25) 0.2704vw 0.2704vw 0.2704vw 0.2704vw;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.2704vw 0.2704vw;
+            box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.2704vw 0.2704vw;
     margin-top: 3.25vw;
     margin-bottom: 3.6569vw;
   }
@@ -2966,8 +2966,8 @@ svg {
     width: 45.9745vw;
   }
   #myTab li {
-    -webkit-box-shadow: #f2f2f2 0px 0.338vw 1.0153vw 0px, #f7f7f7 0px 0px 0px 0.0676vw, #f2f2f2 0px 0.0676vw 0px 0px, #fcfcfc 0px 0.0676vw 0.2028vw 0px;
-            box-shadow: #f2f2f2 0px 0.338vw 1.0153vw 0px, #f7f7f7 0px 0px 0px 0.0676vw, #f2f2f2 0px 0.0676vw 0px 0px, #fcfcfc 0px 0.0676vw 0.2028vw 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0.338vw 1.0153vw 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.0676vw, rgba(0, 0, 0, 0.05) 0px 0.0676vw 0px 0px, rgba(0, 0, 0, 0.01) 0px 0.0676vw 0.2028vw 0px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0.338vw 1.0153vw 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.0676vw, rgba(0, 0, 0, 0.05) 0px 0.0676vw 0px 0px, rgba(0, 0, 0, 0.01) 0px 0.0676vw 0.2028vw 0px;
     border-radius: 0.2704vw;
   }
 }
@@ -3102,8 +3102,8 @@ svg {
   }
   .reviews-item {
     width: 100vw;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0.832vw 0.832vw 0.832vw 0.832vw;
-            box-shadow: rgba(0, 0, 0, 0.25) 0.832vw 0.832vw 0.832vw 0.832vw;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.832vw 0.832vw;
+            box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.832vw 0.832vw;
     margin-top: 10vw;
     margin-bottom: 11.252vw;
   }
