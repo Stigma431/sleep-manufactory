@@ -45,34 +45,6 @@ html {
             display: none !important;
         }
 
-        .hamburger-box {
-            width: 1.146vw !important;
-            color: #1F316A !important;
-        }
-
-        .hamburger-inner {
-            width: 1.146vw !important;
-            height: 0.104vw;
-
-        }
-
-        #mmenu-icon {
-            display: flex;
-            align-items: center;
-        }
-
-        .hamburger-inner::after {
-            width: 1.146vw !important;
-            height: 0.104vw;
-        }
-
-        .hamburger-inner::before {
-            width: 1.146vw !important;
-            height: 0.104vw;
-            bottom: -0.260vw;
-
-        }
-
         .header-right {
 
             width: 6.042vw;
@@ -115,6 +87,34 @@ html {
             }
         }
     }
+}
+
+.hamburger-box {
+    width: 1.146vw;
+    color: #1F316A;
+}
+
+.hamburger-inner {
+    width: 1.146vw;
+    height: 0.104vw;
+
+}
+
+#mmenu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-inner::after {
+    width: 1.146vw ;
+    height: 0.104vw;
+}
+
+.hamburger-inner::before {
+    width: 1.146vw ;
+    height: 0.104vw;
+    bottom: -0.260vw;
+
 }
 
 
@@ -528,29 +528,24 @@ html {
         align-items: center;
     }
 
-    .header .header-wrapper .hamburger-box {
-        width: 1.146vw * $coefficient !important;
-        color: #1F316A !important;
+    .hamburger-box {
+        width: 1.146vw * $coefficient;
+        color: #1F316A;
     }
 
-    .header .header-wrapper .hamburger-box {
-        width: 1.146vw * $coefficient !important;
-        color: #1F316A !important;
-    }
-
-    .header .header-wrapper .hamburger-inner {
-        width: 1.146vw * $coefficient !important;
+    .hamburger-inner {
+        width: 1.146vw * $coefficient;
         height: 0.104vw * $coefficient;
     }
 
-    .header .header-wrapper .hamburger-inner::before {
-        width: 1.146vw * $coefficient !important;
+    .hamburger-inner::before {
+        width: 1.146vw * $coefficient;
         height: 0.104vw * $coefficient;
         bottom: -0.260vw * $coefficient;
     }
 
-    .header .header-wrapper .hamburger-inner::after {
-        width: 1.146vw * $coefficient !important;
+    .hamburger-inner::after {
+        width: 1.146vw * $coefficient;
         height: 0.104vw * $coefficient;
     }
 }
@@ -712,25 +707,25 @@ html {
         align-items: center;
     }
 
-    .header .header-wrapper .hamburger-box {
-        width: 1.5vw * $coefficient !important;
-        color: #1F316A !important;
+    .hamburger-box {
+        width: 1.5vw * $coefficient;
+        color: #1F316A;
         height: auto;
     }
 
-    .header .header-wrapper .hamburger-inner {
-        width: 1.5vw * $coefficient !important;
+    .hamburger-inner {
+        width: 1.5vw * $coefficient;
         height: 0.104vw * $coefficient;
     }
 
-    .header .header-wrapper .hamburger-inner::before {
-        width: 1.5vw * $coefficient !important;
+    .hamburger-inner::before {
+        width: 1.5vw * $coefficient;
         height: 0.104vw * $coefficient;
         top: -1.7vw !important;
     }
 
-    .header .header-wrapper .hamburger-inner::after {
-        width: 1.5vw * $coefficient !important;
+    .hamburger-inner::after {
+        width: 1.5vw * $coefficient;
         height: 0.104vw * $coefficient;
         top: 1.7vw;
     }
