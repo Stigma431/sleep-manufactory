@@ -1507,11 +1507,10 @@ li.slick-active {
 
   .right-item_box {
     display: flex;
-<<<<<<< HEAD:main-page/style.css
     justify-content: space-between;
     width: 80vw; }
     .right-item_box .right-item-1 {
-      background: url(images/Ee3supY6pXE.jpg) no-repeat;
+      background: url(../images/Ee3supY6pXE.jpg) no-repeat;
       width: 39vw;
       height: 37vw;
       background-size: 39vw;
@@ -1522,50 +1521,17 @@ li.slick-active {
       height: 36vw;
       background-size: 39vw; }
     .right-item_box .right-item-3 {
-      background: url(images/VAgFrbHs8GE.jpg) no-repeat;
+      background: url(../images/VAgFrbHs8GE.jpg) no-repeat;
       width: 39vw;
       height: 37vw;
       background-size: 39vw;
       margin-bottom: 3.96vw; }
     .right-item_box .right-item-4 {
-      background: url(images/MBxFqJktrfY.jpg) no-repeat;
+      background: url(../images/MBxFqJktrfY.jpg) no-repeat;
       width: 39vw;
       height: 37vw;
       background-size: 39vw; }
 
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 80vw;
-  }
-  .right-item_box .right-item-1 {
-    background: url(../images/Ee3supY6pXE.jpg) no-repeat;
-    width: 39vw;
-    height: 37vw;
-    background-size: 39vw;
-    margin-bottom: 3.96vw;
-  }
-  .right-item_box .right-item-2 {
-    background: url(images/Cy4kgQ9ChhE.jpg) no-repeat;
-    width: 39vw;
-    height: 36vw;
-    background-size: 39vw;
-  }
-  .right-item_box .right-item-3 {
-    background: url(../images/VAgFrbHs8GE.jpg) no-repeat;
-    width: 39vw;
-    height: 37vw;
-    background-size: 39vw;
-    margin-bottom: 3.96vw;
-  }
-  .right-item_box .right-item-4 {
-    background: url(../images/MBxFqJktrfY.jpg) no-repeat;
-    width: 39vw;
-    height: 37vw;
-    background-size: 39vw;
-  }
->>>>>>> 56e10bbdfba91f1dbc742982af4c14162efd000b:main-page/css/style.css
   .item-content {
     top: 3.088vw; }
     .item-content .item-discount {
@@ -1822,11 +1788,10 @@ li .slick-active {
   transition: opacity 0.3s ease-in-out 0s;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD:main-page/style.css
   opacity: 1; }
   .second-reviews .reviews-image {
     display: block;
-    background: url(images/Rectangle2.jpg) no-repeat;
+    background: url(../images/Rectangle2.jpg) no-repeat;
     width: 18.646vw;
     height: 23.125vw;
     position: relative;
@@ -1887,109 +1852,6 @@ li .slick-active {
         font-size: 0.885vw;
         line-height: 1.081vw;
         text-decoration: line-through; }
-=======
-  opacity: 1;
-}
-
-.second-reviews .reviews-image {
-  display: block;
-  background: url(../images/Rectangle2.jpg) no-repeat;
-  width: 18.646vw;
-  height: 23.125vw;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.second-reviews .reviews-image-content {
-  position: absolute;
-  top: 0.833vw;
-  left: 0.833vw;
-  font-size: 0.625vw;
-  letter-spacing: 0.052vw;
-  color: white;
-  border-radius: 0.625vw;
-  background-color: #00706e;
-  padding: 0.104vw 0.521vw;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.second-reviews .reviews-decoration-button {
-  position: absolute;
-  bottom: 0.833vw;
-  left: 0.833vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  font-size: 0.938vw;
-  padding: 0.521vw 1.250vw 0.625vw;
-  color: white;
-  background: #1e306e;
-  opacity: 0;
-  line-height: 1;
-  border-radius: 1.354vw;
-  -webkit-transition: opacity 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
-  transition: opacity 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
-}
-
-.second-reviews .mobile-decoration-button {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0.417vw 0.833vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #ffebeb;
-  display: none;
-}
-
-.second-reviews .mobile-decoration-button .second-reviews-name-mobile {
-  font-size: 0.938vw;
-  color: #1e306e;
-  margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.second-reviews .mobile-decoration-button .purchase-mobile {
-  color: #000000;
-  font-size: 0.885vw;
-}
-
-.second-reviews .mobile-decoration-button .purchase-mobile .discount-price-mobile {
-  color: #27706D;
-  font-size: 0.885vw;
-  line-height: 1.081vw;
-}
-
-.second-reviews .mobile-decoration-button .purchase-mobile .price-mobile {
-  color: #414141;
-  font-size: 0.885vw;
-  line-height: 1.081vw;
-  text-decoration: line-through;
-}
->>>>>>> 56e10bbdfba91f1dbc742982af4c14162efd000b:main-page/css/style.css
 
 .reviews-decoration-button:hover {
   background: #526699; }
@@ -2779,12 +2641,11 @@ li .slick-active {
 
 .slider-carousel_items {
   display: flex;
-<<<<<<< HEAD:main-page/style.css
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .slider-carousel_items .image {
-    background: url(images/Rectangle3.jpg) no-repeat;
+    background: url(../images/Rectangle3.jpg) no-repeat;
     display: block;
     position: relative;
     background-size: 100%;
@@ -2811,61 +2672,6 @@ li .slick-active {
     width: 100%;
     padding-left: 0.260vw;
     padding-bottom: 0.260vw; }
-=======
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slider-carousel_items .image {
-  background: url(../images/Rectangle3.jpg) no-repeat;
-  display: block;
-  position: relative;
-  background-size: 100%;
-  width: 24.167vw;
-  height: 15.917vw;
-  cursor: pointer;
-}
-
-.slider-carousel_items .name {
-  font-weight: 700;
-  font-size: 0.885vw;
-  line-height: 1.081vw;
-  color: #1F316A;
-}
-
-.slider-carousel_items .price {
-  font-weight: 700;
-  font-size: 0.885vw;
-  line-height: 1.081vw;
-  color: #000000;
-}
-
-.slider-carousel_items .price span {
-  color: #504C4C;
-}
-
-.slider-carousel_items .select {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%;
-  padding-left: 0.260vw;
-  padding-bottom: 0.260vw;
-}
->>>>>>> 56e10bbdfba91f1dbc742982af4c14162efd000b:main-page/css/style.css
 
 .slider-carousel_items .image .decoration-button {
   position: absolute;
