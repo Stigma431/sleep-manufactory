@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-
 html {
   overflow-y: scroll;
 }
@@ -1007,7 +1006,6 @@ html {
   .burger-menu {}
 }
 
-
 .main-slider.slider {
   width: 100% !important;
   margin: 0;
@@ -1198,9 +1196,9 @@ html {
 .main-slider:hover .slick-arrow {
   opacity: 1;
   box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-  rgb(247, 247, 247) 0 0 0 0.052vw,
-  rgb(242, 242, 242) 0 0.052vw 0 0,
-  rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+    rgb(247, 247, 247) 0 0 0 0.052vw,
+    rgb(242, 242, 242) 0 0.052vw 0 0,
+    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
 
@@ -1221,10 +1219,9 @@ html {
 }
 
 
-.fa.fa-angle-right {
-  position: absolute;
+.main-slider .fa.fa.fa-angle-right {
   top: 44%;
-  right: 0.521vw;
+  left: 0.6773vw;
 }
 
 
@@ -1349,9 +1346,9 @@ html {
   }
 
 
-  .fa.fa-angle-right {
+  .main-slider .fa.fa.fa-angle-right {
     top: 44%;
-    right: 0.521vw * $coefficient;
+    left: 0.6773vw * $coefficient;
   }
 
 
@@ -1476,15 +1473,15 @@ html {
     font-size: 2.083vw * $coefficient !important;
   }
 
-  .fa.fa-angle-left {
+  .main-slider .fa.fa-angle-left {
     top: 44%;
     left: 0.521vw * $coefficient;
   }
 
 
-  .main-slider .fa.fa-angle-right {
+  .main-slider .fa.fa.fa-angle-right {
     top: 44%;
-    right: 0.521vw * $coefficient;
+    left: 0.6773vw * $coefficient;
   }
 
 
@@ -1531,7 +1528,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("../../images/ajax-loader.gif") center center no-repeat;
+    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
   }
 }
 
@@ -1540,7 +1537,7 @@ $slick-opacity-not-active: 0.25 !default;
   @font-face {
     font-family: "slick";
     src: slick-font-url("slick.eot");
-    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("../../fonts/slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -2276,7 +2273,6 @@ li .slick-active {
   min-width: 68.958vw;
   justify-content: center;
   margin: 0 auto;
-  align-items: center;
   position: relative;
 
   .background {
@@ -2674,9 +2670,9 @@ li .slick-active {
 .second-slider:hover .slick-arrow {
   opacity: 1;
   box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-  rgb(247, 247, 247) 0 0 0 0.052vw,
-  rgb(242, 242, 242) 0 0.052vw 0 0,
-  rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+    rgb(247, 247, 247) 0 0 0 0.052vw,
+    rgb(242, 242, 242) 0 0.052vw 0 0,
+    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
 .slick-arrow {
@@ -3037,7 +3033,6 @@ li .slick-active {
     padding: 0vw 6vw;
     background-color: #FFF2F2;
     height: 54.216vw * $coefficient;
-    align-items: baseline;
     display: flex;
     flex-direction: column-reverse;
 
@@ -3381,7 +3376,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("../../assets/images/ajax-loader.gif") center center no-repeat;
+    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
   }
 }
 
@@ -3390,7 +3385,7 @@ $slick-opacity-not-active: 0.25 !default;
   @font-face {
     font-family: "slick";
     src: slick-font-url("slick.eot");
-    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("../../fonts/slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -3486,8 +3481,8 @@ $slick-opacity-not-active: 0.25 !default;
 
 .first-regular .slick-dots {
   position: absolute;
-  bottom: -1.5vw;
-  left: 1vw;
+  bottom: 4.87vw;
+  left: 3.8vw;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -4325,9 +4320,9 @@ $slick-opacity-not-active: 0.25 !default;
 .slider-сarousel:hover .slick-arrow {
   opacity: 1;
   box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-  rgb(247, 247, 247) 0 0 0 0.052vw,
-  rgb(242, 242, 242) 0 0.052vw 0 0,
-  rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+    rgb(247, 247, 247) 0 0 0 0.052vw,
+    rgb(242, 242, 242) 0 0.052vw 0 0,
+    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
 
@@ -4738,7 +4733,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: auto;
   }
 
-  .slick-arrow {
+  .slider-carousel .slick-arrow {
     padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
 
   }
@@ -4749,18 +4744,18 @@ $slick-opacity-not-active: 0.25 !default;
   .slick-arrow:hover {}
 
 
-  .fa {
+  .slider-carousel .fa {
     font-size: 2.083vw * $coefficient !important;
   }
 
-  .fa.fa-angle-left {
+  .slider-carousel .fa.fa-angle-left {
     top: 25%;
     left: 0.521vw * $coefficient;
     z-index: 1;
   }
 
 
-  .fa.fa-angle-right {
+  .slider-carousel .fa.fa-angle-right {
 
     top: 25%;
     right: 0.521vw * $coefficient;
@@ -5153,7 +5148,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: auto;
   }
 
-  .slick-arrow {
+  .slider-carousel .slick-arrow {
     padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
     display: none !important;
   }
@@ -5164,19 +5159,18 @@ $slick-opacity-not-active: 0.25 !default;
   .slick-arrow:hover {}
 
 
-  .fa {
+  .slider-carousel .fa {
     font-size: 2.083vw * $coefficient !important;
   }
 
-  .fa.fa-angle-left {
+  .slider-carousel .fa.fa-angle-left {
     top: 25%;
     left: 0.521vw * $coefficient;
     z-index: 1;
   }
 
 
-  .fa.fa-angle-right {
-
+  .slider-carousel .fa.fa-angle-right {
     top: 25%;
     right: 0.521vw * $coefficient;
   }
@@ -5450,9 +5444,9 @@ video {
   color: rgb(21, 21, 21);
   background: rgb(255, 255, 255);
   box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-  rgb(247, 247, 247) 0 0 0 0.052vw,
-  rgb(242, 242, 242) 0 0.052vw 0 0,
-  rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+    rgb(247, 247, 247) 0 0 0 0.052vw,
+    rgb(242, 242, 242) 0 0.052vw 0 0,
+    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
   transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s, box-shadow 0.15s ease-out 0s;
   margin-top: 1.250vw;
 }
@@ -5460,9 +5454,9 @@ video {
 .ready-button .button:hover {
   color: rgb(82, 102, 153);
   box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-  rgb(247, 247, 247) 0 0 0 0.052vw,
-  rgb(230, 230, 230) 0 0.104vw 0.052vw 0,
-  rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+    rgb(247, 247, 247) 0 0 0 0.052vw,
+    rgb(230, 230, 230) 0 0.104vw 0.052vw 0,
+    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
 @media all and (max-width: 1366px) {
@@ -5491,9 +5485,9 @@ video {
     color: rgb(21, 21, 21);
     background: rgb(255, 255, 255);
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
     transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s, box-shadow 0.15s ease-out 0s;
     margin-top: 1.250vw * $coefficient;
   }
@@ -5501,9 +5495,9 @@ video {
   .ready-button .button:hover {
     color: rgb(82, 102, 153);
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 }
 
@@ -5539,14 +5533,14 @@ video {
   .ready-button .button:hover {
     color: rgb(82, 102, 153);
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 }
 
+//categoria-page 
 
-//categories-page-styles
 .categories-container {
   width: 77.865vw;
   margin: 0 auto;
@@ -5603,7 +5597,7 @@ video {
   color: #1F316A;
 }
 
-.categories-container .categories-item .button {
+.categories-container .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5625,7 +5619,7 @@ video {
   cursor: pointer;
 }
 
-.categories-container .categories-item .button:hover {
+.categories-container .button:hover {
   background: #FFFFFF;
   color: rgb(30, 48, 110);
 }
@@ -5673,7 +5667,7 @@ video {
     line-height: 1.780vw * $coefficient;
   }
 
-  .categories-container .categories-item .button {
+  .categories-container .button {
     bottom: 1.510vw * $coefficient;
     left: 1.042vw * $coefficient;
     font-size: 1.406vw * $coefficient;
@@ -5684,7 +5678,7 @@ video {
     height: 2.708vw * $coefficient;
   }
 
-  .button:hover {}
+  .categories-container .button:hover {}
 
 }
 
@@ -5727,7 +5721,7 @@ video {
     line-height: 1.780vw * $coefficient;
   }
 
-  .categories-container .categories-item .button {
+  .categories-container .button {
     bottom: 1.510vw * $coefficient;
     left: 1.042vw * $coefficient;
     font-size: 1.406vw * $coefficient;
@@ -5738,7 +5732,7 @@ video {
     height: 2.708vw * $coefficient;
   }
 
-  .button:hover {}
+  .categories-container .button:hover {}
 
 }
 
@@ -5805,14 +5799,14 @@ video {
 
 }
 
-//product-page-styles
+//product-page
 
-.main.product-page {
+.product-page {
   margin-top: 5.938vw;
   margin-bottom: 6.615vw;
 }
 
-.slick-slider {
+.product-first-slick.slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -6500,22 +6494,10 @@ svg {
     border-radius: 0.260vw * $coefficient;
   }
 
-  .form-select {
-    width: 25.052vw * $coefficient;
-    height: 3.385vw * $coefficient;
-    padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
-    font-size: 1.146vw * $coefficient;
-    background-position: right 0.625vw * $coefficient center;
-    background-size: 0.833vw * $coefficient 0.625vw * $coefficient;
-    border: 0.052vw * $coefficient solid #ced4da;
-    border-radius: 0.208vw * $coefficient;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  }
-
 
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 415px) {
   $coefficient: 4;
 
   .product-first-slick .slick-slider {
@@ -6784,21 +6766,14 @@ svg {
     line-height: 1.526vw * $coefficient;
     border-radius: 0.260vw * $coefficient;
   }
-
-  .form-select {
-    width: 25.052vw * $coefficient;
-    height: 3.385vw * $coefficient;
-    padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
-    font-size: 1.146vw * $coefficient;
-    background-position: right 0.625vw * $coefficient center;
-    background-size: 0.833vw * $coefficient 0.625vw * $coefficient;
-    border: 0.052vw * $coefficient solid #ced4da;
-    border-radius: 0.208vw * $coefficient;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  }
-
-
 }
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
 
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
@@ -6838,7 +6813,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("../../assets/images/ajax-loader.gif") center center no-repeat;
+    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
   }
 }
 
@@ -6847,7 +6822,7 @@ $slick-opacity-not-active: 0.25 !default;
   @font-face {
     font-family: "slick";
     src: slick-font-url("slick.eot");
-    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("../../fonts/slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -7206,7 +7181,7 @@ $slick-opacity-not-active: 0.25 !default;
   }
 }
 
-.slick-slider {
+.reviews-items.slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -7219,6 +7194,7 @@ $slick-opacity-not-active: 0.25 !default;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  width: auto;
 }
 
 .slick-list {
@@ -7310,10 +7286,6 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-arrow.slick-hidden {
   display: none;
-}
-
-.reviews-items.slider {
-  width: auto;
 }
 
 .reviews-items .slick-slide {
@@ -7524,9 +7496,9 @@ $slick-opacity-not-active: 0.25 !default;
 .reviews-items:hover .slick-arrow {
   opacity: 1;
   box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-  rgb(247, 247, 247) 0 0 0 0.052vw,
-  rgb(242, 242, 242) 0 0.052vw 0 0,
-  rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+    rgb(247, 247, 247) 0 0 0 0.052vw,
+    rgb(242, 242, 242) 0 0.052vw 0 0,
+    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
 
@@ -7540,7 +7512,7 @@ $slick-opacity-not-active: 0.25 !default;
   font-size: 2.083vw !important;
 }
 
-.fa.fa-angle-left {
+.reviews-items .fa.fa-angle-left {
   position: absolute;
   top: 44%;
   left: 0.521vw;
@@ -7548,7 +7520,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 
-.fa.fa-angle-right {
+.reviews-items .fa.fa-angle-right {
   position: absolute;
   top: 44%;
   right: 0.521vw;
@@ -7572,9 +7544,9 @@ $slick-opacity-not-active: 0.25 !default;
 #myTab li {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw 0.781vw 0px,
-  rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
-  rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
-  rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
+    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
+    rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
+    rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
   border-radius: 0.208vw;
 }
 
@@ -7827,9 +7799,9 @@ $slick-opacity-not-active: 0.25 !default;
 
   .reviews-items:hover .slick-arrow {
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 
 
@@ -7840,14 +7812,14 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 2.083vw * $coefficient !important;
   }
 
-  .fa.fa-angle-left {
+  .reviews-items .fa.fa-angle-left {
     top: 44%;
     left: 0.521vw * $coefficient;
     z-index: 1;
   }
 
 
-  .fa.fa-angle-right {
+  .reviews-items .fa.fa-angle-right {
     position: absolute;
     top: 44%;
     right: 0.521vw * $coefficient;
@@ -7874,9 +7846,9 @@ $slick-opacity-not-active: 0.25 !default;
 
   #myTab li {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
-    rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
-    rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
     border-radius: 0.208vw * $coefficient;
   }
 }
@@ -8034,7 +8006,7 @@ $slick-opacity-not-active: 0.25 !default;
     border-width: 0px 0px 0.241vw;
   }
 
-  .fa.fa-angle-down {
+  .reviews-items .fa.fa-angle-down {
     font-size: 1.5vw * $coefficient !important;
     vertical-align: middle;
   }
@@ -8133,9 +8105,9 @@ $slick-opacity-not-active: 0.25 !default;
 
   .reviews-items:hover .slick-arrow {
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 
 
@@ -8146,14 +8118,14 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 2.083vw * $coefficient !important;
   }
 
-  .fa.fa-angle-left {
+  .reviews-items .fa.fa-angle-left {
     top: 44%;
     left: 0.521vw * $coefficient;
     z-index: 1;
   }
 
 
-  .fa.fa-angle-right {
+  .reviews-items .fa.fa-angle-right {
     position: absolute;
     top: 44%;
     right: 0.521vw * $coefficient;
@@ -8244,7 +8216,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("../../assets/images/ajax-loader.gif") center center no-repeat;
+    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
   }
 }
 
@@ -8253,7 +8225,7 @@ $slick-opacity-not-active: 0.25 !default;
   @font-face {
     font-family: "slick";
     src: slick-font-url("slick.eot");
-    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("../../fonts/slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
     font-weight: normal;
     font-style: normal;
   }
