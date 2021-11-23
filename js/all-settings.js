@@ -66,8 +66,8 @@ $(document).on('ready', function () {
         slidesToScroll: 1,
         prevArrow: false,
         variableWidth: true,
-        autoplay: false,
-        autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         nextArrow: '<i class="fa fa-angle-right">',
         asNavFor: '.first-regular'
     });
