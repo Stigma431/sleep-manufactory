@@ -34,6 +34,11 @@ html {
       justify-content: space-between;
       margin-top: 0.365vw;
 
+      .logo {
+        width: 12.396vw;
+        height: auto;
+      }
+
       .header__nav {
         position: absolute;
         right: 1.875vw;
@@ -466,6 +471,11 @@ html {
       .header-logo_burger {
         margin-top: 0.365vw * $coefficient;
 
+        .logo {
+          width: 12.396vw * $coefficient;
+          height: auto;
+        }
+
         .header__nav {
           right: 1.875vw * $coefficient;
         }
@@ -738,6 +748,11 @@ html {
 
       .header-logo_burger {
         margin-top: 0.365vw * $coefficient;
+
+        .logo {
+          width: 12.396vw * $coefficient;
+          height: auto;
+        }
 
         .header__nav {
           position: absolute;
