@@ -1011,7 +1011,7 @@ html {
   margin: 0;
 }
 
-.slick-slider {
+.main-slider .slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -1075,7 +1075,6 @@ html {
     visibility: hidden;
   }
 }
-
 
 .slick-slide {
   float: left;
@@ -1181,7 +1180,7 @@ html {
   transition: background-color 500ms, color 500ms;
 }
 
-.slick-arrow {
+.main-slider .slick-arrow {
   margin: 0;
   padding: 0.443vw 1.1124vw;
   color: black;
@@ -1219,9 +1218,10 @@ html {
 }
 
 
-.main-slider .fa.fa.fa-angle-right {
+.main-slider .fa.fa-angle-right {
+  position: absolute;
   top: 44%;
-  left: 0.6773vw;
+  right: 0.6773vw;
 }
 
 
@@ -1346,9 +1346,9 @@ html {
   }
 
 
-  .main-slider .fa.fa.fa-angle-right {
-    top: 44%;
-    left: 0.6773vw * $coefficient;
+  .main-slider .fa.fa-angle-right {
+    top: 44% !important;
+    right: 0.6773vw * $coefficient;
   }
 
 
@@ -1479,9 +1479,9 @@ html {
   }
 
 
-  .main-slider .fa.fa.fa-angle-right {
-    top: 44%;
-    left: 0.6773vw * $coefficient;
+  .main-slider .fa.fa-angle-right {
+    top: 44% !important;
+    right: 0.6773vw * $coefficient;
   }
 
 
@@ -2331,7 +2331,7 @@ li .slick-active {
   color: #1F316A;
 }
 
-.slick-slider {
+.first-regular.slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -2522,6 +2522,7 @@ li .slick-active {
 .second-regular {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 23.542vw !important;
   margin-top: 8.854vw !important;
 }
@@ -2675,7 +2676,20 @@ li .slick-active {
     rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
 }
 
-.slick-arrow {
+.first-regular .slick-arrow {
+  font-size: 2.083vw !important;
+  margin: 0;
+  padding: 0.443vw 1.1124vw;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  opacity: 0;
+  transition: background-color 0.15s ease-out 0s;
+  transition: opacity 0.15s ease-out 0s;
+  border-radius: 50%;
+}
+
+.second-regular .slick-arrow {
   font-size: 2.083vw !important;
   margin: 0;
   padding: 0.443vw 1.1124vw;
@@ -2980,11 +2994,15 @@ li .slick-active {
 
   .second-slider:hover .slick-arrow {}
 
-  .slick-arrow {
+
+  .first-regular .slick-arrow {
     font-size: 2.083vw * $coefficient !important;
     padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
-    border-radius: 50%;
-
+  }
+  
+  .second-regular .slick-arrow {
+    font-size: 2.083vw * $coefficient !important;
+    padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
   }
 
   .slick-arrow:hover {}
@@ -4305,7 +4323,7 @@ $slick-opacity-not-active: 0.25 !default;
   width: auto;
 }
 
-.slick-arrow {
+.slider-сarousel .slick-arrow {
   margin: 0;
   padding: 0.443vw 1.1124vw;
   color: black;
@@ -4326,7 +4344,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 
-.slick-arrow:hover {
+.slider-сarousel .slick-arrow:hover {
   color: rgb(82, 102, 153);
 }
 
@@ -4756,7 +4774,6 @@ $slick-opacity-not-active: 0.25 !default;
 
 
   .slider-carousel .fa.fa-angle-right {
-
     top: 25%;
     right: 0.521vw * $coefficient;
   }
@@ -5944,6 +5961,7 @@ video {
   transition: opacity 500ms ease-in-out 0s;
   width: 100%;
   height: 26.354vw;
+  width: auto;
 }
 
 
@@ -5956,6 +5974,7 @@ video {
 
 .first-slick_item .item-1 {
   width: 48.438vw;
+  width: auto;
 }
 
 .second-slick-item {

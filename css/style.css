@@ -1012,7 +1012,7 @@ html {
   margin: 0;
 }
 
-.slick-slider {
+.main-slider .slick-slider {
   position: relative;
   display: block;
   -webkit-box-sizing: border-box;
@@ -1203,7 +1203,7 @@ html {
   transition: background-color 500ms, color 500ms;
 }
 
-.slick-arrow {
+.main-slider .slick-arrow {
   margin: 0;
   padding: 0.443vw 1.1124vw;
   color: black;
@@ -1238,9 +1238,10 @@ html {
   z-index: 1;
 }
 
-.main-slider .fa.fa.fa-angle-right {
+.main-slider .fa.fa-angle-right {
+  position: absolute;
   top: 44%;
-  left: 0.6773vw;
+  right: 0.6773vw;
 }
 
 .slick-arrow.slick-hidden {
@@ -1310,9 +1311,9 @@ html {
     top: 44%;
     left: 0.6773vw;
   }
-  .main-slider .fa.fa.fa-angle-right {
-    top: 44%;
-    left: 0.88049vw;
+  .main-slider .fa.fa-angle-right {
+    top: 44% !important;
+    right: 0.88049vw;
   }
 }
 
@@ -1384,9 +1385,9 @@ html {
     top: 44%;
     left: 2.084vw;
   }
-  .main-slider .fa.fa.fa-angle-right {
-    top: 44%;
-    left: 2.7092vw;
+  .main-slider .fa.fa-angle-right {
+    top: 44% !important;
+    right: 2.7092vw;
   }
 }
 
@@ -2166,7 +2167,7 @@ li .slick-active {
   color: #1F316A;
 }
 
-.slick-slider {
+.first-regular.slick-slider {
   position: relative;
   display: block;
   -webkit-box-sizing: border-box;
@@ -2395,6 +2396,9 @@ li .slick-active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 23.542vw !important;
   margin-top: 8.854vw !important;
 }
@@ -2582,7 +2586,22 @@ li .slick-active {
           box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;
 }
 
-.slick-arrow {
+.first-regular .slick-arrow {
+  font-size: 2.083vw !important;
+  margin: 0;
+  padding: 0.443vw 1.1124vw;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: background-color 0.15s ease-out 0s;
+  transition: background-color 0.15s ease-out 0s;
+  -webkit-transition: opacity 0.15s ease-out 0s;
+  transition: opacity 0.15s ease-out 0s;
+  border-radius: 50%;
+}
+
+.second-regular .slick-arrow {
   font-size: 2.083vw !important;
   margin: 0;
   padding: 0.443vw 1.1124vw;
@@ -2802,10 +2821,13 @@ li .slick-active {
     font-size: 1.2194vw;
     margin-left: 0.6773vw;
   }
-  .slick-arrow {
+  .first-regular .slick-arrow {
     font-size: 2.7079vw !important;
     padding: 0.5759vw 1.44612vw;
-    border-radius: 50%;
+  }
+  .second-regular .slick-arrow {
+    font-size: 2.7079vw !important;
+    padding: 0.5759vw 1.44612vw;
   }
   .slick-arrow.slick-hidden {
     display: none;
@@ -4064,7 +4086,7 @@ li .slick-active {
   width: auto;
 }
 
-.slick-arrow {
+.slider-сarousel .slick-arrow {
   margin: 0;
   padding: 0.443vw 1.1124vw;
   color: black;
@@ -4084,7 +4106,7 @@ li .slick-active {
           box-shadow: #f2f2f2 0 0.26vw 0.781vw 0, #f7f7f7 0 0 0 0.052vw, #f2f2f2 0 0.052vw 0 0, #fcfcfc 0 0.052vw 0.156vw 0;
 }
 
-.slick-arrow:hover {
+.slider-сarousel .slick-arrow:hover {
   color: #526699;
 }
 
@@ -5447,6 +5469,7 @@ video {
   transition: opacity 500ms ease-in-out 0s;
   width: 100%;
   height: 26.354vw;
+  width: auto;
 }
 
 .first-slick_item .item-1 {
@@ -5456,6 +5479,7 @@ video {
 
 .first-slick_item .item-1 {
   width: 48.438vw;
+  width: auto;
 }
 
 .second-slick-item {
