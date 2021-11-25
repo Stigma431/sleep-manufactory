@@ -44,6 +44,7 @@ html {
 
 .header {
   width: 100vw;
+  height: 2.917vw;
   background: #fff;
   -webkit-box-shadow: 0 0.26vw 1.302vw rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.26vw 1.302vw rgba(0, 0, 0, 0.15);
@@ -51,6 +52,12 @@ html {
   position: relative;
   top: 0;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .header-wrapper {
@@ -124,36 +131,6 @@ html {
 
 .header .header-wrapper .mm-navbar_title {
   display: none !important;
-}
-
-.header .header-wrapper .hamburger-box {
-  width: 1.146vw !important;
-  color: #1F316A !important;
-}
-
-.header .header-wrapper .hamburger-inner {
-  width: 1.146vw !important;
-  height: 0.104vw;
-}
-
-.header .header-wrapper #mmenu-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .header-wrapper .hamburger-inner::after {
-  width: 1.146vw !important;
-  height: 0.104vw;
-}
-
-.header .header-wrapper .hamburger-inner::before {
-  width: 1.146vw !important;
-  height: 0.104vw;
-  bottom: -0.260vw;
 }
 
 .header .header-wrapper .nav-menu {
@@ -527,6 +504,37 @@ html {
   cursor: pointer;
 }
 
+.hamburger-box {
+  width: 1.146vw;
+  color: #1F316A !important;
+}
+
+.hamburger-inner {
+  width: 1.5vw;
+  height: 0.104vw;
+}
+
+#mmenu-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger-inner::after {
+  width: 1.5vw;
+  height: 0.104vw;
+  top: 0.350vw;
+}
+
+.hamburger-inner::before {
+  width: 1.5vw;
+  height: 0.104vw;
+  top: -0.400vw;
+}
+
 @media all and (max-width: 1366px) {
   .container {
     width: 100vw;
@@ -534,6 +542,7 @@ html {
   }
   .header {
     width: 100vw;
+    height: 3.5vw;
     -webkit-box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15);
   }
@@ -542,7 +551,7 @@ html {
     height: 2.917vw;
   }
   .header .header-wrapper .header-logo_burger {
-    margin-top: 0.511vw;
+    margin-top: 0.56vw;
   }
   .header .header-wrapper .header-logo_burger .logo {
     width: 17.3544vw;
@@ -749,32 +758,36 @@ html {
     -ms-flex-align: center;
     align-items: center;
   }
-  .header .header-wrapper .hamburger-box {
-    width: 1.6044vw !important;
+  .hamburger-box {
+    width: 1.6044vw;
+    color: #1F316A;
+  }
+  .hamburger-box {
+    width: 1.6044vw;
     color: #1F316A !important;
+    height: auto;
+    margin-bottom: 0.439vw;
   }
-  .header .header-wrapper .hamburger-box {
-    width: 1.6044vw !important;
-    color: #1F316A !important;
-  }
-  .header .header-wrapper .hamburger-inner {
-    width: 1.6044vw !important;
+  .hamburger-inner {
+    width: 1.6044vw;
     height: 0.1456vw;
   }
-  .header .header-wrapper .hamburger-inner::before {
-    width: 1.6044vw !important;
+  .hamburger-inner::before {
+    width: 1.6044vw;
     height: 0.1456vw;
-    bottom: -0.364vw;
+    top: -0.42vw;
   }
-  .header .header-wrapper .hamburger-inner::after {
-    width: 1.6044vw !important;
+  .hamburger-inner::after {
+    width: 1.6044vw;
     height: 0.1456vw;
+    top: 0.42vw;
   }
 }
 
 @media all and (max-width: 415px) {
   .header {
     width: 100vw;
+    height: 11.668vw;
     -webkit-box-shadow: 0 1.04vw 5.208vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 1.04vw 5.208vw rgba(0, 0, 0, 0.15);
   }
@@ -999,22 +1012,23 @@ html {
     -ms-flex-align: center;
     align-items: center;
   }
-  .header .header-wrapper .hamburger-box {
-    width: 6vw !important;
+  .hamburger-box {
+    width: 6vw;
     color: #1F316A !important;
     height: auto;
+    margin-bottom: 1.446vw;
   }
-  .header .header-wrapper .hamburger-inner {
-    width: 6vw !important;
+  .hamburger-inner {
+    width: 6vw;
     height: 0.416vw;
   }
-  .header .header-wrapper .hamburger-inner::before {
-    width: 6vw !important;
+  .hamburger-inner::before {
+    width: 6vw;
     height: 0.416vw;
-    top: -1.7vw !important;
+    top: -1.7vw;
   }
-  .header .header-wrapper .hamburger-inner::after {
-    width: 6vw !important;
+  .hamburger-inner::after {
+    width: 6vw;
     height: 0.416vw;
     top: 1.7vw;
   }

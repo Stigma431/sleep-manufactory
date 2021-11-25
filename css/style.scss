@@ -11,6 +11,7 @@ html {
 
 .header {
   width: 100vw;
+  height: 2.917vw;
   background: #fff;
   -webkit-box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
@@ -18,6 +19,8 @@ html {
   position: relative;
   top: 0;
   position: fixed;
+  display: flex;
+  align-items: center;
 
   .header-wrapper {
     width: 97.813vw;
@@ -82,33 +85,7 @@ html {
       display: none !important;
     }
 
-    .hamburger-box {
-      width: 1.146vw !important;
-      color: #1F316A !important;
-    }
-
-    .hamburger-inner {
-      width: 1.146vw !important;
-      height: 0.104vw;
-
-    }
-
-    #mmenu-icon {
-      display: flex;
-      align-items: center;
-    }
-
-    .hamburger-inner::after {
-      width: 1.146vw !important;
-      height: 0.104vw;
-    }
-
-    .hamburger-inner::before {
-      width: 1.146vw !important;
-      height: 0.104vw;
-      bottom: -0.260vw;
-
-    }
+    
 
     .nav-menu {
       list-style: none;
@@ -451,6 +428,35 @@ html {
   cursor: pointer;
 }
 
+.hamburger-box {
+  width: 1.146vw;
+  color: #1F316A !important;
+}
+
+.hamburger-inner {
+  width: 1.5vw;
+  height: 0.104vw;
+
+}
+
+#mmenu-icon {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-inner::after {
+  width: 1.5vw;
+  height: 0.104vw;
+  top: 0.350vw;
+}
+
+.hamburger-inner::before {
+  width: 1.5vw;
+  height: 0.104vw;
+  top: -0.400vw;
+
+}
+
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
 
@@ -461,6 +467,7 @@ html {
 
   .header {
     width: 100vw;
+    height: 3.5vw;
     -webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
@@ -469,7 +476,7 @@ html {
       height: 2.917vw;
 
       .header-logo_burger {
-        margin-top: 0.365vw * $coefficient;
+        margin-top: 0.400vw * $coefficient;
 
         .logo {
           width: 12.396vw * $coefficient;
@@ -705,30 +712,33 @@ html {
     align-items: center;
   }
 
-  .header .header-wrapper .hamburger-box {
-    width: 1.146vw * $coefficient !important;
+  .hamburger-box {
+    width: 1.146vw * $coefficient ;
+    color: #1F316A;
+  }
+
+  .hamburger-box {
+    width: 1.146vw * $coefficient;
     color: #1F316A !important;
+    height: auto;
+    margin-bottom: 0.439vw;
   }
 
-  .header .header-wrapper .hamburger-box {
-    width: 1.146vw * $coefficient !important;
-    color: #1F316A !important;
-  }
-
-  .header .header-wrapper .hamburger-inner {
-    width: 1.146vw * $coefficient !important;
+  .hamburger-inner {
+    width: 1.146vw * $coefficient;
     height: 0.104vw * $coefficient;
   }
 
-  .header .header-wrapper .hamburger-inner::before {
-    width: 1.146vw * $coefficient !important;
+  .hamburger-inner::before {
+    width: 1.146vw * $coefficient;
     height: 0.104vw * $coefficient;
-    bottom: -0.260vw * $coefficient;
+    top: -0.3vw * $coefficient;
   }
 
-  .header .header-wrapper .hamburger-inner::after {
-    width: 1.146vw * $coefficient !important;
+  .hamburger-inner::after {
+    width: 1.146vw * $coefficient;
     height: 0.104vw * $coefficient;
+    top: 0.3vw * $coefficient;
   }
 }
 
@@ -737,6 +747,7 @@ html {
 
   .header {
     width: 100vw;
+    height: 2.917vw * $coefficient;
     -webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
@@ -995,25 +1006,26 @@ html {
     align-items: center;
   }
 
-  .header .header-wrapper .hamburger-box {
-    width: 1.5vw * $coefficient !important;
+  .hamburger-box {
+    width: 1.5vw * $coefficient;
     color: #1F316A !important;
     height: auto;
+    margin-bottom: 1.446vw;
   }
 
-  .header .header-wrapper .hamburger-inner {
-    width: 1.5vw * $coefficient !important;
+  .hamburger-inner {
+    width: 1.5vw * $coefficient;
     height: 0.104vw * $coefficient;
   }
 
-  .header .header-wrapper .hamburger-inner::before {
-    width: 1.5vw * $coefficient !important;
+  .hamburger-inner::before {
+    width: 1.5vw * $coefficient;
     height: 0.104vw * $coefficient;
-    top: -1.7vw !important;
+    top: -1.7vw;
   }
 
-  .header .header-wrapper .hamburger-inner::after {
-    width: 1.5vw * $coefficient !important;
+  .hamburger-inner::after {
+    width: 1.5vw * $coefficient;
     height: 0.104vw * $coefficient;
     top: 1.7vw;
   }

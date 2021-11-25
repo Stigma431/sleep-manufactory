@@ -78,12 +78,12 @@ html {
         }
 
         .hamburger-box {
-            width: 1.146vw !important;
+            width: 1.146vw ;
             color: #1F316A !important;
         }
 
         .hamburger-inner {
-            width: 1.146vw !important;
+            width: 1.146vw ;
             height: 0.104vw;
 
         }
@@ -94,12 +94,12 @@ html {
         }
 
         .hamburger-inner::after {
-            width: 1.146vw !important;
+            width: 1.146vw ;
             height: 0.104vw;
         }
 
         .hamburger-inner::before {
-            width: 1.146vw !important;
+            width: 1.146vw;
             height: 0.104vw;
             bottom: -0.260vw;
 
