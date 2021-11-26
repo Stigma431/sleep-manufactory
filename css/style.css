@@ -6602,6 +6602,203 @@ svg {
   }
 }
 
+.materials {
+  margin-top: 5vw;
+  background-color: #F2F4F3;
+}
+
+.materials-main__title {
+  padding-top: 4.792vw;
+  font-size: 1.875vw;
+  font-weight: 700;
+  line-height: 2.292vw;
+  text-align: center;
+  color: #1F316A;
+}
+
+.materials-container {
+  width: 68.958vw;
+  margin: 0 auto;
+}
+
+.materials-items {
+  margin-top: 2.656vw;
+}
+
+.materials-items:last-child {
+  padding-bottom: 4.792vw;
+}
+
+.materials-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.materials-image {
+  width: auto;
+  height: auto;
+  margin-right: 3.040vw;
+}
+
+.materials-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.materials-title {
+  font-size: 2.500vw;
+  font-weight: 400;
+  line-height: 3.750vw;
+  text-align: left;
+  color: #504C4C;
+  margin-bottom: 0.833vw;
+}
+
+.materials-text {
+  font-size: 1.354vw;
+  font-weight: 400;
+  line-height: 2.031vw;
+  text-align: left;
+  color: #999999;
+  margin-bottom: 0.833vw;
+}
+
+.materials-content.materials-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.materials-content.materials-right .materials-image {
+  margin-left: 3.040vw;
+  margin-right: 0;
+}
+
+.materials-content.materials-right .materials-title {
+  text-align: right;
+}
+
+.materials-content.materials-right .materials-text {
+  text-align: right;
+}
+
+@media all and (max-width: 1366px) {
+  .materials {
+    margin-top: 7vw;
+  }
+  .materials-main__title {
+    padding-top: 6.7088vw;
+    font-size: 2.625vw;
+    line-height: 3.2088vw;
+  }
+  .materials-container {
+    width: 96.5412vw;
+  }
+  .materials-items {
+    margin-top: 3.7184vw;
+  }
+  .materials-items:last-child {
+    padding-bottom: 6.7088vw;
+  }
+  .materials-image {
+    width: 16.3786vw;
+    height: 16.0412vw;
+    margin-right: 4.256vw;
+  }
+  .materials-title {
+    font-size: 3.5vw;
+    line-height: 5.25vw;
+    margin-bottom: 1.1662vw;
+  }
+  .materials-text {
+    font-size: 1.8956vw;
+    line-height: 2.8434vw;
+    margin-bottom: 1.1662vw;
+  }
+  .materials-content.materials-right .materials-image {
+    margin-left: 4.256vw;
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .materials {
+    margin-top: 20vw;
+  }
+  .materials-main__title {
+    padding-top: 19.168vw;
+    font-size: 7.5vw;
+    line-height: 9.168vw;
+  }
+  .materials-container {
+    width: 90vw;
+  }
+  .materials-items {
+    margin-top: 10.624vw;
+  }
+  .materials-items:last-child {
+    padding-bottom: 19.168vw;
+  }
+  .materials-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .materials-image {
+    width: 46.796vw;
+    height: 45.832vw;
+    margin-right: 0;
+    margin-bottom: 11.566vw;
+  }
+  .materials-title {
+    font-size: 10vw;
+    line-height: 15vw;
+    margin-bottom: 3.332vw;
+  }
+  .materials-text {
+    font-size: 5.416vw;
+    line-height: 8.124vw;
+    margin-bottom: 3.332vw;
+  }
+  .materials-content.materials-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .materials-content.materials-right .materials-image {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .materials-content.materials-right .materials-title {
+    text-align: left;
+  }
+  .materials-content.materials-right .materials-text {
+    text-align: left;
+  }
+}
+
 .reviews-items.slick-slider {
   position: relative;
   display: block;
