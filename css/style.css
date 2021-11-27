@@ -5986,6 +5986,18 @@ svg {
     margin-top: 1.4898vw;
     margin-bottom: 2.1489vw;
   }
+  .form-select {
+    width: 32.5vw;
+    height: 4.4005vw;
+    padding: 0.4069vw 2.4375vw 0.4069vw 0.8125vw;
+    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    font-size: 1.4898vw;
+    line-height: 1.5;
+    background-position: right 0.8125vw center;
+    background-size: 1.0829vw 0.8125vw;
+    border: 0.0676vw solid #ced4da;
+    border-radius: 0.2704vw;
+  }
   .load {
     padding-right: 1.0829vw;
   }
@@ -6200,6 +6212,18 @@ svg {
   .mattress-second-parameters {
     margin-top: 4.584vw;
     margin-bottom: 6.612vw;
+  }
+  .form-select {
+    width: 100.208vw;
+    height: 13.54vw;
+    padding: 1.252vw 7.5vw 1.252vw 2.5vw;
+    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    font-size: 4.584vw;
+    line-height: 1.5;
+    background-position: right 2.5vw center;
+    background-size: 3.332vw 2.5vw;
+    border: 0.208vw solid #ced4da;
+    border-radius: 0.832vw;
   }
   .load-height {
     -webkit-box-pack: center;

@@ -6477,6 +6477,19 @@ svg {
     margin-bottom: 1.653vw * $coefficient;
   }
 
+  .form-select {
+    width: 25vw * $coefficient;
+    height: 3.385vw * $coefficient;
+    padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
+    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    font-size: 1.146vw * $coefficient;
+    line-height: 1.5;
+    background-position: right 0.625vw * $coefficient center;
+    background-size: 0.833vw * $coefficient 0.625vw * $coefficient;
+    border: 0.052vw * $coefficient solid #ced4da;
+    border-radius: 0.208vw * $coefficient;
+  }
+
   .load-height {}
 
   .load {
@@ -6746,6 +6759,19 @@ svg {
   .mattress-second-parameters {
     margin-top: 1.146vw * $coefficient;
     margin-bottom: 1.653vw * $coefficient;
+  }
+
+  .form-select {
+    width: 25.052vw * $coefficient;
+    height: 3.385vw * $coefficient;
+    padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
+    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    font-size: 1.146vw * $coefficient;
+    line-height: 1.5;
+    background-position: right 0.625vw * $coefficient center;
+    background-size: 0.833vw * $coefficient 0.625vw * $coefficient;
+    border: 0.052vw * $coefficient solid #ced4da;
+    border-radius: 0.208vw * $coefficient;
   }
 
   .load-height {
