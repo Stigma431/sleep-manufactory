@@ -1,0 +1,212 @@
+@import "base-scss.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.product-detail__container {
+    width: 77.708vw;
+    margin: 0 auto;
+    margin-top: 5.104vw;
+}
+
+#product-detail__tab {
+    width: 47.083vw;
+    justify-content: space-between;
+    margin-bottom: 6.042vw;
+}
+
+#product-detail__tab.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1F316A;
+}
+
+#product-detail__tab.nav-pills .nav-link {
+    width: 12.713vw;
+    text-align: center;
+}
+
+#product-detail__tab li {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw 0.781vw 0px,
+        rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
+        rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
+        rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
+    border-radius: 0.208vw;
+}
+
+#product-detail__tab .nav-link {
+    display: block;
+    color: #1F316A;
+    font-weight: 700;
+    font-size: 1.250vw;
+    line-height: 1.526vw;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.product-desc__title {
+    font-size: 1.875vw;
+    line-height: 2.289vw;
+    font-weight: 700;
+    color: #1F316A;
+    text-align: center;
+    margin-bottom: 1.302vw;
+}
+
+.product-desc ul {
+    padding: 0;
+}
+
+.product-desc__name {
+    margin-bottom: 3.229vw;
+}
+
+.product-desc h3 {
+    font-size: 1.875vw;
+    line-height: 2.289vw;
+    font-weight: 700;
+    color: #4F4F4F;
+}
+
+.product-desc ul li:not(:first-child) {
+    list-style-type: disc;
+    margin-left: 1.667vw;
+    font-size: 1.875vw;
+    line-height: 2.289vw;
+    font-weight: 400;
+    color: #4F4F4F;
+    margin-bottom: 1.302vw;
+}
+
+@media all and (max-width: 1366px) {
+    $coefficient: 1.3;
+
+    .product-detail__container {
+        width: 98vw;
+        margin-top: 5.104vw * $coefficient;
+    }
+    
+    #product-detail__tab {
+        width: 47.083vw * $coefficient;
+        margin-bottom: 6.042vw * $coefficient;
+    }
+    
+    #product-detail__tab.nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+    }
+    
+    #product-detail__tab.nav-pills .nav-link {
+        width: 12.713vw * $coefficient;
+        text-align: center;
+    }
+    
+    #product-detail__tab li {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
+            rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+            rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+            rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+        border-radius: 0.208vw * $coefficient;
+    }
+    
+    #product-detail__tab .nav-link {
+        font-size: 1.250vw * $coefficient;
+        line-height: 1.526vw * $coefficient;
+    }
+    
+    .product-desc__title {
+        font-size: 1.875vw * $coefficient;
+        line-height: 2.289vw * $coefficient;
+        margin-bottom: 1.302vw * $coefficient;
+    }
+    
+    .product-desc ul {
+    }
+    
+    .product-desc__name {
+        margin-bottom: 3.229vw * $coefficient;
+    }
+    
+    .product-desc h3 {
+        font-size: 1.875vw * $coefficient;
+        line-height: 2.289vw * $coefficient;
+    }
+    
+    .product-desc ul li:not(:first-child) {
+        margin-left: 1.667vw * $coefficient;
+        font-size: 1.875vw * $coefficient;
+        line-height: 2.289vw * $coefficient;
+        margin-bottom: 1.302vw * $coefficient;
+    }
+    
+}
+
+@media all and (max-width: 415px) {
+    $coefficient: 4;
+
+    .product-detail__container {
+        width: 98vw;
+        margin-top: 5.104vw * $coefficient;
+    }
+    
+    #product-detail__tab {
+        width: 47.083vw * $coefficient;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-bottom: 6.042vw * $coefficient;
+    }
+    
+    #product-detail__tab.nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+    }
+    
+    #product-detail__tab.nav-pills .nav-link {
+        width: 12.713vw * $coefficient;
+        text-align: center;
+    }
+    
+    #product-detail__tab li {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
+            rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+            rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+            rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+        border-radius: 0.208vw * $coefficient;
+    }
+    
+    #product-detail__tab .nav-link {
+        font-size: 1.250vw * $coefficient;
+        line-height: 1.526vw * $coefficient;
+    }
+    
+    .product-desc__title {
+        font-size: 1.875vw * $coefficient;
+        line-height: 2.289vw * $coefficient;
+        margin-bottom: 1.302vw * $coefficient;
+    }
+    
+    .product-desc ul {
+    }
+    
+    .product-desc__name {
+        margin-bottom: 3.229vw * $coefficient;
+    }
+    
+    .product-desc h3 {
+        font-size: 1.875vw * $coefficient;
+        line-height: 2.289vw * $coefficient;
+    }
+    
+    .product-desc ul li:not(:first-child) {
+        margin-left: 1.667vw * $coefficient;
+        font-size: 1.875vw * $coefficient;
+        line-height: 2.289vw * $coefficient;
+        margin-bottom: 1.302vw * $coefficient;
+    }
+    
+}
