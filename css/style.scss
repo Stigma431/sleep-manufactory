@@ -85,7 +85,7 @@ html {
       display: none !important;
     }
 
-    
+
 
     .nav-menu {
       list-style: none;
@@ -177,6 +177,57 @@ html {
       }
     }
   }
+}
+
+.cart-Menu__Title {
+  justify-content: flex-start;
+  margin-top: 0.104vw;
+  margin-left: 0.625vw;
+  margin-bottom: 0;
+  font-size: 1.042vw;
+  text-align: center;
+  color: rgb(30, 48, 110);
+}
+
+.cartMenu_content {
+  padding-right: 1.458vw;
+  padding-left: 1.458vw;
+}
+
+.cartMenu_text {
+  margin-top: 2.083vw;
+  margin-bottom: 1.667vw;
+  font-size: 1.042vw;
+  letter-spacing: 0px;
+  color: rgb(82, 82, 82);
+  text-align: center;
+}
+
+.cartMenu_button {
+  display: inline-block;
+  font-size: 0.938vw;
+  line-height: 1.3;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.208vw;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+  appearance: none;
+  padding: 0.625vw 1.250vw 0.677vw;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(255, 255, 255) !important;
+  background: rgb(30, 48, 110);
+  width: 100%;
+}
+
+.cartMenu_button:hover {
+  background: rgb(82, 102, 153);
+}
+
+#cartMenu .mm-navbar_sticky {
+  display: none;
 }
 
 
@@ -574,6 +625,39 @@ html {
     }
   }
 
+  .cart-Menu__Title {
+    margin-top: 0.104vw * $coefficient;
+    margin-left: 0.625vw * $coefficient;
+    margin-bottom: 0;
+    font-size: 1.042vw * $coefficient;
+  }
+
+  .cartMenu_content {
+    padding-right: 1.458vw * $coefficient;
+    padding-left: 1.458vw * $coefficient;
+  }
+
+  .cartMenu_text {
+    margin-top: 2.083vw * $coefficient;
+    margin-bottom: 1.667vw * $coefficient;
+    font-size: 1.042vw * $coefficient;
+    letter-spacing: 0px;
+  }
+
+  .cartMenu_button {
+    font-size: 0.938vw * $coefficient;
+    line-height: 1.3;
+    border-radius: 0.208vw * $coefficient;
+    transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    padding: 0.625vw * $coefficient 1.250vw * $coefficient 0.677vw * $coefficient;
+    width: 100%;
+  }
+
+  .cartMenu_button:hover {}
+
+  #cartMenu .mm-navbar_sticky {}
+
+
   .discount-menu {
     display: flex;
     -webkit-box-align: center;
@@ -713,7 +797,7 @@ html {
   }
 
   .hamburger-box {
-    width: 1.146vw * $coefficient ;
+    width: 1.146vw * $coefficient;
     color: #1F316A;
   }
 
@@ -868,6 +952,48 @@ html {
       }
     }
   }
+
+  #menu {
+    width: 100vw;
+  }
+
+  #cartMenu {
+    width: 100vw;
+  }
+
+
+  .cart-Menu__Title {
+    margin-top: 0.104vw * $coefficient;
+    margin-left: 0.625vw * $coefficient;
+    margin-bottom: 0;
+    font-size: 1.042vw * $coefficient;
+  }
+
+  .cartMenu_content {
+    padding-right: 1.458vw * $coefficient;
+    padding-left: 1.458vw * $coefficient;
+  }
+
+  .cartMenu_text {
+    margin-top: 2.083vw * $coefficient;
+    margin-bottom: 1.667vw * $coefficient;
+    font-size: 1.042vw * $coefficient;
+    letter-spacing: 0px;
+  }
+
+  .cartMenu_button {
+    font-size: 0.938vw * $coefficient;
+    line-height: 1.3;
+    border-radius: 0.208vw * $coefficient;
+    transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+    padding: 0.625vw * $coefficient 1.250vw * $coefficient 0.677vw * $coefficient;
+    width: 100%;
+  }
+
+  .cartMenu_button:hover {}
+
+  #cartMenu .mm-navbar_sticky {}
+
 
   .discount-menu {
     display: flex;
@@ -3026,7 +3152,7 @@ li .slick-active {
     font-size: 2.083vw * $coefficient !important;
     padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
   }
-  
+
   .second-regular .slick-arrow {
     font-size: 2.083vw * $coefficient !important;
     padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
@@ -7287,7 +7413,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .materials-image {
-  width: auto ;
+  width: auto;
   height: auto;
   margin-right: 3.040vw;
 }
@@ -7318,144 +7444,347 @@ $slick-opacity-not-active: 0.25 !default;
 
 .materials-content.materials-right {
   flex-direction: row-reverse;
+
   .materials-image {
-      margin-left: 3.040vw;
-      margin-right: 0;
+    margin-left: 3.040vw;
+    margin-right: 0;
   }
+
   .materials-title {
-      text-align: right;
+    text-align: right;
   }
+
   .materials-text {
-      text-align: right;
+    text-align: right;
   }
 }
 
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
+
   .materials {
-      margin-top: 5vw * $coefficient;
+    margin-top: 5vw * $coefficient;
   }
-  
+
   .materials-main__title {
-      padding-top: 4.792vw * $coefficient;
-      font-size: 1.875vw * $coefficient;
-      line-height: 2.292vw * $coefficient;
+    padding-top: 4.792vw * $coefficient;
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.292vw * $coefficient;
   }
-  
+
   .materials-container {
-      width: 68.958vw * $coefficient;
+    width: 68.958vw * $coefficient;
   }
-  
+
   .materials-items {
-      margin-top: 2.656vw * $coefficient;
+    margin-top: 2.656vw * $coefficient;
   }
-  
+
   .materials-items:last-child {
-      padding-bottom: 4.792vw * $coefficient;
+    padding-bottom: 4.792vw * $coefficient;
   }
-  
-  .materials-content {
-  }
-  
+
+  .materials-content {}
+
   .materials-image {
-      width: 11.699vw * $coefficient;
-      height: 11.458vw * $coefficient;
-      margin-right: 3.040vw * $coefficient;
+    width: 11.699vw * $coefficient;
+    height: 11.458vw * $coefficient;
+    margin-right: 3.040vw * $coefficient;
   }
-  
-  .materials-description {
-  }
-  
+
+  .materials-description {}
+
   .materials-title {
-      font-size: 2.500vw * $coefficient;
-      line-height: 3.750vw * $coefficient;
-      margin-bottom: 0.833vw * $coefficient;
+    font-size: 2.500vw * $coefficient;
+    line-height: 3.750vw * $coefficient;
+    margin-bottom: 0.833vw * $coefficient;
   }
-  
+
   .materials-text {
-      font-size: 1.354vw * $coefficient;
-      line-height: 2.031vw * $coefficient;
-      margin-bottom: 0.833vw * $coefficient;
+    font-size: 1.354vw * $coefficient;
+    line-height: 2.031vw * $coefficient;
+    margin-bottom: 0.833vw * $coefficient;
   }
-  
+
   .materials-content.materials-right {
-      .materials-image {
-          margin-left: 3.040vw * $coefficient;
-          margin-right: 0;
-      }
-      .materials-title {
-      }
-      .materials-text {
-      }
+    .materials-image {
+      margin-left: 3.040vw * $coefficient;
+      margin-right: 0;
+    }
+
+    .materials-title {}
+
+    .materials-text {}
   }
-  
+
 }
 
 @media all and (max-width: 415px) {
   $coefficient: 4;
+
   .materials {
-      margin-top: 5vw * $coefficient;
+    margin-top: 5vw * $coefficient;
   }
-  
+
   .materials-main__title {
-      padding-top: 4.792vw * $coefficient;
-      font-size: 1.875vw * $coefficient;
-      line-height: 2.292vw * $coefficient;
+    padding-top: 4.792vw * $coefficient;
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.292vw * $coefficient;
   }
-  
+
   .materials-container {
-      width: 90vw;
+    width: 90vw;
   }
-  
+
   .materials-items {
-      margin-top: 2.656vw * $coefficient;
+    margin-top: 2.656vw * $coefficient;
   }
-  
+
   .materials-items:last-child {
-      padding-bottom: 4.792vw * $coefficient;
+    padding-bottom: 4.792vw * $coefficient;
   }
-  
+
   .materials-content {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-  
+
   .materials-image {
-      width: 11.699vw * $coefficient;
-      height: 11.458vw * $coefficient;
-      margin-right: 0;
-      margin-bottom: 11.566vw;
+    width: 11.699vw * $coefficient;
+    height: 11.458vw * $coefficient;
+    margin-right: 0;
+    margin-bottom: 11.566vw;
   }
-  
-  .materials-description {
-  }
-  
+
+  .materials-description {}
+
   .materials-title {
-      font-size: 2.500vw * $coefficient;
-      line-height: 3.750vw * $coefficient;
-      margin-bottom: 0.833vw * $coefficient;
+    font-size: 2.500vw * $coefficient;
+    line-height: 3.750vw * $coefficient;
+    margin-bottom: 0.833vw * $coefficient;
 
   }
-  
+
   .materials-text {
-      font-size: 1.354vw * $coefficient;
-      line-height: 2.031vw * $coefficient;
-      margin-bottom: 0.833vw * $coefficient;
+    font-size: 1.354vw * $coefficient;
+    line-height: 2.031vw * $coefficient;
+    margin-bottom: 0.833vw * $coefficient;
   }
-  
+
   .materials-content.materials-right {
-      flex-direction: column;
-      .materials-image {
-          margin-left: 0;
-          margin-right: 0;
-      }
-      .materials-title {
-          text-align: left;
-      }
-      .materials-text {
-          text-align: left;
-      }
-  } 
+    flex-direction: column;
+
+    .materials-image {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .materials-title {
+      text-align: left;
+    }
+
+    .materials-text {
+      text-align: left;
+    }
+  }
+}
+
+.product-detail__container {
+  width: 77.708vw;
+  margin: 0 auto;
+  margin-top: 5.104vw;
+}
+
+#product-detail__tab {
+  width: 47.083vw;
+  justify-content: space-between;
+  margin-bottom: 6.042vw;
+}
+
+#product-detail__tab.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #1F316A;
+}
+
+#product-detail__tab.nav-pills .nav-link {
+  width: 12.713vw;
+  text-align: center;
+}
+
+#product-detail__tab li {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw 0.781vw 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
+    rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
+    rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
+  border-radius: 0.208vw;
+}
+
+#product-detail__tab .nav-link {
+  display: block;
+  color: #1F316A;
+  font-weight: 700;
+  font-size: 1.250vw;
+  line-height: 1.526vw;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.product-desc__title {
+  font-size: 1.875vw;
+  line-height: 2.289vw;
+  font-weight: 700;
+  color: #1F316A;
+  text-align: center;
+  margin-bottom: 1.302vw;
+}
+
+.product-desc ul {
+  padding: 0;
+}
+
+.product-desc__name {
+  margin-bottom: 3.229vw;
+}
+
+.product-desc h3 {
+  font-size: 1.875vw;
+  line-height: 2.289vw;
+  font-weight: 700;
+  color: #4F4F4F;
+}
+
+.product-desc ul li:not(:first-child) {
+  list-style-type: disc;
+  margin-left: 1.667vw;
+  font-size: 1.875vw;
+  line-height: 2.289vw;
+  font-weight: 400;
+  color: #4F4F4F;
+  margin-bottom: 1.302vw;
+}
+
+@media all and (max-width: 1366px) {
+  $coefficient: 1.3;
+
+  .product-detail__container {
+    width: 98vw;
+    margin-top: 5.104vw * $coefficient;
+  }
+
+  #product-detail__tab {
+    width: 47.083vw * $coefficient;
+    margin-bottom: 6.042vw * $coefficient;
+  }
+
+  #product-detail__tab.nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {}
+
+  #product-detail__tab.nav-pills .nav-link {
+    width: 12.713vw * $coefficient;
+    text-align: center;
+  }
+
+  #product-detail__tab li {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+    border-radius: 0.208vw * $coefficient;
+  }
+
+  #product-detail__tab .nav-link {
+    font-size: 1.250vw * $coefficient;
+    line-height: 1.526vw * $coefficient;
+  }
+
+  .product-desc__title {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.289vw * $coefficient;
+    margin-bottom: 1.302vw * $coefficient;
+  }
+
+  .product-desc ul {}
+
+  .product-desc__name {
+    margin-bottom: 3.229vw * $coefficient;
+  }
+
+  .product-desc h3 {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.289vw * $coefficient;
+  }
+
+  .product-desc ul li:not(:first-child) {
+    margin-left: 1.667vw * $coefficient;
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.289vw * $coefficient;
+    margin-bottom: 1.302vw * $coefficient;
+  }
+
+}
+
+@media all and (max-width: 415px) {
+  $coefficient: 4;
+
+  .product-detail__container {
+    width: 98vw;
+    margin-top: 5.104vw * $coefficient;
+  }
+
+  #product-detail__tab {
+    width: 47.083vw * $coefficient;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 6.042vw * $coefficient;
+  }
+
+  #product-detail__tab.nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {}
+
+  #product-detail__tab.nav-pills .nav-link {
+    width: 12.713vw * $coefficient;
+    text-align: center;
+  }
+
+  #product-detail__tab li {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+    border-radius: 0.208vw * $coefficient;
+  }
+
+  #product-detail__tab .nav-link {
+    font-size: 1.250vw * $coefficient;
+    line-height: 1.526vw * $coefficient;
+  }
+
+  .product-desc__title {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.289vw * $coefficient;
+    margin-bottom: 1.302vw * $coefficient;
+  }
+
+  .product-desc ul {}
+
+  .product-desc__name {
+    margin-bottom: 3.229vw * $coefficient;
+  }
+
+  .product-desc h3 {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.289vw * $coefficient;
+  }
+
+  .product-desc ul li:not(:first-child) {
+    margin-left: 1.667vw * $coefficient;
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.289vw * $coefficient;
+    margin-bottom: 1.302vw * $coefficient;
+  }
+
 }
 
 .reviews-items.slick-slider {

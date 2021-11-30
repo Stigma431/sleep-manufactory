@@ -29,6 +29,41 @@ document.addEventListener(
 
 );
 
+document.addEventListener(
+    "DOMContentLoaded", () => {
+        const menu = new Mmenu("#cartMenu", {
+            "extensions": [
+                "pagedim-black",
+                "position-right",
+                "position-front"
+            ],
+            navbar: {
+                title: ""
+              },
+            "counters": false,
+            "navbars": [{
+                    "position": "top",
+                    "content": [
+                        "<div class='cart-Menu__Title'>Ваша корзина</div>",
+                        "close"
+                    ],
+                },
+                {
+                    "position": "bottom",
+                    "content": [
+                        "<a class='fa fa-envelope' href='#/'></a>",
+                        "<a class='fa fa-twitter' href='#/'></a>",
+                        "<a class='fa fa-facebook' href='#/'></a>"
+                    ]
+                },
+            ]
+
+        });
+
+    }
+
+);
+
 $(document).on('ready', function () {
     $(".main-slider").slick({
         dots: true,

@@ -102,7 +102,17 @@
                 <div class="map">
                     <a href="#" class="header-right_link"><img class="map-icon" src="images/map.svg" alt=""></a>
                     <a class="map-name" href="#">Москва</a>
-                    <a href="#"><img class="shopping-cart" src="images/Vector.svg" alt=""></a>
+                    <a href="#cartMenu">
+                        <img class="shopping-cart" src="images/Vector.svg" alt="">
+                    </a>
+                    <nav id="cartMenu">
+                        <div class="cartMenu_container">
+                            <div class="cartMenu_content">
+                                <div class="cartMenu_text">Ваша корзина пуста</div>
+                                <a href="#" class="cartMenu_button">Начать покупки</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -186,6 +196,77 @@
                 </form>
             </div>
         </div>
+        <section class="product-detail">
+            <div class="product-detail__container">
+                <ul id="product-detail__tab" class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#productDesc">Описание товара</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#productSpecific">Характеристики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#productPickup">Отзывы о товаре</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="productDesc">
+                        <section class="product-desc">
+                            <h2 class="product-desc__title">Описание товара</h2>
+                            <h3 class="product-desc__name">096/1 - анатомический матрас двухсторонней мягкости серии
+                                «Family»</h3>
+                            <ul>
+                                <li>
+                                    <h3>Основа матраса:</h3>
+                                </li>
+                                <li>Стандартный независимый (кассетный) пружинный блок 256 пружин м². <br>
+                                    Благодаря своим конструктивным особенностям, независимая система пружин, в отличие от
+                                    блока «Bonnell»,
+                                    позволяет равномерно (точечно) распределить вес тела человека, снять напряжение
+                                    разгрузить и выпрямить позвоночник, обеспечивая максимальный комфорт во время сна.<br>
+                                    Независимый пружинный блок обеспечивает естественное положение тела, повторяет все
+                                    изгибы, как бы облегает фигуру лежащего на нем человека.</li>
+                                <li>Комфортные условия придает матрасу мягкий изоляционный наполнитель войлок – натуральное
+                                    волокно с хорошей тепло и воздухо проницаемостью, не создающей парникового эффекта.</li>
+                                <li>Дополнительные ортопедические свойства обеспечиваются за счет применения жесткого
+                                    наполнителя - кокосовой койры.</li>
+                                <li>Максимальные анатомические свойства матрасу придает латекс. Латекс - экологически чистый
+                                    натуральный материал, получаемый из вспененного сока каучукового дерева «Гевея».
+                                    Обладает бактерицидными свойствами. Высококачественный материал имеет великолепную
+                                    упругость, обеспечивающий превосходные анатомические свойства матрасу. Латекс принимает
+                                    форму тела человека и повторяет все его контуры.</li>
+                                <li>Дополнительный объем, и прочность придает верхнее покрытие матраса - жаккардовая ткань
+                                    (100% хлопок) стеганая на тройном слое синтепона.</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3>Достоинства Sweet Sleep art.96:</h3>
+                                </li>
+                                <li>В качестве основы матраса могут быть использованы независимые пружинные блоки системы
+                                    «Multipoket» 560 пр. м²; 1500 пр. .м², а также независимый блок - пружина в пружине.
+                                </li>
+                                <li>Максимально допустимая нагрузка на одно спальное место (размер 80х200) - 90 кг</li>
+                                <li>Высота матраца 22 см.</li>
+                                <li>Гарантия 550 дней</li>
+                                <li>Срок эксплуатации 11 лет</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="productSpecific">
+                        <section class="product-specific"></section>
+                    </div>
+                    <div class="tab-pane fade" id="productPickup">
+                        <section class="pickup-product"></section>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $('#product-detail__tab a').click(function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                })
+            </script>
+        </section>
         <div class="materials">
             <h2 class="materials-main__title">Материалы и дизайн</h2>
             <div class="materials-container">
