@@ -10,7 +10,7 @@ document.addEventListener(
                     "position": "top",
                     "content": [
                         "close",
-                        "<a href=''><img src='images/Vector.svg'></a>"
+                        "<a href='#cartMenu'><img src='images/Vector.svg'></a>"
                     ]
                 },
                 {
