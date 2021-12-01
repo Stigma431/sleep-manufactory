@@ -64,6 +64,41 @@ document.addEventListener(
 
 );
 
+document.addEventListener(
+    "DOMContentLoaded", () => {
+        const menu = new Mmenu("#cartMenuProduct", {
+            "extensions": [
+                "pagedim-black",
+                "position-right",
+                "position-front"
+            ],
+            navbar: {
+                title: ""
+              },
+            "counters": false,
+            "navbars": [{
+                    "position": "top",
+                    "content": [
+                        "<div class='cart-Menu__Title'>Ваша корзина</div>",
+                        "close"
+                    ],
+                },
+                {
+                    "position": "bottom",
+                    "content": [
+                        "<div class='cartTotalContainer'><div class='totalTitle'>Your total</div><div class='totalValues'>$139.00</div></div>",
+                        "<div class='checkoutButton'><a href='#'>Checkout</span></a></div>"
+                    ]
+                },
+            ]
+
+        });
+
+    }
+
+);
+
+
 $(document).on('ready', function () {
     $(".main-slider").slick({
         dots: true,

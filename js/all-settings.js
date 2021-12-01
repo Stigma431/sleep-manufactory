@@ -64,7 +64,6 @@ document.addEventListener(
 
 );
 
-
 $(document).on('ready', function () {
     $(".main-slider").slick({
         dots: true,
