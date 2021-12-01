@@ -664,6 +664,10 @@ html {
   width: 100%;
 }
 
+.checkoutButton a:hover {
+  background: #526699;
+}
+
 .burger-menu {
   width: 2.135vw;
   /* Бургер меню меню для мобильных*/
