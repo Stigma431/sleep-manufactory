@@ -7236,6 +7236,71 @@ video {
   color: #504C4C;
 }
 
+.mattress-color {
+  display: flex;
+  flex-direction: column;
+}
+
+.mattress-color_title {
+  font-size: 1.146vw;
+  font-weight: 700;
+  line-height: 1.406vw;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mattress-color_select {
+  display: flex;
+  width: auto;
+  margin-top: 0.625vw;
+}
+
+.mattress-color_circle {
+  width: 2.656vw;
+  height: 2.656vw;
+  margin-right: 0.938vw;
+  border-radius: 50%;
+  border: 0.052vw solid #504C4C;
+  padding: 1vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.mattress-color_circle:hover::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  border: 0.052vw solid #504C4C;
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.mattress-color_circle:active {
+
+}
+
+.mattress-color_first {
+  background-color: #3B4151;
+}
+
+.mattress-color_second {
+  background-color: #CEBAB3;
+}
+
+.mattress-color_third {
+  background-color: #FFFFFF;
+}
+
+.mattress-color_fourth {
+  background-color: #C7C7C7;
+}
+
+.mattress-color_fifth {
+  background-color: #BFC7D2;
+}
+
 .delivery-container {
   display: flex;
   flex-direction: column;
@@ -7547,6 +7612,61 @@ svg {
     line-height: 1.271vw * $coefficient;
   }
 
+  .mattress-color {
+  }
+  
+  .mattress-color_title {
+    font-size: 1.146vw * $coefficient;
+    line-height: 1.406vw * $coefficient;
+    letter-spacing: 0em;
+  }
+  
+  .mattress-color_select {
+    margin-top: 0.625vw * $coefficient;
+  }
+  
+  .mattress-color_circle {
+    width: 2.656vw * $coefficient;
+    height: 2.656vw * $coefficient;
+    margin-right: 0.938vw * $coefficient;
+    border-radius: 50%;
+    border: 0.052vw * $coefficient solid #504C4C;
+    padding: 1vw * $coefficient;
+  }
+  
+  .mattress-color_circle:hover::after{
+    content: "";
+    border: 0.052vw * $coefficient solid #504C4C;
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .mattress-color_circle:active {
+  
+  }
+  
+  .mattress-color_first {
+    background-color: #3B4151;
+  }
+  
+  .mattress-color_second {
+    background-color: #CEBAB3;
+  }
+  
+  .mattress-color_third {
+    background-color: #FFFFFF;
+  }
+  
+  .mattress-color_fourth {
+    background-color: #C7C7C7;
+  }
+  
+  .mattress-color_fifth {
+    background-color: #BFC7D2;
+  }
+  
+
   .delivery-container {
     margin-bottom: 1.3vw * $coefficient;
   }
@@ -7833,6 +7953,63 @@ svg {
     line-height: 1.271vw * $coefficient;
   }
 
+  .mattress-color {
+  }
+  
+  .mattress-color_title {
+    font-size: 1.146vw * $coefficient;
+    line-height: 1.406vw * $coefficient;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .mattress-color_select {
+    margin-top: 0.625vw * $coefficient;
+    justify-content: center;
+  }
+  
+  .mattress-color_circle {
+    width: 2.656vw * $coefficient;
+    height: 2.656vw * $coefficient;
+    margin-right: 0.938vw * $coefficient;
+    border-radius: 50%;
+    border: 0.052vw * $coefficient solid #504C4C;
+    padding: 1vw * $coefficient;
+  }
+  
+  .mattress-color_circle:hover::after{
+    content: "";
+    border: 0.052vw * $coefficient solid #504C4C;
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .mattress-color_circle:active {
+  
+  }
+  
+  .mattress-color_first {
+    background-color: #3B4151;
+  }
+  
+  .mattress-color_second {
+    background-color: #CEBAB3;
+  }
+  
+  .mattress-color_third {
+    background-color: #FFFFFF;
+  }
+  
+  .mattress-color_fourth {
+    background-color: #C7C7C7;
+  }
+  
+  .mattress-color_fifth {
+    background-color: #BFC7D2;
+  }
+
+
   .delivery-container {
     margin-bottom: 1.3vw * $coefficient;
   }
@@ -8077,19 +8254,19 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .product-first-slick .slick-dots li:nth-child(1) {
-  content: url(../images/000-mini.jpg) !important;
+  content: url(../images/hyperlite.png) !important;
 }
 
 .product-first-slick .slick-dots li:nth-child(2) {
-  content: url(../images/Rectangle10-mini.jpg) !important;
+  content: url(../images/rectangle15.png) !important;
 }
 
 .product-first-slick .slick-dots li:nth-child(3) {
-  content: url(../images/Rectangle11-mini.jpg) !important;
+  content: url(../images/rectangle16.png) !important;
 }
 
 .product-first-slick .slick-dots li:nth-child(4) {
-  content: url(../images/Rectangle12-mini.jpg) !important;
+  content: url(../images/rectangle17.png) !important;
 }
 
 .product-first-slick li.slick-active {

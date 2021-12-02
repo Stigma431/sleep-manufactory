@@ -6757,6 +6757,74 @@ video {
   color: #504C4C;
 }
 
+.mattress-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mattress-color_title {
+  font-size: 1.146vw;
+  font-weight: 700;
+  line-height: 1.406vw;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mattress-color_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  margin-top: 0.625vw;
+}
+
+.mattress-color_circle {
+  width: 2.656vw;
+  height: 2.656vw;
+  margin-right: 0.938vw;
+  border-radius: 50%;
+  border: 0.052vw solid #504C4C;
+  padding: 1vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.mattress-color_circle:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  border: 0.052vw solid #504C4C;
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.mattress-color_first {
+  background-color: #3B4151;
+}
+
+.mattress-color_second {
+  background-color: #CEBAB3;
+}
+
+.mattress-color_third {
+  background-color: #FFFFFF;
+}
+
+.mattress-color_fourth {
+  background-color: #C7C7C7;
+}
+
+.mattress-color_fifth {
+  background-color: #BFC7D2;
+}
+
 .delivery-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7009,6 +7077,44 @@ svg {
     font-size: 1.3546vw;
     line-height: 1.6523vw;
   }
+  .mattress-color_title {
+    font-size: 1.4898vw;
+    line-height: 1.8278vw;
+    letter-spacing: 0em;
+  }
+  .mattress-color_select {
+    margin-top: 0.8125vw;
+  }
+  .mattress-color_circle {
+    width: 3.4528vw;
+    height: 3.4528vw;
+    margin-right: 1.2194vw;
+    border-radius: 50%;
+    border: 0.0676vw solid #504C4C;
+    padding: 1.3vw;
+  }
+  .mattress-color_circle:hover::after {
+    content: "";
+    border: 0.0676vw solid #504C4C;
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .mattress-color_first {
+    background-color: #3B4151;
+  }
+  .mattress-color_second {
+    background-color: #CEBAB3;
+  }
+  .mattress-color_third {
+    background-color: #FFFFFF;
+  }
+  .mattress-color_fourth {
+    background-color: #C7C7C7;
+  }
+  .mattress-color_fifth {
+    background-color: #BFC7D2;
+  }
   .delivery-container {
     margin-bottom: 1.69vw;
   }
@@ -7241,6 +7347,48 @@ svg {
     font-size: 4.168vw;
     line-height: 5.084vw;
   }
+  .mattress-color_title {
+    font-size: 4.584vw;
+    line-height: 5.624vw;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .mattress-color_select {
+    margin-top: 2.5vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mattress-color_circle {
+    width: 10.624vw;
+    height: 10.624vw;
+    margin-right: 3.752vw;
+    border-radius: 50%;
+    border: 0.208vw solid #504C4C;
+    padding: 4vw;
+  }
+  .mattress-color_circle:hover::after {
+    content: "";
+    border: 0.208vw solid #504C4C;
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .mattress-color_first {
+    background-color: #3B4151;
+  }
+  .mattress-color_second {
+    background-color: #CEBAB3;
+  }
+  .mattress-color_third {
+    background-color: #FFFFFF;
+  }
+  .mattress-color_fourth {
+    background-color: #C7C7C7;
+  }
+  .mattress-color_fifth {
+    background-color: #BFC7D2;
+  }
   .delivery-container {
     margin-bottom: 5.2vw;
   }
@@ -7436,19 +7584,19 @@ svg {
 }
 
 .product-first-slick .slick-dots li:nth-child(1) {
-  content: url(../images/000-mini.jpg) !important;
+  content: url(../images/hyperlite.png) !important;
 }
 
 .product-first-slick .slick-dots li:nth-child(2) {
-  content: url(../images/Rectangle10-mini.jpg) !important;
+  content: url(../images/rectangle15.png) !important;
 }
 
 .product-first-slick .slick-dots li:nth-child(3) {
-  content: url(../images/Rectangle11-mini.jpg) !important;
+  content: url(../images/rectangle16.png) !important;
 }
 
 .product-first-slick .slick-dots li:nth-child(4) {
-  content: url(../images/Rectangle12-mini.jpg) !important;
+  content: url(../images/rectangle17.png) !important;
 }
 
 .product-first-slick li.slick-active {
