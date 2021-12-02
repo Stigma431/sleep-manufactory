@@ -9,6 +9,10 @@ html {
   overflow-y: scroll;
 }
 
+img, svg {
+  vertical-align: middle;
+}
+
 .header {
   width: 100vw;
   height: 2.917vw;
@@ -23,7 +27,7 @@ html {
   align-items: center;
 
   .header-wrapper {
-    width: 95.813vw;
+    width: 97.813vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -136,7 +140,7 @@ html {
     }
 
     .header-right {
-
+      margin-right: 0.625vw;
       width: 6.042vw;
       height: 0.990vw;
 
@@ -169,10 +173,10 @@ html {
         .shopping-cart {
           display: flex;
 
-          img {
+          
             width: 0.938vw;
             height: 0.817vw;
-          }
+          
         }
       }
     }
@@ -971,7 +975,7 @@ html {
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
-      width: 95.813vw;
+      width: 97.813vw;
       height: 2.917vw;
 
       .header-logo_burger {
@@ -1506,7 +1510,7 @@ html {
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
-      width: 95.813vw;
+      width: 97.813vw;
       height: 2.917vw * $coefficient;
 
 
