@@ -79,7 +79,7 @@ document.addEventListener(
             "navbars": [{
                     "position": "top",
                     "content": [
-                        "<div class='cart-Menu__Title'>Ваша корзина</div>",
+                        "<div class='cart-Menu__Title'>Ваша корзина <span class='itemCount'>(1)</span></div>",
                         "close"
                     ],
                 },

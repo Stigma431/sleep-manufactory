@@ -306,6 +306,11 @@ html {
   color: #1e306e;
 }
 
+.itemCount {
+  font-size: 1.042vw;
+  color: #1e306e;
+}
+
 .cartMenu_text {
   margin-top: 2.083vw;
   margin-bottom: 1.667vw;
@@ -1188,6 +1193,9 @@ html {
     margin-bottom: 0;
     font-size: 1.4588vw;
   }
+  .itemCount {
+    font-size: 1.4588vw;
+  }
   .cartMenu_content {
     padding-right: 2.0412vw;
     padding-left: 2.0412vw;
@@ -1629,6 +1637,9 @@ html {
   .cart-Menu__Title {
     margin-top: 0.416vw;
     margin-bottom: 0;
+    font-size: 4.168vw;
+  }
+  .itemCount {
     font-size: 4.168vw;
   }
   .cartMenu_content {

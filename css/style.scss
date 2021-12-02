@@ -243,7 +243,10 @@ html {
   color: rgb(30, 48, 110);
 }
 
-
+.itemCount {
+  font-size: 1.042vw;
+  color: rgb(30, 48, 110);
+}
 
 .cartMenu_text {
   margin-top: 2.083vw;
@@ -1058,6 +1061,10 @@ html {
     font-size: 1.042vw * $coefficient;
   }
 
+  .itemCount {
+    font-size: 1.042vw * $coefficient;
+  }
+
   .cartMenu_content {
     padding-right: 1.458vw * $coefficient;
     padding-left: 1.458vw * $coefficient;
@@ -1598,11 +1605,15 @@ html {
   #cartMenuProduct .mm-navbars_top .mm-navbar {
     padding-right: 1.46vw * $coefficient;
     padding-left: 1.46vw * $coefficient;
-}
+  }
 
   .cart-Menu__Title {
     margin-top: 0.104vw * $coefficient;
     margin-bottom: 0;
+    font-size: 1.042vw * $coefficient;
+  }
+
+  .itemCount {
     font-size: 1.042vw * $coefficient;
   }
 
