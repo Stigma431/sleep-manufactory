@@ -9,7 +9,8 @@ html {
   overflow-y: scroll;
 }
 
-img, svg {
+img,
+svg {
   vertical-align: middle;
 }
 
@@ -173,10 +174,10 @@ img, svg {
         .shopping-cart {
           display: flex;
 
-          
-            width: 0.938vw;
-            height: 0.817vw;
-          
+
+          width: 0.938vw;
+          height: 0.817vw;
+
         }
       }
     }
@@ -1010,8 +1011,9 @@ img, svg {
           line-height: 1.771vw * $coefficient;
         }
 
-        .shopping-cart img {
-          width: 1.04vw * $coefficient;
+        .shopping-cart {
+          width: 0.938vw * $coefficient;
+          height: 0.817vw * $coefficient;
         }
 
       }
@@ -1067,10 +1069,8 @@ img, svg {
           }
 
           .shopping-cart {
-            img {
-              width: 0.938vw * $coefficient;
-              height: 0.817vw * $coefficient;
-            }
+            width: 0.938vw * $coefficient;
+            height: 0.817vw * $coefficient;
           }
         }
       }
@@ -1100,7 +1100,7 @@ img, svg {
     border-radius: 50%;
     font-size: 0.625vw * $coefficient;
   }
-  
+
 
   .cartMenu_content {
     padding-right: 1.458vw * $coefficient;
@@ -1617,10 +1617,8 @@ img, svg {
           }
 
           .shopping-cart {
-            img {
-              width: 0.938vw * $coefficient;
-              height: 0.817vw * $coefficient;
-            }
+            width: 0.938vw * $coefficient;
+            height: 0.817vw * $coefficient;
           }
         }
       }

@@ -42,7 +42,8 @@ html {
   overflow-y: scroll;
 }
 
-img, svg {
+img,
+svg {
   vertical-align: middle;
 }
 
@@ -1172,8 +1173,9 @@ img, svg {
     padding: 0.7294vw;
     line-height: 2.4794vw;
   }
-  .header .header-wrapper .header-logo_burger .shopping-cart img {
-    width: 1.456vw;
+  .header .header-wrapper .header-logo_burger .shopping-cart {
+    width: 1.3132vw;
+    height: 1.1438vw;
   }
   .header .header-wrapper .nav-menu {
     font-size: 0.938vw;
@@ -1209,7 +1211,7 @@ img, svg {
     font-size: 1.3132vw;
     margin-right: 0.8022vw;
   }
-  .header .header-wrapper .header-right .map .shopping-cart img {
+  .header .header-wrapper .header-right .map .shopping-cart {
     width: 1.3132vw;
     height: 1.1438vw;
   }
@@ -1654,7 +1656,7 @@ img, svg {
     font-size: 3.752vw;
     margin-right: 2.292vw;
   }
-  .header .header-wrapper .header-right .map .shopping-cart img {
+  .header .header-wrapper .header-right .map .shopping-cart {
     width: 3.752vw;
     height: 3.268vw;
   }
