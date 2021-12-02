@@ -23,7 +23,7 @@ html {
   align-items: center;
 
   .header-wrapper {
-    width: 97.813vw;
+    width: 95.813vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -246,6 +246,29 @@ html {
 .itemCount {
   font-size: 1.042vw;
   color: rgb(30, 48, 110);
+}
+
+.cartButton {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -0.469vw;
+  right: -0.521vw;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 0.938vw;
+  width: 0.938vw;
+  border-radius: 50%;
+  background-color: rgb(243, 210, 106);
+  color: rgb(30, 48, 110);
+  font-size: 0.625vw;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .cartMenu_text {
@@ -948,7 +971,7 @@ html {
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
-      width: 97.813vw;
+      width: 95.813vw;
       height: 2.917vw;
 
       .header-logo_burger {
@@ -1064,6 +1087,16 @@ html {
   .itemCount {
     font-size: 1.042vw * $coefficient;
   }
+
+  .cartCount {
+    top: -0.469vw * $coefficient;
+    right: -0.521vw * $coefficient;
+    height: 0.938vw * $coefficient;
+    width: 0.938vw * $coefficient;
+    border-radius: 50%;
+    font-size: 0.625vw * $coefficient;
+  }
+  
 
   .cartMenu_content {
     padding-right: 1.458vw * $coefficient;
@@ -1473,7 +1506,7 @@ html {
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
-      width: 97.813vw;
+      width: 95.813vw;
       height: 2.917vw * $coefficient;
 
 
@@ -1615,6 +1648,15 @@ html {
 
   .itemCount {
     font-size: 1.042vw * $coefficient;
+  }
+
+  .cartCount {
+    top: -0.469vw * $coefficient;
+    right: -0.521vw * $coefficient;
+    height: 0.938vw * $coefficient;
+    width: 0.938vw * $coefficient;
+    border-radius: 50%;
+    font-size: 0.625vw * $coefficient;
   }
 
   .cartMenu_content {
