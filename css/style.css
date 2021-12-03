@@ -760,6 +760,9 @@ svg {
 
 .cartTotalContainer {
   margin-bottom: 0.625vw;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .totalTitle {
@@ -6649,8 +6652,8 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 1.146vw;
-  margin-bottom: 1.653vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .form-select {
@@ -6971,12 +6974,18 @@ svg {
     width: 100%;
     height: 34.2602vw;
   }
-  .first-slick_item .item-1 {
-    width: 62.9694vw !important;
-    height: 36.7653vw;
+  .first-slick_item {
+    width: auto;
+  }
+  .second-product-page .first-slick_item {
+    width: 56.662vw !important;
+    height: 34.993vw  !important;
   }
   .first-slick_item .item-1 {
     width: 62.9694vw;
+  }
+  .second-product-page .first-slick_item.item-1 {
+    width: auto;
   }
   .second-slick-item {
     width: 4.7398vw !important;
@@ -7037,8 +7046,8 @@ svg {
     padding-left: 1.8278vw;
   }
   .mattress-second-parameters {
-    margin-top: 1.4898vw;
-    margin-bottom: 2.1489vw;
+    margin-top: 0.8vw;
+    margin-bottom: 1.1489vw;
   }
   .form-select {
     width: 32.5vw;
@@ -7116,7 +7125,7 @@ svg {
     background-color: #BFC7D2;
   }
   .delivery-container {
-    margin-bottom: 1.69vw;
+    margin-bottom: 0.69vw;
   }
   .delivery-title {
     font-size: 1.3546vw;

@@ -610,6 +610,7 @@ svg {
   .mm-navbar {
     display: flex;
     flex-direction: column;
+    
     height: auto;
     color: inherit;
     z-index: 3;
@@ -626,6 +627,7 @@ svg {
 
 .cartTotalContainer {
   margin-bottom: 0.625vw;
+  align-items: baseline;
 }
 
 .totalTitle {
@@ -7147,8 +7149,8 @@ video {
 .mattress-second-parameters {
   display: flex;
   flex-direction: column;
-  margin-top: 1.146vw;
-  margin-bottom: 1.653vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .form-select {
@@ -7471,15 +7473,23 @@ svg {
   }
 
 
-  .first-slick_item .item-1 {
-    width: 48.438vw * $coefficient !important;
-    height: 28.281vw * $coefficient;
+  .first-slick_item {
+    width: auto;
   }
 
+
+  .second-product-page .first-slick_item {
+    width: 56.662vw !important;
+    height: 34.993vw  !important;
+  }
 
 
   .first-slick_item .item-1 {
     width: 48.438vw * $coefficient;
+  }
+
+  .second-product-page .first-slick_item.item-1 {
+    width: auto;
   }
 
   .second-slick-item {
@@ -7560,8 +7570,8 @@ svg {
   }
 
   .mattress-second-parameters {
-    margin-top: 1.146vw * $coefficient;
-    margin-bottom: 1.653vw * $coefficient;
+    margin-top: 0.8vw;
+    margin-bottom: 1.1489vw;
   }
 
   .form-select {
@@ -7668,7 +7678,7 @@ svg {
   
 
   .delivery-container {
-    margin-bottom: 1.3vw * $coefficient;
+    margin-bottom: 0.69vw;
   }
 
   .delivery-title {
