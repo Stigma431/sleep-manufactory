@@ -243,9 +243,6 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   text-align: left;
   padding-top: 1.67vw;
 }
@@ -314,12 +311,12 @@ svg {
   width: 20.83vw;
 }
 
-.sub-menu li {
-  width: auto;
+.sub-menu > li {
+  width: 45.833vw;
   margin: 0 auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sub-menu_image-container {
