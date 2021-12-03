@@ -160,7 +160,7 @@ svg {
   background: #fff;
 }
 
-.header .header-wrapper .nav-menu a {
+.header .header-wrapper .nav-menu .nav-links {
   color: #1F316A;
   text-decoration: none;
   border-bottom: 0.150vw solid transparent;
@@ -171,7 +171,7 @@ svg {
   display: block;
 }
 
-.header .header-wrapper .nav-menu a:hover {
+.header .header-wrapper .nav-menu .nav-links:hover {
   border-bottom: 0.150vw solid #1F316A;
 }
 
@@ -233,6 +233,131 @@ svg {
   display: flex;
   width: 0.938vw;
   height: 0.817vw;
+}
+
+.header_main-nav .sub-menu > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: left;
+  padding-top: 1.67vw;
+}
+
+.mm-listitem__title {
+  padding: 0.42vw 0px;
+  font-size: 1.04vw;
+  color: #1e306e;
+}
+
+.sub-menu .mm-listitem__text {
+  font-weight: 400;
+  font-size: 0.938vw;
+  line-height: 1;
+  letter-spacing: 0.031vw;
+  padding: 0.938vw 0;
+  color: #151515 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: none !important;
+}
+
+.sub-menu .mm-listitem__text:hover {
+  padding-left: 0.625vw;
+}
+
+.sub-menu .menu-link-button {
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  font-size: 0.938vw;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.208vw;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+  transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-style: normal;
+  color: white !important;
+  background: #1e306e;
+  line-height: 1.250vw;
+  margin-top: 1vw;
+  margin-left: 0;
+  padding: 0.625vw 1.25vw;
+}
+
+.sub-menu_image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sub-menu li ul:last-child {
+  width: 20.83vw;
+}
+
+.sub-menu li {
+  width: auto;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sub-menu_image-container {
+  width: auto;
+  -webkit-transition: -webkit-transform 0.15s ease-out 0s;
+  transition: -webkit-transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s, -webkit-transform 0.15s ease-out 0s;
+}
+
+.sub-menu_image-title {
+  font-size: 1.04vw;
+  color: #1e306e;
+  margin-bottom: 0.208vw;
+}
+
+.sub-menu_image {
+  width: auto;
+  -webkit-transition: border-radius 0.3s ease-in-out 0s,  -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: border-radius 0.3s ease-in-out 0s,  -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s,  border-radius 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s,  border-radius 0.3s ease-in-out 0s,  -webkit-box-shadow 0.3s ease-in-out 0s;
+}
+
+.sub-menu_image:hover {
+  border-radius: 0.313vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.32) 0px 0.313vw 0.833vw 0px;
+          box-shadow: rgba(0, 0, 0, 0.32) 0px 0.313vw 0.833vw 0px;
+}
+
+.sub-menu_image-desc {
+  font-weight: 300;
+  display: inline-block;
+  padding: 0.625vw 0px 0.208vw;
+  font-size: 0.833vw;
+  letter-spacing: 0.031vw;
+  color: #000000;
+  border-bottom: none;
 }
 
 .cart-Menu__Title {
@@ -505,6 +630,7 @@ svg {
 
 .quantityMinus {
   border: none;
+  background-color: transparent;
 }
 
 .quantityIcon-minus {
@@ -6979,7 +7105,7 @@ svg {
   }
   .second-product-page .first-slick_item {
     width: 56.662vw !important;
-    height: 34.993vw  !important;
+    height: 34.993vw !important;
   }
   .first-slick_item .item-1 {
     width: 62.9694vw;
