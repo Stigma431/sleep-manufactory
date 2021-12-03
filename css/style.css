@@ -6928,7 +6928,7 @@ video {
   position: absolute;
   inset: 0;
   background-color: transparent;
-  border: 0.052vw solid #504C4C;
+  border: 0.1vw solid #504C4C;
   border-radius: 50%;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
