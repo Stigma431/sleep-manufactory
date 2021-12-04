@@ -152,12 +152,20 @@ svg {
 
 .header .header-wrapper .nav-menu .sub-menu {
   position: absolute;
-  top: 3vw;
-  left: 0;
-  min-width: 100vw;
-  min-height: 22.656vw;
-  display: none;
-  background: #fff;
+  top: 100%;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  pointer-events: auto;
+  -webkit-transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, height 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, height 0.3s ease 0s;
+  will-change: opacity, transform;
+  height: 0;
 }
 
 .header .header-wrapper .nav-menu .nav-links {
@@ -168,7 +176,9 @@ svg {
 }
 
 .header .header-wrapper .nav-menu .nav:hover .sub-menu {
-  display: block;
+  height: 22.500vw;
+  visibility: visible;
+  opacity: 1;
 }
 
 .header .header-wrapper .nav-menu .nav-links:hover {
@@ -264,10 +274,13 @@ svg {
   display: -ms-flexbox;
   display: flex;
   border-bottom: none !important;
+  -webkit-transition: margin-left 0.15s ease-in 0s, color 0.15s ease-out 0s;
+  transition: margin-left 0.15s ease-in 0s, color 0.15s ease-out 0s;
 }
 
 .sub-menu .mm-listitem__text:hover {
-  padding-left: 0.625vw;
+  margin-left: 0.625vw;
+  color: #1e306e !important;
 }
 
 .sub-menu .menu-link-button {
@@ -307,6 +320,16 @@ svg {
           flex-direction: column;
 }
 
+.image-container-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-container-desabled {
+  display: none;
+}
+
 .sub-menu li ul:last-child {
   width: 20.83vw;
 }
@@ -336,10 +359,10 @@ svg {
 .sub-menu_image {
   width: auto;
   height: auto;
-  -webkit-transition: border-radius 0.3s ease-in-out 0s,  -webkit-box-shadow 0.3s ease-in-out 0s;
-  transition: border-radius 0.3s ease-in-out 0s,  -webkit-box-shadow 0.3s ease-in-out 0s;
-  transition: box-shadow 0.3s ease-in-out 0s,  border-radius 0.3s ease-in-out 0s;
-  transition: box-shadow 0.3s ease-in-out 0s,  border-radius 0.3s ease-in-out 0s,  -webkit-box-shadow 0.3s ease-in-out 0s;
+  -webkit-transition: border-radius 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: border-radius 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, border-radius 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, border-radius 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
 }
 
 .sub-menu_image:hover {
@@ -1305,17 +1328,22 @@ svg {
     height: 1.1438vw;
   }
   .header .header-wrapper .nav-menu {
-    font-size: 0.938vw;
-    line-height: 1.146vw;
+    font-size: 1.3132vw;
+    line-height: 1.6044vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header .header-wrapper .nav-menu .sub-menu {
-    top: 3vw;
-    min-width: 140vw;
-    min-height: 31.7184vw;
+    width: 100%;
+    height: 0;
   }
-  .header .header-wrapper .nav-menu a {
+  .header .header-wrapper .nav-menu .nav-links {
     border-bottom: 0.21vw solid transparent;
-    padding: 1.0206vw 1.0206vw;
+    padding: 0.729vw  0.729vw;
+  }
+  .header .header-wrapper .nav-menu .nav:hover .sub-menu {
+    height: 31.5vw;
   }
   .header .header-wrapper .nav-menu a:hover {
     border-bottom: 0.21vw solid #1F316A;
@@ -1341,6 +1369,51 @@ svg {
   .header .header-wrapper .header-right .map .shopping-cart {
     width: 1.3132vw;
     height: 1.1438vw;
+  }
+  .header_main-nav .sub-menu > li {
+    padding-top: 2.338vw;
+  }
+  .mm-listitem__title {
+    padding: 0.588vw 0px;
+    font-size: 1.456vw;
+    color: #1e306e;
+  }
+  .sub-menu .mm-listitem__text {
+    font-weight: 400;
+    font-size: 1.3132vw;
+    line-height: 1;
+    letter-spacing: 0.0434vw;
+    padding: 1.3132vw 0;
+  }
+  .sub-menu .mm-listitem__text:hover {
+    margin-left: 0.875vw;
+  }
+  .sub-menu .menu-link-button {
+    font-size: 1.3132vw;
+    border-radius: 0.2912vw;
+    line-height: 1.75vw;
+    margin-top: 1.4vw;
+    padding: 0.875vw 1.75vw;
+  }
+  .sub-menu li ul:last-child {
+    width: 29.162vw;
+  }
+  .sub-menu > li {
+    width: 64.1662vw;
+  }
+  .sub-menu_image-title {
+    font-size: 1.456vw;
+    margin-bottom: 0.2912vw;
+  }
+  .sub-menu_image:hover {
+    border-radius: 0.4382vw;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.32) 0px 0.4382vw 1.1662vw 0px;
+            box-shadow: rgba(0, 0, 0, 0.32) 0px 0.4382vw 1.1662vw 0px;
+  }
+  .sub-menu_image-desc {
+    padding: 0.875vw 0px 0.2912vw;
+    font-size: 1.1662vw;
+    letter-spacing: 0.0434vw;
   }
   #cartMenuProduct .mm-navbars_top .mm-navbar {
     padding-right: 2.044vw;
