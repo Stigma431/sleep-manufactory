@@ -7176,7 +7176,7 @@ svg {
   }
   .second-product-page .first-slick_item {
     width: 56.662vw !important;
-    height: 34.993vw !important;
+    height: 34.993vw;
   }
   .first-slick_item .item-1 {
     width: 62.9694vw;
