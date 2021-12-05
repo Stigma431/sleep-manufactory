@@ -1167,6 +1167,11 @@ svg {
   height: 2.917vw;
 }
 
+#cartMenu .mm-navbar {
+  padding-right: 1.46vw;
+  padding-left: 1.46vw;
+}
+
 .mm-navbar img {
   width: 1.823vw;
   height: 1.823vw;
@@ -6140,7 +6145,6 @@ li .slick-active {
 }
 
 video {
-  margin-top: 10vw;
   height: 32.552vw;
 }
 
@@ -6156,7 +6160,6 @@ video {
     margin: 0 auto;
   }
   video {
-    margin-top: 13vw;
     height: 42.3176vw;
   }
 }
@@ -6173,7 +6176,6 @@ video {
     margin: 0 auto;
   }
   video {
-    margin-top: 3.9vw;
     height: 42.3176vw;
   }
 }
