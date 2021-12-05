@@ -20,3 +20,7 @@ $(".mm-listitem__text-three").hover(function () {
     $('.sub-menu_image-container-three').removeClass("image-container-desabled");
     $('.sub-menu_image-container-three').addClass("image-container-active");
 });
+
+$(".nav-menu").hover(function () {
+    $('.nav-links').toggleClass('nav-links-desabled');
+});
