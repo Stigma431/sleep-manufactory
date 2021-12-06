@@ -660,6 +660,14 @@ svg {
           box-shadow: rgba(189, 187, 187, 0.5) 0px 0px 0.208vw 0px;
 }
 
+#cartMenuProduct button:not([disabled]):hover .quantityIcon-minus {
+  background: #e6e6e6;
+}
+
+#cartMenuProduct button:not([disabled]):hover .quantityIcon-plus {
+  background: #e6e6e6;
+}
+
 .quantityMinus {
   border: none;
   background-color: transparent;

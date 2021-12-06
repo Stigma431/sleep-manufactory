@@ -301,6 +301,7 @@ svg {
   border-radius 0.3s ease-in-out 0s;
 }
 
+
 .sub-menu_image:hover {
   border-radius: 0.313vw;
   box-shadow: rgba(0, 0, 0, 0.32) 0px 0.313vw 0.833vw 0px;
@@ -551,6 +552,15 @@ svg {
   border-radius: 0.208vw;
   box-shadow: rgba(189, 187, 187, 0.5) 0px 0px 0.208vw 0px;
 }
+
+#cartMenuProduct button:not([disabled]):hover .quantityIcon-minus {
+  background: rgb(230, 230, 230);
+}
+
+#cartMenuProduct button:not([disabled]):hover .quantityIcon-plus {
+  background: rgb(230, 230, 230);
+}
+
 
 .quantityMinus {
   border: none;
