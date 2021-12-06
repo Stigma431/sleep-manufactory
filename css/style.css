@@ -90,7 +90,7 @@ svg {
   margin-top: 0.365vw;
 }
 
-.header .header-wrapper .header-logo_burger .logo {
+.header .header-wrapper .header-logo_burger .logo img {
   width: 12.396vw;
   height: auto;
 }
@@ -1320,7 +1320,7 @@ svg {
   .header .header-wrapper .header-logo_burger {
     margin-top: 0.56vw;
   }
-  .header .header-wrapper .header-logo_burger .logo {
+  .header .header-wrapper .header-logo_burger .logo img {
     width: 17.3544vw;
     height: auto;
   }
@@ -1804,7 +1804,7 @@ svg {
   .header .header-wrapper .header-logo_burger {
     margin-top: 1.46vw;
   }
-  .header .header-wrapper .header-logo_burger .logo {
+  .header .header-wrapper .header-logo_burger .logo img {
     width: 49.584vw;
     height: auto;
   }

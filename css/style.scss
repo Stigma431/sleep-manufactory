@@ -43,8 +43,11 @@ svg {
       margin-top: 0.365vw;
 
       .logo {
-        width: 12.396vw;
-        height: auto;
+        
+        img {
+          width: 12.396vw;
+          height: auto;
+        }
       }
 
       .header__nav {
@@ -1133,8 +1136,12 @@ svg {
         margin-top: 0.400vw * $coefficient;
 
         .logo {
-          width: 12.396vw * $coefficient;
-          height: auto;
+          
+
+          img {
+            width: 12.396vw * $coefficient;
+            height: auto;
+          }
         }
 
         .header__nav {
@@ -1738,8 +1745,11 @@ svg {
         margin-top: 0.365vw * $coefficient;
 
         .logo {
-          width: 12.396vw * $coefficient;
-          height: auto;
+         
+          img {
+            width: 12.396vw * $coefficient;
+            height: auto;
+          }
         }
 
         .header__nav {
