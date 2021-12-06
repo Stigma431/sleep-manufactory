@@ -452,7 +452,7 @@ svg {
 
 #cartMenuProduct .mm-navbars_top .mm-navbar {
   background-color: white;
-  padding-right: 1.46vw;
+  padding-right: 0.46vw;
   padding-left: 1.46vw;
 }
 
@@ -754,7 +754,6 @@ svg {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 1.250vw;
 }
 
 .cart-price_discount {
@@ -1176,7 +1175,7 @@ svg {
 }
 
 #cartMenu .mm-navbar {
-  padding-right: 1.46vw;
+  padding-right: 0.46vw;
   padding-left: 1.46vw;
 }
 
@@ -1440,7 +1439,7 @@ svg {
     letter-spacing: 0.0434vw;
   }
   #cartMenuProduct .mm-navbars_top .mm-navbar {
-    padding-right: 2.044vw;
+    padding-right: 0.644vw;
     padding-left: 2.044vw;
   }
   .cart-Menu__Title {
@@ -1551,9 +1550,6 @@ svg {
     height: 2.3338vw;
     font-size: 1.3132vw;
     border-radius: 0px 0.2912vw 0.2912vw 0px;
-  }
-  .cart_price-container {
-    margin-top: 1.75vw;
   }
   .cart-summary_container {
     padding-top: 1.1662vw;
@@ -1894,7 +1890,7 @@ svg {
     width: 100vw;
   }
   #cartMenuProduct .mm-navbars_top .mm-navbar {
-    padding-right: 5.84vw;
+    padding-right: 1.84vw;
     padding-left: 5.84vw;
   }
   .cart-Menu__Title {
@@ -2005,9 +2001,6 @@ svg {
     height: 6.668vw;
     font-size: 3.752vw;
     border-radius: 0px 0.832vw 0.832vw 0px;
-  }
-  .cart_price-container {
-    margin-top: 5vw;
   }
   .cart-summary_container {
     padding-top: 3.332vw;
@@ -7503,7 +7496,7 @@ svg {
     line-height: 3.56vw;
     padding: 1.252vw 3.124vw;
     border-radius: 3.124vw;
-    margin-top: 2.8vw;
+    margin-top: 0;
   }
   .mattress-parameters {
     margin-top: 1.668vw;
