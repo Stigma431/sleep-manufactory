@@ -86,7 +86,7 @@ document.addEventListener(
                 {
                     "position": "bottom",
                     "content": [
-                        "<div class='cartTotalContainer'><div class='totalTitle'>Ваш общий ценник</div><div class='totalValues-container'><div class='totalValues'>5 147,17р</div><div class='savedValues'>Вы сэкономили 5 147,17р!</div></div></div>",
+                        "<div class='cartTotalContainer'><div class='totalTitle'>Итого:</div><div class='totalValues-container'><div class='totalValues'>5 147,17р</div><div class='savedValues'>Вы сэкономили 5 147,17р!</div></div></div>",
                         "<div class='checkoutButton'><a href='#'>Оформить</span></a></div>"
                     ]
                 },
