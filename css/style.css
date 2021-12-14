@@ -3559,9 +3559,9 @@ li .slick-active {
 }
 
 .reviews .reviews-tag .tag-icon {
+  margin-right: 0.431vw;
   width: 3.216vw;
   height: 3.281vw;
-  margin-right: 0.431vw;
 }
 
 .reviews .reviews-tag .tag-name-city {
@@ -4216,8 +4216,8 @@ li .slick-active {
     margin-bottom: 4.792vw;
   }
   .reviews .reviews-tag .tag-icon {
-    width: 18.64vw;
-    height: 18.64vw;
+    width: 12.864vw;
+    height: 13.124vw;
     margin-right: 1.724vw;
   }
   .reviews .reviews-tag .tag-name-city .tag-name {
@@ -6061,10 +6061,7 @@ li .slick-active {
           align-items: center;
 }
 
-.advantages-icon {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.advantages-item img {
   height: 4.688vw;
   width: 4.688vw;
 }
@@ -6094,6 +6091,10 @@ li .slick-active {
     margin-top: 6.5vw;
     margin-bottom: 6.5vw;
   }
+  .advantages-item img {
+    height: 6.0944vw;
+    width: 6.0944vw;
+  }
   .advantages-title {
     font-size: 1.1505vw;
     line-height: 1.4053vw;
@@ -6122,6 +6123,10 @@ li .slick-active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .advantages-item img {
+    height: 18.752vw;
+    width: 18.752vw;
   }
   .advantages-title {
     font-size: 3.54vw;
@@ -6757,6 +6762,11 @@ video {
   margin-bottom: 0;
 }
 
+.second-page-reviews ul li img {
+  width: 1.563vw;
+  height: 1.491vw;
+}
+
 .reviews-number {
   font-size: 1.042vw;
   line-height: 1.271vw;
@@ -7209,6 +7219,10 @@ svg {
   .second-page-reviews ul {
     padding-right: 1.1505vw;
   }
+  .second-page-reviews ul li img {
+    width: 2.0319vw;
+    height: 1.9383vw;
+  }
   .reviews-number {
     font-size: 1.3546vw;
     line-height: 1.6523vw;
@@ -7470,6 +7484,10 @@ svg {
   }
   .second-page-reviews ul {
     padding-right: 3.54vw;
+  }
+  .second-page-reviews ul li img {
+    width: 6.252vw;
+    height: 5.964vw;
   }
   .reviews-number {
     font-size: 4.168vw;
@@ -8053,9 +8071,12 @@ svg {
 }
 
 .materials-image {
-  width: auto;
-  height: auto;
   margin-right: 3.040vw;
+}
+
+.materials-image img {
+  width: 11.699vw;
+  height: 11.458vw;
 }
 
 .materials-description {
@@ -8128,9 +8149,11 @@ svg {
     padding-bottom: 6.7088vw;
   }
   .materials-image {
+    margin-right: 4.256vw;
+  }
+  .materials-image img {
     width: 16.3786vw;
     height: 16.0412vw;
-    margin-right: 4.256vw;
   }
   .materials-title {
     font-size: 3.5vw;
@@ -8176,10 +8199,12 @@ svg {
             flex-direction: column;
   }
   .materials-image {
-    width: 46.796vw;
-    height: 45.832vw;
     margin-right: 0;
     margin-bottom: 11.566vw;
+  }
+  .materials-image img {
+    width: 46.796vw;
+    height: 45.832vw;
   }
   .materials-title {
     font-size: 10vw;
@@ -8627,6 +8652,11 @@ svg {
   padding: 1.146vw 0 1.535vw 1.658vw;
 }
 
+.reviews-item_content ul li img {
+  width: 1.181vw;
+  height: 1.181vw;
+}
+
 .product-page-reviews_tag {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8636,6 +8666,11 @@ svg {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 1.133vw;
+}
+
+.product-page-reviews_tag .tag-icon img {
+  width: 3.684vw;
+  height: 3.799vw;
 }
 
 .tag-name-city {
@@ -8947,8 +8982,16 @@ svg {
   .reviews-item_content {
     padding: 1.4898vw 0 1.9955vw 2.1554vw;
   }
+  .reviews-item_content ul li img {
+    width: 1.5353vw;
+    height: 1.5353vw;
+  }
   .product-page-reviews_tag {
     margin-bottom: 1.4729vw;
+  }
+  .product-page-reviews_tag .tag-icon img {
+    width: 4.7892vw;
+    height: 4.9387vw;
   }
   .name {
     font-size: 1.1505vw;
@@ -9171,8 +9214,16 @@ svg {
   .reviews-item_content {
     padding: 4.584vw 0 6.14vw 6.632vw;
   }
+  .reviews-item_content ul li img {
+    width: 4.724vw;
+    height: 4.724vw;
+  }
   .product-page-reviews_tag {
     margin-bottom: 4.532vw;
+  }
+  .product-page-reviews_tag .tag-icon img {
+    width: 14.736vw;
+    height: 15.196vw;
   }
   .name {
     font-size: 3.54vw;

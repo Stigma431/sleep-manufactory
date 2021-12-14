@@ -3745,9 +3745,9 @@ li .slick-active {
     margin-bottom: 1.198vw;
 
     .tag-icon {
+      margin-right: 0.431vw;
       width: 3.216vw;
       height: 3.281vw;
-      margin-right: 0.431vw;
     }
 
     .tag-name-city {
@@ -4484,8 +4484,8 @@ li .slick-active {
       margin-bottom: 1.198vw * $coefficient;
 
       .tag-icon {
-        width: 4.66vw * $coefficient;
-        height: 4.66vw * $coefficient;
+        width: 3.216vw * $coefficient;
+        height: 3.281vw * $coefficient;
         margin-right: 0.431vw * $coefficient;
       }
 
@@ -6561,12 +6561,11 @@ $slick-opacity-not-active: 0.25 !default;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.advantages-icon {
-  justify-content: center;
-  height: 4.688vw;
-  width: 4.688vw;
+  img {
+    height: 4.688vw;
+    width: 4.688vw;
+  }
 }
 
 .advantages-title {
@@ -6599,7 +6598,13 @@ $slick-opacity-not-active: 0.25 !default;
 
   .advantages-items {}
 
-  .advantages-item {}
+  .advantages-item {
+
+    img {
+      height: 4.688vw * $coefficient;
+      width: 4.688vw * $coefficient;
+    }
+  }
 
   .advantages-title {
     font-size: 0.885vw * $coefficient;
@@ -6631,7 +6636,13 @@ $slick-opacity-not-active: 0.25 !default;
     justify-content: center;
   }
 
-  .advantages-item {}
+  .advantages-item {
+
+    img {
+      height: 4.688vw * $coefficient;
+      width: 4.688vw * $coefficient;
+    }
+  }
 
   .advantages-title {
     font-size: 0.885vw * $coefficient;
@@ -7274,6 +7285,14 @@ video {
   padding-left: 0;
   padding-right: 0.885vw;
   margin-bottom: 0;
+
+  li {
+
+    img {
+      width: 1.563vw;
+      height: 1.491vw;
+    }
+  }
 }
 
 .reviews-number {
@@ -7724,6 +7743,14 @@ svg {
 
   .second-page-reviews ul {
     padding-right: 0.885vw * $coefficient;
+
+    li {
+
+      img {
+        width: 1.563vw * $coefficient;
+        height: 1.491vw * $coefficient;
+      }
+    }
   }
 
   .reviews-number {
@@ -8059,6 +8086,14 @@ svg {
 
   .second-page-reviews ul {
     padding-right: 0.885vw * $coefficient;
+
+    li {
+
+      img {
+        width: 1.563vw * $coefficient;
+        height: 1.491vw * $coefficient;
+      }
+    }
   }
 
   .reviews-number {
@@ -8743,9 +8778,12 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .materials-image {
-  width: auto;
-  height: auto;
   margin-right: 3.040vw;
+
+  img {
+    width: 11.699vw;
+    height: 11.458vw;
+  }
 }
 
 .materials-description {
@@ -8817,9 +8855,12 @@ $slick-opacity-not-active: 0.25 !default;
   .materials-content {}
 
   .materials-image {
-    width: 11.699vw * $coefficient;
-    height: 11.458vw * $coefficient;
     margin-right: 3.040vw * $coefficient;
+
+    img {
+      width: 11.699vw * $coefficient;
+      height: 11.458vw * $coefficient;
+    }
   }
 
   .materials-description {}
@@ -8880,10 +8921,13 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   .materials-image {
-    width: 11.699vw * $coefficient;
-    height: 11.458vw * $coefficient;
     margin-right: 0;
     margin-bottom: 11.566vw;
+
+    img {
+      width: 11.699vw * $coefficient;
+      height: 11.458vw * $coefficient;
+    }
   }
 
   .materials-description {}
@@ -9353,6 +9397,14 @@ $slick-opacity-not-active: 0.25 !default;
 
 .reviews-item_content {
   padding: 1.146vw 0 1.535vw 1.658vw;
+
+  ul li {
+
+    img {
+      width: 1.181vw;
+      height: 1.181vw;
+    }
+  }
 }
 
 .product-page-reviews_tag {
@@ -9361,7 +9413,13 @@ $slick-opacity-not-active: 0.25 !default;
   margin-bottom: 1.133vw;
 }
 
-.product-page-reviews_tag .tag-icon {}
+.product-page-reviews_tag .tag-icon {
+
+  img {
+    width: 3.684vw;
+    height: 3.799vw;
+  }
+}
 
 .tag-name-city {
   display: flex;
@@ -9696,13 +9754,27 @@ $slick-opacity-not-active: 0.25 !default;
 
   .reviews-item_content {
     padding: 1.146vw * $coefficient 0 1.535vw * $coefficient 1.658vw * $coefficient;
+
+    ul li {
+
+      img {
+        width: 1.181vw * $coefficient;
+        height: 1.181vw * $coefficient;
+      }
+    }
   }
 
   .product-page-reviews_tag {
     margin-bottom: 1.133vw * $coefficient;
   }
 
-  .product-page-reviews_tag .tag-icon {}
+  .product-page-reviews_tag .tag-icon {
+
+    img {
+      width: 3.684vw * $coefficient;
+      height: 3.799vw * $coefficient;
+    }
+  }
 
   .tag-name-city {}
 
@@ -10001,13 +10073,27 @@ $slick-opacity-not-active: 0.25 !default;
 
   .reviews-item_content {
     padding: 1.146vw * $coefficient 0 1.535vw * $coefficient 1.658vw * $coefficient;
+
+    ul li {
+
+      img {
+        width: 1.181vw * $coefficient;
+        height: 1.181vw * $coefficient;
+      }
+    }
   }
 
   .product-page-reviews_tag {
     margin-bottom: 1.133vw * $coefficient;
   }
 
-  .product-page-reviews_tag .tag-icon {}
+  .product-page-reviews_tag .tag-icon {
+
+    img {
+      width: 3.684vw * $coefficient;
+      height: 3.799vw * $coefficient;
+    }
+  }
 
   .tag-name-city {}
 
