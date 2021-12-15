@@ -9738,4 +9738,88 @@ footer .year {
 .container-right .cartMenu_container {
   background-color: #F6F6F6;
 }
+
+.cartMenu_content-ordering {
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+.cart-Menu__Title-ordering {
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: 1.927vw;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.cart-product_image-ordering {
+  width: 4.167vw;
+  height: 4.167vw;
+}
+
+.cart_price-container-ordering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cart_price-container-ordering .cart-price_discount {
+  margin-right: 0.417vw;
+}
+
+.cartTotalContainer-ordering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages-ordering {
+  background-color: #FAF6F4;
+  height: 10.4vw;
+}
+
+.advantages_container-ordering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages-ordering-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages-ordering-item img {
+  width: 4.688vw;
+  height: 4.583vw;
+}
 /*# sourceMappingURL=ordering.css.map */

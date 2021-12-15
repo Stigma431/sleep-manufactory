@@ -10695,19 +10695,77 @@ footer {
 //ordering-page
 
 .ordering-container {
-    display: flex;
+  display: flex;
 
 }
 
 .container-left {
-    width: 46.619vw;
-    margin: 0 auto;
+  width: 46.619vw;
+  margin: 0 auto;
 }
 
 .container-right {
-    width: 39.531vw;
+  width: 39.531vw;
 }
 
 .container-right .cartMenu_container {
-    background-color: #F6F6F6;
+  background-color: #F6F6F6;
+}
+
+.cartMenu_content-ordering {
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+.cart-Menu__Title-ordering {
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: 1.927vw;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.cart-product_image-ordering {
+  width: 4.167vw;
+  height: 4.167vw;
+}
+
+.cart_price-container-ordering {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.cart_price-container-ordering .cart-price_discount {
+  margin-right: 0.417vw;
+}
+
+.cartTotalContainer-ordering {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.advantages-ordering {
+  background-color: #FAF6F4;
+  height: 10.4vw;
+}
+
+.advantages_container-ordering {
+  display: flex;
+  align-items: center;
+
+}
+
+.advantages-ordering-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 4.688vw;
+    height: 4.583vw;
+  }
 }
