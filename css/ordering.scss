@@ -10700,8 +10700,192 @@ footer {
 }
 
 .container-left {
-  width: 46.619vw;
-  margin: 0 auto;
+  width: 100%;
+  padding-top: 1.667vw;
+  padding-bottom: 4.167vw;
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+
+.logo-image {
+  margin-bottom: 1.458vw;
+  display: block;
+}
+
+.registration-title {
+  display: flex;
+  align-items: center;
+  padding: 1.250vw 0 0.625vw;
+}
+
+.step-number {
+  width: 2.865vw;
+  height: 2.865vw;
+  font-size: 1.875vw;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 2.292vw;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #1F316A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.833vw;
+}
+
+.step-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.667vw;
+  font-weight: 700;
+  line-height: 2.031vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F316A;
+
+  span {
+    font-size: 1.146vw;
+    font-weight: 400;
+    line-height: 1.406vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+
+    a {
+      color: 1F316A;
+    }
+  }
+}
+
+.input-email {
+  position: relative;
+}
+
+.form-control {
+  width: 45.313vw !important;
+  height: 3.646vw;
+}
+
+.form-control:focus {
+}
+
+.form-control:active {
+}
+
+.input-email:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_email {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  color: rgb(21, 21, 21);
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  display: block;
+  width: 100%;
+  border: 0px;
+  background: none;
+  appearance: none;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2.5rem inset;
+  border-radius: 0.25rem;
+  transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+}
+
+.input-border {
+  position: absolute;
+  inset: 0.833vw 0 0;
+  z-index: 2;
+  border-width: 0.104vw;
+  border-style: solid;
+  border-color: transparent transparent rgb(230, 230, 230);
+  border-image: initial;
+  border-radius: 0.208vw;
+  pointer-events: none;
+  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running;
+
+  .input-border::before {
+    animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running jpDwqE;
+  }
+
+  .input-border::before {
+    border-top-color: rgb(230, 230, 230);
+    border-left-color: rgb(230, 230, 230);
+  }
+}
+
+.input-border_second {
+
+  .input-border_second::before,
+  .input-border_second::after {
+    animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running lphpOy;
+  }
+
+  .input-border_second::before,
+  .input-border_second::after {
+    background: rgb(230, 230, 230);
+  }
+
+  .input-border_second::before {
+    transform: translateX(-100%);
+  }
+
+  .input-border_second::before {
+    right: 50%;
+  }
+
+  .input-border_second::before,
+  .input-border_second::after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    display: block;
+    width: 50%;
+    transition: transform 0.3s ease-out 0s;
+  }
+}
+
+.email-label_wrapper {
+  letter-spacing: 0.031vw;
+  padding: 0.833vw 1.042vw;
+  font-size: 1.875vw;
+  position: absolute;
+  left: 0px;
+  top: -0.5vw;
+  z-index: 1;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform-origin: 0px 0px;
+  pointer-events: none;
+  transition: transform 0.3s ease-out 0s;
+  color: rgb(82, 82, 82);
+}
+
+.email-label_wrapper-active {
+  font-weight: 400;
+  letter-spacing: 0.031vw;
+  padding: 0.833vw 1.042vw;
+  font-size: 0.938vw;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform-origin: 0px 0px;
+  pointer-events: none;
+  transition: transform 0.3s ease-out 0s;
+  color: rgb(82, 82, 82);
+  transform: translateY(-0.8rem) translateX(0.25rem) scale(0.85);
 }
 
 .container-right {
@@ -10747,9 +10931,24 @@ footer {
   justify-content: space-between;
 }
 
+.border-image {
+  width: 39.531vw;
+}
+
 .advantages-ordering {
   background-color: #FAF6F4;
   height: 10.4vw;
+}
+
+.advantages-ordering_title {
+  font-size: 1.875vw;
+  font-weight: 400;
+  line-height: 2.292vw;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 0.521vw;
+  margin-top: 1.539vw;
+  color: #1F316A;
 }
 
 .advantages_container-ordering {
