@@ -6,16 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/mmenu.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/slick3.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/all-settings.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/mmenu.css">
-    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/ordering.css">
     <title>Главная страница</title>
 </head>
@@ -38,29 +32,49 @@
                         <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1" class="input-email">
-                                    <span class="email-label_wrapper">
-                                        <span>E-mail</span>
-                                    </span>
-                                    <input type="email" class="form-control form-control_email" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
+                                    <div>
+                                        <span class="email-label_wrapper">
+                                            <span>Email address</span>
+                                        </span>
+                                        <input required type="email" class="form-control form-control_email"
+                                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <span class="input-border"></span>
+                                        <span class="input-border_second input-border_second-deactive"></span>
+                                    </div>
                                     <small id="emailHelp" class="form-text text-muted">
                                         We'll never share your email with anyone else.
                                     </small>
-                                    <span class="input-border"></span>
-                                    <span class="input-border_second"></span>
                                 </label>
                             </div>
                             <script>
-                                $(document).ready(function() {
+                                var fields = form.querySelectorAll('.field')
+
+                                form.addEventListener('submit', function (event) {
+                                    event.preventDefault()
+
+                                    for (var i = 0; i < fields.length; i++) {
+                                        if (!fields[i].value) {
+                                            console.log('field is blank', fields[i])
+                                        }
+                                    }
+                                })
+                            </script>
+                            <script>
+                                $(document).ready(function () {
                                     $('.form-control_email').click(function (ev) {
-                                        $('.email-label_wrapper').addClass('email-label_wrapper-active');
+                                        $('.input-border_second').addClass(
+                                            'input-border_second-active');
+                                        $('.email-label_wrapper').addClass(
+                                            'email-label_wrapper-active');
                                         ev.stopPropagation();
                                     });
                                     $('html').click(function () {
-                                        $('.email-label_wrapper').removeClass('email-label_wrapper-active');
+                                        $('.email-label_wrapper').removeClass(
+                                            'email-label_wrapper-active');
+                                        $('.input-border_second').removeClass(
+                                            'input-border_second-active');
                                     });
                                 });
-
                             </script>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
@@ -189,6 +203,7 @@
 
             </div>
         </div>
+        
 </body>
 
 </html>

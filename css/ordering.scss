@@ -10711,6 +10711,13 @@ footer {
 .logo-image {
   margin-bottom: 1.458vw;
   display: block;
+  width: 12.396vw;
+  height: 2.240vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .registration-title {
@@ -10755,32 +10762,20 @@ footer {
     color: #000000;
 
     a {
-      color: 1F316A;
+      color: #1F316A;
     }
   }
 }
 
-.input-email {
+.input-email div {
   position: relative;
 }
 
 .form-control {
-  width: 45.313vw !important;
   height: 3.646vw;
 }
 
-.form-control:focus {
-}
-
-.form-control:active {
-}
-
-.input-email:hover .form-control {
-  background: rgb(246, 246, 246);
-  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
-}
-
-.form-control_email {
+.form-control {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.0375rem;
@@ -10788,7 +10783,7 @@ footer {
   padding: 1rem 1.25rem;
   font-size: 1.125rem;
   display: block;
-  width: 100%;
+  width: 45.313vw;
   border: 0px;
   background: none;
   appearance: none;
@@ -10797,58 +10792,182 @@ footer {
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
 }
 
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:active {}
+
+.input-email:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
 .input-border {
   position: absolute;
-  inset: 0.833vw 0 0;
+  inset: 0 0px 0px;
   z-index: 2;
-  border-width: 0.104vw;
+  border-width: 2px;
   border-style: solid;
   border-color: transparent transparent rgb(230, 230, 230);
   border-image: initial;
-  border-radius: 0.208vw;
+  border-radius: 0.25rem;
   pointer-events: none;
-  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running;
-
-  .input-border::before {
-    animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running jpDwqE;
-  }
-
-  .input-border::before {
-    border-top-color: rgb(230, 230, 230);
-    border-left-color: rgb(230, 230, 230);
-  }
+  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
 }
 
-.input-border_second {
+.input-border::before {
+  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running jpDwqE;
+}
 
-  .input-border_second::before,
-  .input-border_second::after {
-    animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running lphpOy;
-  }
+.input-border::before {
+  border-top-color: rgb(230, 230, 230) !important;
+  border-left-color: rgb(230, 230, 230) !important;
+}
 
-  .input-border_second::before,
-  .input-border_second::after {
-    background: rgb(230, 230, 230);
-  }
+.input-border::before {
+  right: auto;
+  width: 1rem;
+  border-right: 0px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
 
-  .input-border_second::before {
-    transform: translateX(-100%);
-  }
+.input-border::before,
+.input-border::after {
+  content: " ";
+  position: absolute;
+  inset: -2px;
+  border: 2px solid transparent;
+  pointer-events: none;
+}
 
-  .input-border_second::before {
-    right: 50%;
-  }
+.input-border::after {
+  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running eDrksG;
+}
 
-  .input-border_second::before,
-  .input-border_second::after {
-    content: " ";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    display: block;
-    width: 50%;
-    transition: transform 0.3s ease-out 0s;
-  }
+.input-border::after {
+  border-top-color: rgb(230, 230, 230);
+  border-right-color: rgb(230, 230, 230);
+}
+
+
+
+.input-border::after {
+  border-left: 0px;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  left: calc(1.4rem + 89.25px);
+}
+
+.input-border_second-active {
+  position: absolute;
+  top: 0rem;
+  right: auto;
+  left: 1rem;
+  display: block;
+  height: 2px;
+  overflow: hidden;
+  width: calc(0.6rem + 89.25px);
+}
+
+.input-border_second-active::before,
+.input-border_second-active::after {
+  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running lphpOy;
+}
+
+.input-border_second-active::before,
+.input-border_second-active::after {
+  background: rgb(230, 230, 230);
+}
+
+.input-border_second-active::before {
+  transform: translateX(-100%);
+}
+
+.input-border_second-active::before {
+  right: 50%;
+}
+
+.input-border_second-active::before,
+.input-border_second-active::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  display: block;
+  width: 50%;
+  transition: transform 0.3s ease-out 0s;
+}
+
+
+.input-border_second-active::before,
+.input-border_second-active::after {
+  animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running lphpOy;
+}
+
+.input-border_second-active::before,
+.input-border_second-active::after {
+  background: rgb(230, 230, 230);
+}
+
+.input-border_second-active::after {
+  transform: translateX(100%);
+}
+
+.input-border_second-active::after {
+  left: 50%;
+}
+
+.input-border_second-active::before,
+.input-border_second-active::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  display: block;
+  width: 50%;
+  transition: transform 0.3s ease-out 0s;
+}
+
+.input-border_second-deactive {
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 1rem;
+  display: block;
+  height: 2px;
+  overflow: hidden;
+  width: calc(0.6rem + 89.25px);
+}
+
+.input-border_second-deactive::before, .input-border_second-deactive::after {
+  background: rgb(237, 90, 77);
+}
+
+.input-border_second-deactive::before, .input-border_second-deactive::after {
+  background: rgb(230, 230, 230);
+}
+
+.input-border_second-deactive::before {
+  right: 50%;
+}
+
+.input-border_second-deactive::before, .input-border_second-deactive::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  display: block;
+  width: 50%;
+  transition: transform 0.3s ease-out 0s;
+}
+
+.input-border_second-deactive::after {
+  left: 50%;
 }
 
 .email-label_wrapper {
@@ -10870,22 +10989,22 @@ footer {
 }
 
 .email-label_wrapper-active {
-  font-weight: 400;
-  letter-spacing: 0.031vw;
-  padding: 0.833vw 1.042vw;
-  font-size: 0.938vw;
-  position: absolute;
-  left: 0px;
-  z-index: 1;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transform-origin: 0px 0px;
-  pointer-events: none;
-  transition: transform 0.3s ease-out 0s;
-  color: rgb(82, 82, 82);
-  transform: translateY(-0.8rem) translateX(0.25rem) scale(0.85);
+    font-weight: 400;
+    letter-spacing: 0.0375rem;
+    padding: 1rem 1.25rem;
+    font-size: 1.125rem;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform-origin: 0px 0px;
+    pointer-events: none;
+    transition: transform 0.3s ease-out 0s;
+    color: rgb(82, 82, 82);
+    transform: translateY(-1rem) translateX(0.25rem) scale(0.85);
 }
 
 .container-right {
