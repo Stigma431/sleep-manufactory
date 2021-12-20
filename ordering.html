@@ -47,19 +47,6 @@
                                 </label>
                             </div>
                             <script>
-                                var fields = form.querySelectorAll('.field')
-
-                                form.addEventListener('submit', function (event) {
-                                    event.preventDefault()
-
-                                    for (var i = 0; i < fields.length; i++) {
-                                        if (!fields[i].value) {
-                                            console.log('field is blank', fields[i])
-                                        }
-                                    }
-                                })
-                            </script>
-                            <script>
                                 $(document).ready(function () {
                                     $('.form-control_email').click(function (ev) {
                                         $('.input-border_second').addClass(
