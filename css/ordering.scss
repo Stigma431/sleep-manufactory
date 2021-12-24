@@ -10944,11 +10944,13 @@ footer {
   width: calc(0.6rem + 89.25px);
 }
 
-.input-border_second-deactive::before, .input-border_second-deactive::after {
+.input-border_second-deactive::before,
+.input-border_second-deactive::after {
   background: rgb(237, 90, 77);
 }
 
-.input-border_second-deactive::before, .input-border_second-deactive::after {
+.input-border_second-deactive::before,
+.input-border_second-deactive::after {
   background: rgb(230, 230, 230);
 }
 
@@ -10956,7 +10958,8 @@ footer {
   right: 50%;
 }
 
-.input-border_second-deactive::before, .input-border_second-deactive::after {
+.input-border_second-deactive::before,
+.input-border_second-deactive::after {
   content: " ";
   position: absolute;
   top: 0px;
@@ -10989,22 +10992,22 @@ footer {
 }
 
 .email-label_wrapper-active {
-    font-weight: 400;
-    letter-spacing: 0.0375rem;
-    padding: 1rem 1.25rem;
-    font-size: 1.125rem;
-    position: absolute;
-    left: 0px;
-    z-index: 1;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    transform-origin: 0px 0px;
-    pointer-events: none;
-    transition: transform 0.3s ease-out 0s;
-    color: rgb(82, 82, 82);
-    transform: translateY(-1rem) translateX(0.25rem) scale(0.85);
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform-origin: 0px 0px;
+  pointer-events: none;
+  transition: transform 0.3s ease-out 0s;
+  color: rgb(82, 82, 82);
+  transform: translateY(-1rem) translateX(0.25rem) scale(0.85);
 }
 
 .container-right {
@@ -11086,4 +11089,48 @@ footer {
     width: 4.688vw;
     height: 4.583vw;
   }
+}
+
+.formWrapper {
+  width: 45.313vw;
+  margin: 0 auto;
+}
+
+.btn.btn-primary {
+  float: right;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+  appearance: none;
+  padding: 0.75rem 1.5rem 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  background: rgb(30, 48, 110);
+  height: 3.5rem;
+  line-height: 1.5;
+  width: 20.833vw;
+  font-size: 1.667vw;
+  box-shadow: rgb(242, 242, 242) 0px 0.0625rem 0px,
+    rgb(230, 230, 230) 0px 0.0625rem 0.125rem,
+    rgb(242, 242, 242) 0px 0.3125rem 0.9375rem;
+}
+
+
+.btn.btn-primary:hover {
+  background: rgb(82, 102, 153);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  box-shadow: rgb(242, 242, 242) 0px 0.3125rem 0.9375rem,
+    rgb(230, 230, 230) 0px 0.3125rem 0.3125rem,
+    rgb(242, 242, 242) 0px 0.125rem 0.3125rem;
 }

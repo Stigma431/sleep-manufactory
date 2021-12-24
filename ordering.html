@@ -29,51 +29,58 @@
                                 <span>Уже есть аккаунт? <a href="#">Войти></a></span>
                             </span>
                         </h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="input-email">
-                                    <div>
-                                        <span class="email-label_wrapper">
-                                            <span>Email address</span>
-                                        </span>
-                                        <input required type="email" class="form-control form-control_email"
-                                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <span class="input-border"></span>
-                                        <span class="input-border_second input-border_second-deactive"></span>
-                                    </div>
-                                    <small id="emailHelp" class="form-text text-muted">
-                                        We'll never share your email with anyone else.
-                                    </small>
-                                </label>
-                            </div>
-                            <script>
-                                $(document).ready(function () {
-                                    $('.form-control_email').click(function (ev) {
-                                        $('.input-border_second').addClass(
-                                            'input-border_second-active');
-                                        $('.email-label_wrapper').addClass(
-                                            'email-label_wrapper-active');
-                                        ev.stopPropagation();
+                        <div class="formWrapper">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="input-email">
+                                        <div>
+                                            <span class="email-label_wrapper">
+                                                <span>Email address</span>
+                                            </span>
+                                            <input required type="email" class="form-control form-control_email"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                        <small id="emailHelp" class="form-text text-muted">
+                                            We'll never share your email with anyone else.
+                                        </small>
+                                    </label>
+                                </div>
+                                <script>
+                                    $(document).ready(function () {
+                                        $('.form-control_email').click(function (ev) {
+                                            $('.input-border_second').addClass(
+                                                'input-border_second-active');
+                                            $('.email-label_wrapper').addClass(
+                                                'email-label_wrapper-active');
+                                            ev.stopPropagation();
+                                        });
+                                        $('html').click(function () {
+                                            $('.email-label_wrapper').removeClass(
+                                                'email-label_wrapper-active');
+                                            $('.input-border_second').removeClass(
+                                                'input-border_second-active');
+                                        });
                                     });
-                                    $('html').click(function () {
-                                        $('.email-label_wrapper').removeClass(
-                                            'email-label_wrapper-active');
-                                        $('.input-border_second').removeClass(
-                                            'input-border_second-active');
-                                    });
-                                });
-                            </script>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Password">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+                                </script>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="submitContent">
+                                        <span class="labelWrapper">Продолжить покупку</span>
+                                        <span></span>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <div class="address"></div>
                     <div class="delivery"></div>
@@ -190,7 +197,6 @@
 
             </div>
         </div>
-        
 </body>
 
 </html>
