@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/ordering.css">
-    <title>Главная страница</title>
+    <title>ОФормление заказа</title>
 </head>
 
 <body>
@@ -42,10 +42,37 @@
                                             <span class="input-border"></span>
                                             <span class="input-border_second input-border_second-deactive"></span>
                                         </div>
-                                        <small id="emailHelp" class="form-text text-muted">
-                                            We'll never share your email with anyone else.
-                                        </small>
                                     </label>
+                                </div>
+                                <div class="FieldWrapper-sc-1dsmy0d-0 cspcqU">
+                                    <span data-qa="input" class="InputWrapper-o0ktdc-0 ipZAAB">
+                                        <label data-qa="input-option-field" class="InputContainer-o0ktdc-1 gczSAf">
+                                            <span class="OptionContent-o0ktdc-19 jOEbaz">
+                                                <input aria-invalid="false"
+                                                    aria-labelledby="input-marketing_opt_in-label"
+                                                    id="input-marketing_opt_in" name="marketing_opt_in" type="checkbox"
+                                                    class="OptionInput-o0ktdc-11 crJvTC" value="false">
+                                                <svg aria-hidden="true" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="OptionInputBorder-o0ktdc-13 CheckboxInputBorder-o0ktdc-15 jhoJHC">
+                                                    <rect class="input-checkbox-outer" height="20" rx="3" ry="3"
+                                                        width="20" x="0" y="0"></rect>
+                                                    <rect class="input-checkbox-inner" height="18" rx="2" ry="2"
+                                                        width="18" x="1" y="1"></rect>
+                                                    <polyline class="input-checkbox-mark"
+                                                        points="2.5,9.5 7.5,14.5 17.5,4.5"></polyline>
+                                                </svg>
+                                                <span id="input-marketing_opt_in-label"
+                                                    class="OptionInputLabel-o0ktdc-12 euJMLY">
+                                                    <span>
+                                                        <span class="LabelWrapper-sc-1dsmy0d-3 gypWrY">Stay up to date
+                                                            with exclusive offers and news. Unsubscribe anytime.</span>
+                                                        &nbsp;
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </span>
                                 </div>
                                 <script>
                                     $(document).ready(function () {
@@ -62,23 +89,33 @@
                                             $('.input-border_second').removeClass(
                                                 'input-border_second-active');
                                         });
+                                        $('.gczSAf').hover(function () {
+                                            $('.OptionInputBorder-o0ktdc-13').addClass(
+                                                'jhoJHC');
+                                            $('.OptionInputBorder-o0ktdc-13').removeClass(
+                                                'bwCrgA');
+                                            ev.stopPropagation();
+                                        });
+                                        $('.cspcqU').click(function () {
+                                            $('.OptionInputBorder-o0ktdc-13').addClass(
+                                                'bwCrgA');
+                                            $('.OptionInputBorder-o0ktdc-13').removeClass(
+                                                'jhoJHC');
+                                            ev.stopPropagation();
+                                        });
                                     });
                                 </script>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="Password">
+                                <div class="submitWrapper">
+                                    <button type="submit" class="btn btn-primary">
+                                        <span class="submitContent">
+                                            <span class="labelWrapper">Продолжить покупку</span>
+                                            <span></span>
+                                        </span>
+                                    </button>
+                                    <div class="submit-text">
+                                        Оформляя заказ, я подтверждаю свое согласие с <a href="#">договором-оферты</a>
+                                    </div>
                                 </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">
-                                    <span class="submitContent">
-                                        <span class="labelWrapper">Продолжить покупку</span>
-                                        <span></span>
-                                    </span>
-                                </button>
                             </form>
                         </div>
                     </div>

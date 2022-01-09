@@ -10769,6 +10769,7 @@ footer {
 
 .input-email div {
   position: relative;
+  margin-bottom: 2.083vw;
 }
 
 .form-control {
@@ -11134,3 +11135,207 @@ footer {
     rgb(230, 230, 230) 0px 0.3125rem 0.3125rem,
     rgb(242, 242, 242) 0px 0.125rem 0.3125rem;
 }
+
+.submitWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.submit-text {
+  margin-top: 0.729vw;
+  width: 20.833vw;
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: 1.250vw;
+  letter-spacing: 0em;
+  text-align: left;
+
+  a {
+    color: #1F316A;
+  }
+}
+
+.form-check-wrapper {
+  margin-bottom: 3.802vw;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.125rem;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.form-check-input:hover {
+  border: 1px solid rgb(143, 192, 228);
+  background-color: rgb(215, 236, 247);
+}
+
+.form-check-label {
+  font-size: 1.250vw;
+  font-weight: 400;
+  line-height: 1.510vw;
+  text-align: left;
+  color: #474747;
+}
+
+//Тесты
+
+.cspcqU {
+  width: 100%;
+}
+
+.ipZAAB {
+  position: relative;
+  display: block;
+  flex: 1 1 0%;
+  margin-bottom: 0.5rem;
+}
+
+.gczSAf {
+  position: relative;
+  outline: 0px;
+  display: inline-block;
+  padding-top: 0px;
+  cursor: pointer;
+  margin-top: 0.75rem;
+}
+
+.jOEbaz {
+  flex: 1 1 0%;
+}
+
+.crJvTC {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+  letter-spacing: 0.0375rem;
+  box-shadow: none;
+}
+
+
+
+.jhoJHC {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.125rem;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+label:hover .jhoJHC .input-radio-outer,
+label:hover .jhoJHC .input-checkbox-outer {
+  fill: rgb(143, 192, 228);
+}
+
+.jhoJHC .input-radio-outer,
+.jhoJHC .input-checkbox-outer {
+  fill: rgb(82, 82, 82);
+  transition: fill 240ms ease-in-out 0ms;
+}
+
+label:hover .jhoJHC .input-radio-inner,
+label:hover .jhoJHC .input-checkbox-inner {
+  fill: rgb(215, 236, 247);
+  transform: scale(0.9);
+}
+
+.jhoJHC .input-radio-inner,
+.jhoJHC .input-checkbox-inner {
+  fill: rgb(255, 255, 255);
+  transform-origin: 50% 50%;
+  transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
+}
+
+label:hover .jhoJHC .input-checkbox-mark {
+  stroke: rgb(215, 236, 247);
+}
+
+.jhoJHC .input-checkbox-mark {
+  fill: transparent;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 2;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
+}
+
+.bwCrgA {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.125rem;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.bwCrgA .input-checkbox-outer,
+label:hover .bwCrgA .input-checkbox-outer {
+  fill: rgb(30, 48, 110);
+}
+
+.bwCrgA .input-radio-outer,
+.bwCrgA .input-checkbox-outer {
+  fill: rgb(82, 82, 82);
+  transition: fill 240ms ease-in-out 0ms;
+}
+
+.bwCrgA .input-checkbox-inner,
+label:hover .bwCrgA .input-checkbox-inner {
+  fill: transparent;
+}
+
+.bwCrgA .input-radio-inner,
+.bwCrgA .input-checkbox-inner {
+  fill: rgb(255, 255, 255);
+  transform-origin: 50% 50%;
+  transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
+}
+
+.bwCrgA .input-checkbox-mark {
+  fill: transparent;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 2;
+  transform-origin: 50% 50%;
+  transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
+  transform: scale(1);
+}
+
+.euJMLY {
+  font-size: 1.125rem;
+  line-height: 1.333;
+  letter-spacing: 0.0375rem;
+}
+
+.jOEbaz {
+  flex: 1 1 0%;
+}
+
