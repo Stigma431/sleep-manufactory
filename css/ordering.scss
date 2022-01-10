@@ -458,6 +458,10 @@ svg {
   background-color: white;
 }
 
+.cartAdd_promo-form {
+  position: relative;
+}
+
 .cart-promo {
   position: relative;
   z-index: 1;
@@ -473,6 +477,103 @@ svg {
   text-align: center;
   color: rgb(0, 112, 110);
   background: rgb(245, 251, 250);
+}
+
+.input-promo div {
+  position: relative;
+}
+
+.form-control_promo {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  color: rgb(21, 21, 21);
+  padding: 0.7rem 1.25rem;
+  font-size: 1.125rem;
+  display: block;
+  width: 32.866vw;
+  border: 0px;
+  background: #F6F6F6;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  outline: none;
+}
+
+.input_promo-border {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 750ms ease-out 750ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_promo-border-active {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 0ms ease-out 150ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_promo-border::before,
+.input_promo-border::after {
+  background-color: rgb(30, 48, 110);
+}
+
+.input_promo-border::before {
+  left: 50%;
+}
+
+.input_promo-border::after {
+  right: 50%;
+}
+
+.input_promo-border::before,
+.input_promo-border::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(30, 48, 110);
+  transition: width 0.15s ease-out 0s;
+}
+
+.input_promo-border-active::before,
+.input_promo-border-active::after {
+  width: 50%;
+}
+
+.applyButtonContainer {
+  font-weight: 400;
+  position: absolute;
+  top: 0.2rem;
+  right: 0px;
+  bottom: 0px;
+  font-size: 1rem;
+  border: 0px;
+  background: none;
+  appearance: none;
+  outline: 0px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.active {
+  display: flex;
 }
 
 .cart-item_container {
@@ -691,12 +792,17 @@ svg {
   align-items: center;
 }
 
-.tagIcon {
+.tagPromoIcon {
   fill: rgb(255, 255, 255);
   margin-right: 0.417vw;
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
   pointer-events: none;
+
+  img {
+    width: 1.572vw;
+    height: 1.345vw;
+  }
 }
 
 .iconPromoSvg {
@@ -715,8 +821,8 @@ svg {
   background: none;
   outline: 0px;
   cursor: pointer;
-  width: 0.417vw;
-  height: 0.417vw;
+  width: 0.862vw;
+  height: 0.810vw;
   margin-left: 0.833vw;
   fill: rgb(255, 255, 255);
 
@@ -725,6 +831,10 @@ svg {
     inset: 0px;
     margin: auto;
   }
+}
+
+.closePromoIcon:hover {
+  fill: rgb(30, 48, 110);
 }
 
 .cartAdd_promo {
@@ -737,7 +847,6 @@ svg {
   background: none;
   outline: 0px;
   cursor: pointer;
-  display: none;
 }
 
 .cartShipping {
@@ -1491,8 +1600,8 @@ svg {
   }
 
   .closePromoIcon {
-    width: 0.417vw * $coefficient;
-    height: 0.417vw * $coefficient;
+    width: 0.862vw * $coefficient;
+    height: 0.810vw * $coefficient;
     margin-left: 0.833vw * $coefficient;
 
     svg {}
@@ -2051,8 +2160,8 @@ svg {
   }
 
   .closePromoIcon {
-    width: 0.417vw * $coefficient;
-    height: 0.417vw * $coefficient;
+    width: 0.862vw * $coefficient;
+    height: 0.810vw * $coefficient;
     margin-left: 0.833vw * $coefficient;
 
     svg {}
@@ -10720,6 +10829,10 @@ footer {
   }
 }
 
+.registration {
+  border-bottom: 1px solid rgb(30, 48, 110);
+}
+
 .registration-title {
   display: flex;
   align-items: center;
@@ -10765,6 +10878,10 @@ footer {
       color: #1F316A;
     }
   }
+}
+
+.formWrapper {
+  padding-bottom: 0.833vw;
 }
 
 .input-email div {
@@ -10974,43 +11091,6 @@ footer {
   left: 50%;
 }
 
-.email-label_wrapper {
-  letter-spacing: 0.031vw;
-  padding: 0.833vw 1.042vw;
-  font-size: 1.875vw;
-  position: absolute;
-  left: 0px;
-  top: -0.5vw;
-  z-index: 1;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transform-origin: 0px 0px;
-  pointer-events: none;
-  transition: transform 0.3s ease-out 0s;
-  color: rgb(82, 82, 82);
-}
-
-.email-label_wrapper-active {
-  font-weight: 400;
-  letter-spacing: 0.0375rem;
-  padding: 1rem 1.25rem;
-  font-size: 1.125rem;
-  position: absolute;
-  left: 0px;
-  z-index: 1;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transform-origin: 0px 0px;
-  pointer-events: none;
-  transition: transform 0.3s ease-out 0s;
-  color: rgb(82, 82, 82);
-  transform: translateY(-1rem) translateX(0.25rem) scale(0.85);
-}
-
 .container-right {
   width: 39.531vw;
 }
@@ -11189,11 +11269,11 @@ footer {
 
 //Тесты
 
-.cspcqU {
+.FieldWrapper {
   width: 100%;
 }
 
-.ipZAAB {
+.InputWrapper {
   position: relative;
   display: block;
   flex: 1 1 0%;
@@ -11209,16 +11289,44 @@ footer {
   margin-top: 0.75rem;
 }
 
-.jOEbaz {
+.OptionContent {
   flex: 1 1 0%;
+  display: flex;
 }
 
-.crJvTC {
+.OptionInput {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
+  z-index: -1;
   opacity: 0;
+}
+
+.OptionInput+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.OptionInput+label::before {
+  content: '';
+  display: inline-block;
+  width: 1.563vw;
+  height: 1.563vw;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+
+.OptionInput:checked+label::before {
+  border-color: #1F316A;
+  background-color: #1F316A;
+  background-image: url("../images/checkmark.svg");
+  background-size: 100%;
 }
 
 [type="checkbox"],
@@ -11329,7 +11437,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   transform: scale(1);
 }
 
-.euJMLY {
+.OptionInputLabel {
   font-size: 1.125rem;
   line-height: 1.333;
   letter-spacing: 0.0375rem;
@@ -11337,5 +11445,133 @@ label:hover .bwCrgA .input-checkbox-inner {
 
 .jOEbaz {
   flex: 1 1 0%;
+  display: flex;
+  align-items: center;
 }
 
+.address {
+  border-bottom: 1px solid #1F316A66;
+}
+
+.address-title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 1.314vw;
+  padding-top: 1.314vw;
+}
+
+.step-number-deactive {
+  width: 2.865vw;
+  height: 2.865vw;
+  font-size: 1.875vw;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 2.292vw;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #1F316A66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.833vw;
+}
+
+.step-title-deactive {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.667vw;
+  font-weight: 700;
+  line-height: 2.031vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F316A66;
+}
+
+.delivery {
+  border-bottom: 1px solid #1F316A66;
+}
+
+.delivery-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 1.314vw;
+  padding-top: 1.314vw;
+}
+
+.payment {
+  border-bottom: 1px solid #1F316A66;
+}
+
+.payment-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 1.314vw;
+  padding-top: 1.314vw;
+}
+
+.CheckoutStepContainer {
+  margin-top: 10px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headlineNumber {
+  font-weight: 500;
+  display: flex;
+  flex-shrink: 0;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.375;
+  border: 1px solid rgb(46, 132, 89);
+  border-radius: 50%;
+  color: rgb(46, 132, 89);
+  background-color: white;
+
+  img {
+    width: 1.465vw;
+    height: 1.208vw;
+  }
+}
+
+.headlineText {
+  font-size: 1.125rem;
+  line-height: 1.333;
+  letter-spacing: 0.0375rem;
+  flex: 1 1 0%;
+  color: rgb(82, 102, 153);
+}
+
+.editButton {
+  font-weight: 400;
+  color: rgb(30, 48, 110);
+  border: none;
+  background: transparent;
+  border-bottom: 0.0625rem solid rgba(33, 43, 100, 0.25);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease-out 0s;
+}
+
+.editButton:hover {
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.summaryContainer {
+  padding-bottom: 1.5rem;
+  padding-left: calc(2.625rem);
+  padding-right: 2rem;
+}

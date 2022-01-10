@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/ordering.css">
-    <title>ОФормление заказа</title>
+    <title>Оформление заказа</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                     <img src="images/logo.svg" alt="">
                 </a>
                 <div class="checkout-container">
-                    <div class="registration">
+                    <div class="registration disabled">
                         <h3 class="registration-title">
                             <span class="step-number">1</span>
                             <span class="step-title">Оформить как гость
@@ -34,39 +34,27 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1" class="input-email">
                                         <div>
-                                            <span class="email-label_wrapper">
-                                                <span>Email address</span>
-                                            </span>
-                                            <input required type="email" class="form-control form-control_email"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <input required placeholder="Email address" type="email"
+                                                class="form-control form-control_email" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
                                             <span class="input-border"></span>
                                             <span class="input-border_second input-border_second-deactive"></span>
                                         </div>
                                     </label>
                                 </div>
-                                <div class="FieldWrapper-sc-1dsmy0d-0 cspcqU">
-                                    <span data-qa="input" class="InputWrapper-o0ktdc-0 ipZAAB">
+                                <div class="FieldWrapper">
+                                    <span data-qa="input" class="InputWrapper">
                                         <label data-qa="input-option-field" class="InputContainer-o0ktdc-1 gczSAf">
-                                            <span class="OptionContent-o0ktdc-19 jOEbaz">
+                                            <span class="OptionContent">
                                                 <input aria-invalid="false"
                                                     aria-labelledby="input-marketing_opt_in-label"
                                                     id="input-marketing_opt_in" name="marketing_opt_in" type="checkbox"
-                                                    class="OptionInput-o0ktdc-11 crJvTC" value="false">
-                                                <svg aria-hidden="true" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="OptionInputBorder-o0ktdc-13 CheckboxInputBorder-o0ktdc-15 jhoJHC">
-                                                    <rect class="input-checkbox-outer" height="20" rx="3" ry="3"
-                                                        width="20" x="0" y="0"></rect>
-                                                    <rect class="input-checkbox-inner" height="18" rx="2" ry="2"
-                                                        width="18" x="1" y="1"></rect>
-                                                    <polyline class="input-checkbox-mark"
-                                                        points="2.5,9.5 7.5,14.5 17.5,4.5"></polyline>
-                                                </svg>
-                                                <span id="input-marketing_opt_in-label"
-                                                    class="OptionInputLabel-o0ktdc-12 euJMLY">
+                                                    class="OptionInput" value="false">
+                                                    <label for="input-marketing_opt_in"></label>
+                                                <span id="input-marketing_opt_in-label" class="OptionInputLabel">
                                                     <span>
-                                                        <span class="LabelWrapper-sc-1dsmy0d-3 gypWrY">Stay up to date
-                                                            with exclusive offers and news. Unsubscribe anytime.</span>
+                                                        <span class="LabelWrapper">Подписаться на
+                                                            бесплатную рассылку</span>
                                                         &nbsp;
                                                     </span>
                                                 </span>
@@ -74,37 +62,6 @@
                                         </label>
                                     </span>
                                 </div>
-                                <script>
-                                    $(document).ready(function () {
-                                        $('.form-control_email').click(function (ev) {
-                                            $('.input-border_second').addClass(
-                                                'input-border_second-active');
-                                            $('.email-label_wrapper').addClass(
-                                                'email-label_wrapper-active');
-                                            ev.stopPropagation();
-                                        });
-                                        $('html').click(function () {
-                                            $('.email-label_wrapper').removeClass(
-                                                'email-label_wrapper-active');
-                                            $('.input-border_second').removeClass(
-                                                'input-border_second-active');
-                                        });
-                                        $('.gczSAf').hover(function () {
-                                            $('.OptionInputBorder-o0ktdc-13').addClass(
-                                                'jhoJHC');
-                                            $('.OptionInputBorder-o0ktdc-13').removeClass(
-                                                'bwCrgA');
-                                            ev.stopPropagation();
-                                        });
-                                        $('.cspcqU').click(function () {
-                                            $('.OptionInputBorder-o0ktdc-13').addClass(
-                                                'bwCrgA');
-                                            $('.OptionInputBorder-o0ktdc-13').removeClass(
-                                                'jhoJHC');
-                                            ev.stopPropagation();
-                                        });
-                                    });
-                                </script>
                                 <div class="submitWrapper">
                                     <button type="submit" class="btn btn-primary">
                                         <span class="submitContent">
@@ -119,10 +76,40 @@
                             </form>
                         </div>
                     </div>
-                    <div class="address"></div>
-                    <div class="delivery"></div>
-                    <div class="payment"></div>
+                    <div class="CheckoutStepContainer">
+                        <div class="headline">
+                            <span class="headlineNumber"><img src="images/checkmark2.svg" alt=""></span>
+                            <span class="headlineText">Контактные данные</span>
+                            <button class="editButton">Редактировать</button>
+                        </div>
+                        <div class="summaryContainer">
+                            <p class="summaryLine">eandy@inbox.ru</p>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h3 class="address-title">
+                            <span class="step-number-deactive">2</span>
+                            <span class="step-title-deactive">Адрес доставки
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="delivery">
+                        <h3 class="delivery-title">
+                            <span class="step-number-deactive">3</span>
+                            <span class="step-title-deactive">Метод доставки</span>
+                        </h3>
+                    </div>
+                    <div class="payment">
+                        <h3 class="payment-title">
+                            <span class="step-number-deactive">4</span>
+                            <span class="step-title-deactive">Оплата заказа
+                            </span>
+                        </h3>
+                    </div>
                 </div>
+                <script>
+
+                </script>
             </div>
             <div class="container-right">
                 <div class="cartMenu_container">
@@ -161,15 +148,12 @@
                                         <span class="summary-item summary-item_right">—</span>
                                     </li>
                                     <li>
-                                        <span class="summary-item summary-item_left">Промо-код</span>
-                                        <span class="summary-item summary-item_right cart-promo_rectangle">
-                                            <span aria-hidden="true" class="tagIcon" data-icon="tag" data-qa="icon"><svg
-                                                    viewBox="0 0 24 24" role="img" class="iconPromoSvg">
-                                                    <title>tag</title>
-                                                    <path
-                                                        d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58s1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41s-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z">
-                                                    </path>
-                                                </svg></span>
+                                        <span class="summary-item summary-item_left promo-item active">Промо-код</span>
+                                        <span
+                                            class="summary-item summary-item_right promo-item active cart-promo_rectangle">
+                                            <span class="tagPromoIcon">
+                                                <img src="images/tag.svg" alt="">
+                                            </span>
                                             BFSLEEP
                                             <button data-remove-promo="true" title="Remove promo code"
                                                 class="closePromoIcon"><svg viewBox="0 0 14 14">
@@ -185,8 +169,62 @@
                                                 </svg></button>
                                         </span>
 
-                                        <span class="cartAdd_promo cartAdd_promo-ordering">Применить промо-код +</span>
+                                        <span class="cartAdd_promo cartAdd_promo-ordering disabled">Применить промо-код
+                                            +</span>
+                                        <span class="cartAdd_promo-form disabled">
+                                            <label for="exampleInputPromo" class="input-promo">
+                                                <div>
+                                                    <input placeholder="Промо-код" type="promo"
+                                                        class="form-control_promo" id="exampleInputPromo">
+                                                    <span class="input_promo-border"></span>
+                                                </div>
+                                            </label>
+                                            <div class="promoSubmitWrapper">
+                                                <button type="submit" class="applyButtonContainer">Применить</button>
+                                            </div>
+                                        </span>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $('.form-control_promo').click(function (ev) {
+                                                    $('.promo-label_wrapper').addClass(
+                                                        'promo-label_wrapper-active');
+                                                    $('.promo-label_wrapper').removeClass(
+                                                        'promo-label_wrapper-deactive');
+                                                    $('.input_promo-border').addClass(
+                                                        'input_promo-border-active');
+                                                    ev.stopPropagation();
+                                                });
+                                                $('html').click(function () {
+                                                    $('.promo-label_wrapper').removeClass(
+                                                        'promo-label_wrapper-active');
+                                                    $('.promo-label_wrapper').addClass(
+                                                        'promo-label_wrapper-deactive');
+                                                    $('.input_promo-border').removeClass(
+                                                        'input_promo-border-active');
+                                                });
+                                            });
+                                        </script>
                                     </li>
+                                    <script>
+                                        $(function () {
+                                            $('.closePromoIcon').click(function () {
+                                                $('.promo-item').addClass('disabled');
+                                                $('.promo-item').addClass('active');
+                                                $('.cartAdd_promo').addClass('active');
+                                                $('.cartAdd_promo').removeClass('disabled');
+                                            });
+                                            $('.cartAdd_promo').click(function () {
+                                                $('.cartAdd_promo').addClass('disabled');
+                                                $('.cartAdd_promo-form').addClass('active');
+                                                $('.cartAdd_promo-form').removeClass('disabled');
+                                            });
+                                            $('.applyButtonContainer').click(function () {
+                                                $('.cartAdd_promo-form').addClass('disabled');
+                                                $('.promo-item').removeClass('disabled');
+                                                $('.promo-item').addClass('active');
+                                            });
+                                        });
+                                    </script>
                                     <li>
                                         <div class='cartTotalContainer cartTotalContainer-ordering'>
                                             <div class='totalTitle'>Итого:</div>
