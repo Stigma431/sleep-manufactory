@@ -10739,6 +10739,10 @@ label:hover .bwCrgA .input-checkbox-inner {
   width: 20.833vw;
 }
 
+.checkout-container .delivery {
+  border-bottom: 0.052vw solid #1e306e;
+}
+
 .delivery-deactive {
   border-bottom: 0.052vw solid #1F316A66;
 }
@@ -10957,6 +10961,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2.184vw;
 }
 
 .itemInfoContainer img {
@@ -12006,7 +12011,10 @@ label:hover .bwCrgA .input-checkbox-inner {
     color: #1F316A;
   }
   .form-control_name {
-    width: 29.1662vw;
+    width: 20.833vw;
+  }
+  .checkout-container .delivery {
+    border-bottom: 0.0728vw solid #1e306e;
   }
   .delivery-deactive {
     border-bottom: 0.0728vw solid #1F316A66;
@@ -12145,7 +12153,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_city {
-    width: 63.4382vw;
+    width: 45.313vw;
   }
   .input-street div {
     position: relative;
@@ -12157,7 +12165,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_street {
-    width: 63.4382vw;
+    width: 45.313vw;
   }
   .input-house div {
     position: relative;
@@ -12169,7 +12177,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_house {
-    width: 63.4382vw;
+    width: 45.313vw;
   }
   .input-phone div {
     position: relative;
@@ -12181,7 +12189,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_phone {
-    width: 63.4382vw;
+    width: 45.313vw;
   }
   .formTitle {
     font-size: 2.0412vw;
@@ -12197,6 +12205,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 3.0576vw;
   }
   .itemInfoContainer img {
     border: 0.0728vw solid #1F316A;
@@ -12368,7 +12377,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_card {
-    width: 63.4382vw;
+    width: 45.313vw;
   }
   .input-cardHolder div {
     position: relative;
@@ -12380,7 +12389,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_cardHolder {
-    width: 63.4382vw;
+    width: 45.313vw;
   }
   .input-month div {
     position: relative;
@@ -12392,7 +12401,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_month {
-    width: 29.1662vw;
+    width: 20.833vw;
   }
   .input-cvv div {
     position: relative;
@@ -12404,7 +12413,7 @@ label:hover .bwCrgA .input-checkbox-inner {
             box-shadow: #f6f6f6 0px 0px 0px 2.9162vw inset;
   }
   .form-control_cvv {
-    width: 29.1662vw;
+    width: 20.833vw;
   }
   .payment-form {
     display: -webkit-box;

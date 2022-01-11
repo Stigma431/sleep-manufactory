@@ -11533,6 +11533,12 @@ label:hover .bwCrgA .input-checkbox-inner {
   width: 20.833vw;
 }
 
+.checkout-container {
+  .delivery {
+    border-bottom: 0.052vw solid rgb(30, 48, 110);
+  }
+}
+
 .delivery-deactive {
   border-bottom: 0.052vw solid #1F316A66;
 }
@@ -11710,6 +11716,7 @@ label:hover .bwCrgA .input-checkbox-inner {
 
 .itemInfoContainer {
   display: flex;
+  margin-bottom: 2.184vw;
 
   img {
     border: 0.052vw solid #1F316A;
@@ -12258,7 +12265,7 @@ label:hover .bwCrgA .input-checkbox-inner {
 
   .border-image {
     width: 35.531vw;
-    
+
   }
 
   .advantages-ordering {
@@ -12653,7 +12660,13 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_name {
-    width: 20.833vw * $coefficient;
+    width: 20.833vw;
+  }
+
+  .checkout-container {
+    .delivery {
+      border-bottom: 0.052vw * $coefficient solid rgb(30, 48, 110);
+    }
   }
 
   .delivery-deactive {
@@ -12775,7 +12788,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_city {
-    width: 45.313vw * $coefficient;
+    width: 45.313vw;
   }
 
   .input-street div {
@@ -12789,7 +12802,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_street {
-    width: 45.313vw * $coefficient;
+    width: 45.313vw;
   }
 
   .input-house div {
@@ -12803,7 +12816,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_house {
-    width: 45.313vw * $coefficient;
+    width: 45.313vw;
   }
 
   .input-phone div {
@@ -12817,7 +12830,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_phone {
-    width: 45.313vw * $coefficient;
+    width: 45.313vw;
   }
 
   .formTitle {
@@ -12833,6 +12846,7 @@ label:hover .bwCrgA .input-checkbox-inner {
 
   .itemInfoContainer {
     display: flex;
+    margin-bottom: 2.184vw * $coefficient;
 
     img {
       border: 0.052vw * $coefficient solid #1F316A;
@@ -12992,7 +13006,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_card {
-    width: 45.313vw * $coefficient;
+    width: 45.313vw;
   }
 
   .input-cardHolder div {
@@ -13006,7 +13020,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_cardHolder {
-    width: 45.313vw * $coefficient;
+    width: 45.313vw;
   }
 
   .input-month div {
@@ -13020,7 +13034,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_month {
-    width: 20.833vw * $coefficient;
+    width: 20.833vw;
   }
 
   .input-cvv div {
@@ -13034,7 +13048,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .form-control_cvv {
-    width: 20.833vw * $coefficient;
+    width: 20.833vw;
   }
 
   .payment-form {
