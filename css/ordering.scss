@@ -11097,6 +11097,7 @@ footer {
 
 .container-right .cartMenu_container {
   background-color: #F6F6F6;
+  height: 100%;
 }
 
 .cartMenu_content-ordering {
@@ -11449,7 +11450,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   align-items: center;
 }
 
-.address {
+.address-deactive {
   border-bottom: 1px solid #1F316A66;
 }
 
@@ -11489,7 +11490,51 @@ label:hover .bwCrgA .input-checkbox-inner {
   color: #1F316A66;
 }
 
-.delivery {
+.address {
+  border-bottom: 1px solid rgb(30, 48, 110);
+}
+
+.address-title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 1.314vw;
+  padding-top: 1.314vw;
+}
+
+.step-number-active {
+  width: 2.865vw;
+  height: 2.865vw;
+  font-size: 1.875vw;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 2.292vw;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #1F316A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.833vw;
+}
+
+.step-title-active {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.667vw;
+  font-weight: 700;
+  line-height: 2.031vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F316A;
+}
+
+.form-control_name {
+  width: 20.833vw;
+}
+
+.delivery-deactive {
   border-bottom: 1px solid #1F316A66;
 }
 
@@ -11513,8 +11558,9 @@ label:hover .bwCrgA .input-checkbox-inner {
   padding-top: 1.314vw;
 }
 
-.CheckoutStepContainer {
+.сheckoutStepContainer {
   margin-top: 10px;
+  border-bottom: 1px solid #1F316A66;
 }
 
 .headline {
@@ -11574,4 +11620,301 @@ label:hover .bwCrgA .input-checkbox-inner {
   padding-bottom: 1.5rem;
   padding-left: calc(2.625rem);
   padding-right: 2rem;
+}
+
+.address-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-name div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-name:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.input-city div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-city:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_city {
+  width: 45.313vw;
+}
+
+.input-street div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-street:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_street {
+  width: 45.313vw;
+}
+
+.input-house div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-house:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_house {
+  width: 45.313vw;
+}
+
+.input-phone div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-phone:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_phone {
+  width: 45.313vw;
+}
+
+.formTitle {
+  font-size: 1.458vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.771vw;
+  letter-spacing: 0;
+  text-align: left;
+  color: #1F316A;
+  margin-bottom: 1.213vw;
+}
+
+.itemInfoContainer {
+  display: flex;
+
+  img {
+    border: 0.052vw solid #1F316A;
+    margin-right: 1.213vw;
+    width: 9.531vw;
+    height: 5.733vw;
+  }
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.833vw;
+  font-weight: 700;
+  line-height: 1.042vw;
+  letter-spacing: 0;
+  text-align: left;
+  color: #8C8B8B;
+
+  .infoColor {
+    color: #4F4F4F;
+  }
+
+  span {
+    padding-bottom: 0.671vw;
+  }
+}
+
+.radio-wrapper {
+  position: relative;
+  display: block;
+  flex: 1 1 0%;
+  margin-bottom: 0.5rem;
+}
+
+.radioContainer {
+  position: relative;
+  outline: 0px;
+  display: flex;
+  align-items: center;
+  border: 0.0625rem solid rgb(204, 204, 204);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-out 0s, border-color 0.15s ease-out 0s, background-color 0.15s ease-out 0s;
+  padding: 1rem;
+}
+
+.radioContainer:hover {
+  background-color: rgb(215, 236, 247);
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 1.563vw;
+  height: 1.563vw;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 0.104vw solid #1F316A;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.radio-wrapper:hover .custom-radio+label::before {
+  border-color: #1F316A;
+  border: 0.104vw solid #1F316A;
+  transform: scale(0.9);
+}
+
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #1F316A;
+  border: 0.208vw solid #1F316A;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active+label::before {
+  background-color: #1F316A;
+  border-color: #1F316A;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+  border-color: #1F316A;
+  background-image: url(../images/Ellipse40.svg);
+  background-size: 54%;
+}
+
+.custom-radio:checked+label:hover::before {
+  border-color: #1F316A;
+}
+
+.radioDescription {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.042vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.250vw;
+  letter-spacing: 0;
+  text-align: left;
+  color: #474747;
+  margin-left: 1.458vw;
+
+  span {
+    font-size: 1.354vw;
+    font-weight: 400;
+    line-height: 1.667vw;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000000;
+  }
+}
+
+.radioPrice {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  display: block;
+  margin: 0px;
+  text-align: right;
+  color: rgb(30, 48, 110);
+  img {
+    vertical-align: middle;
+    width: 3.958vw;
+    height: 2.188vw;
+  }
+}
+
+.input-card div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-card:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_card {
+  width: 45.313vw;
+}
+
+.input-cardHolder div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-cardHolder:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_cardHolder {
+  width: 45.313vw;
+}
+
+.input-month div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-month:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_month {
+  width: 20.833vw
+}
+
+.input-cvv div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-cvv:hover .form-control {
+  background: rgb(246, 246, 246);
+  box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.5rem inset;
+}
+
+.form-control_cvv {
+  width: 20.833vw
+}
+
+.payment-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.payment-border {
+  border-bottom: 1px solid rgb(30, 48, 110);
 }

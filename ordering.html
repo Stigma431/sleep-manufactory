@@ -22,7 +22,7 @@
                     <img src="images/logo.svg" alt="">
                 </a>
                 <div class="checkout-container">
-                    <div class="registration disabled">
+                    <div class="registration">
                         <h3 class="registration-title">
                             <span class="step-number">1</span>
                             <span class="step-title">Оформить как гость
@@ -50,7 +50,7 @@
                                                     aria-labelledby="input-marketing_opt_in-label"
                                                     id="input-marketing_opt_in" name="marketing_opt_in" type="checkbox"
                                                     class="OptionInput" value="false">
-                                                    <label for="input-marketing_opt_in"></label>
+                                                <label for="input-marketing_opt_in"></label>
                                                 <span id="input-marketing_opt_in-label" class="OptionInputLabel">
                                                     <span>
                                                         <span class="LabelWrapper">Подписаться на
@@ -63,7 +63,7 @@
                                     </span>
                                 </div>
                                 <div class="submitWrapper">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary" id="submit_registration">
                                         <span class="submitContent">
                                             <span class="labelWrapper">Продолжить покупку</span>
                                             <span></span>
@@ -76,39 +76,315 @@
                             </form>
                         </div>
                     </div>
-                    <div class="CheckoutStepContainer">
+                    <div class="сheckoutStepContainer disabled" id="checkout-registration">
                         <div class="headline">
                             <span class="headlineNumber"><img src="images/checkmark2.svg" alt=""></span>
                             <span class="headlineText">Контактные данные</span>
-                            <button class="editButton">Редактировать</button>
+                            <button class="editButton" id="registrationEditButton">Редактировать</button>
                         </div>
                         <div class="summaryContainer">
                             <p class="summaryLine">eandy@inbox.ru</p>
                         </div>
                     </div>
-                    <div class="address">
+                    <div class="address-deactive">
                         <h3 class="address-title">
                             <span class="step-number-deactive">2</span>
                             <span class="step-title-deactive">Адрес доставки
                             </span>
                         </h3>
                     </div>
-                    <div class="delivery">
+                    <div class="address disabled">
+                        <h3 class="address-title">
+                            <span class="step-number-active">2</span>
+                            <span class="step-title-active">Адрес доставки
+                            </span>
+                        </h3>
+                        <div class="formWrapper">
+                            <form>
+                                <div class="form-group address-form">
+                                    <label for="exampleInputFirstName" class="input-name">
+                                        <div>
+                                            <input required placeholder="Имя" type="name"
+                                                class="form-control form-control_name" id="exampleInputFirstName">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputLastName" class="input-name">
+                                        <div>
+                                            <input required placeholder="Фамилия" type="name"
+                                                class="form-control form-control_name" id="exampleInputLastName">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputCity" class="input-city">
+                                        <div>
+                                            <input required placeholder="Город" type="city"
+                                                class="form-control form-control_city" id="exampleInputCity">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputStreet" class="input-street">
+                                        <div>
+                                            <input required placeholder="Улица" type="street"
+                                                class="form-control form-control_street" id="exampleInputStreet">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputHouse" class="input-house">
+                                        <div>
+                                            <input required placeholder="Дом/Квартира" type="house"
+                                                class="form-control form-control_house" id="exampleInputHouse">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputPhone" class="input-phone">
+                                        <div>
+                                            <input required placeholder="Телефон" type="phone"
+                                                class="form-control form-control_phone" id="exampleInputPhone">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="submitWrapper">
+                                    <button type="submit" class="btn btn-primary" id="submit_address">
+                                        <span class="submitContent">
+                                            <span class="labelWrapper">Продолжить покупку</span>
+                                            <span></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="сheckoutStepContainer disabled" id="сheckout-address">
+                        <div class="headline">
+                            <span class="headlineNumber"><img src="images/checkmark2.svg" alt=""></span>
+                            <span class="headlineText">Адрес доставки</span>
+                            <button class="editButton" id="addressEditButton">Редактировать</button>
+                        </div>
+                        <div class="summaryContainer">
+                            <p class="summaryLine">Андрей Суханов, г. Нижний Тагил, ул. Ленина 12, дом 8/кв. 45 <br>
+                                +79552621451</p>
+                        </div>
+                    </div>
+                    <div class="delivery-deactive">
                         <h3 class="delivery-title">
                             <span class="step-number-deactive">3</span>
                             <span class="step-title-deactive">Метод доставки</span>
                         </h3>
                     </div>
-                    <div class="payment">
+                    <div class="delivery disabled">
+                        <h3 class="address-title">
+                            <span class="step-number-active">3</span>
+                            <span class="step-title-active">Метод доставки
+                            </span>
+                        </h3>
+                        <form>
+                            <div class="formWrapper">
+                                <div class="formTitle">Ваши товары</div>
+                                <div class="itemInfoContainer">
+                                    <img src="images/mattress1.png" alt="">
+                                    <div class="itemInfo">
+                                        <span class="infoColor">Sweet Sleep art.96</span>
+                                        <span>Размер матраса: 800x2000</span>
+                                        <span>Кол-во: 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group delivery-form">
+                                <div class="radio-wrapper">
+                                    <label class="radioContainer">
+                                        <input type="radio" name="radio" class="custom-radio" id="radio">
+                                        <label for="radio"></label>
+                                        <div class="radioDescription">
+                                            <span>Экспресс-доставка</span>
+                                            Ваш заказ будет доставлен нашим партнером в течении 1-3 дней
+                                        </div>
+                                        <div class="radioPrice">2000 р.</div>
+                                    </label>
+                                </div>
+                                <div class="radio-wrapper">
+                                    <label class="radioContainer">
+                                        <input type="radio" name="radio" class="custom-radio" id="second-radio">
+                                        <label for="second-radio"></label>
+                                        <div class="radioDescription">
+                                            <span>Стандартная доставка</span>
+                                            Ваш заказ будет доставлен Почтой России
+                                        </div>
+                                        <div class="radioPrice">Бесплатно</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="submitWrapper">
+                                <button type="submit" class="btn btn-primary" id="submit_delivery">
+                                    <span class="submitContent">
+                                        <span class="labelWrapper">Продолжить покупку</span>
+                                        <span></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="сheckoutStepContainer disabled" id="сheckout-delivery">
+                        <div class="headline">
+                            <span class="headlineNumber"><img src="images/checkmark2.svg" alt=""></span>
+                            <span class="headlineText">Метод доставки</span>
+                            <button class="editButton" id="deliveryEditButton">Редактировать</button>
+                        </div>
+                        <div class="summaryContainer">
+                            <p class="summaryLine">1 товар, Стандартная доставка</p>
+                        </div>
+                    </div>
+                    <div class="payment-deactive">
                         <h3 class="payment-title">
                             <span class="step-number-deactive">4</span>
                             <span class="step-title-deactive">Оплата заказа
                             </span>
                         </h3>
                     </div>
+                    <div class="payment payment-border disabled">
+                        <h3 class="payment-title">
+                            <span class="step-number-active">4</span>
+                            <span class="step-title-active">Оплата заказа
+                            </span>
+                        </h3>
+                        <div class="formWrapper">
+                            <form>
+                                <div class="radio-wrapper">
+                                    <label class="radioContainer">
+                                        <input type="radio" class="custom-radio" id="third-radio">
+                                        <label for="third-radio"></label>
+                                        <div class="radioDescription">
+                                            <span>Стандартная доставка</span>
+                                            Ваш заказ будет доставлен Почтой России
+                                        </div>
+                                        <div class="radioPrice">
+                                            <img src="images/component4.svg" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-group payment-form">
+                                    <label for="exampleInputCard" class="input-card">
+                                        <div>
+                                            <input required placeholder="Номер карты" type="card"
+                                                class="form-control form-control_card" id="exampleInputCard">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputCardHolder" class="input-cardHolder">
+                                        <div>
+                                            <input required placeholder="Владелец карты" type="cardHolder"
+                                                class="form-control form-control_cardHolder"
+                                                id="exampleInputCardHolder">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputMonth" class="input-month">
+                                        <div>
+                                            <input required placeholder="ММ/ГГ" type="month"
+                                                class="form-control form-control_month" id="exampleInputMonth">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                    <label for="exampleInputFirstCVV" class="input-cvv">
+                                        <div>
+                                            <input required placeholder="CVV" type="cvv"
+                                                class="form-control form-control_cvv" id="exampleInputCVV">
+                                            <span class="input-border"></span>
+                                            <span class="input-border_second input-border_second-deactive"></span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="submitWrapper">
+                                    <button type="submit" class="btn btn-primary">
+                                        <span class="submitContent">
+                                            <span class="labelWrapper">Подтвердить заказ</span>
+                                            <span></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <script>
-
+                    $(document).ready(function () {
+                        $('#submit_registration').click(function (ev) {
+                            $('.registration').addClass(
+                                'disabled');
+                            $('#checkout-registration').removeClass(
+                                'disabled');
+                            $('.address-deactive').addClass(
+                                'disabled');
+                            $('.address').removeClass(
+                                'disabled');
+                            ev.stopPropagation();
+                        });
+                        $('#registrationEditButton').click(function (ev) {
+                            $('.registration').removeClass(
+                                'disabled');
+                            $('#checkout-registration').addClass(
+                                'disabled');
+                            $('.address-deactive').removeClass(
+                                'disabled');
+                            $('.address').addClass(
+                                'disabled');
+                            ev.stopPropagation();
+                        });
+                        $('#submit_address').click(function (ev) {
+                            $('.address').addClass(
+                                'disabled');
+                            $('#сheckout-address').removeClass(
+                                'disabled');
+                            $('.delivery-deactive').addClass(
+                                'disabled');
+                            $('.delivery').removeClass(
+                                'disabled');
+                            ev.stopPropagation();
+                        });
+                        $('#addressEditButton').click(function (ev) {
+                            $('.address').removeClass(
+                                'disabled');
+                            $('#сheckout-address').addClass(
+                                'disabled');
+                            $('.delivery-deactive').removeClass(
+                                'disabled');
+                            $('.delivery').addClass(
+                                'disabled');
+                            ev.stopPropagation();
+                        });
+                        $('#submit_delivery').click(function (ev) {
+                            $('.delivery').addClass(
+                                'disabled');
+                            $('#сheckout-delivery').removeClass(
+                                'disabled');
+                            $('.payment-deactive').addClass(
+                                'disabled');
+                            $('.payment').removeClass(
+                                'disabled');
+                            ev.stopPropagation();
+                        });
+                        $('#deliveryEditButton').click(function (ev) {
+                            $('.delivery').removeClass(
+                                'disabled');
+                            $('#сheckout-delivery').addClass(
+                                'disabled');
+                            $('.payment-deactive').removeClass(
+                                'disabled');
+                            $('.payment').addClass(
+                                'disabled');
+                            ev.stopPropagation();
+                        });
+                    });
                 </script>
             </div>
             <div class="container-right">
@@ -272,6 +548,86 @@
 
             </div>
         </div>
+        <footer>
+            <div class="footer__main">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__column">
+                            <div class="footer__column-header">Категории</div>
+                            <ul class="footer__menu">
+                                <li><a class="footer__menu-link selected" href="#">
+                                        Матрасы</a></li>
+                                <li><a class="footer__menu-link" href="#">
+                                        Топеры</a></li>
+                                <li><a class="footer__menu-link" href="#">
+                                        Боксы кровати</a></li>
+                                <li><a class="footer__menu-link" href="#">
+                                        Ортопедически основания</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__column-header">Ресурсы</div>
+                            <ul class="footer__menu">
+                                <li><a class="footer__menu-link selected" href="#">
+                                        О компании</a></li>
+                                <li><a class="footer__menu-link" href="#">
+                                        Доставка и оплата</a></li>
+                                <li><a class="footer__menu-link" href="#">
+                                        Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__column-header"></div>
+                            <div class="footer__link"></div>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__column-header">Контакты</div>
+                            <div class="footer__social">
+                                <a href="#" target="_blank" class="hover">
+                                    <img class="first" src="images/icon__whatsapp.svg" alt="Иконка Whatsapp" />
+                                    <img class="second" src="images/icon__whatsapp-active.svg" alt="Иконка Whatsapp" />
+                                </a>
+                                <a href="#" target="_blank" class="hover">
+                                    <img class="first" src="images/facebook.svg" alt="Иконка Facebook" />
+                                    <img class="second" src="images/facebook-active.svg" alt="Иконка Facebook" />
+                                </a>
+                                <a href="#" target="_blank" class="hover">
+                                    <img class="first" src="images/twitter.svg" alt="Иконка Twitter" />
+                                    <img class="second" src="images/twitter-active.svg" alt="Иконка Twitter" />
+                                </a>
+                                <a href="#" target="_blank" class="hover">
+                                    <img class="first" src="images/icon__you.svg" alt="Иконка Youtube" />
+                                    <img class="second" src="images/icon__you-active.svg" alt="Иконка Youtube" />
+                                </a>
+                                <a href="#" target="_blank" class="hover">
+                                    <img class="first" src="images/icon__inst.svg" alt="Иконка Instagram" />
+                                    <img class="second" src="images/icon__inst-active.svg" alt="Иконка Instagram" />
+                                </a>
+                                <a href="#" target="_blank" class="hover">
+                                    <img class="first" src="images/icon__vk.svg" alt="Иконка ВК" />
+                                    <img class="second" src="images/icon__vk-active.svg" alt="Иконка ВК" />
+                                </a>
+                            </div>
+                            <div class="footer__menu-link">
+                                <a href="tel:+79636998650" class="footer__tel">+7 963 699-86-50</a>
+                            </div>
+                            <div class="footer__menu-link">
+                                <a href="mailto:info@top-matras.shop" class="footer__mail">info@top-matras.shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="container">
+                    <div class="footer__row-copyright">
+                        <i class="fa fa-copyright"></i>
+                        <div class="year">2021</div>
+                        <a href="#" class="policy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
