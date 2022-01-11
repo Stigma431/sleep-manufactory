@@ -327,7 +327,7 @@
                                 'disabled');
                             $('.address').removeClass(
                                 'disabled');
-                            ev.stopPropagation();
+                            event.preventDefault();
                         });
                         $('#registrationEditButton').click(function (ev) {
                             $('.registration').removeClass(
@@ -338,7 +338,7 @@
                                 'disabled');
                             $('.address').addClass(
                                 'disabled');
-                            ev.stopPropagation();
+                            event.preventDefault();
                         });
                         $('#submit_address').click(function (ev) {
                             $('.address').addClass(
@@ -349,7 +349,7 @@
                                 'disabled');
                             $('.delivery').removeClass(
                                 'disabled');
-                            ev.stopPropagation();
+                            event.preventDefault();
                         });
                         $('#addressEditButton').click(function (ev) {
                             $('.address').removeClass(
@@ -360,7 +360,7 @@
                                 'disabled');
                             $('.delivery').addClass(
                                 'disabled');
-                            ev.stopPropagation();
+                            event.preventDefault();
                         });
                         $('#submit_delivery').click(function (ev) {
                             $('.delivery').addClass(
@@ -371,7 +371,7 @@
                                 'disabled');
                             $('.payment').removeClass(
                                 'disabled');
-                            ev.stopPropagation();
+                            event.preventDefault();
                         });
                         $('#deliveryEditButton').click(function (ev) {
                             $('.delivery').removeClass(
