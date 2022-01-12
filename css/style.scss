@@ -2521,12 +2521,13 @@ svg {
 }
 
 .main-slider .slider-item {
-  background: url(../images/slid1-bg.svg);
+  background: url(../images/slid1-bg.png);
   width: 100vw !important;
   height: 40.104vw;
   display: flex !important;
   justify-content: center;
   align-items: center;
+  background-size: 100%;
 }
 
 .slider-content {
@@ -7370,16 +7371,12 @@ video {
 }
 
 
-.first-slick_item .item-1 {
-  width: 48.438vw !important;
-  height: 28.281vw;
-}
+.first-slick_item {
 
-
-
-.first-slick_item .item-1 {
-  width: 48.438vw;
-  width: auto;
+  img {
+    width: 51.458vw;
+    height: 32.396vw;
+  }
 }
 
 .second-slick-item {
@@ -7547,18 +7544,23 @@ video {
   width: inherit;
 }
 
-.load-height {
+.mattress-parameters-wrapper {
   display: flex;
   flex-direction: row;
 }
 
-.load {
+.mattress-parameters-column {
   display: flex;
   flex-direction: column;
-  padding-right: 0.833vw;
+  padding-right: 1.042vw;
+  padding-bottom: 0.781vw;
 }
 
-.load-title {
+.first-columns {
+  padding-right: 2.8vw;
+}
+
+.mattress-parameters-title {
   font-weight: 700;
   font-size: 1.146vw;
   line-height: 1.399vw;
@@ -7566,34 +7568,7 @@ video {
   margin-bottom: 0.313vw;
 }
 
-.load-description {
-  font-weight: 400;
-  font-size: 1.042vw;
-  line-height: 1.271vw;
-  color: #504C4C;
-}
-
-.height {
-  display: flex;
-  flex-direction: column;
-}
-
-.height-title {
-  font-weight: 700;
-  font-size: 1.146vw;
-  line-height: 1.399vw;
-  color: #4F4F4F;
-  margin-bottom: 0.313vw;
-}
-
-.height-description {
-  font-weight: 400;
-  font-size: 1.042vw;
-  line-height: 1.271vw;
-  color: #504C4C;
-}
-
-.load-height_description {
+.mattress-parameters-description {
   font-weight: 400;
   font-size: 1.042vw;
   line-height: 1.271vw;
@@ -14452,7 +14427,7 @@ label:hover .bwCrgA .input-checkbox-inner {
 
 //Страница авторизации
 
-.main {
+.authorization-main {
   margin-top: 7.031vw;
 }
 
@@ -14640,7 +14615,7 @@ label:hover .bwCrgA .input-checkbox-inner {
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
 
-  .main {
+  .authorization-main {
     margin-top: 7.031vw * $coefficient;
   }
 
@@ -14830,7 +14805,7 @@ label:hover .bwCrgA .input-checkbox-inner {
 @media all and (max-width: 415px) {
   $coefficient: 4;
 
-  .main {
+  .authorization-main {
     margin-top: 7.031vw * $coefficient;
   }
 
@@ -15285,7 +15260,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     text-align: left;
     margin-bottom: 1.302vw * $coefficient;
   }
-  
+
 }
 
 @media all and (max-width: 415px) {
@@ -15303,5 +15278,5 @@ label:hover .bwCrgA .input-checkbox-inner {
     text-align: left;
     margin-bottom: 1.302vw * $coefficient;
   }
-  
+
 }
