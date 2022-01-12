@@ -8530,6 +8530,12 @@ svg {
   height: 18.490vw;
 }
 
+.submitWrapper.submitWrapper_review {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 @media all and (max-width: 1366px) {
   .product-detail {
     margin-top: 6.6352vw;
