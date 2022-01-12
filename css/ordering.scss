@@ -9410,6 +9410,7 @@ $slick-opacity-not-active: 0.25 !default;
 .product-page-reviews {
   width: 100vw;
   background-color: #F2F4F3;
+  margin-bottom: 5.208vw;
 }
 
 .product-page-reviews-container {
@@ -9810,6 +9811,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   .product-page-reviews {
     width: 100vw;
+    margin-bottom: 5.208vw * $coefficient;
   }
 
   .product-page-reviews-container {
@@ -10070,6 +10072,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   .product-page-reviews {
     width: 100vw;
+    margin-bottom: 5.208vw * $coefficient;
   }
 
   .product-page-reviews-container {

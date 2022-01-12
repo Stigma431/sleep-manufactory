@@ -8651,6 +8651,7 @@ svg {
 .product-page-reviews {
   width: 100vw;
   background-color: #F2F4F3;
+  margin-bottom: 5.208vw;
 }
 
 .product-page-reviews-container {
@@ -9063,6 +9064,7 @@ svg {
   }
   .product-page-reviews {
     width: 100vw;
+    margin-bottom: 6.7704vw;
   }
   .product-page-reviews-container {
     padding-top: 6.0944vw;
@@ -9238,6 +9240,7 @@ svg {
   }
   .product-page-reviews {
     width: 100vw;
+    margin-bottom: 20.832vw;
   }
   .product-page-reviews-container {
     padding-top: 18.752vw;
