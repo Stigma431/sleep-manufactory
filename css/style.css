@@ -6815,7 +6815,7 @@ video {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 76vw;
+  width: 78.708vw;
   margin: 0 auto;
 }
 
@@ -6825,8 +6825,8 @@ video {
 
 .product-first-slick .draggable {
   position: relative;
-  width: 48.438vw;
-  height: 28.281vw;
+  width: 51.458vw;
+  height: 32.396vw;
 }
 
 .slick-active {
@@ -7063,6 +7063,9 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mattress-parameters-column {
@@ -7094,6 +7097,7 @@ video {
   font-size: 1.042vw;
   line-height: 1.271vw;
   color: #504C4C;
+  padding-bottom: 0.181vw;
 }
 
 .mattress-color {
@@ -7301,8 +7305,8 @@ svg {
     margin-bottom: 1.0829vw;
   }
   .product-first-slick .draggable {
-    width: 62.9694vw;
-    height: 36.7653vw;
+    width: 66.8954vw;
+    height: 42.1148vw;
   }
   .product-first-slick .slick-slide {
     top: 50%;
@@ -7317,8 +7321,9 @@ svg {
     width: 56.662vw !important;
     height: 34.993vw;
   }
-  .first-slick_item .item-1 {
-    width: 62.9694vw;
+  .first-slick_item img {
+    width: 60.89538vw;
+    height: 41.51472vw;
   }
   .second-product-page .first-slick_item.item-1 {
     width: auto;
@@ -7401,30 +7406,19 @@ svg {
     border: 0.0676vw solid #ced4da;
     border-radius: 0.2704vw;
   }
-  .load {
-    padding-right: 1.0829vw;
+  .mattress-parameters-column {
+    padding-right: 1.3546vw;
+    padding-bottom: 1.0153vw;
   }
-  .load-title {
+  .mattress-parameters-title {
     font-size: 1.4898vw;
     line-height: 1.8187vw;
     margin-bottom: 0.4069vw;
   }
-  .load-description {
+  .mattress-parameters-description {
     font-size: 1.3546vw;
     line-height: 1.6523vw;
-  }
-  .height-title {
-    font-size: 1.4898vw;
-    line-height: 1.8187vw;
-    margin-bottom: 0.4069vw;
-  }
-  .height-description {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
-  }
-  .load-height_description {
-    font-size: 1.3546vw;
-    line-height: 1.6523vw;
+    padding-bottom: 0.2353vw;
   }
   .mattress-color_title {
     font-size: 1.4898vw;
@@ -7670,35 +7664,28 @@ svg {
     border: 0.208vw solid #ced4da;
     border-radius: 0.832vw;
   }
-  .load-height {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .mattress-parameters-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .load {
-    padding-right: 3.332vw;
+  .mattress-parameters-column {
+    padding-right: 4.168vw;
+    padding-bottom: 3.124vw;
   }
-  .load-title {
+  .mattress-parameters-title {
     font-size: 4.584vw;
     line-height: 5.596vw;
     margin-bottom: 1.252vw;
   }
-  .load-description {
+  .mattress-parameters-description {
     font-size: 4.168vw;
     line-height: 5.084vw;
-  }
-  .height-title {
-    font-size: 4.584vw;
-    line-height: 5.596vw;
-    margin-bottom: 1.252vw;
-  }
-  .height-description {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
-  }
-  .load-height_description {
-    font-size: 4.168vw;
-    line-height: 5.084vw;
+    padding-bottom: 0.724vw;
   }
   .mattress-color_title {
     font-size: 4.584vw;
@@ -8360,7 +8347,7 @@ svg {
 }
 
 #product-detail__tab {
-  width: 47.083vw;
+  width: 27.083vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -8428,6 +8415,119 @@ svg {
   font-weight: 400;
   color: #4F4F4F;
   margin-bottom: 1.302vw;
+}
+
+.form-review_title {
+  font-size: 1.875vw;
+  line-height: 2.292vw;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1F316A;
+  margin-bottom: 2.500vw;
+}
+
+.assessment {
+  font-size: 1.875vw;
+  font-weight: 700;
+  line-height: 2.292vw;
+  letter-spacing: 0;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1F316A;
+  margin-bottom: 2.552vw;
+}
+
+.assessment ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.521vw;
+}
+
+.assessment ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.271vw;
+}
+
+.assessment ul li img {
+  width: 1.563vw;
+  height: 1.563vw;
+}
+
+.form-control.form-control_name-review {
+  width: 30.260vw;
+}
+
+.review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.formWrapper.review-formWrapper {
+  width: 63.594vw;
+  margin: 0 auto;
+}
+
+.form-control.form-control_city-review {
+  width: 30.260vw;
+}
+
+.form-control.form-control_email-review {
+  width: 63.594vw;
+}
+
+.input-review div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-review:hover .form-control {
+  background: #f6f6f6;
+  -webkit-box-shadow: #f6f6f6 0px 0px 0px 2.083vw inset;
+          box-shadow: #f6f6f6 0px 0px 0px 2.083vw inset;
+}
+
+.input-review div {
+  position: relative;
+  margin-bottom: 2.083vw;
+}
+
+.input-review:hover .form-control {
+  background: #f6f6f6;
+  -webkit-box-shadow: #f6f6f6 0px 0px 0px 2.083vw inset;
+          box-shadow: #f6f6f6 0px 0px 0px 2.083vw inset;
+}
+
+.form-control.form-control_review {
+  width: 63.594vw;
+  height: 18.490vw;
 }
 
 @media all and (max-width: 1366px) {
