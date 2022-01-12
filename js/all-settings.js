@@ -39,7 +39,7 @@ document.addEventListener(
             ],
             navbar: {
                 title: ""
-              },
+            },
             "counters": false,
             "navbars": [{
                     "position": "top",
@@ -74,7 +74,7 @@ document.addEventListener(
             ],
             navbar: {
                 title: ""
-              },
+            },
             "counters": false,
             "navbars": [{
                     "position": "top",
@@ -157,7 +157,7 @@ $(document).on('ready', function () {
         swipeToSlide: true,
         autoplay: false,
         variableWidth: true,
-        mobileFirst:true,
+        mobileFirst: true,
         autoplay: false,
         autoplaySpeed: 5000,
         nextArrow: '<i class="fa fa-angle-right">',
@@ -234,3 +234,152 @@ $(function () {
     });
 });
 
+//Страница оформления заказа 
+
+$(document).ready(function () {
+    $('#submit_registration').click(function (ev) {
+        $('.registration').addClass(
+            'disabled');
+        $('#checkout-registration').removeClass(
+            'disabled');
+        $('.address-deactive').addClass(
+            'disabled');
+        $('.address').removeClass(
+            'disabled');
+        event.preventDefault();
+    });
+    $('#registrationEditButton').click(function (ev) {
+        $('.registration').removeClass(
+            'disabled');
+        $('#checkout-registration').addClass(
+            'disabled');
+        $('.address-deactive').removeClass(
+            'disabled');
+        $('.address').addClass(
+            'disabled');
+        event.preventDefault();
+    });
+    $('#submit_address').click(function (ev) {
+        $('.address').addClass(
+            'disabled');
+        $('#сheckout-address').removeClass(
+            'disabled');
+        $('.delivery-deactive').addClass(
+            'disabled');
+        $('.delivery').removeClass(
+            'disabled');
+        event.preventDefault();
+    });
+    $('#addressEditButton').click(function (ev) {
+        $('.address').removeClass(
+            'disabled');
+        $('#сheckout-address').addClass(
+            'disabled');
+        $('.delivery-deactive').removeClass(
+            'disabled');
+        $('.delivery').addClass(
+            'disabled');
+        event.preventDefault();
+    });
+    $('#submit_delivery').click(function (ev) {
+        $('.delivery').addClass(
+            'disabled');
+        $('#сheckout-delivery').removeClass(
+            'disabled');
+        $('.payment-deactive').addClass(
+            'disabled');
+        $('.payment').removeClass(
+            'disabled');
+        event.preventDefault();
+    });
+    $('#deliveryEditButton').click(function (ev) {
+        $('.delivery').removeClass(
+            'disabled');
+        $('#сheckout-delivery').addClass(
+            'disabled');
+        $('.payment-deactive').removeClass(
+            'disabled');
+        $('.payment').addClass(
+            'disabled');
+        ev.stopPropagation();
+    });
+});
+
+$(document).ready(function () {
+    $('.form-control_promo').click(function (ev) {
+        $('.promo-label_wrapper').addClass(
+            'promo-label_wrapper-active');
+        $('.promo-label_wrapper').removeClass(
+            'promo-label_wrapper-deactive');
+        $('.input_promo-border').addClass(
+            'input_promo-border-active');
+        ev.stopPropagation();
+    });
+    $('html').click(function () {
+        $('.promo-label_wrapper').removeClass(
+            'promo-label_wrapper-active');
+        $('.promo-label_wrapper').addClass(
+            'promo-label_wrapper-deactive');
+        $('.input_promo-border').removeClass(
+            'input_promo-border-active');
+    });
+});
+
+$(function () {
+    $('.closePromoIcon').click(function () {
+        $('.promo-item').addClass('disabled');
+        $('.promo-item').addClass('active');
+        $('.cartAdd_promo').addClass('active');
+        $('.cartAdd_promo').removeClass('disabled');
+    });
+    $('.cartAdd_promo').click(function () {
+        $('.cartAdd_promo').addClass('disabled');
+        $('.cartAdd_promo-form').addClass('active');
+        $('.cartAdd_promo-form').removeClass('disabled');
+    });
+    $('.applyButtonContainer').click(function () {
+        $('.cartAdd_promo-form').addClass('disabled');
+        $('.promo-item').removeClass('disabled');
+        $('.promo-item').addClass('active');
+    });
+});
+
+//Страница авторизации 
+
+$(document).ready(function () {
+    $('.form-control_login').click(function (ev) {;
+        $('.input_login-border').addClass(
+            'input_login-border-active');
+        ev.stopPropagation();
+    });
+    $('html').click(function () {
+        $('.input_login-border').removeClass(
+            'input_login-border-active');
+    });
+});
+
+$(document).ready(function () {
+    $('.form-control_password').click(function (ev) {;
+        $('.input_password-border').addClass(
+            'input_password-border-active');
+        ev.stopPropagation();
+    });
+    $('html').click(function () {
+        $('.input_password-border').removeClass(
+            'input_password-border-active');
+    });
+});
+
+//Страница регистрации 
+
+$(document).ready(function () {
+    $('.form-control_password-confirmed').click(function (ev) {;
+        $('.input_password-confirmed-border').addClass(
+            'input_password-confirmed-border-active');
+        ev.stopPropagation();
+    });
+    $('html').click(function () {
+        $('.input_password-confirmed-border').removeClass(
+            'input_password-confirmed-border-active');
+    });
+});

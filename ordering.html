@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/all-settings.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
@@ -317,76 +318,6 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    $(document).ready(function () {
-                        $('#submit_registration').click(function (ev) {
-                            $('.registration').addClass(
-                                'disabled');
-                            $('#checkout-registration').removeClass(
-                                'disabled');
-                            $('.address-deactive').addClass(
-                                'disabled');
-                            $('.address').removeClass(
-                                'disabled');
-                            event.preventDefault();
-                        });
-                        $('#registrationEditButton').click(function (ev) {
-                            $('.registration').removeClass(
-                                'disabled');
-                            $('#checkout-registration').addClass(
-                                'disabled');
-                            $('.address-deactive').removeClass(
-                                'disabled');
-                            $('.address').addClass(
-                                'disabled');
-                            event.preventDefault();
-                        });
-                        $('#submit_address').click(function (ev) {
-                            $('.address').addClass(
-                                'disabled');
-                            $('#сheckout-address').removeClass(
-                                'disabled');
-                            $('.delivery-deactive').addClass(
-                                'disabled');
-                            $('.delivery').removeClass(
-                                'disabled');
-                            event.preventDefault();
-                        });
-                        $('#addressEditButton').click(function (ev) {
-                            $('.address').removeClass(
-                                'disabled');
-                            $('#сheckout-address').addClass(
-                                'disabled');
-                            $('.delivery-deactive').removeClass(
-                                'disabled');
-                            $('.delivery').addClass(
-                                'disabled');
-                            event.preventDefault();
-                        });
-                        $('#submit_delivery').click(function (ev) {
-                            $('.delivery').addClass(
-                                'disabled');
-                            $('#сheckout-delivery').removeClass(
-                                'disabled');
-                            $('.payment-deactive').addClass(
-                                'disabled');
-                            $('.payment').removeClass(
-                                'disabled');
-                            event.preventDefault();
-                        });
-                        $('#deliveryEditButton').click(function (ev) {
-                            $('.delivery').removeClass(
-                                'disabled');
-                            $('#сheckout-delivery').addClass(
-                                'disabled');
-                            $('.payment-deactive').removeClass(
-                                'disabled');
-                            $('.payment').addClass(
-                                'disabled');
-                            ev.stopPropagation();
-                        });
-                    });
-                </script>
             </div>
             <div class="container-right">
                 <div class="cartMenu_container">
@@ -460,48 +391,7 @@
                                                 <button type="submit" class="applyButtonContainer">Применить</button>
                                             </div>
                                         </span>
-                                        <script>
-                                            $(document).ready(function () {
-                                                $('.form-control_promo').click(function (ev) {
-                                                    $('.promo-label_wrapper').addClass(
-                                                        'promo-label_wrapper-active');
-                                                    $('.promo-label_wrapper').removeClass(
-                                                        'promo-label_wrapper-deactive');
-                                                    $('.input_promo-border').addClass(
-                                                        'input_promo-border-active');
-                                                    ev.stopPropagation();
-                                                });
-                                                $('html').click(function () {
-                                                    $('.promo-label_wrapper').removeClass(
-                                                        'promo-label_wrapper-active');
-                                                    $('.promo-label_wrapper').addClass(
-                                                        'promo-label_wrapper-deactive');
-                                                    $('.input_promo-border').removeClass(
-                                                        'input_promo-border-active');
-                                                });
-                                            });
-                                        </script>
                                     </li>
-                                    <script>
-                                        $(function () {
-                                            $('.closePromoIcon').click(function () {
-                                                $('.promo-item').addClass('disabled');
-                                                $('.promo-item').addClass('active');
-                                                $('.cartAdd_promo').addClass('active');
-                                                $('.cartAdd_promo').removeClass('disabled');
-                                            });
-                                            $('.cartAdd_promo').click(function () {
-                                                $('.cartAdd_promo').addClass('disabled');
-                                                $('.cartAdd_promo-form').addClass('active');
-                                                $('.cartAdd_promo-form').removeClass('disabled');
-                                            });
-                                            $('.applyButtonContainer').click(function () {
-                                                $('.cartAdd_promo-form').addClass('disabled');
-                                                $('.promo-item').removeClass('disabled');
-                                                $('.promo-item').addClass('active');
-                                            });
-                                        });
-                                    </script>
                                     <li>
                                         <div class='cartTotalContainer cartTotalContainer-ordering'>
                                             <div class='totalTitle'>Итого:</div>

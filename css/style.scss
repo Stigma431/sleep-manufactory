@@ -486,27 +486,27 @@ svg {
 .form-control_promo {
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.0375rem;
+  letter-spacing: 0.031vw;
   color: rgb(21, 21, 21);
-  padding: 0.7rem 1.25rem;
-  font-size: 1.125rem;
+  padding: 0.583vw 1.042vw;
+  font-size: 0.938vw;
   display: block;
   width: 32.866vw;
-  border: 0px;
+  border: 0;
   background: #F6F6F6;
   appearance: none;
-  border-radius: 0.25rem;
+  border-radius: 0.208vw;
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
   outline: none;
 }
 
 .input_promo-border {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: block;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
   pointer-events: none;
   transition: border-color 750ms ease-out 750ms;
   border-bottom-color: rgb(30, 48, 110);
@@ -518,7 +518,7 @@ svg {
   bottom: 0px;
   left: 0px;
   display: block;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
   pointer-events: none;
   transition: border-color 0ms ease-out 150ms;
   border-bottom-color: rgb(30, 48, 110);
@@ -541,9 +541,9 @@ svg {
 .input_promo-border::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -0.052vw;
   width: 0px;
-  height: 2px;
+  height: 0.104vw;
   background-color: rgb(30, 48, 110);
   transition: width 0.15s ease-out 0s;
 }
@@ -556,10 +556,10 @@ svg {
 .applyButtonContainer {
   font-weight: 400;
   position: absolute;
-  top: 0.2rem;
+  top: 0.167vw;
   right: 0px;
   bottom: 0px;
-  font-size: 1rem;
+  font-size: 0.833vw;
   border: 0px;
   background: none;
   appearance: none;
@@ -11174,9 +11174,7 @@ footer {
   height: 10.4vw;
 }
 
-#advantages-ordering-PC {
-    
-}
+#advantages-ordering-PC {}
 
 #advantages-ordering-mobile {
   display: none;
@@ -11324,6 +11322,7 @@ footer {
   padding-top: 0px;
   cursor: pointer;
   margin-top: 0.625vw;
+  margin-bottom: 3.021vw;
 }
 
 .OptionContent {
@@ -12316,7 +12315,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   #border-image-PC {
     display: block;
   }
-  
+
   #border-image-mobile {
     display: none;
   }
@@ -12331,9 +12330,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     flex-direction: column;
   }
 
-  #advantages-ordering-PC {
-    
-  }
+  #advantages-ordering-PC {}
 
   #advantages-ordering-mobile {
     display: none;
@@ -13121,6 +13118,91 @@ label:hover .bwCrgA .input-checkbox-inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .form-control_promo {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 25.866vw;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+  }
+
+  .input_promo-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_promo-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_promo-border::before,
+  .input_promo-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_promo-border::before {
+    left: 50%;
+  }
+
+  .input_promo-border::after {
+    right: 50%;
+  }
+
+  .input_promo-border::before,
+  .input_promo-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_promo-border-active::before,
+  .input_promo-border-active::after {
+    width: 50%;
+  }
+
+  .applyButtonContainer {
+    font-weight: 400;
+    position: absolute;
+    top: 0.167vw * $coefficient;
+    right: 0px;
+    bottom: 0px;
+    font-size: 0.833vw * $coefficient;
+    border: 0px;
+    background: none;
+    appearance: none;
+    outline: 0px;
+    cursor: pointer;
+    color: inherit;
   }
 
 }
@@ -14281,4 +14363,945 @@ label:hover .bwCrgA .input-checkbox-inner {
     flex-wrap: wrap;
   }
 
+  .form-control_promo {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 86vw;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+  }
+
+  .input_promo-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: #F6F6F6;
+  }
+
+  .input_promo-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: #F6F6F6;
+  }
+
+  .input_promo-border::before,
+  .input_promo-border::after {
+    background-color: #F6F6F6;
+  }
+
+  .input_promo-border::before {
+    left: 50%;
+  }
+
+  .input_promo-border::after {
+    right: 50%;
+  }
+
+  .input_promo-border::before,
+  .input_promo-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: #F6F6F6;
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_promo-border-active::before,
+  .input_promo-border-active::after {
+    width: 50%;
+  }
+
+  .applyButtonContainer {
+    font-weight: 400;
+    position: absolute;
+    top: 0.167vw * $coefficient;
+    right: 0px;
+    bottom: 0px;
+    font-size: 0.833vw * $coefficient;
+    border: 0px;
+    background: none;
+    appearance: none;
+    outline: 0px;
+    cursor: pointer;
+    color: inherit;
+  }
+
+}
+
+//Страница авторизации
+
+.main {
+  margin-top: 7.031vw;
+}
+
+.authorization-title {
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.292vw;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1F316A;
+  margin-bottom: 8.073vw;
+}
+
+.input-login div {
+  position: relative;
+}
+
+.form-control_login {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.031vw;
+  color: rgb(21, 21, 21);
+  padding: 0.583vw 1.042vw;
+  font-size: 0.938vw;
+  display: block;
+  width: 32.866vw;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  border-radius: 0.208vw;
+  transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  outline: none;
+  margin-bottom: 4.219vw;
+}
+
+.input_login-border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 750ms ease-out 750ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_login-border-active {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 0ms ease-out 150ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_login-border::before,
+.input_login-border::after {
+  background-color: rgb(30, 48, 110);
+}
+
+.input_login-border::before {
+  left: 50%;
+}
+
+.input_login-border::after {
+  right: 50%;
+}
+
+.input_login-border::before,
+.input_login-border::after {
+  content: "";
+  position: absolute;
+  bottom: -0.052vw;
+  width: 0px;
+  height: 0.104vw;
+  background-color: rgb(30, 48, 110);
+  transition: width 0.15s ease-out 0s;
+}
+
+.input_login-border-active::before,
+.input_login-border-active::after {
+  width: 50%;
+}
+
+.input-password div {
+  position: relative;
+}
+
+.form-control_password {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.031vw;
+  color: rgb(21, 21, 21);
+  padding: 0.583vw 1.042vw;
+  font-size: 0.938vw;
+  display: block;
+  width: 32.866vw;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  border-radius: 0.208vw;
+  transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  outline: none;
+  margin-bottom: 4.219vw;
+}
+
+.input_password-border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 750ms ease-out 750ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_password-border-active {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 0ms ease-out 150ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_password-border::before,
+.input_password-border::after {
+  background-color: rgb(30, 48, 110);
+}
+
+.input_password-border::before {
+  left: 50%;
+}
+
+.input_password-border::after {
+  right: 50%;
+}
+
+.input_password-border::before,
+.input_password-border::after {
+  content: "";
+  position: absolute;
+  bottom: -0.052vw;
+  width: 0px;
+  height: 0.104vw;
+  background-color: rgb(30, 48, 110);
+  transition: width 0.15s ease-out 0s;
+}
+
+.input_password-border-active::before,
+.input_password-border-active::after {
+  width: 50%;
+}
+
+
+.InputWrapper-authorization {
+  margin-bottom: 3.021vw;
+}
+
+.authorization-link {
+  margin-top: 2.083vw;
+  margin-bottom: 8.281vw;
+
+  a {
+    font-size: 1.250vw;
+    font-weight: 400;
+    line-height: 1.510vw;
+    letter-spacing: 0;
+    text-align: left;
+    text-decoration: underline;
+    color: #1F316A;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  $coefficient: 1.4;
+
+  .main {
+    margin-top: 7.031vw * $coefficient;
+  }
+
+  .authorization-title {
+    font-size: 1.875vw * $coefficient;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.292vw * $coefficient;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F316A;
+    margin-bottom: 8.073vw * $coefficient;
+  }
+
+  .input-login div {
+    position: relative;
+  }
+
+  .form-control_login {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 32.866vw * $coefficient;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+    margin-bottom: 4.219vw * $coefficient;
+  }
+
+  .input_login-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_login-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_login-border::before,
+  .input_login-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_login-border::before {
+    left: 50%;
+  }
+
+  .input_login-border::after {
+    right: 50%;
+  }
+
+  .input_login-border::before,
+  .input_login-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_login-border-active::before,
+  .input_login-border-active::after {
+    width: 50%;
+  }
+
+  .input-password div {
+    position: relative;
+  }
+
+  .form-control_password {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 32.866vw * $coefficient;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+    margin-bottom: 4.219vw * $coefficient;
+  }
+
+  .input_password-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-border::before,
+  .input_password-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_password-border::before {
+    left: 50%;
+  }
+
+  .input_password-border::after {
+    right: 50%;
+  }
+
+  .input_password-border::before,
+  .input_password-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_password-border-active::before,
+  .input_password-border-active::after {
+    width: 50%;
+  }
+
+
+  .InputWrapper-authorization {
+    margin-bottom: 3.021vw * $coefficient;
+  }
+
+  .authorization-link {
+    margin-top: 2.083vw * $coefficient;
+    margin-bottom: 8.281vw * $coefficient;
+
+    a {
+      font-size: 1.250vw * $coefficient;
+      font-weight: 400;
+      line-height: 1.510vw * $coefficient;
+      letter-spacing: 0;
+      text-align: left;
+      text-decoration: underline;
+      color: #1F316A;
+    }
+  }
+
+}
+
+@media all and (max-width: 415px) {
+  $coefficient: 4;
+
+  .main {
+    margin-top: 7.031vw * $coefficient;
+  }
+
+  .authorization-title {
+    font-size: 1.875vw * $coefficient;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.292vw * $coefficient;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F316A;
+    margin-bottom: 8.073vw * $coefficient;
+  }
+
+  .input-login div {
+    position: relative;
+  }
+
+  .form-control_login {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 32.866vw * $coefficient;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+    margin-bottom: 4.219vw * $coefficient;
+  }
+
+  .input_login-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_login-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_login-border::before,
+  .input_login-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_login-border::before {
+    left: 50%;
+  }
+
+  .input_login-border::after {
+    right: 50%;
+  }
+
+  .input_login-border::before,
+  .input_login-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_login-border-active::before,
+  .input_login-border-active::after {
+    width: 50%;
+  }
+
+  .input-password div {
+    position: relative;
+  }
+
+  .form-control_password {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 32.866vw * $coefficient;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+    margin-bottom: 4.219vw * $coefficient;
+  }
+
+  .input_password-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-border::before,
+  .input_password-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_password-border::before {
+    left: 50%;
+  }
+
+  .input_password-border::after {
+    right: 50%;
+  }
+
+  .input_password-border::before,
+  .input_password-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_password-border-active::before,
+  .input_password-border-active::after {
+    width: 50%;
+  }
+
+
+  .InputWrapper-authorization {
+    margin-bottom: 3.021vw * $coefficient;
+  }
+
+  .authorization-link {
+    margin-top: 2.083vw * $coefficient;
+    margin-bottom: 8.281vw * $coefficient;
+
+    a {
+      font-size: 1.250vw * $coefficient;
+      font-weight: 400;
+      line-height: 1.510vw * $coefficient;
+      letter-spacing: 0;
+      text-align: left;
+      text-decoration: underline;
+      color: #1F316A;
+    }
+  }
+
+}
+
+//Страница регистрации
+
+.input-password_confirmed div {
+  position: relative;
+}
+
+.form-control_password-confirmed {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.031vw;
+  color: rgb(21, 21, 21);
+  padding: 0.583vw 1.042vw;
+  font-size: 0.938vw;
+  display: block;
+  width: 32.866vw;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  border-radius: 0.208vw;
+  transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  outline: none;
+  margin-bottom: 4.219vw;
+}
+
+.input_password-confirmed-border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 750ms ease-out 750ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_password-confirmed-border-active {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: 0.052vw solid rgb(255, 255, 255);
+  pointer-events: none;
+  transition: border-color 0ms ease-out 150ms;
+  border-bottom-color: rgb(30, 48, 110);
+}
+
+.input_password-confirmed-border::before,
+.input_password-confirmed-border::after {
+  background-color: rgb(30, 48, 110);
+}
+
+.input_password-confirmed-border::before {
+  left: 50%;
+}
+
+.input_password-confirmed-border::after {
+  right: 50%;
+}
+
+.input_password-confirmed-border::before,
+.input_password-confirmed-border::after {
+  content: "";
+  position: absolute;
+  bottom: -0.052vw;
+  width: 0px;
+  height: 0.104vw;
+  background-color: rgb(30, 48, 110);
+  transition: width 0.15s ease-out 0s;
+}
+
+.input_password-confirmed-border-active::before,
+.input_password-confirmed-border-active::after {
+  width: 50%;
+}
+
+@media all and (max-width: 1366px) {
+  $coefficient: 1.4;
+
+  .input-password_confirmed div {
+    position: relative;
+  }
+
+  .form-control_password-confirmed {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 32.866vw * $coefficient;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+    margin-bottom: 4.219vw * $coefficient;
+  }
+
+  .input_password-confirmed-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-confirmed-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-confirmed-border::before,
+  .input_password-confirmed-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_password-confirmed-border::before {
+    left: 50%;
+  }
+
+  .input_password-confirmed-border::after {
+    right: 50%;
+  }
+
+  .input_password-confirmed-border::before,
+  .input_password-confirmed-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_password-confirmed-border-active::before,
+  .input_password-confirmed-border-active::after {
+    width: 50%;
+  }
+
+}
+
+@media all and (max-width: 415px) {
+  $coefficient: 4;
+
+  .input-password_confirmed div {
+    position: relative;
+  }
+
+  .form-control_password-confirmed {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.031vw * $coefficient;
+    color: rgb(21, 21, 21);
+    padding: 0.583vw * $coefficient 1.042vw * $coefficient;
+    font-size: 0.938vw * $coefficient;
+    display: block;
+    width: 32.866vw * $coefficient;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0.208vw * $coefficient;
+    transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    outline: none;
+    margin-bottom: 4.219vw * $coefficient;
+  }
+
+  .input_password-confirmed-border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 750ms ease-out 750ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-confirmed-border-active {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    border-bottom: 0.052vw * $coefficient solid rgb(255, 255, 255);
+    pointer-events: none;
+    transition: border-color 0ms ease-out 150ms;
+    border-bottom-color: rgb(30, 48, 110);
+  }
+
+  .input_password-confirmed-border::before,
+  .input_password-confirmed-border::after {
+    background-color: rgb(30, 48, 110);
+  }
+
+  .input_password-confirmed-border::before {
+    left: 50%;
+  }
+
+  .input_password-confirmed-border::after {
+    right: 50%;
+  }
+
+  .input_password-confirmed-border::before,
+  .input_password-confirmed-border::after {
+    content: "";
+    position: absolute;
+    bottom: -0.052vw * $coefficient;
+    width: 0px;
+    height: 0.104vw * $coefficient;
+    background-color: rgb(30, 48, 110);
+    transition: width 0.15s ease-out 0s;
+  }
+
+  .input_password-confirmed-border-active::before,
+  .input_password-confirmed-border-active::after {
+    width: 50%;
+  }
+
+}
+
+//Страница восстановления
+
+.recovery-main {
+  margin-bottom: 9.896vw;
+}
+
+.inputLogin-description {
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: 1.250vw;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 1.302vw;
+  color: #000000;
+}
+
+@media all and (max-width: 1366px) {
+  $coefficient: 1.4;
+
+  .recovery-main {
+    margin-bottom: 9.896vw * $coefficient;
+  }
+
+  .inputLogin-description {
+    font-size: 1.042vw * $coefficient;
+    font-weight: 400;
+    line-height: 1.250vw * $coefficient;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 1.302vw * $coefficient;
+  }
+  
+}
+
+@media all and (max-width: 415px) {
+  $coefficient: 4;
+
+  .recovery-main {
+    margin-bottom: 9.896vw * $coefficient;
+  }
+
+  .inputLogin-description {
+    font-size: 1.042vw * $coefficient;
+    font-weight: 400;
+    line-height: 1.250vw * $coefficient;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 1.302vw * $coefficient;
+  }
+  
 }
