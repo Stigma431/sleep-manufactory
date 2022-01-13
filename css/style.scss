@@ -139,6 +139,10 @@ svg {
         height: 22.500vw;
         visibility: visible;
         opacity: 1;
+
+        a {
+          border: 0;
+        }
       }
 
       .nav-links:hover {
@@ -179,7 +183,6 @@ svg {
         color: #1f316a;
         display: flex;
         align-items: center;
-        width: 6.042vw;
         margin-left: 0.816vw;
 
         .map-icon {
@@ -278,6 +281,22 @@ svg {
 .sub-menu_image-container {
   display: flex;
   flex-direction: column;
+}
+
+.sub-menu_image-container {
+  border-bottom: 0 !important;
+
+  .product-item_title {
+    font-size: 1.325vw;
+  }
+
+  .product-discount_price {
+    font-size: 1.325vw;
+  }
+
+  .product-price {
+    font-size: 1.325vw;
+  }
 }
 
 .image-container-active {
@@ -1961,7 +1980,6 @@ svg {
         }
 
         .map {
-          width: 6.042vw * $coefficient;
           margin-left: 0.816vw;
 
           .map-icon {
@@ -2150,11 +2168,9 @@ svg {
 
   .cart_price-container {}
 
-  .cart-price_discount {
-  }
+  .cart-price_discount {}
 
-  .cart-price {
-  }
+  .cart-price {}
 
   .ordering-container .cart-price_discount {
     color: rgb(255, 255, 255);

@@ -191,6 +191,10 @@ svg {
   opacity: 1;
 }
 
+.header .header-wrapper .nav-menu .nav:hover .sub-menu a {
+  border: 0;
+}
+
 .header .header-wrapper .nav-menu .nav-links:hover {
   border-bottom: 0.150vw solid #1F316A;
 }
@@ -232,7 +236,6 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 6.042vw;
   margin-left: 0.816vw;
 }
 
@@ -343,6 +346,22 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.sub-menu_image-container {
+  border-bottom: 0 !important;
+}
+
+.sub-menu_image-container .product-item_title {
+  font-size: 1.325vw;
+}
+
+.sub-menu_image-container .product-discount_price {
+  font-size: 1.325vw;
+}
+
+.sub-menu_image-container .product-price {
+  font-size: 1.325vw;
 }
 
 .image-container-active {
@@ -2009,7 +2028,6 @@ svg {
     vertical-align: middle;
   }
   .header .header-wrapper .header-right .map {
-    width: 24.168vw;
     margin-left: 0.816vw;
   }
   .header .header-wrapper .header-right .map .map-icon {
