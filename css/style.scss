@@ -161,18 +161,30 @@ svg {
     }
 
     .header-right {
-      margin-right: 0.625vw;
+      margin-right: 3vw;
       width: 6.042vw;
       height: 0.990vw;
+      display: flex;
+      align-items: center;
+
+      .account {
+        img {
+          width: 1.736vw;
+          height: 1.736vw;
+          vertical-align: middle;
+        }
+      }
 
       .map {
         color: #1f316a;
         display: flex;
         align-items: center;
         width: 6.042vw;
+        margin-left: 0.816vw;
 
         .map-icon {
           padding-right: 0.401vw;
+          vertical-align: middle;
 
           img {
             width: 0.693vw;
@@ -498,6 +510,10 @@ svg {
   border-radius: 0.208vw;
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
   outline: none;
+}
+
+.product-page_promo.form-control_promo {
+  width: 19.917vw;
 }
 
 .input_promo-border {
@@ -1285,7 +1301,7 @@ svg {
       }
 
       .nav-menu {
-        font-size: 0.938vw * $coefficient;
+        font-size: 0.9vw * $coefficient;
         line-height: 1.146vw * $coefficient;
         align-items: center;
 
@@ -1934,10 +1950,19 @@ svg {
 
         width: 6.042vw * $coefficient;
         height: 0.990vw * $coefficient;
-        margin-right: 2vw;
+        margin-right: 2.1vw * $coefficient;
+
+        .account {
+          img {
+            width: 1.736vw * $coefficient;
+            height: 1.736vw * $coefficient;
+            vertical-align: middle;
+          }
+        }
 
         .map {
           width: 6.042vw * $coefficient;
+          margin-left: 0.816vw;
 
           .map-icon {
             padding-right: 0.401vw * $coefficient;
@@ -2068,6 +2093,9 @@ svg {
     font-weight: 400;
     padding-right: 1.250vw * $coefficient;
     font-size: 0.833vw * $coefficient;
+  }
+
+  .ordering-container .productName {
     color: rgb(255, 255, 255);
   }
 
@@ -2123,10 +2151,16 @@ svg {
   .cart_price-container {}
 
   .cart-price_discount {
-    color: rgb(255, 255, 255);
   }
 
   .cart-price {
+  }
+
+  .ordering-container .cart-price_discount {
+    color: rgb(255, 255, 255);
+  }
+
+  .ordering-container .cart-price {
     color: rgb(255, 255, 255);
   }
 
@@ -2145,7 +2179,7 @@ svg {
     width: 50%;
   }
 
-  .summary-item_left {
+  .ordering-container.summary-item_left {
     color: rgb(255, 255, 255);
   }
 
@@ -2186,6 +2220,9 @@ svg {
     letter-spacing: 0.016vw * $coefficient;
     margin-bottom: 0.417vw * $coefficient;
     margin-top: 0.417vw * $coefficient;
+  }
+
+  .ordering-container .cartShipping {
     color: rgb(255, 255, 255);
   }
 
@@ -2219,6 +2256,9 @@ svg {
   .savedValues {
     font-size: 0.938vw * $coefficient;
     letter-spacing: 0.031vw * $coefficient;
+  }
+
+  .ordering-container .savedValues {
     color: rgb(255, 255, 255);
   }
 
@@ -7512,6 +7552,10 @@ video {
   margin-bottom: 1vw;
 }
 
+.second-product-page .mattress-second-parameters {
+  margin-bottom: 0.3vw;
+}
+
 .form-select {
   display: block;
   width: 25.052vw;
@@ -7526,8 +7570,8 @@ video {
   background-repeat: no-repeat;
   background-position: right .75rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
+  border: 1px solid #C4C4C4;
+  border-radius: 0.260vw;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -7577,9 +7621,14 @@ video {
   padding-bottom: 0.181vw;
 }
 
+.second-product-page .mattress-parameters-description {
+  margin-bottom: 0.625vw;
+}
+
 .mattress-color {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.927vw;
 }
 
 .mattress-color_title {
@@ -7814,23 +7863,12 @@ svg {
     width: auto;
   }
 
-
-  .second-product-page .first-slick_item {
-    width: 56.662vw !important;
-    height: 34.993vw;
-  }
-
-
   .first-slick_item {
 
     img {
       width: 46.8426vw * $coefficient;
       height: 31.9344vw * $coefficient;
     }
-  }
-
-  .second-product-page .first-slick_item.item-1 {
-    width: auto;
   }
 
   .second-slick-item {
@@ -7920,7 +7958,14 @@ svg {
 
   .mattress-second-parameters {
     margin-top: 0.8vw;
-    margin-bottom: 1.1489vw;
+  }
+
+  .third-product-page .mattress-second-parameters {
+    margin-bottom: 1.7vw;
+  }
+
+  .second-product-page .mattress-second-parameters {
+    margin-bottom: 1.1vw;
   }
 
   .form-select {
@@ -8253,7 +8298,7 @@ svg {
   }
 
   .form-select {
-    width: 25.052vw * $coefficient;
+    width: 25vw * $coefficient;
     height: 3.385vw * $coefficient;
     padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
     -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
@@ -8621,6 +8666,23 @@ $slick-opacity-not-active: 0.25 !default;
   box-shadow: rgb(109, 128, 180) 0px 0px 0px 0.104vw;
 }
 
+.third-product-page .slick-dots li:nth-child(1) {
+  content: url(../images/third-product-page_item1-mini.jpg) !important;
+}
+
+.third-product-page .slick-dots li:nth-child(2) {
+  content: url(../images/third-product-page_item2-mini.jpg) !important;
+}
+
+.third-product-page .slick-dots li:nth-child(3) {
+  content: url(../images/third-product-page_item3-mini.jpg) !important;
+}
+
+.third-product-page .slick-dots li:nth-child(4) {
+  content: url(../images/third-product-page_item4-mini.jpg) !important;
+}
+
+
 @media all and (max-width: 1366px) {
   $coefficient: 1.3;
 
@@ -8899,6 +8961,28 @@ $slick-opacity-not-active: 0.25 !default;
   }
 }
 
+//Третья страница покупки
+
+.third-product-page .mattress-parameters-wrapper {
+  flex-direction: column;
+}
+
+
+
+.third-product-page .mattress-parameters-column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  padding-bottom: 0.781vw;
+}
+
+.mattress-parameters-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.19vw;
+}
+
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
 
@@ -9145,11 +9229,12 @@ $slick-opacity-not-active: 0.25 !default;
     flex-direction: row;
     align-items: center;
     margin-left: 0.521vw;
-    
+
     li {
       display: flex;
       align-items: center;
       padding-right: 0.271vw;
+
       img {
         width: 1.563vw;
         height: 1.563vw;
@@ -9227,7 +9312,7 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   #product-detail__tab {
-    width: 47.083vw * $coefficient;
+    width: 27.083vw * $coefficient;
     margin-bottom: 6.042vw * $coefficient;
   }
 
@@ -9275,6 +9360,77 @@ $slick-opacity-not-active: 0.25 !default;
     line-height: 2.289vw * $coefficient;
     margin-bottom: 1.302vw * $coefficient;
   }
+
+  .form-review_title {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.292vw * $coefficient;
+    letter-spacing: 0;
+    margin-bottom: 2.500vw * $coefficient;
+  }
+
+  .assessment {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.292vw * $coefficient;
+    letter-spacing: 0;
+    margin-bottom: 2.552vw * $coefficient;
+
+    ul {
+      margin-left: 0.521vw * $coefficient;
+
+      li {
+        padding-right: 0.271vw * $coefficient;
+
+        img {
+          width: 1.563vw * $coefficient;
+          height: 1.563vw * $coefficient;
+        }
+      }
+    }
+  }
+
+  .form-control.form-control_name-review {
+    width: 30.260vw * $coefficient;
+  }
+
+  .review-form {}
+
+  .formWrapper.review-formWrapper {
+    width: 63.594vw * $coefficient;
+    margin: 0 auto;
+  }
+
+  .form-control.form-control_city-review {
+    width: 30.260vw * $coefficient;
+  }
+
+  .form-control.form-control_email-review {
+    width: 63.594vw * $coefficient;
+  }
+
+  .input-review div {
+    position: relative;
+    margin-bottom: 2.083vw * $coefficient;
+  }
+
+  .input-review:hover .form-control {
+    box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.083vw * $coefficient inset;
+  }
+
+  .input-review div {
+    position: relative;
+    margin-bottom: 2.083vw * $coefficient;
+  }
+
+  .input-review:hover .form-control {
+    box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.083vw * $coefficient inset;
+  }
+
+  .form-control.form-control_review {
+    width: 63.594vw * $coefficient;
+    height: 18.490vw * $coefficient;
+  }
+
+  .submitWrapper.submitWrapper_review {}
 
 }
 
@@ -9291,11 +9447,11 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   .product-detail__container {
-    width: 98vw;
+    width: 25vw * $coefficient;
   }
 
   #product-detail__tab {
-    width: 47.083vw * $coefficient;
+    width: 25vw * $coefficient;
     overflow-x: scroll;
     overflow-y: hidden;
     margin-bottom: 6.042vw * $coefficient;
@@ -9305,7 +9461,7 @@ $slick-opacity-not-active: 0.25 !default;
   .nav-pills .show>.nav-link {}
 
   #product-detail__tab.nav-pills .nav-link {
-    width: 12.713vw * $coefficient;
+    width: 12vw * $coefficient;
     text-align: center;
   }
 
@@ -9346,6 +9502,80 @@ $slick-opacity-not-active: 0.25 !default;
     margin-bottom: 1.302vw * $coefficient;
   }
 
+  .form-review_title {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.292vw * $coefficient;
+    letter-spacing: 0;
+    margin-bottom: 2.500vw * $coefficient;
+  }
+
+  .assessment {
+    font-size: 1.875vw * $coefficient;
+    line-height: 2.292vw * $coefficient;
+    letter-spacing: 0;
+    margin-bottom: 2.552vw * $coefficient;
+
+    ul {
+      margin-left: 0.521vw * $coefficient;
+
+      li {
+        padding-right: 0.271vw * $coefficient;
+
+        img {
+          width: 1.563vw * $coefficient;
+          height: 1.563vw * $coefficient;
+        }
+      }
+    }
+  }
+
+  .form-control.form-control_name-review {
+    width: 24.5vw * $coefficient;
+  }
+
+  .review-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .formWrapper.review-formWrapper {
+    width: 24.5vw * $coefficient;
+    margin: 0 auto;
+  }
+
+  .form-control.form-control_city-review {
+    width: 24.5vw * $coefficient;
+  }
+
+  .form-control.form-control_email-review {
+    width: 24.5vw * $coefficient;
+  }
+
+  .input-review div {
+    position: relative;
+    margin-bottom: 2.083vw * $coefficient;
+  }
+
+  .input-review:hover .form-control {
+    box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.083vw * $coefficient inset;
+  }
+
+  .input-review div {
+    position: relative;
+    margin-bottom: 2.083vw * $coefficient;
+  }
+
+  .input-review:hover .form-control {
+    box-shadow: rgb(246, 246, 246) 0px 0px 0px 2.083vw * $coefficient inset;
+  }
+
+  .form-control.form-control_review {
+    width: 24.5vw * $coefficient;
+    height: 18.490vw * $coefficient;
+  }
+
+  .submitWrapper.submitWrapper_review {}
 }
 
 .reviews-items.slick-slider {
@@ -13180,6 +13410,11 @@ label:hover .bwCrgA .input-checkbox-inner {
     outline: none;
   }
 
+  .product-page_promo.form-control_promo {
+    width: 19.917vw * $coefficient;
+  }
+
+
   .input_promo-border {
     position: absolute;
     right: 0;
@@ -14421,6 +14656,10 @@ label:hover .bwCrgA .input-checkbox-inner {
     border-radius: 0.208vw * $coefficient;
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     outline: none;
+  }
+
+  .product-page_promo.form-control_promo {
+    width: 19.917vw * $coefficient;
   }
 
   .input_promo-border {
