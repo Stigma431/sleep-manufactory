@@ -172,7 +172,7 @@ svg {
   color: #1F316A;
   text-decoration: none;
   border-bottom: 0.150vw solid transparent;
-  padding: 0.729vw 0.729vw;
+  padding: 0.77vw 0.729vw;
   -webkit-transition: color 0.15s ease-out 0s;
   transition: color 0.15s ease-out 0s;
 }
@@ -1492,7 +1492,7 @@ svg {
     height: 1.1438vw;
   }
   .header .header-wrapper .nav-menu {
-    font-size: 1.26vw;
+    font-size: 1.12vw;
     line-height: 1.6044vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1504,7 +1504,7 @@ svg {
   }
   .header .header-wrapper .nav-menu .nav-links {
     border-bottom: 0.21vw solid transparent;
-    padding: 0.729vw 0.729vw;
+    padding: 0.829vw 0.729vw;
   }
   .header .header-wrapper .nav-menu .nav:hover .sub-menu {
     height: 31.5vw;
