@@ -49,7 +49,6 @@ svg {
 
 .header {
   width: 100vw;
-  height: 2.917vw;
   background: #fff;
   -webkit-box-shadow: 0 0.26vw 1.302vw rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.26vw 1.302vw rgba(0, 0, 0, 0.15);
@@ -77,7 +76,6 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2.917vw;
 }
 
 .header .header-wrapper .header-logo_burger {
@@ -211,8 +209,7 @@ svg {
 }
 
 .header .header-wrapper .header-right {
-  margin-right: 3vw;
-  width: 6.042vw;
+  margin-right: 1vw;
   height: 0.990vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,15 +350,15 @@ svg {
 }
 
 .sub-menu_image-container .product-item_title {
-  font-size: 1.325vw;
+  font-size: 1.2vw;
 }
 
 .sub-menu_image-container .product-discount_price {
-  font-size: 1.325vw;
+  font-size: 1.2vw;
 }
 
 .sub-menu_image-container .product-price {
-  font-size: 1.325vw;
+  font-size: 1.2vw;
 }
 
 .image-container-active {
@@ -1469,19 +1466,17 @@ svg {
   }
   .header {
     width: 100vw;
-    height: 3.5vw;
     -webkit-box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15);
   }
   .header .header-wrapper {
     width: 97.813vw;
-    height: 2.917vw;
   }
   .header .header-wrapper .header-logo_burger {
     margin-top: 0.56vw;
   }
   .header .header-wrapper .header-logo_burger .logo img {
-    width: 17.3544vw;
+    width: 13.622vw;
     height: auto;
   }
   .header .header-wrapper .header-logo_burger .header__nav {
@@ -1511,7 +1506,7 @@ svg {
     height: 1.1438vw;
   }
   .header .header-wrapper .nav-menu {
-    font-size: 1.12vw;
+    font-size: 1.092vw;
     line-height: 1.6044vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1532,11 +1527,7 @@ svg {
     border-bottom: 0.21vw solid #1F316A;
   }
   .header .header-wrapper .nav-menu .deactive {
-    padding: 1.0206vw 1.0206vw;
-  }
-  .header .header-wrapper .header-right {
-    width: 8.4588vw;
-    height: 1.386vw;
+    padding: 1.0206vw 0.49vw;
   }
   .header .header-wrapper .header-right .map .map-icon {
     padding-right: 0.5614vw;
@@ -2016,11 +2007,6 @@ svg {
   }
   .header .header-wrapper .header_main-nav .nav-menu .nav {
     background-color: transparent;
-  }
-  .header .header-wrapper .header-right {
-    width: 24.168vw;
-    height: 3.96vw;
-    margin-right: 8.4vw;
   }
   .header .header-wrapper .header-right .account img {
     width: 6.944vw;
@@ -2923,7 +2909,7 @@ svg {
   text-align: center;
   padding: 0;
   margin: 0;
-  left: 47vw;
+  left: 46.2vw;
   width: 10vw;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -3475,6 +3461,10 @@ li.slick-active {
 .slider {
   width: 50%;
   margin: 5.208vw 1.198vw;
+}
+
+.reviews-items.slider {
+  margin: 2vw 1.198vw;
 }
 
 .slick-slide {
@@ -8505,7 +8495,7 @@ svg {
 }
 
 .product-desc h3 {
-  font-size: 1.875vw;
+  font-size: 1.675vw;
   line-height: 2.289vw;
   font-weight: 700;
   color: #4F4F4F;
@@ -8514,7 +8504,7 @@ svg {
 .product-desc ul li:not(:first-child) {
   list-style-type: disc;
   margin-left: 1.667vw;
-  font-size: 1.875vw;
+  font-size: 1.475vw;
   line-height: 2.289vw;
   font-weight: 400;
   color: #4F4F4F;
@@ -8773,6 +8763,10 @@ svg {
     font-size: 5vw;
     line-height: 6.104vw;
   }
+  .product-desc {
+    padding-left: 3.614vw;
+    padding-right: 3.614vw;
+  }
   .product-desc__title {
     font-size: 7.5vw;
     line-height: 9.156vw;
@@ -8782,11 +8776,11 @@ svg {
     margin-bottom: 12.916vw;
   }
   .product-desc h3 {
-    font-size: 7.5vw;
+    font-size: 6vw;
     line-height: 9.156vw;
   }
   .product-desc ul li:not(:first-child) {
-    margin-left: 6.668vw;
+    margin-left: 5.2vw;
     font-size: 7.5vw;
     line-height: 9.156vw;
     margin-bottom: 5.208vw;
@@ -9077,8 +9071,8 @@ svg {
   background-color: #FFFFFF;
   margin-right: 0 !important;
   border-radius: 0.260vw;
-  margin-top: 2.500vw;
-  margin-bottom: 2.813vw;
+  margin-top: 0.2vw;
+  margin-bottom: 0.2vw;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
@@ -9175,7 +9169,7 @@ svg {
   line-height: 1.017vw;
   width: 21.243vw;
   color: #504C4C;
-  margin-bottom: 4.010vw;
+  margin-bottom: 1vw;
 }
 
 .read-more {
@@ -9420,8 +9414,8 @@ svg {
     width: 32.0047vw;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.2704vw 0.2704vw;
             box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.2704vw 0.2704vw;
-    margin-top: 3.25vw;
-    margin-bottom: 3.6569vw;
+    margin-top: 0.26vw;
+    margin-bottom: 0.26vw;
   }
   .reviews-item_content {
     padding: 1.4898vw 0 1.9955vw 2.1554vw;
@@ -9457,7 +9451,7 @@ svg {
     font-size: 1.0829vw;
     line-height: 1.3221vw;
     width: 27.6159vw;
-    margin-bottom: 5.213vw;
+    margin-bottom: 1.3vw;
   }
   .read-more {
     font-size: 1.0829vw;
@@ -9653,8 +9647,8 @@ svg {
     width: 100vw;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.832vw 0.832vw;
             box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.832vw 0.832vw;
-    margin-top: 10vw;
-    margin-bottom: 11.252vw;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
   }
   .reviews-item_content {
     padding: 4.584vw 0 6.14vw 6.632vw;
@@ -9690,7 +9684,7 @@ svg {
     font-size: 3.332vw;
     line-height: 4.068vw;
     width: 84.972vw;
-    margin-bottom: 16.04vw;
+    margin-bottom: 4vw;
   }
   .read-more {
     font-size: 3.332vw;

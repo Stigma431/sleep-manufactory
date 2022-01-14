@@ -16,7 +16,6 @@ svg {
 
 .header {
   width: 100vw;
-  height: 2.917vw;
   background: #fff;
   -webkit-box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
@@ -33,7 +32,6 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 2.917vw;
 
 
 
@@ -165,8 +163,7 @@ svg {
     }
 
     .header-right {
-      margin-right: 3vw;
-      width: 6.042vw;
+      margin-right: 1vw;
       height: 0.990vw;
       display: flex;
       align-items: center;
@@ -287,15 +284,15 @@ svg {
   border-bottom: 0 !important;
 
   .product-item_title {
-    font-size: 1.325vw;
+    font-size: 1.2vw;
   }
 
   .product-discount_price {
-    font-size: 1.325vw;
+    font-size: 1.2vw;
   }
 
   .product-price {
-    font-size: 1.325vw;
+    font-size: 1.2vw;
   }
 }
 
@@ -1268,13 +1265,11 @@ svg {
 
   .header {
     width: 100vw;
-    height: 3.5vw;
     -webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
       width: 97.813vw;
-      height: 2.917vw;
 
       .header-logo_burger {
         margin-top: 0.400vw * $coefficient;
@@ -1283,7 +1278,7 @@ svg {
 
 
           img {
-            width: 12.396vw * $coefficient;
+            width: 9.73vw * $coefficient;
             height: auto;
           }
         }
@@ -1320,7 +1315,7 @@ svg {
       }
 
       .nav-menu {
-        font-size: 0.8vw * $coefficient;
+        font-size: 0.78vw * $coefficient;
         line-height: 1.146vw * $coefficient;
         align-items: center;
 
@@ -1345,14 +1340,12 @@ svg {
         .nav {}
 
         .deactive {
-          padding: 0.729vw * $coefficient 0.729vw * $coefficient;
+          padding: 0.729vw * $coefficient 0.35vw * $coefficient;
         }
 
       }
 
       .header-right {
-        width: 6.042vw * $coefficient;
-        height: 0.990vw * $coefficient;
 
         .map {
 
@@ -1966,10 +1959,6 @@ svg {
 
 
       .header-right {
-
-        width: 6.042vw * $coefficient;
-        height: 0.990vw * $coefficient;
-        margin-right: 2.1vw * $coefficient;
 
         .account {
           img {
@@ -3090,7 +3079,7 @@ $slick-opacity-not-active: 0.25 !default;
   text-align: center;
   padding: 0;
   margin: 0;
-  left: 47vw;
+  left: 46.2vw;
   width: 10vw;
   display: flex !important;
   justify-content: space-between;
@@ -3686,6 +3675,10 @@ li.slick-active {
 .slider {
   width: 50%;
   margin: 5.208vw 1.198vw;
+}
+
+.reviews-items.slider {
+  margin: 2vw 1.198vw;
 }
 
 .slick-slide {
@@ -9203,7 +9196,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .product-desc h3 {
-  font-size: 1.875vw;
+  font-size: 1.675vw;
   line-height: 2.289vw;
   font-weight: 700;
   color: #4F4F4F;
@@ -9212,7 +9205,7 @@ $slick-opacity-not-active: 0.25 !default;
 .product-desc ul li:not(:first-child) {
   list-style-type: disc;
   margin-left: 1.667vw;
-  font-size: 1.875vw;
+  font-size: 1.475vw;
   line-height: 2.289vw;
   font-weight: 400;
   color: #4F4F4F;
@@ -9494,6 +9487,11 @@ $slick-opacity-not-active: 0.25 !default;
     line-height: 1.526vw * $coefficient;
   }
 
+  .product-desc {
+    padding-left: 3.614vw;
+    padding-right: 3.614vw;
+  }
+
   .product-desc__title {
     font-size: 1.875vw * $coefficient;
     line-height: 2.289vw * $coefficient;
@@ -9507,12 +9505,12 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   .product-desc h3 {
-    font-size: 1.875vw * $coefficient;
+    font-size: 1.5vw * $coefficient;
     line-height: 2.289vw * $coefficient;
   }
 
   .product-desc ul li:not(:first-child) {
-    margin-left: 1.667vw * $coefficient;
+    margin-left: 1.3vw * $coefficient;
     font-size: 1.875vw * $coefficient;
     line-height: 2.289vw * $coefficient;
     margin-bottom: 1.302vw * $coefficient;
@@ -9795,8 +9793,8 @@ $slick-opacity-not-active: 0.25 !default;
   background-color: #FFFFFF;
   margin-right: 0 !important;
   border-radius: 0.260vw;
-  margin-top: 2.500vw;
-  margin-bottom: 2.813vw;
+  margin-top: 0.2vw;
+  margin-bottom: 0.2vw;
   transition: transform 500ms;
 }
 
@@ -9876,7 +9874,7 @@ $slick-opacity-not-active: 0.25 !default;
   line-height: 1.017vw;
   width: 21.243vw;
   color: #504C4C;
-  margin-bottom: 4.010vw;
+  margin-bottom: 1vw;
 }
 
 .read-more {
@@ -10159,8 +10157,8 @@ $slick-opacity-not-active: 0.25 !default;
   .reviews-item {
     width: 24.619vw * $coefficient;
     box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw * $coefficient 0.208vw * $coefficient;
-    margin-top: 2.500vw * $coefficient;
-    margin-bottom: 2.813vw * $coefficient;
+    margin-top: 0.2vw * $coefficient;
+    margin-bottom: 0.2vw * $coefficient;
   }
 
   .reviews-item_content {
@@ -10215,7 +10213,7 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 0.833vw * $coefficient;
     line-height: 1.017vw * $coefficient;
     width: 21.243vw * $coefficient;
-    margin-bottom: 4.010vw * $coefficient;
+    margin-bottom:  1vw * $coefficient;
   }
 
   .read-more {
@@ -10479,8 +10477,8 @@ $slick-opacity-not-active: 0.25 !default;
   .reviews-item {
     width: 25vw * $coefficient;
     box-shadow: rgba(0, 0, 0, 0.25) 0vw 0.208vw * $coefficient 0.208vw * $coefficient;
-    margin-top: 2.500vw * $coefficient;
-    margin-bottom: 2.813vw * $coefficient;
+    margin-top: 0.2vw * $coefficient;
+    margin-bottom: 0.2vw * $coefficient;
   }
 
   .reviews-item_content {
@@ -10535,7 +10533,7 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 0.833vw * $coefficient;
     line-height: 1.017vw * $coefficient;
     width: 21.243vw * $coefficient;
-    margin-bottom: 4.010vw * $coefficient;
+    margin-bottom: 1vw * $coefficient;
   }
 
   .read-more {
