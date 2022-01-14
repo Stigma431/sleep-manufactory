@@ -128,8 +128,8 @@ svg {
 }
 
 .header .header-wrapper .hamburger {
-  padding: 0 !important;
-  padding-right: 0.990vw !important;
+  padding: 0;
+  padding-right: 0.990vw;
 }
 
 .header .header-wrapper .mm-navbar_title {
@@ -210,7 +210,6 @@ svg {
 
 .header .header-wrapper .header-right {
   margin-right: 1vw;
-  height: 0.990vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,12 +235,18 @@ svg {
   margin-left: 0.816vw;
 }
 
-.header .header-wrapper .header-right .map .map-icon {
+.header .header-wrapper .header-right .map .header-right_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: 0.401vw;
-  vertical-align: middle;
 }
 
-.header .header-wrapper .header-right .map .map-icon img {
+.header .header-wrapper .header-right .map .header-right_link img {
+  vertical-align: middle;
   width: 0.693vw;
   height: 0.906vw;
 }
@@ -1459,6 +1464,10 @@ svg {
   top: -0.400vw;
 }
 
+.border-divider {
+  display: none;
+}
+
 @media all and (max-width: 1366px) {
   .container {
     width: 100vw;
@@ -1529,12 +1538,18 @@ svg {
   .header .header-wrapper .nav-menu .deactive {
     padding: 1.0206vw 0.49vw;
   }
-  .header .header-wrapper .header-right .map .map-icon {
-    padding-right: 0.5614vw;
+  .header .header-wrapper .header-right .map .header-right_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .header .header-wrapper .header-right .map .map-icon img {
-    width: 0.9702vw;
-    height: 1.2684vw;
+  .header .header-wrapper .header-right .map .header-right_link img {
+    vertical-align: middle;
+    width: 3.207vw;
+    height: 4.193vw;
   }
   .header .header-wrapper .header-right .map .map-name {
     font-size: 1.3132vw;
@@ -1944,19 +1959,26 @@ svg {
 @media all and (max-width: 415px) {
   .header {
     width: 100vw;
-    height: 11.668vw;
     -webkit-box-shadow: 0 1.04vw 5.208vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 1.04vw 5.208vw rgba(0, 0, 0, 0.15);
   }
   .header .header-wrapper {
-    width: 97.813vw;
-    height: 11.668vw;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .header .header-wrapper .header-logo_burger {
+    width: 83.487vw;
+    margin: 0 auto;
     margin-top: 1.46vw;
   }
   .header .header-wrapper .header-logo_burger .logo img {
-    width: 49.584vw;
+    width: 69.752vw;
     height: auto;
   }
   .header .header-wrapper .header-logo_burger .header__nav {
@@ -2008,28 +2030,47 @@ svg {
   .header .header-wrapper .header_main-nav .nav-menu .nav {
     background-color: transparent;
   }
+  .header .header-wrapper .header-right {
+    margin-top: 1.928vw;
+    margin-bottom: 2.410vw;
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .header .header-wrapper .header-right .account img {
-    width: 6.944vw;
-    height: 6.944vw;
+    width: 6.024vw;
+    height: 6.024vw;
     vertical-align: middle;
   }
   .header .header-wrapper .header-right .map {
-    margin-left: 0.816vw;
+    margin-left: 0;
   }
-  .header .header-wrapper .header-right .map .map-icon {
-    padding-right: 1.604vw;
+  .header .header-wrapper .header-right .map .header-right_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .header .header-wrapper .header-right .map .map-icon img {
-    width: 2.772vw;
-    height: 3.624vw;
+  .header .header-wrapper .header-right .map .header-right_link img {
+    vertical-align: middle;
+    width: 3.207vw;
+    height: 4.193vw;
   }
   .header .header-wrapper .header-right .map .map-name {
     font-size: 3.752vw;
     margin-right: 2.292vw;
   }
   .header .header-wrapper .header-right .map .shopping-cart {
-    width: 3.752vw;
-    height: 3.268vw;
+    width: 4.337vw;
+    height: 3.781vw;
+  }
+  .border-divider {
+    display: block;
+    width: 100%;
+    border-bottom: 0.482vw solid #1F316A;
   }
   #menu {
     width: 100vw;
@@ -2392,24 +2433,28 @@ svg {
     align-items: center;
   }
   .hamburger-box {
-    width: 6vw;
+    width: 8.92vw;
     color: #1F316A !important;
     height: auto;
     margin-bottom: 1.446vw;
   }
   .hamburger-inner {
-    width: 6vw;
-    height: 0.416vw;
+    width: 8.92vw;
+    height: 0.8vw;
   }
   .hamburger-inner::before {
-    width: 6vw;
-    height: 0.416vw;
-    top: -1.7vw;
+    width: 8.92vw;
+    height: 0.8vw;
+    top: -2.034vw;
   }
   .hamburger-inner::after {
-    width: 6vw;
-    height: 0.416vw;
-    top: 1.7vw;
+    width: 8.92vw;
+    height: 0.8vw;
+    top: 2.034vw;
+  }
+  .header .header-wrapper .hamburger {
+    padding: 0;
+    padding-right: 0;
   }
 }
 
@@ -7796,6 +7841,10 @@ svg {
     font-size: 5vw;
     line-height: 6.104vw;
     border-radius: 1.04vw;
+  }
+  .product-page {
+    margin-top: 12vw;
+    margin-bottom: 6.615vw;
   }
 }
 

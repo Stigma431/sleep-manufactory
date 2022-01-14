@@ -82,8 +82,8 @@ svg {
     }
 
     .hamburger {
-      padding: 0 !important;
-      padding-right: 0.990vw !important;
+      padding: 0;
+      padding-right: 0.990vw;
 
     }
 
@@ -164,7 +164,6 @@ svg {
 
     .header-right {
       margin-right: 1vw;
-      height: 0.990vw;
       display: flex;
       align-items: center;
 
@@ -182,11 +181,13 @@ svg {
         align-items: center;
         margin-left: 0.816vw;
 
-        .map-icon {
+        .header-right_link {
+          display: flex;
+          align-items: center;
           padding-right: 0.401vw;
-          vertical-align: middle;
 
           img {
+            vertical-align: middle;
             width: 0.693vw;
             height: 0.906vw;
           }
@@ -1252,7 +1253,10 @@ svg {
   width: 1.5vw;
   height: 0.104vw;
   top: -0.400vw;
+}
 
+.border-divider {
+  display: none;
 }
 
 @media all and (max-width: 1366px) {
@@ -1349,13 +1353,14 @@ svg {
 
         .map {
 
-          .map-icon {
-            padding-right: 0.401vw * $coefficient;
+          .header-right_link {
+            display: flex;
+            align-items: center;
 
             img {
-              width: 0.693vw * $coefficient;
-              height: 0.906vw * $coefficient;
-
+              vertical-align: middle;
+              width: 3.207vw;
+              height: 4.193vw;
             }
           }
 
@@ -1867,23 +1872,23 @@ svg {
 
   .header {
     width: 100vw;
-    height: 2.917vw * $coefficient;
     -webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
 
     .header-wrapper {
-      width: 97.813vw;
-      height: 2.917vw * $coefficient;
-
-
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
 
       .header-logo_burger {
+        width: 83.487vw;
+        margin: 0 auto;
         margin-top: 0.365vw * $coefficient;
 
         .logo {
 
           img {
-            width: 12.396vw * $coefficient;
+            width: 17.438vw * $coefficient;
             height: auto;
           }
         }
@@ -1959,24 +1964,30 @@ svg {
 
 
       .header-right {
+        margin-top: 1.928vw;
+        margin-bottom: 2.410vw;
+        margin-right: 0;
+        justify-content: center;
 
         .account {
           img {
-            width: 1.736vw * $coefficient;
-            height: 1.736vw * $coefficient;
+            width: 1.506vw * $coefficient;
+            height: 1.506vw * $coefficient;
             vertical-align: middle;
           }
         }
 
         .map {
-          margin-left: 0.816vw;
+          margin-left: 0;
 
-          .map-icon {
-            padding-right: 0.401vw * $coefficient;
+          .header-right_link {
+            display: flex;
+            align-items: center;
 
             img {
-              width: 0.693vw * $coefficient;
-              height: 0.906vw * $coefficient;
+              vertical-align: middle;
+              width: 3.207vw;
+              height: 4.193vw;
             }
           }
 
@@ -1986,12 +1997,18 @@ svg {
           }
 
           .shopping-cart {
-            width: 0.938vw * $coefficient;
-            height: 0.817vw * $coefficient;
+            width: 4.337vw;
+            height: 3.781vw;
           }
         }
       }
     }
+  }
+
+  .border-divider {
+    display: block;
+    width: 100%;
+    border-bottom: 0.482vw solid #1F316A;
   }
 
   #menu {
@@ -2420,27 +2437,32 @@ svg {
   }
 
   .hamburger-box {
-    width: 1.5vw * $coefficient;
+    width: 2.23vw * $coefficient;
     color: #1F316A !important;
     height: auto;
     margin-bottom: 1.446vw;
   }
 
   .hamburger-inner {
-    width: 1.5vw * $coefficient;
-    height: 0.104vw * $coefficient;
+    width: 2.23vw * $coefficient;
+    height: 0.2vw * $coefficient;
   }
 
   .hamburger-inner::before {
-    width: 1.5vw * $coefficient;
-    height: 0.104vw * $coefficient;
-    top: -1.7vw;
+    width: 2.23vw * $coefficient;
+    height: 0.2vw * $coefficient;
+    top: -2.034vw;
   }
 
   .hamburger-inner::after {
-    width: 1.5vw * $coefficient;
-    height: 0.104vw * $coefficient;
-    top: 1.7vw;
+    width: 2.23vw * $coefficient;
+    height: 0.2vw * $coefficient;
+    top: 2.034vw;
+  }
+
+  .header .header-wrapper .hamburger {
+    padding: 0;
+    padding-right: 0;
   }
 
   .burger-menu {}
@@ -8423,6 +8445,12 @@ svg {
     line-height: 1.526vw * $coefficient;
     border-radius: 0.260vw * $coefficient;
   }
+
+  .product-page {
+    margin-top: 3vw * $coefficient;
+    margin-bottom: 6.615vw;
+  }
+
 }
 
 // Default Variables
@@ -10213,7 +10241,7 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 0.833vw * $coefficient;
     line-height: 1.017vw * $coefficient;
     width: 21.243vw * $coefficient;
-    margin-bottom:  1vw * $coefficient;
+    margin-bottom: 1vw * $coefficient;
   }
 
   .read-more {
