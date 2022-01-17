@@ -7616,6 +7616,14 @@ video {
   flex-direction: column;
 }
 
+.first-product-characteristics-container {
+  width: 25.05vw;
+}
+
+.mattress-second-parameters.first-product-mattress-second-parameters {
+  margin-bottom: 0;
+}
+
 .second-page-reviews {
   display: flex;
   flex-direction: row;
@@ -7786,6 +7794,10 @@ video {
   flex-direction: column;
   padding-right: 1.042vw;
   padding-bottom: 0.781vw;
+}
+
+.mattress-parameters-column.first-product-mattress-parameters-column {
+  padding-bottom: 0.54vw;
 }
 
 .first-columns {
@@ -8064,6 +8076,15 @@ svg {
   }
 
   .characteristics-container {}
+
+  .first-product-characteristics-container {
+    width: 32.45vw;
+  }
+  
+  .mattress-second-parameters.first-product-mattress-second-parameters {
+    margin-bottom: 0;
+  }
+  
 
   .second-page-reviews {}
 
