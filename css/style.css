@@ -6845,8 +6845,9 @@ video {
 
 @media all and (max-width: 415px) {
   .ready-container {
+    background: url(../images/ready-bg.jpg) no-repeat;
     width: 100vw;
-    height: 31.792vw;
+    height: 60.241vw;
     background-size: 100%;
     margin-top: 26.668vw;
   }
