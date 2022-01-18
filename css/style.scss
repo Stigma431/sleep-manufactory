@@ -45,6 +45,7 @@ svg {
         img {
           width: 12.396vw;
           height: auto;
+          vertical-align: middle;
         }
       }
 
@@ -85,6 +86,11 @@ svg {
       padding: 0;
       padding-right: 0.990vw;
 
+      img {
+        vertical-align: middle;
+        width: 1.146vw;
+        height: 0.833vw;
+      }
     }
 
     .mm-navbar_title {
@@ -1898,6 +1904,18 @@ svg {
         width: 83.487vw;
         margin: 0 auto;
         margin-top: 0.365vw * $coefficient;
+
+        .hamburger {
+          padding: 0;
+          padding-right: 0.990vw;
+    
+          img {
+            vertical-align: middle;
+            width: 8.947vw;
+            height: 6.506vw;
+          }
+        }
+
 
         .logo {
 
@@ -5132,7 +5150,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .first-regular .slick-dots {
   position: absolute;
-  bottom: 4.87vw;
+  bottom: 5.87vw;
   left: 3.8vw;
   list-style: none;
   display: flex;
