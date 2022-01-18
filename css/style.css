@@ -1434,6 +1434,21 @@ svg {
 
 .menu-image {
   margin-left: 0.521vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-image .mm-listitem__text {
+  padding: 0.4vw 0.625vw;
+}
+
+.menu-image .product-price {
+  margin-left: 0;
 }
 
 #mm-2 a img {
@@ -4500,6 +4515,7 @@ li .slick-active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
   }
   .slick-list {
     margin: 0;
@@ -7824,6 +7840,7 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    width: 100vw;
   }
   .second-page-reviews {
     -webkit-box-pack: center;
@@ -8947,9 +8964,8 @@ svg {
     width: 100vw;
   }
   #product-detail__tab {
-    width: 100vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    width: 98vw;
+    margin: 0 auto;
     margin-bottom: 24.168vw;
   }
   #product-detail__tab.nav-pills .nav-link {
@@ -9024,8 +9040,7 @@ svg {
             flex-direction: column;
   }
   .formWrapper.review-formWrapper {
-    width: 98vw;
-    margin: 0 auto;
+    width: 100vw;
   }
   .form-control.form-control_city-review {
     width: 98vw;
@@ -13513,7 +13528,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     background: #1e306e;
     height: 11.668vw;
     line-height: 1.5;
-    width: 83.332vw;
+    width: 100vw;
     font-size: 6.668vw;
     -webkit-box-shadow: #f2f2f2 0px 0.208vw 0px, #e6e6e6 0px 0.208vw 0.416vw, #f2f2f2 0px 1.04vw 3.124vw;
             box-shadow: #f2f2f2 0px 0.208vw 0px, #e6e6e6 0px 0.208vw 0.416vw, #f2f2f2 0px 1.04vw 3.124vw;
@@ -15484,7 +15499,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     letter-spacing: 0em;
   }
   .catalog-wrapper {
-    width: 100vw;
+    width: 92.771vw;
     margin: 0 auto;
     margin-top: 11.376vw;
     -webkit-box-pack: center;
@@ -15495,8 +15510,8 @@ label:hover .bwCrgA .input-checkbox-inner {
     margin-bottom: 11.46vw;
   }
   .catalog_items .image {
-    width: 100vw;
-    height: 72.288vw;
+    width: 92.771vw;
+    height: 67.229vw;
     background-size: 100%;
   }
   .catalog_items .name {

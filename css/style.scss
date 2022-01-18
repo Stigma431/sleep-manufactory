@@ -1224,6 +1224,14 @@ svg {
 
 .menu-image {
   margin-left: 0.521vw;
+  display: flex;
+  flex-direction: column;
+  .mm-listitem__text {
+    padding: 0.4vw 0.625vw;
+  }
+  .product-price {
+    margin-left: 0;
+  }
 }
 
 #mm-2 a img {
@@ -4725,6 +4733,7 @@ li .slick-active {
     margin-top: 12vw * $coefficient;
     padding: 0vw 3vw;
     display: flex;
+    text-align: center;
   }
 
   .slick-slider {}
@@ -8417,6 +8426,7 @@ svg {
   .characteristics-container {
     justify-content: center;
     text-align: center;
+    width: 100vw;
   }
 
   .second-page-reviews {
@@ -9665,9 +9675,8 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   #product-detail__tab {
-    width: 25vw * $coefficient;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    width: 24.5vw * $coefficient;
+    margin: 0 auto;
     margin-bottom: 6.042vw * $coefficient;
   }
 
@@ -9759,8 +9768,8 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   .formWrapper.review-formWrapper {
-    width: 24.5vw * $coefficient;
-    margin: 0 auto;
+    width: 25vw * $coefficient;
+  
   }
 
   .form-control.form-control_city-review {
@@ -14130,7 +14139,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     background: rgb(30, 48, 110);
     height: 2.917vw * $coefficient;
     line-height: 1.5;
-    width: 20.833vw * $coefficient;
+    width: 25vw * $coefficient;
     font-size: 1.667vw * $coefficient;
     box-shadow: rgb(242, 242, 242) 0px 0.052vw * $coefficient 0px,
       rgb(230, 230, 230) 0px 0.052vw * $coefficient 0.104vw * $coefficient,
@@ -16048,7 +16057,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 
   .catalog-wrapper {
-    width: 100vw;
+    width: 92.771vw;
     margin: 0 auto;
     margin-top: 2.844vw * $coefficient;
     justify-content: center;
@@ -16058,8 +16067,8 @@ label:hover .bwCrgA .input-checkbox-inner {
     margin-bottom: 2.865vw * $coefficient;
 
     .image {
-      width: 25vw * $coefficient;
-      height: 18.072vw * $coefficient;
+      width: 92.771vw;
+      height: 67.229vw;
       background-size: 100%;
     }
 
