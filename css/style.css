@@ -7362,7 +7362,6 @@ video {
   color: #FFFFFF;
   background-color: #0C5E5B;
   border-radius: 0.781vw;
-  margin-top: 0.7vw;
 }
 
 .mattress-parameters {
@@ -15929,6 +15928,106 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
   .review-right-wrapper .product-page-reviews_text {
     width: auto;
+  }
+}
+
+.fourth-product-page .form-select {
+  display: block;
+  width: 11.979vw;
+  height: 3.385vw;
+  padding: .375rem 2.25rem .375rem .75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1.146vw;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #C4C4C4;
+  border-radius: 0.260vw;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.fourth-product-page .mattress-parameters-column {
+  padding-right: 0;
+  width: 50vw;
+}
+
+.mattress-second-parameters.fourth-product-mattress-second-parameters {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0.58vw;
+}
+
+.mattress-second-parameters.fourth-product-mattress-second-parameters .mattress-parameters-column {
+  padding-bottom: 0.481vw;
+}
+
+@media all and (max-width: 1366px) {
+  .fourth-product-page .form-select {
+    display: block;
+    width: 15.5727vw;
+    height: 3.385vw;
+    padding: .375rem 2.25rem .375rem .75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1.146vw;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #C4C4C4;
+    border-radius: 0.260vw;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .fourth-product-page .form-select {
+    display: block;
+    width: 47.916vw;
+    height: 13.54vw;
+    padding: .375rem 2.25rem .375rem .75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 4.584vw;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #C4C4C4;
+    border-radius: 0.260vw;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .mattress-parameters-wrapper-mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */
