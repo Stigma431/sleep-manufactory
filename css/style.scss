@@ -7956,11 +7956,15 @@ video {
   justify-content: space-between;
 }
 
+.mattress-parameters-wrapper_column{
+  flex-direction: column;
+}
+
 .mattress-parameters-column {
   display: flex;
   flex-direction: column;
   padding-right: 1.042vw;
-  padding-bottom: 0.781vw;
+  padding-bottom: 0.581vw;
 }
 
 .mattress-parameters-column.first-product-mattress-parameters-column {
@@ -8359,9 +8363,7 @@ svg {
   .mattress-parameters-wrapper {}
 
   .mattress-parameters-column {
-    padding-right: 1.042vw * $coefficient;
-    padding-bottom: 0.781vw * $coefficient;
-    ;
+    padding-bottom: 0.7153vw;
   }
 
   .mattress-parameters-title {
@@ -15285,14 +15287,19 @@ label:hover .bwCrgA .input-checkbox-inner {
   width: 50%;
 }
 
+.authorizationWrapper .submitWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8.281vw;
+}
 
 .InputWrapper-authorization {
   margin-bottom: 3.021vw;
 }
 
 .authorization-link {
-  margin-top: 2.083vw;
-  margin-bottom: 8.281vw;
 
   a {
     font-size: 1.250vw;
@@ -15300,7 +15307,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     line-height: 1.510vw;
     letter-spacing: 0;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
     color: #1F316A;
   }
 }
@@ -15310,6 +15317,11 @@ label:hover .bwCrgA .input-checkbox-inner {
 
   .authorization-main {
     margin-top: 7.031vw * $coefficient;
+  }
+
+  .authorization-container .formWrapper {
+    width: 63vw;
+    margin: 0 auto;
   }
 
   .authorization-title {
@@ -15473,14 +15485,19 @@ label:hover .bwCrgA .input-checkbox-inner {
     width: 50%;
   }
 
+  .authorizationWrapper .submitWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8.281vw * $coefficient;
+  }
 
   .InputWrapper-authorization {
     margin-bottom: 3.021vw * $coefficient;
   }
 
   .authorization-link {
-    margin-top: 2.083vw * $coefficient;
-    margin-bottom: 8.281vw * $coefficient;
 
     a {
       font-size: 1.250vw * $coefficient;
@@ -15488,7 +15505,7 @@ label:hover .bwCrgA .input-checkbox-inner {
       line-height: 1.510vw * $coefficient;
       letter-spacing: 0;
       text-align: left;
-      text-decoration: underline;
+      text-decoration: none;
       color: #1F316A;
     }
   }
@@ -15502,6 +15519,11 @@ label:hover .bwCrgA .input-checkbox-inner {
     margin-top: 7.031vw * $coefficient;
   }
 
+  .authorization-container .formWrapper {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
   .authorization-title {
     font-size: 1.875vw * $coefficient;
     font-style: normal;
@@ -15510,7 +15532,7 @@ label:hover .bwCrgA .input-checkbox-inner {
     letter-spacing: 0em;
     text-align: center;
     color: #1F316A;
-    margin-bottom: 8.073vw * $coefficient;
+    margin-bottom: 4.073vw * $coefficient;
   }
 
   .input-login div {
@@ -15663,14 +15685,21 @@ label:hover .bwCrgA .input-checkbox-inner {
     width: 50%;
   }
 
+  .authorizationWrapper .submitWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8.281vw * $coefficient;
+  }
+
 
   .InputWrapper-authorization {
     margin-bottom: 3.021vw * $coefficient;
   }
 
   .authorization-link {
-    margin-top: 2.083vw * $coefficient;
-    margin-bottom: 8.281vw * $coefficient;
+    margin-top: 3.021vw;
 
     a {
       font-size: 1.250vw * $coefficient;
@@ -15678,7 +15707,7 @@ label:hover .bwCrgA .input-checkbox-inner {
       line-height: 1.510vw * $coefficient;
       letter-spacing: 0;
       text-align: left;
-      text-decoration: underline;
+      text-decoration: none;
       color: #1F316A;
     }
   }
