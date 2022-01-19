@@ -15311,6 +15311,23 @@ label:hover .bwCrgA .input-checkbox-inner {
   }
 }
 
+.fourth-product-page .product-first-slick .slick-dots li:nth-child(1) {
+  content: url(../images/fourth-product-item1-small.jpg) !important;
+}
+
+.fourth-product-page .product-first-slick .slick-dots li:nth-child(2) {
+  content: url(../images/fourth-product-item2-small.jpg) !important;
+}
+
+.fourth-product-page .product-first-slick .slick-dots li:nth-child(3) {
+  content: url(../images/fourth-product-item3-small.jpg) !important;
+}
+
+.fourth-product-page .product-first-slick .slick-dots li:nth-child(4) {
+  content: url(../images/fourth-product-item4-small.jpg) !important;
+}
+
+
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
 
