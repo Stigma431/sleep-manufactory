@@ -1377,7 +1377,7 @@ svg {
       }
 
       .nav-menu {
-        font-size: 0.78vw * $coefficient;
+        font-size: 0.89vw;
         line-height: 1.146vw * $coefficient;
         align-items: center;
 
@@ -1385,7 +1385,7 @@ svg {
           width: 100%;
           height: 0;
         }
-
+        
         .nav-links {
           border-bottom: 0.150vw * $coefficient solid transparent;
           padding: 0.829vw 0.729vw;
