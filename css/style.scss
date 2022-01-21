@@ -1385,7 +1385,7 @@ svg {
           width: 100%;
           height: 0;
         }
-        
+
         .nav-links {
           border-bottom: 0.150vw * $coefficient solid transparent;
           padding: 0.829vw 0.729vw;
@@ -1990,8 +1990,10 @@ svg {
 
       .header-logo_burger {
         width: 83.487vw;
-        margin: 0 auto;
-        margin-top: 0.365vw * $coefficient;
+        margin-left: 9vw;
+        margin-right: 14vw;
+        margin-top: 1.46vw;
+        margin-bottom: 1.46vw;
 
         .hamburger {
           padding: 0;

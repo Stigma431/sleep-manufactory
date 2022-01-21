@@ -2100,8 +2100,10 @@ svg {
   }
   .header .header-wrapper .header-logo_burger {
     width: 83.487vw;
-    margin: 0 auto;
+    margin-left: 9vw;
+    margin-right: 14vw;
     margin-top: 1.46vw;
+    margin-bottom: 1.46vw;
   }
   .header .header-wrapper .header-logo_burger .hamburger {
     padding: 0;
