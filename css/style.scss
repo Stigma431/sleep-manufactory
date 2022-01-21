@@ -2323,7 +2323,7 @@ svg {
     width: 50%;
   }
 
-  .ordering-container.summary-item_left {
+  .ordering-container .summary-item_left {
     color: rgb(255, 255, 255);
   }
 
@@ -11781,7 +11781,7 @@ footer {
 }
 
 .container-right .cartMenu_container {
-  background-color: #F6F6F6;
+  background-color: #FAF6F4;
   height: 100%;
 }
 
@@ -11835,6 +11835,11 @@ footer {
 .advantages-ordering {
   background-color: #FAF6F4;
   height: 10.4vw;
+
+  .advantages-items {
+    width: 30.052vw;
+    margin: 0 auto;
+  }
 }
 
 #advantages-ordering-PC {}
@@ -11852,6 +11857,7 @@ footer {
   margin-bottom: 0.521vw;
   margin-top: 1.539vw;
   color: #1F316A;
+  text-align: center;
 }
 
 .advantages_container-ordering {
@@ -14236,6 +14242,7 @@ label:hover .bwCrgA .input-checkbox-inner {
   #advantages-ordering-mobile {
     display: block;
     margin-bottom: 1.042vw;
+    height: auto;
   }
 
   #border-image-PC {
@@ -14260,8 +14267,11 @@ label:hover .bwCrgA .input-checkbox-inner {
 
   .advantages_container-ordering {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
   }
 
   .advantages-ordering-item {
