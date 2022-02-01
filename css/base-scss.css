@@ -4,6 +4,7 @@
   src: url("../fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri.woff") format("woff"), url("../fonts/Calibri.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  src: url("../fonts/slick.eot") format("embedded-opentype"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.woff") format("woff");
 }
 
 * {
