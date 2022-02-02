@@ -421,10 +421,15 @@ svg {
 .sub-menu_image {
   width: 23vw;
   height: auto;
-  -webkit-transition: border-radius 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
-  transition: border-radius 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
-  transition: box-shadow 0.3s ease-in-out 0s, border-radius 0.3s ease-in-out 0s;
-  transition: box-shadow 0.3s ease-in-out 0s, border-radius 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
+  -webkit-transition: border-radius 0.3s ease-in-out 0s,
+ -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: border-radius 0.3s ease-in-out 0s,
+ -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s,
+ border-radius 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s,
+ border-radius 0.3s ease-in-out 0s,
+ -webkit-box-shadow 0.3s ease-in-out 0s;
 }
 
 .sub-menu_image:hover {
@@ -751,7 +756,8 @@ svg {
       grid-template-rows: -webkit-min-content -webkit-min-content;
       grid-template-rows: min-content min-content;
   gap: 0.417vw 1.042vw;
-      grid-template-areas: "image information" "plan plan";
+      grid-template-areas: "image information"
+ "plan plan";
 }
 
 .cart-product_info {
@@ -3490,8 +3496,8 @@ li.slick-active {
 
 .categories-item:hover {
   border-radius: 0.313vw;
-  -webkit-box-shadow: #00001e;
-          box-shadow: #00001e;
+  -webkit-box-shadow: rgb(0, 0, 30);
+          box-shadow: rgb(0, 0, 30);
   opacity: 1 !important;
 }
 
