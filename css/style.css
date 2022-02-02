@@ -9659,8 +9659,8 @@ svg {
   align-items: center;
   color: #4F4F4F;
   font-weight: 400;
-  -webkit-box-shadow: #e5e5e5 !important;
-          box-shadow: #e5e5e5 !important;
+  -webkit-box-shadow: rgb(229, 229, 229) !important;
+          box-shadow: rgb(229, 229, 229) !important;
   border: 0.241vw solid;
   border-color: #a3a3a3;
   border-width: 0px 0px 0.241vw;
@@ -9921,8 +9921,8 @@ svg {
   .btn:focus,
   .btn:active {
     outline: none !important;
-    -webkit-box-shadow: #e5e5e5 !important;
-            box-shadow: #e5e5e5 !important;
+    -webkit-box-shadow: rgb(229, 229, 229) !important;
+            box-shadow: rgb(229, 229, 229) !important;
   }
   .dropdown-reviews-button {
     display: -webkit-box;
@@ -9932,8 +9932,8 @@ svg {
         -ms-flex-align: center;
             align-items: center;
     color: #151515;
-    -webkit-box-shadow: #e5e5e5 !important;
-            box-shadow: #e5e5e5 !important;
+    -webkit-box-shadow: rgb(229, 229, 229) !important;
+            box-shadow: rgb(229, 229, 229) !important;
     border-color: #a3a3a3;
     border-width: 0px 0px 0.241vw;
     background-color: #FFFFFF;
@@ -10080,8 +10080,8 @@ svg {
     width: 59.759vw;
   }
   #myTab-2 .dropdown-toggle {
-    -webkit-box-shadow: #e5e5e5 !important;
-            box-shadow: #e5e5e5 !important;
+    -webkit-box-shadow: rgb(229, 229, 229) !important;
+            box-shadow: rgb(229, 229, 229) !important;
     border-width: 0px 0px 0.241vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
