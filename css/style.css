@@ -7795,7 +7795,7 @@ svg {
     width: 32.5vw;
     height: 4.4005vw;
     padding: 0.4069vw 2.4375vw 0.4069vw 0.8125vw;
-    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    -moz-padding-start: calc(0.625vw * 1.3 - 0.156vw * 1.3);
     font-size: 1.4898vw;
     line-height: 1.5;
     background-position: right 0.8125vw center;
@@ -8050,7 +8050,7 @@ svg {
     width: 100vw;
     height: 13.54vw;
     padding: 1.252vw 7.5vw 1.252vw 2.5vw;
-    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    -moz-padding-start: calc(0.625vw * 1.3 - 0.156vw * 1.3);
     font-size: 4.584vw;
     line-height: 1.5;
     background-position: right 2.5vw center;
@@ -11966,7 +11966,7 @@ textarea {
     border-left: 0px;
     border-top-right-radius: 0.2912vw;
     border-bottom-right-radius: 0.2912vw;
-    left: calc(1.167vw * $coefficient + 4.648vw * $coefficient);
+    left: calc(1.167vw * 1.3 + 4.648vw * 1.3);
   }
   .input-border_second-active {
     position: absolute;
@@ -11976,7 +11976,7 @@ textarea {
     display: block;
     height: 0.1456vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: calc(0.500vw * 1.3 + 4.648vw * 1.3);
   }
   .input-border_second-active::before,
   .input-border_second-active::after {
@@ -12044,7 +12044,7 @@ textarea {
     display: block;
     height: 0.1456vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: calc(0.500vw * 1.3 + 4.648vw * 1.3);
   }
   .input-border_second-deactive::before,
   .input-border_second-deactive::after {
@@ -12623,7 +12623,7 @@ textarea {
   }
   .summaryContainer {
     padding-bottom: 1.75vw;
-    padding-left: calc(2.188vw * $coefficient);
+    padding-left: calc(2.188vw * 1.3);
     padding-right: 2.3338vw;
   }
   .address-form {
@@ -13198,7 +13198,7 @@ textarea {
     border-left: 0px;
     border-top-right-radius: 0.832vw;
     border-bottom-right-radius: 0.832vw;
-    left: calc(1.167vw * $coefficient + 4.648vw * $coefficient);
+    left: calc(1.167vw * 4 + 4.648vw * 4);
   }
   .input-border_second-active {
     position: absolute;
@@ -13208,7 +13208,7 @@ textarea {
     display: block;
     height: 0.416vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: calc(0.500vw 4 + 4.648vw * 4);
   }
   .input-border_second-active::before,
   .input-border_second-active::after {
@@ -13276,7 +13276,7 @@ textarea {
     display: block;
     height: 0.416vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: calc(0.500vw * 4 + 4.648vw * 4);
   }
   .input-border_second-deactive::before,
   .input-border_second-deactive::after {
@@ -13843,7 +13843,7 @@ textarea {
   }
   .summaryContainer {
     padding-bottom: 5vw;
-    padding-left: calc(2.188vw * $coefficient);
+    padding-left: calc(2.188vw * 4);
     padding-right: 6.668vw;
   }
   .address-form {
