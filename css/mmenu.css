@@ -2349,8 +2349,6 @@ input.mm-check:checked:before {
     left: 100%;
     top: -10%;
     z-index: 100;
-    -webkit-clip-path: polygon(-20px 0, 0 0, 0 100%, -20px 100%);
-    clip-path: polygon(-20px 0, 0 0, 0 100%, -20px 100%);
     -webkit-box-shadow: var(--mm-shadow);
     box-shadow: var(--mm-shadow)
 }
@@ -2358,8 +2356,6 @@ input.mm-check:checked:before {
 .mm-menu_shadow-page.mm-menu_position-right:after {
     left: auto;
     right: 100%;
-    -webkit-clip-path: polygon(20px 0, 40px 0, 40px 100%, 20px 100%);
-    clip-path: polygon(20px 0, 40px 0, 40px 100%, 20px 100%)
 }
 
 .mm-menu_shadow-page.mm-menu_position-front:after {
