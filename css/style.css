@@ -5,7 +5,6 @@
   src: url("../fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri.woff") format("woff"), url("../fonts/Calibri.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/slick.eot") format("embedded-opentype"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.woff") format("woff");
 }
 
 * {
@@ -167,7 +166,6 @@ svg {
   width: 100%;
   overflow: hidden;
   background-color: white;
-  pointer-events: auto;
   -webkit-transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, height 0.3s ease 0s;
   transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, height 0.3s ease 0s;
   will-change: opacity, transform;
@@ -665,7 +663,6 @@ svg {
   left: 0;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 750ms ease-out 750ms;
   transition: border-color 750ms ease-out 750ms;
   border-bottom-color: #1e306e;
@@ -678,7 +675,6 @@ svg {
   left: 0px;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 0ms ease-out 150ms;
   transition: border-color 0ms ease-out 150ms;
   border-bottom-color: #1e306e;
@@ -801,9 +797,6 @@ svg {
   right: -0.417vw;
   padding: 0.417vw;
   line-height: 0;
-  fill: #151515;
-  -webkit-transition: fill 0.15s ease-out 0s;
-  transition: fill 0.15s ease-out 0s;
   background-color: transparent;
 }
 
@@ -859,7 +852,6 @@ svg {
   font-size: 0.938vw;
   line-height: 1;
   background: white;
-  pointer-events: none;
   -webkit-transition: background-color 0.15s ease-out 0s;
   transition: background-color 0.15s ease-out 0s;
   border: none;
@@ -906,7 +898,6 @@ svg {
   font-size: 0.938vw;
   line-height: 1;
   background: white;
-  pointer-events: none;
   -webkit-transition: background-color 0.15s ease-out 0s;
   transition: background-color 0.15s ease-out 0s;
   border: none;
@@ -1004,13 +995,11 @@ svg {
 }
 
 .tagPromoIcon {
-  fill: white;
   margin-right: 0.417vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   vertical-align: middle;
-  pointer-events: none;
 }
 
 .tagPromoIcon img {
@@ -2854,10 +2843,6 @@ svg {
   display: none;
 }
 
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
 .slick-initialized .slick-slide {
   display: block;
 }
@@ -4028,10 +4013,6 @@ li .slick-active {
   display: none;
 }
 
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
 .slick-initialized .slick-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4489,9 +4470,6 @@ li .slick-active {
   .slick-slide.slick-loading img {
     display: none;
   }
-  .slick-slide.dragging img {
-    pointer-events: none;
-  }
   .slick-initialized .slick-slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4731,9 +4709,6 @@ li .slick-active {
   }
   .slick-slide.slick-loading img {
     display: none;
-  }
-  .slick-slide.dragging img {
-    pointer-events: none;
   }
   .slick-initialized .slick-slide {
     display: -webkit-box;
@@ -5275,10 +5250,6 @@ li .slick-active {
 
 .slick-slide.slick-loading img {
   display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
 }
 
 .slick-initialized .slick-slide {
@@ -5961,9 +5932,6 @@ li .slick-active {
   .slick-slide.slick-loading img {
     display: none;
   }
-  .slick-slide.dragging img {
-    pointer-events: none;
-  }
   .slick-initialized .slick-slide {
     display: block;
   }
@@ -6253,9 +6221,6 @@ li .slick-active {
   }
   .slick-slide.slick-loading img {
     display: none;
-  }
-  .slick-slide.dragging img {
-    pointer-events: none;
   }
   .slick-initialized .slick-slide {
     display: block;
@@ -7191,10 +7156,6 @@ video {
   display: none;
 }
 
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
 .slick-initialized .slick-slide {
   display: block;
 }
@@ -7706,9 +7667,6 @@ svg {
   .slick-slide.slick-loading img {
     display: none;
   }
-  .slick-slide.dragging img {
-    pointer-events: none;
-  }
   .slick-initialized .slick-slide {
     display: block;
   }
@@ -7960,9 +7918,6 @@ svg {
   }
   .slick-slide.slick-loading img {
     display: none;
-  }
-  .slick-slide.dragging img {
-    pointer-events: none;
   }
   .slick-initialized .slick-slide {
     display: block;
@@ -9326,10 +9281,6 @@ svg {
   display: none;
 }
 
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
 .slick-initialized .slick-slide {
   display: block;
 }
@@ -9747,9 +9698,6 @@ svg {
   .slick-slide.slick-loading img {
     display: none;
   }
-  .slick-slide.dragging img {
-    pointer-events: none;
-  }
   .slick-initialized .slick-slide {
     display: block;
   }
@@ -9922,9 +9870,6 @@ svg {
   }
   .slick-slide.slick-loading img {
     display: none;
-  }
-  .slick-slide.dragging img {
-    pointer-events: none;
   }
   .slick-initialized .slick-slide {
     display: block;
@@ -10709,7 +10654,6 @@ footer .year {
   -o-border-image: initial;
      border-image: initial;
   border-radius: 0.208vw;
-  pointer-events: none;
   -webkit-animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
           animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
 }
@@ -10738,7 +10682,6 @@ footer .year {
   position: absolute;
   inset: -0.104vw;
   border: 0.104vw solid transparent;
-  pointer-events: none;
 }
 
 .input-border::after {
@@ -11228,110 +11171,6 @@ textarea {
   vertical-align: middle;
   -webkit-transform: translate3d(0px, 0px, 0px);
           transform: translate3d(0px, 0px, 0px);
-}
-
-label:hover .jhoJHC .input-radio-outer,
-label:hover .jhoJHC .input-checkbox-outer {
-  fill: #8fc0e4;
-}
-
-.jhoJHC .input-radio-outer,
-.jhoJHC .input-checkbox-outer {
-  fill: #525252;
-  -webkit-transition: fill 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms;
-}
-
-label:hover .jhoJHC .input-radio-inner,
-label:hover .jhoJHC .input-checkbox-inner {
-  fill: #d7ecf7;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.jhoJHC .input-radio-inner,
-.jhoJHC .input-checkbox-inner {
-  fill: white;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-}
-
-label:hover .jhoJHC .input-checkbox-mark {
-  stroke: #d7ecf7;
-}
-
-.jhoJHC .input-checkbox-mark {
-  fill: transparent;
-  stroke: white;
-  stroke-width: 2;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-}
-
-.bwCrgA {
-  position: relative;
-  display: inline-block;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 1.042vw;
-  height: 1.042vw;
-  margin-right: 0.417vw;
-  margin-bottom: 0.104vw;
-  vertical-align: middle;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-          transform: translate3d(0px, 0px, 0px);
-}
-
-.bwCrgA .input-checkbox-outer,
-label:hover .bwCrgA .input-checkbox-outer {
-  fill: #1e306e;
-}
-
-.bwCrgA .input-radio-outer,
-.bwCrgA .input-checkbox-outer {
-  fill: #525252;
-  -webkit-transition: fill 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms;
-}
-
-.bwCrgA .input-checkbox-inner,
-label:hover .bwCrgA .input-checkbox-inner {
-  fill: transparent;
-}
-
-.bwCrgA .input-radio-inner,
-.bwCrgA .input-checkbox-inner {
-  fill: white;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
-  transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-}
-
-.bwCrgA .input-checkbox-mark {
-  fill: transparent;
-  stroke: white;
-  stroke-width: 2;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .OptionInputLabel {
@@ -12088,7 +11927,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     -o-border-image: initial;
        border-image: initial;
     border-radius: 0.2912vw;
-    pointer-events: none;
     -webkit-animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
             animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
   }
@@ -12113,7 +11951,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     position: absolute;
     inset: -0.1456vw;
     border: 0.1456vw solid transparent;
-    pointer-events: none;
   }
   .input-border::after {
     -webkit-animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running eDrksG;
@@ -12548,98 +12385,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     vertical-align: middle;
     -webkit-transform: translate3d(0px, 0px, 0px);
             transform: translate3d(0px, 0px, 0px);
-  }
-  label:hover .jhoJHC .input-radio-outer,
-  label:hover .jhoJHC .input-checkbox-outer {
-    fill: #8fc0e4;
-  }
-  .jhoJHC .input-radio-outer,
-  .jhoJHC .input-checkbox-outer {
-    fill: #525252;
-    -webkit-transition: fill 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms;
-  }
-  label:hover .jhoJHC .input-radio-inner,
-  label:hover .jhoJHC .input-checkbox-inner {
-    fill: #d7ecf7;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .jhoJHC .input-radio-inner,
-  .jhoJHC .input-checkbox-inner {
-    fill: white;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  }
-  label:hover .jhoJHC .input-checkbox-mark {
-    stroke: #d7ecf7;
-  }
-  .jhoJHC .input-checkbox-mark {
-    fill: transparent;
-    stroke: white;
-    stroke-width: 2;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  }
-  .bwCrgA {
-    position: relative;
-    display: inline-block;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 1.4588vw;
-    height: 1.4588vw;
-    margin-right: 0.5838vw;
-    margin-bottom: 0.1456vw;
-    vertical-align: middle;
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-  }
-  .bwCrgA .input-checkbox-outer,
-  label:hover .bwCrgA .input-checkbox-outer {
-    fill: #1e306e;
-  }
-  .bwCrgA .input-radio-outer,
-  .bwCrgA .input-checkbox-outer {
-    fill: #525252;
-    -webkit-transition: fill 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms;
-  }
-  .bwCrgA .input-checkbox-inner,
-  label:hover .bwCrgA .input-checkbox-inner {
-    fill: transparent;
-  }
-  .bwCrgA .input-radio-inner,
-  .bwCrgA .input-checkbox-inner {
-    fill: white;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  }
-  .bwCrgA .input-checkbox-mark {
-    fill: transparent;
-    stroke: white;
-    stroke-width: 2;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
   .OptionInputLabel {
     font-size: 1.3132vw;
@@ -13211,7 +12956,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -13223,7 +12967,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
@@ -13416,7 +13159,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     -o-border-image: initial;
        border-image: initial;
     border-radius: 0.832vw;
-    pointer-events: none;
     -webkit-animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
             animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running iywxWU;
   }
@@ -13441,7 +13183,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     position: absolute;
     inset: -0.416vw;
     border: 0.416vw solid transparent;
-    pointer-events: none;
   }
   .input-border::after {
     -webkit-animation: 270ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none running eDrksG;
@@ -13864,111 +13605,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     letter-spacing: 0.124vw;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-  .jhoJHC {
-    position: relative;
-    display: inline-block;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 4.168vw;
-    height: 4.168vw;
-    margin-right: 1.668vw;
-    margin-bottom: 0.416vw;
-    vertical-align: middle;
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-  }
-  label:hover .jhoJHC .input-radio-outer,
-  label:hover .jhoJHC .input-checkbox-outer {
-    fill: #8fc0e4;
-  }
-  .jhoJHC .input-radio-outer,
-  .jhoJHC .input-checkbox-outer {
-    fill: #525252;
-    -webkit-transition: fill 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms;
-  }
-  label:hover .jhoJHC .input-radio-inner,
-  label:hover .jhoJHC .input-checkbox-inner {
-    fill: #d7ecf7;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .jhoJHC .input-radio-inner,
-  .jhoJHC .input-checkbox-inner {
-    fill: white;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  }
-  label:hover .jhoJHC .input-checkbox-mark {
-    stroke: #d7ecf7;
-  }
-  .jhoJHC .input-checkbox-mark {
-    fill: transparent;
-    stroke: white;
-    stroke-width: 2;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-  }
-  .bwCrgA {
-    position: relative;
-    display: inline-block;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 4.168vw;
-    height: 4.168vw;
-    margin-right: 1.668vw;
-    margin-bottom: 0.416vw;
-    vertical-align: middle;
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-  }
-  .bwCrgA .input-checkbox-outer,
-  label:hover .bwCrgA .input-checkbox-outer {
-    fill: #1e306e;
-  }
-  .bwCrgA .input-radio-outer,
-  .bwCrgA .input-checkbox-outer {
-    fill: #525252;
-    -webkit-transition: fill 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms;
-  }
-  .bwCrgA .input-checkbox-inner,
-  label:hover .bwCrgA .input-checkbox-inner {
-    fill: transparent;
-  }
-  .bwCrgA .input-radio-inner,
-  .bwCrgA .input-checkbox-inner {
-    fill: white;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms;
-    transition: fill 240ms ease-in-out 0ms, transform 240ms ease-in-out 0ms, -webkit-transform 240ms ease-in-out 0ms;
-  }
-  .bwCrgA .input-checkbox-mark {
-    fill: transparent;
-    stroke: white;
-    stroke-width: 2;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    transition: fill 240ms ease-in-out 0ms, transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms, -webkit-transform 270ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 10ms;
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
   .OptionInputLabel {
     font-size: 3.752vw;
@@ -14540,7 +14176,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #F6F6F6;
@@ -14552,7 +14187,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #F6F6F6;
@@ -14649,7 +14283,6 @@ label:hover .bwCrgA .input-checkbox-inner {
   left: 0;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 750ms ease-out 750ms;
   transition: border-color 750ms ease-out 750ms;
   border-bottom-color: #1e306e;
@@ -14662,7 +14295,6 @@ label:hover .bwCrgA .input-checkbox-inner {
   left: 0px;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 0ms ease-out 150ms;
   transition: border-color 0ms ease-out 150ms;
   border-bottom-color: #1e306e;
@@ -14732,7 +14364,6 @@ label:hover .bwCrgA .input-checkbox-inner {
   left: 0;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 750ms ease-out 750ms;
   transition: border-color 750ms ease-out 750ms;
   border-bottom-color: #1e306e;
@@ -14745,7 +14376,6 @@ label:hover .bwCrgA .input-checkbox-inner {
   left: 0px;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 0ms ease-out 150ms;
   transition: border-color 0ms ease-out 150ms;
   border-bottom-color: #1e306e;
@@ -14878,7 +14508,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -14890,7 +14519,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
@@ -14952,7 +14580,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -14964,7 +14591,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
@@ -15074,7 +14700,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -15086,7 +14711,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
@@ -15148,7 +14772,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -15160,7 +14783,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
@@ -15257,7 +14879,6 @@ label:hover .bwCrgA .input-checkbox-inner {
   left: 0;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 750ms ease-out 750ms;
   transition: border-color 750ms ease-out 750ms;
   border-bottom-color: #1e306e;
@@ -15270,7 +14891,6 @@ label:hover .bwCrgA .input-checkbox-inner {
   left: 0px;
   display: block;
   border-bottom: 0.052vw solid white;
-  pointer-events: none;
   -webkit-transition: border-color 0ms ease-out 150ms;
   transition: border-color 0ms ease-out 150ms;
   border-bottom-color: #1e306e;
@@ -15339,7 +14959,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -15351,7 +14970,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.0728vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
@@ -15416,7 +15034,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 750ms ease-out 750ms;
     transition: border-color 750ms ease-out 750ms;
     border-bottom-color: #1e306e;
@@ -15428,7 +15045,6 @@ label:hover .bwCrgA .input-checkbox-inner {
     left: 0px;
     display: block;
     border-bottom: 0.208vw solid white;
-    pointer-events: none;
     -webkit-transition: border-color 0ms ease-out 150ms;
     transition: border-color 0ms ease-out 150ms;
     border-bottom-color: #1e306e;
