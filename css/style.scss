@@ -2809,8 +2809,7 @@ svg {
   }
 
   &.dragging {
-    cursor: pointer;
-    cursor: hand;
+    cursor: pointer; 
   }
 }
 
@@ -4145,7 +4144,7 @@ li .slick-active {
 
   &.dragging {
     cursor: pointer;
-    cursor: hand;
+    
   }
 }
 
@@ -4582,7 +4581,7 @@ li .slick-active {
 
     &.dragging {
       cursor: pointer;
-      cursor: hand;
+      
     }
   }
 
@@ -4904,7 +4903,7 @@ li .slick-active {
 
     &.dragging {
       cursor: pointer;
-      cursor: hand;
+      
     }
   }
 
@@ -5537,7 +5536,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   &.dragging {
     cursor: pointer;
-    cursor: hand;
+    
   }
 }
 
@@ -6176,7 +6175,7 @@ $slick-opacity-not-active: 0.25 !default;
 
     &.dragging {
       cursor: pointer;
-      cursor: hand;
+      
     }
   }
 
@@ -6587,7 +6586,7 @@ $slick-opacity-not-active: 0.25 !default;
 
     &.dragging {
       cursor: pointer;
-      cursor: hand;
+      
     }
   }
 
@@ -7651,7 +7650,7 @@ video {
 
   &.dragging {
     cursor: pointer;
-    cursor: hand;
+    
   }
 }
 
@@ -9993,7 +9992,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   &.dragging {
     cursor: pointer;
-    cursor: hand;
+    
   }
 }
 
