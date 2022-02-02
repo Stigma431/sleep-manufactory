@@ -2791,7 +2791,6 @@ svg {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -3963,7 +3962,6 @@ li .slick-active {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -4434,7 +4432,6 @@ li .slick-active {
   }
   .slick-list.dragging {
     cursor: pointer;
-    cursor: hand;
   }
   .slick-slider .slick-track,
   .slick-slider .slick-list {
@@ -4674,7 +4671,6 @@ li .slick-active {
   }
   .slick-list.dragging {
     cursor: pointer;
-    cursor: hand;
   }
   .slick-slider .slick-track,
   .slick-slider .slick-list {
@@ -5196,7 +5192,6 @@ li .slick-active {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -5891,7 +5886,6 @@ li .slick-active {
   }
   .slick-list.dragging {
     cursor: pointer;
-    cursor: hand;
   }
   .slick-slider .slick-track,
   .slick-slider .slick-list {
@@ -6181,7 +6175,6 @@ li .slick-active {
   }
   .slick-list.dragging {
     cursor: pointer;
-    cursor: hand;
   }
   .slick-slider .slick-track,
   .slick-slider .slick-list {
@@ -7106,7 +7099,6 @@ video {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -9231,7 +9223,6 @@ svg {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
