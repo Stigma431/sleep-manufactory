@@ -5170,7 +5170,6 @@ textarea.form-control-lg {
   width: 350px;
   max-width: 100%;
   font-size: 0.875rem;
-  pointer-events: auto;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -5273,7 +5272,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   width: 100%;
-  pointer-events: auto;
+  
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -7457,11 +7456,11 @@ textarea.form-control-lg {
 }
 
 .pe-none {
-  pointer-events: none !important;
+  
 }
 
 .pe-auto {
-  pointer-events: auto !important;
+  
 }
 
 .rounded {
