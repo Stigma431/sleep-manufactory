@@ -602,6 +602,7 @@ svg {
 
 .cartAdd_promo-form {
   position: relative;
+  width: 100%;
 }
 
 .cart-promo {
@@ -624,6 +625,10 @@ svg {
   text-align: center;
   color: #00706e;
   background: #f5fbfa;
+}
+
+.input-promo {
+  width: 100%;
 }
 
 .input-promo div {
@@ -653,7 +658,7 @@ svg {
 }
 
 .product-page_promo.form-control_promo {
-  width: 28.560vw;
+  width: 19.740vw;
 }
 
 .input_promo-border {
@@ -1030,13 +1035,13 @@ svg {
   width: 0.862vw;
   height: 0.810vw;
   margin-left: 0.833vw;
-  fill: white;
 }
 
 .closePromoIcon svg {
   position: absolute;
   inset: 0px;
   margin: auto;
+  fill: white;
 }
 
 .closePromoIcon:hover {
