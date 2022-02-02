@@ -1035,13 +1035,13 @@ svg {
   width: 0.862vw;
   height: 0.810vw;
   margin-left: 0.833vw;
+  fill: white;
 }
 
 .closePromoIcon svg {
   position: absolute;
   inset: 0px;
   margin: auto;
-  fill: white;
 }
 
 .closePromoIcon:hover {
@@ -9653,8 +9653,8 @@ svg {
   align-items: center;
   color: #4F4F4F;
   font-weight: 400;
-  -webkit-box-shadow: rgba(203, 203, 203, 0.5) !important;
-          box-shadow: rgba(203, 203, 203, 0.5) !important;
+  -webkit-box-shadow: #e5e5e5 !important;
+          box-shadow: #e5e5e5 !important;
   border: 0.241vw solid;
   border-color: #a3a3a3;
   border-width: 0px 0px 0.241vw;
@@ -9915,8 +9915,8 @@ svg {
   .btn:focus,
   .btn:active {
     outline: none !important;
-    -webkit-box-shadow: rgba(203, 203, 203, 0.5) !important;
-            box-shadow: rgba(203, 203, 203, 0.5) !important;
+    -webkit-box-shadow: #e5e5e5 !important;
+            box-shadow: #e5e5e5 !important;
   }
   .dropdown-reviews-button {
     display: -webkit-box;
@@ -9926,8 +9926,8 @@ svg {
         -ms-flex-align: center;
             align-items: center;
     color: #151515;
-    -webkit-box-shadow: rgba(203, 203, 203, 0.5) !important;
-            box-shadow: rgba(203, 203, 203, 0.5) !important;
+    -webkit-box-shadow: #e5e5e5 !important;
+            box-shadow: #e5e5e5 !important;
     border-color: #a3a3a3;
     border-width: 0px 0px 0.241vw;
     background-color: #FFFFFF;
@@ -10074,8 +10074,8 @@ svg {
     width: 59.759vw;
   }
   #myTab-2 .dropdown-toggle {
-    -webkit-box-shadow: rgba(203, 203, 203, 0.5) !important;
-            box-shadow: rgba(203, 203, 203, 0.5) !important;
+    -webkit-box-shadow: #e5e5e5 !important;
+            box-shadow: #e5e5e5 !important;
     border-width: 0px 0px 0.241vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

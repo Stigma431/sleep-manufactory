@@ -870,12 +870,12 @@ svg {
   width: 0.862vw;
   height: 0.810vw;
   margin-left: 0.833vw;
+  fill: rgb(255, 255, 255);
 
   svg {
     position: absolute;
     inset: 0px;
     margin: auto;
-    fill: rgb(255, 255, 255);
   }
 }
 
@@ -10386,7 +10386,7 @@ $slick-opacity-not-active: 0.25 !default;
   align-items: center;
   color: #4F4F4F;
   font-weight: 400;
-  box-shadow: rgba(203, 203, 203, 0.5) !important;
+  box-shadow: rgb(229, 229, 229) !important;
   border: 0.241vw solid;
   border-color: #a3a3a3;
   border-width: 0px 0px 0.241vw;
@@ -10782,14 +10782,14 @@ $slick-opacity-not-active: 0.25 !default;
   .btn:focus,
   .btn:active {
     outline: none !important;
-    box-shadow: rgba(203, 203, 203, 0.5) !important;
+    box-shadow: rgb(229, 229, 229) !important;
   }
 
   .dropdown-reviews-button {
     display: flex;
     align-items: center;
     color: rgb(21, 21, 21);
-    box-shadow: rgba(203, 203, 203, 0.5) !important;
+    box-shadow: rgb(229, 229, 229) !important;
     border-color: rgb(163, 163, 163);
     border-width: 0px 0px 0.241vw;
     background-color: #FFFFFF;
@@ -10989,7 +10989,7 @@ $slick-opacity-not-active: 0.25 !default;
   .nav-pills .show>.nav-link {}
 
   #myTab-2 .dropdown-toggle {
-    box-shadow: rgba(203, 203, 203, 0.5) !important;
+    box-shadow: rgb(229, 229, 229) !important;
     border-width: 0px 0px 0.241vw;
     justify-content: space-between;
   }
