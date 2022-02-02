@@ -684,9 +684,7 @@
 
 .mm-sronly {
     border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;    
     white-space: nowrap !important;
     width: 1px !important;
     min-width: 1px !important;
@@ -1162,7 +1160,7 @@
 }
 
 .mm-wrapper_dragging .mm-menu {
-    pointer-events: none !important
+    
 }
 
 .mm-wrapper_dragging .mm-wrapper__blocker {
@@ -1711,7 +1709,6 @@
 
 .mm-listitem_onlysubitems>.mm-listitem__text:not(.mm-listitem__btn) {
     z-index: -1;
-    pointer-events: none
 }
 
 .mm-sectionindexer {
