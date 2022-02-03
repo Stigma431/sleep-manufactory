@@ -13683,6 +13683,9 @@ textarea {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 30.646vw;
+    align-content: space-between;
+    margin-bottom: 2.083vw;
   }
 
   .input-name div {
@@ -14022,6 +14025,9 @@ textarea {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 17.646vw;
+    align-content: space-between;
+    margin-bottom: 2.083vw;
   }
 
   .form-control_promo {
@@ -15067,6 +15073,9 @@ textarea {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 100.646vw;
+    align-content: space-between;
+    margin-bottom: 2.083vw;
   }
 
   .input-name div {
@@ -15406,6 +15415,9 @@ textarea {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 47.646vw;
+    align-content: space-between;
+    margin-bottom: 2.083vw;
   }
 
   .form-control_promo {
