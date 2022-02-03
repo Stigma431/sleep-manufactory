@@ -15601,6 +15601,10 @@ textarea {
   margin-bottom: 4.219vw;
 }
 
+.registration-form div {
+  margin-bottom: 4.219vw;
+}
+
 .authorization-form>div {
   margin-bottom: 4.219vw;
 }
@@ -16054,6 +16058,11 @@ textarea {
   .authorization-form>div {
     margin-bottom: 16.876vw;
   }
+
+  .registration-form div {
+    margin-bottom: 16.876vw;
+  }
+  
 
   .form-control_password {
     font-style: normal;
