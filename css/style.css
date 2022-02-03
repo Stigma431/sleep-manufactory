@@ -8934,6 +8934,9 @@ svg {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      height: 28.646vw;
+      align-content: space-between;
+      margin-bottom: 2.083vw;
 }
 
 .formWrapper.review-formWrapper {
@@ -8962,7 +8965,7 @@ svg {
 
 .input-review div {
   position: relative;
-  margin-bottom: 2.083vw;
+  
 }
 
 .input-review:hover .form-control {
@@ -10607,6 +10610,7 @@ footer .year {
   letter-spacing: 0.031vw;
   color: #151515;
   padding: 0.833vw 1.042vw;
+  border: 0.052vw solid #e6e6e6 !important;
   font-size: 0.938vw;
   display: block;
   width: 45.313vw;
@@ -11441,7 +11445,7 @@ textarea {
       flex-wrap: wrap;
 }
 
-.input-name div {
+.input-name>span {
   position: relative;
   margin-bottom: 2.083vw;
 }
@@ -11452,7 +11456,7 @@ textarea {
           box-shadow: #f6f6f6 0px 0px 0px 2.083vw inset;
 }
 
-.input-city div {
+.input-city>span {
   position: relative;
   margin-bottom: 2.083vw;
 }
@@ -11467,7 +11471,7 @@ textarea {
   width: 45.313vw;
 }
 
-.input-street div {
+.input-street>span {
   position: relative;
   margin-bottom: 2.083vw;
 }
@@ -11482,7 +11486,7 @@ textarea {
   width: 45.313vw;
 }
 
-.input-house div {
+.input-house>span {
   position: relative;
   margin-bottom: 2.083vw;
 }
@@ -11497,9 +11501,8 @@ textarea {
   width: 45.313vw;
 }
 
-.input-phone div {
+.input-phone>span {
   position: relative;
-  margin-bottom: 2.083vw;
 }
 
 .input-phone:hover .form-control {
