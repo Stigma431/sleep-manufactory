@@ -15513,7 +15513,7 @@ textarea {
   margin-bottom: 8.073vw;
 }
 
-.input-login div {
+.input-login>span {
   position: relative;
 }
 
@@ -15537,7 +15537,6 @@ textarea {
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s, -webkit-box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
   outline: none;
-  margin-bottom: 4.219vw;
 }
 
 .input_login-border {
@@ -15594,9 +15593,18 @@ textarea {
   width: 50%;
 }
 
-.input-password div {
+.input-password>span {
   position: relative;
 }
+
+.authorization-form {
+  margin-bottom: 4.219vw;
+}
+
+.authorization-form>div {
+  margin-bottom: 4.219vw;
+}
+
 
 .form-control_password {
   font-style: normal;
@@ -15618,7 +15626,6 @@ textarea {
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
   transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s, -webkit-box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
   outline: none;
-  margin-bottom: 4.219vw;
 }
 
 .input_password-border {
@@ -15767,7 +15774,6 @@ textarea {
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s, -webkit-box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     outline: none;
-    margin-bottom: 5.9066vw;
   }
 
   .input_login-border {
@@ -15848,7 +15854,6 @@ textarea {
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s, -webkit-box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     outline: none;
-    margin-bottom: 5.9066vw;
   }
 
   .input_password-border {
@@ -15982,7 +15987,6 @@ textarea {
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s, -webkit-box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     outline: none;
-    margin-bottom: 16.876vw;
   }
 
   .input_login-border {
@@ -16043,6 +16047,14 @@ textarea {
     position: relative;
   }
 
+  .authorization-form {
+    margin-bottom: 16.876vw;
+  }
+
+  .authorization-form>div {
+    margin-bottom: 16.876vw;
+  }
+
   .form-control_password {
     font-style: normal;
     font-weight: 400;
@@ -16063,7 +16075,6 @@ textarea {
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     transition: background 270ms cubic-bezier(0, 0, 0.2, 1) 0s, box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s, -webkit-box-shadow 270ms cubic-bezier(0, 0, 0.2, 1) 0s;
     outline: none;
-    margin-bottom: 16.876vw;
   }
 
   .input_password-border {
