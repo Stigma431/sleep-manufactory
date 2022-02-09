@@ -248,8 +248,6 @@ svg {
     transition: margin-left 0.15s ease-in 0s, color 0.15s ease-out 0s;
   }
 
-
-
   .sub-menu .mm-listitem__text:hover {
     margin-left: 0.625vw;
     color: rgb(30, 48, 110) !important;
@@ -4131,44 +4129,44 @@ svg {
 
   // Default Variables
 
-// Slick icon entity codes outputs the following
-// "\2190" outputs ascii character "←"
-// "\2192" outputs ascii character "→"
-// "\2022" outputs ascii character "•"
+  // Slick icon entity codes outputs the following
+  // "\2190" outputs ascii character "←"
+  // "\2192" outputs ascii character "→"
+  // "\2022" outputs ascii character "•"
 
-$slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
-$slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
-$slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
-$slick-dot-character: "\2022" !default;
-$slick-dot-size: 20px !default;
-$slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
-$slick-opacity-not-active: 0.25 !default;
+  $slick-font-path: "./fonts/" !default;
+  $slick-font-family: "slick" !default;
+  $slick-loader-path: "./" !default;
+  $slick-arrow-color: white !default;
+  $slick-dot-color: black !default;
+  $slick-dot-color-active: $slick-dot-color !default;
+  $slick-prev-character: "\2190" !default;
+  $slick-next-character: "\2192" !default;
+  $slick-dot-character: "\2022" !default;
+  $slick-dot-size: 20px !default;
+  $slick-opacity-default: 0.75 !default;
+  $slick-opacity-on-hover: 1 !default;
+  $slick-opacity-not-active: 0.25 !default;
 
-@function slick-image-url($url) {
-  @if function-exists(image-url) {
-    @return image-url($url);
+  @function slick-image-url($url) {
+    @if function-exists(image-url) {
+      @return image-url($url);
+    }
+
+    @else {
+      @return url($slick-loader-path + $url);
+    }
   }
 
-  @else {
-    @return url($slick-loader-path + $url);
-  }
-}
+  @function slick-font-url($url) {
+    @if function-exists(font-url) {
+      @return font-url($url);
+    }
 
-@function slick-font-url($url) {
-  @if function-exists(font-url) {
-    @return font-url($url);
+    @else {
+      @return url($slick-font-path + $url);
+    }
   }
-
-  @else {
-    @return url($slick-font-path + $url);
-  }
-}
 
   /* Dots */
 
@@ -6079,7 +6077,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   .summaryContainer {
     padding-bottom: 1.250vw;
-    padding-left: calc(2.188vw);
+    padding-left: 2.188vw;
     padding-right: 1.667vw;
   }
 
@@ -6894,8 +6892,47 @@ $slick-opacity-not-active: 0.25 !default;
 
 @media all and (max-width: 1366px) {
   $coefficient: 1.4;
+  // Default Variables
 
-  
+  // Slick icon entity codes outputs the following
+  // "\2190" outputs ascii character "←"
+  // "\2192" outputs ascii character "→"
+  // "\2022" outputs ascii character "•"
+
+  $slick-font-path: "./fonts/" !default;
+  $slick-font-family: "slick" !default;
+  $slick-loader-path: "./" !default;
+  $slick-arrow-color: white !default;
+  $slick-dot-color: black !default;
+  $slick-dot-color-active: $slick-dot-color !default;
+  $slick-prev-character: "\2190" !default;
+  $slick-next-character: "\2192" !default;
+  $slick-dot-character: "\2022" !default;
+  $slick-dot-size: 20px !default;
+  $slick-opacity-default: 0.75 !default;
+  $slick-opacity-on-hover: 1 !default;
+  $slick-opacity-not-active: 0.25 !default;
+
+  @function slick-image-url($url) {
+    @if function-exists(image-url) {
+      @return image-url($url);
+    }
+
+    @else {
+      @return url($slick-loader-path + $url);
+    }
+  }
+
+  @function slick-font-url($url) {
+    @if function-exists(font-url) {
+      @return font-url($url);
+    }
+
+    @else {
+      @return url($slick-font-path + $url);
+    }
+  }
+
   .container {
     width: 100vw;
     padding: 0 1.464vw * $coefficient;
@@ -9047,7 +9084,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: 25vw * $coefficient;
     height: 3.385vw * $coefficient;
     padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
-    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    -moz-padding-start: (0.625vw * $coefficient) - (0.156vw * $coefficient);
     font-size: 1.146vw * $coefficient;
     line-height: 1.5;
     background-position: right 0.625vw * $coefficient center;
@@ -9894,7 +9931,7 @@ $slick-opacity-not-active: 0.25 !default;
     border-left: 0px;
     border-top-right-radius: 0.208vw * $coefficient;
     border-bottom-right-radius: 0.208vw * $coefficient;
-    left: calc(1.167vw * $coefficient + 4.648vw * $coefficient);
+    left: (1.167vw * $coefficient) + (4.648vw * $coefficient);
   }
 
   .input-border_second-active {
@@ -9905,7 +9942,7 @@ $slick-opacity-not-active: 0.25 !default;
     display: block;
     height: 0.104vw * $coefficient;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: (0.500vw * $coefficient) + (4.648vw * $coefficient);
   }
 
   .input-border_second-active::before,
@@ -9975,7 +10012,7 @@ $slick-opacity-not-active: 0.25 !default;
     display: block;
     height: 0.104vw * $coefficient;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: (0.500vw * $coefficient) + (4.648vw * $coefficient);
   }
 
   .input-border_second-deactive::before,
@@ -10482,7 +10519,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   .summaryContainer {
     padding-bottom: 1.250vw * $coefficient;
-    padding-left: calc(2.188vw * $coefficient);
+    padding-left: 2.188vw * $coefficient;
     padding-right: 1.667vw * $coefficient;
   }
 
@@ -11298,46 +11335,46 @@ $slick-opacity-not-active: 0.25 !default;
 @media all and (max-width: 415px) {
   $coefficient: 4;
 
-// Default Variables
+  // Default Variables
 
-// Slick icon entity codes outputs the following
-// "\2190" outputs ascii character "←"
-// "\2192" outputs ascii character "→"
-// "\2022" outputs ascii character "•"
+  // Slick icon entity codes outputs the following
+  // "\2190" outputs ascii character "←"
+  // "\2192" outputs ascii character "→"
+  // "\2022" outputs ascii character "•"
 
-$slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
-$slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
-$slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
-$slick-dot-character: "\2022" !default;
-$slick-dot-size: 20px !default;
-$slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
-$slick-opacity-not-active: 0.25 !default;
+  $slick-font-path: "./fonts/" !default;
+  $slick-font-family: "slick" !default;
+  $slick-loader-path: "./" !default;
+  $slick-arrow-color: white !default;
+  $slick-dot-color: black !default;
+  $slick-dot-color-active: $slick-dot-color !default;
+  $slick-prev-character: "\2190" !default;
+  $slick-next-character: "\2192" !default;
+  $slick-dot-character: "\2022" !default;
+  $slick-dot-size: 20px !default;
+  $slick-opacity-default: 0.75 !default;
+  $slick-opacity-on-hover: 1 !default;
+  $slick-opacity-not-active: 0.25 !default;
 
-@function slick-image-url($url) {
-  @if function-exists(image-url) {
-    @return image-url($url);
+  @function slick-image-url($url) {
+    @if function-exists(image-url) {
+      @return image-url($url);
+    }
+
+    @else {
+      @return url($slick-loader-path + $url);
+    }
   }
 
-  @else {
-    @return url($slick-loader-path + $url);
-  }
-}
+  @function slick-font-url($url) {
+    @if function-exists(font-url) {
+      @return font-url($url);
+    }
 
-@function slick-font-url($url) {
-  @if function-exists(font-url) {
-    @return font-url($url);
+    @else {
+      @return url($slick-font-path + $url);
+    }
   }
-
-  @else {
-    @return url($slick-font-path + $url);
-  }
-}
 
   .header {
     width: 100vw;
@@ -13546,7 +13583,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: 25vw * $coefficient;
     height: 3.385vw * $coefficient;
     padding: 0.313vw * $coefficient 1.875vw * $coefficient 0.313vw * $coefficient 0.625vw * $coefficient;
-    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    -moz-padding-start: (0.625vw * $coefficient) - (0.156vw * $coefficient);
     font-size: 1.146vw * $coefficient;
     line-height: 1.5;
     background-position: right 0.625vw * $coefficient center;
@@ -14631,7 +14668,7 @@ $slick-opacity-not-active: 0.25 !default;
     border-left: 0px;
     border-top-right-radius: 0.208vw * $coefficient;
     border-bottom-right-radius: 0.208vw * $coefficient;
-    left: calc(1.167vw * $coefficient + 4.648vw * $coefficient);
+    left: (1.167vw * $coefficient) + (4.648vw * $coefficient);
   }
 
   .input-border_second-active {
@@ -14642,7 +14679,7 @@ $slick-opacity-not-active: 0.25 !default;
     display: block;
     height: 0.104vw * $coefficient;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: (0.500vw * $coefficient) + (4.648vw * $coefficient);
   }
 
   .input-border_second-active::before,
@@ -14712,7 +14749,7 @@ $slick-opacity-not-active: 0.25 !default;
     display: block;
     height: 0.104vw * $coefficient;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: (0.500vw * $coefficient) + (4.648vw * $coefficient);
   }
 
   .input-border_second-deactive::before,
@@ -15210,7 +15247,7 @@ $slick-opacity-not-active: 0.25 !default;
 
   .summaryContainer {
     padding-bottom: 1.250vw * $coefficient;
-    padding-left: calc(2.188vw * $coefficient);
+    padding-left: 2.188vw * $coefficient;
     padding-right: 1.667vw * $coefficient;
   }
 

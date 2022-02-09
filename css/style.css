@@ -5889,7 +5889,7 @@ svg {
   }
   .summaryContainer {
     padding-bottom: 1.250vw;
-    padding-left: calc(2.188vw);
+    padding-left: 2.188vw;
     padding-right: 1.667vw;
   }
   .address-form {
@@ -8313,7 +8313,7 @@ svg {
     width: 35vw;
     height: 4.739vw;
     padding: 0.4382vw 2.625vw 0.4382vw 0.875vw;
-    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    -moz-padding-start: 0.6566vw;
     font-size: 1.6044vw;
     line-height: 1.5;
     background-position: right 0.875vw center;
@@ -8972,7 +8972,7 @@ svg {
     border-left: 0px;
     border-top-right-radius: 0.2912vw;
     border-bottom-right-radius: 0.2912vw;
-    left: calc(1.167vw * $coefficient + 4.648vw * $coefficient);
+    left: 8.141vw;
   }
   .input-border_second-active {
     position: absolute;
@@ -8982,7 +8982,7 @@ svg {
     display: block;
     height: 0.1456vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: 7.2072vw;
   }
   .input-border_second-active::before,
   .input-border_second-active::after {
@@ -9050,7 +9050,7 @@ svg {
     display: block;
     height: 0.1456vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: 7.2072vw;
   }
   .input-border_second-deactive::before,
   .input-border_second-deactive::after {
@@ -9629,7 +9629,7 @@ svg {
   }
   .summaryContainer {
     padding-bottom: 1.75vw;
-    padding-left: calc(2.188vw * $coefficient);
+    padding-left: 3.0632vw;
     padding-right: 2.3338vw;
   }
   .address-form {
@@ -12186,7 +12186,7 @@ svg {
     width: 100vw;
     height: 13.54vw;
     padding: 1.252vw 7.5vw 1.252vw 2.5vw;
-    -moz-padding-start: calc(0.625vw * $coefficient - 0.156vw * $coefficient);
+    -moz-padding-start: 1.876vw;
     font-size: 4.584vw;
     line-height: 1.5;
     background-position: right 2.5vw center;
@@ -13083,7 +13083,7 @@ svg {
     border-left: 0px;
     border-top-right-radius: 0.832vw;
     border-bottom-right-radius: 0.832vw;
-    left: calc(1.167vw * $coefficient + 4.648vw * $coefficient);
+    left: 23.26vw;
   }
   .input-border_second-active {
     position: absolute;
@@ -13093,7 +13093,7 @@ svg {
     display: block;
     height: 0.416vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: 20.592vw;
   }
   .input-border_second-active::before,
   .input-border_second-active::after {
@@ -13161,7 +13161,7 @@ svg {
     display: block;
     height: 0.416vw;
     overflow: hidden;
-    width: calc(0.500vw * $coefficient + 4.648vw * $coefficient);
+    width: 20.592vw;
   }
   .input-border_second-deactive::before,
   .input-border_second-deactive::after {
@@ -13728,7 +13728,7 @@ svg {
   }
   .summaryContainer {
     padding-bottom: 5vw;
-    padding-left: calc(2.188vw * $coefficient);
+    padding-left: 8.752vw;
     padding-right: 6.668vw;
   }
   .address-form {
