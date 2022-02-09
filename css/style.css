@@ -1754,7 +1754,7 @@ svg {
     content: none;
     width: 20px;
     font-family: "slick";
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 20px;
     text-align: center;
     color: black;
@@ -2562,7 +2562,7 @@ svg {
     width: 1.042vw;
     height: 1.042vw;
     font-family: "slick";
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 1.042vw;
     text-align: center;
     color: black;
@@ -4080,7 +4080,7 @@ svg {
     width: 70px;
     height: 52px;
     font-family: "slick";
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 20px;
     text-align: center;
     color: black;
@@ -4972,7 +4972,7 @@ svg {
     width: 20px;
     height: 20px;
     font-family: "slick";
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 20px;
     text-align: center;
     color: black;
